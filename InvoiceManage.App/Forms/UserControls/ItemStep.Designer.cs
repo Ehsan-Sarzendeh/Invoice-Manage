@@ -39,6 +39,7 @@
             BtnNext.BorderColor = System.Drawing.Color.PaleVioletRed;
             BtnNext.BorderRadius = 10;
             BtnNext.BorderSize = 0;
+            BtnNext.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnNext.FlatAppearance.BorderSize = 0;
             BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnNext.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -60,6 +61,7 @@
             BtnPrevious.BorderColor = System.Drawing.Color.PaleVioletRed;
             BtnPrevious.BorderRadius = 10;
             BtnPrevious.BorderSize = 0;
+            BtnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnPrevious.FlatAppearance.BorderSize = 0;
             BtnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnPrevious.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);

@@ -8,5 +8,10 @@ namespace InvoiceManage.App.Forms
         {
             InitializeComponent();
         }
+
+        private void FrmSettings_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Program.FrmMain.Show();
+        }
     }
 }

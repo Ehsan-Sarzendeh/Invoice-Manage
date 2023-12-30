@@ -27,8 +27,7 @@ namespace InvoiceManage.App.Forms
 
         private void FrmInvoiceList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var frmMain = new FrmMain();
-            frmMain.Show();
+            Program.FrmMain.Show();
         }
     }
 }

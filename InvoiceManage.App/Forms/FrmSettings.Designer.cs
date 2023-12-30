@@ -38,7 +38,9 @@
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "FrmSettings";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "تنظیمات";
+            FormClosing += FrmSettings_FormClosing;
             ResumeLayout(false);
         }
 

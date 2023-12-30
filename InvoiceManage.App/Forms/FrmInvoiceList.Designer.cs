@@ -177,7 +177,7 @@
             Font = new System.Drawing.Font("IRANSansWeb", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "FrmInvoiceList";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "لیست فاکتور ها";
             FormClosing += FrmInvoiceList_FormClosing;
             panel1.ResumeLayout(false);

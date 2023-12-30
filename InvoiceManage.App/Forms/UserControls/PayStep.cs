@@ -19,6 +19,8 @@ namespace InvoiceManage.App.Forms.UserControls
         private void BtnNext_Click(object sender, EventArgs e)
         {
 
+
+            ParentForm.Close();
         }
     }
 }

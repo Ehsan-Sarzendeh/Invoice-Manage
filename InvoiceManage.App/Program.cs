@@ -5,12 +5,12 @@ using System.Windows.Forms;
 using Microsoft.Extensions.DependencyInjection;
 using static Stimulsoft.Report.StiOptions;
 using InvoiceManage.Database.Contexts;
-using Microsoft.EntityFrameworkCore;
 
 namespace InvoiceManage.App
 {
     internal static class Program
     {
+        public static FrmMain FrmMain { get; set; }
         public static IServiceProvider ServiceProvider { get; set; }
 
         /// <summary>
@@ -36,7 +36,8 @@ namespace InvoiceManage.App
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            FrmMain = new FrmMain();
+            Application.Run(FrmMain);
         }
 
         private static void ConfigureServices(IServiceCollection services)

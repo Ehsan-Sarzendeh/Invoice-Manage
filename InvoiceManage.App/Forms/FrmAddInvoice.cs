@@ -20,8 +20,7 @@ namespace InvoiceManage.App.Forms
 
         private void FrmAddInvoice_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var frmMain = new FrmMain();
-            frmMain.Show();
+            Program.FrmMain.Show();
         }
 
         private void FrmAddInvoice_Load(object sender, System.EventArgs e)
