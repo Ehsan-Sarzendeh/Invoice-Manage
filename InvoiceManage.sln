@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManage.App", "InvoiceManage.App\InvoiceManage.App.csproj", "{EB9E031B-CD37-40B7-BF07-0A3F04871603}"
+	ProjectSection(ProjectDependencies) = postProject
+		{918BC50A-7D8B-4C29-99D0-766CB658794D} = {918BC50A-7D8B-4C29-99D0-766CB658794D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManage.Database", "InvoiceManage.Database\InvoiceManage.Database.csproj", "{918BC50A-7D8B-4C29-99D0-766CB658794D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB9E031B-CD37-40B7-BF07-0A3F04871603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9E031B-CD37-40B7-BF07-0A3F04871603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9E031B-CD37-40B7-BF07-0A3F04871603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9E031B-CD37-40B7-BF07-0A3F04871603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{918BC50A-7D8B-4C29-99D0-766CB658794D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918BC50A-7D8B-4C29-99D0-766CB658794D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918BC50A-7D8B-4C29-99D0-766CB658794D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918BC50A-7D8B-4C29-99D0-766CB658794D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F9271BC-B10E-41DE-98F0-22FE73175A6A}
+	EndGlobalSection
+EndGlobal

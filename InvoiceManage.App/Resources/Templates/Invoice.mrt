@@ -1,0 +1,1393 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="2">
+      <InvoiceItemList Ref="2" type="DataTableSource" isKey="true">
+        <Alias>InvoiceItemList</Alias>
+        <Columns isList="true" count="11">
+          <value>InvoiceItems_Id,System.Int32</value>
+          <value>Sstid,System.String</value>
+          <value>Sstt,System.String</value>
+          <value>Am,System.Int64</value>
+          <value>fee,System.Int64</value>
+          <value>Prdis,System.Int64</value>
+          <value>Dis,System.Int64</value>
+          <value>Adis,System.Int64</value>
+          <value>Vra,System.Int64</value>
+          <value>Vam,System.Int64</value>
+          <value>Tsstam,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>e0967be785864d228947be98d493adad</Key>
+        <Name>InvoiceItemList</Name>
+        <NameInSource>InvoiceItemList</NameInSource>
+      </InvoiceItemList>
+      <Invoice Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Invoice</Alias>
+        <Columns isList="true" count="30">
+          <value>ORIGINAL,Invoices_Id,Invoices_Id,Invoices_Id,System.Int32,cd18aeae258347259cc2257f6d00697e</value>
+          <value>Indatim_1,System.String</value>
+          <value>Indatim_2,System.String</value>
+          <value>Inno,System.String</value>
+          <value>Inty,System.String</value>
+          <value>Inp,System.String</value>
+          <value>Ins,System.String</value>
+          <value>Tins,System.String</value>
+          <value>Tinb,System.Int32</value>
+          <value>Tprdis,System.String</value>
+          <value>Tadis,System.String</value>
+          <value>Tvam,System.String</value>
+          <value>Todam,System.String</value>
+          <value>Tbill,System.String</value>
+          <value>Setm,System.String</value>
+          <value>Tob,System.String</value>
+          <value>Seller_Phone,System.String</value>
+          <value>Seller_Address,System.String</value>
+          <value>TaxNo,System.String</value>
+          <value>Seller_Name,System.String</value>
+          <value>Seller_NationalId,System.String</value>
+          <value>Seller_PostalCode,System.String</value>
+          <value>Seller_ApprovalNo,System.String</value>
+          <value>Buyer_Name,System.String</value>
+          <value>Buyer_Address,System.String</value>
+          <value>Buyer_Phone,System.String</value>
+          <value>Buyer_Tins,System.String</value>
+          <value>Buyer_NationalId,System.String</value>
+          <value>Buyer_PostalCode,System.String</value>
+          <value>Buyer_ApprovalNo,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>514d3e5907134205bd4b1959cdf4d4a7</Key>
+        <Name>Invoice</Name>
+        <NameInSource>Invoice</NameInSource>
+      </Invoice>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>a2d4eb43cc7c400b98e0e8091c44c65f</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <PageFooterBand1 Ref="5" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,225.2,283,10</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text4 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,282,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,13,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{PageNumber}/{TotalPageCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageFooterBand1>
+        <ReportTitleBand1 Ref="7" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,283,58</ClientRectangle>
+          <Components isList="true" count="13">
+            <Panel4 Ref="8" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,36,56,20</ClientRectangle>
+              <Components isList="true" count="3">
+                <Text6 Ref="9" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,56,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>4811d3908fa94a69b52d9511f392d19d</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text6</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="8" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>سریال داخلی: {Invoice.Inno}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text6>
+                <Text35 Ref="10" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,6,56,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>ad08964c67a545bb9cffca6725b71521</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text35</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="8" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>موضوع: {Invoice.Ins}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text35>
+                <Text37 Ref="11" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,12,56,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>d99f2c57924949e4b924fda7aac6cf3a</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text37</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="8" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>شماره مالیاتی: {Invoice.TaxNo}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text37>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>Panel4</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+            </Panel4>
+            <Panel5 Ref="12" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,14,56,20</ClientRectangle>
+              <Components isList="true" count="3">
+                <Text1 Ref="13" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,12,56,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>430088c2783147508eb574c9ad705888</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text1</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="12" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>زمان: {Invoice.Indatim_2}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text1>
+                <ReportDateTxt Ref="14" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Border>None;Black;1;None;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,6,56,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>485d9179df7149e9928c4e8d385ee766</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>ReportDateTxt</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="12" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>تاریخ: {Invoice.Indatim_1}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </ReportDateTxt>
+                <Text29 Ref="15" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,56,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>8facb7650cf84fb88802409913a2d79e</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text29</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="12" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>شناسه فاکتور: {Invoice.Invoices_Id}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text29>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>Panel5</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+            </Panel5>
+            <Panel3 Ref="16" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>58,14,214,20</ClientRectangle>
+              <Components isList="true" count="4">
+                <Text43 Ref="17" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>142,6,72,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>ce94fcff05254afd8fdb8bb9d9dc20b0</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text43</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="16" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>شناسه ملی: {Invoice.Seller_NationalId}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text43>
+                <Text38 Ref="18" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>142,0,72,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>8b630a77d41548dc81af8db59f331736</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text38</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="16" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>فروشنده: {Invoice.Seller_Name}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text38>
+                <Text48 Ref="19" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>70,6,72,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>adbce40b06ca48bba581304af50d72bb</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text48</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="16" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>شماره اقتصادی: {Invoice.Tins}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text48>
+                <Text49 Ref="20" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>70,0,72,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>d61f89cc396e4c91b2e662cdd697561a</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text49</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="16" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>شماره ثبت: {Invoice.Seller_ApprovalNo}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text49>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>Panel3</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+            </Panel3>
+            <Title Ref="21" type="Panel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,282,12</ClientRectangle>
+              <Components isList="true" count="1">
+                <Text2 Ref="22" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,0,282,12</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,21,Bold</Font>
+                  <Guid>5e0cdd98287748be9e58077344401b20</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text2</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="21" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>صورت حساب فروش</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text2>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>Title</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+            </Title>
+            <Text45 Ref="23" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>274,14,8,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,14</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <Text>فروشنده</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,,Angle=90</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text45>
+            <Panel1 Ref="24" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>58,36,214,20</ClientRectangle>
+              <Components isList="true" count="4">
+                <Text36 Ref="25" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>142,6,72,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>edf800fca62447a590d5b783936f3be2</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text36</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="24" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>شناسه ملی: {Invoice.Buyer_NationalId}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text36>
+                <Text46 Ref="26" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>142,0,72,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>e52f36f63d8f423784b06320cdf0f6a8</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text46</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="24" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>خریدار{Invoice.Buyer_Name}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text46>
+                <Text47 Ref="27" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>70,6,72,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>3a59ceea2af746678f78576ea999ee8a</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text47</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="24" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>شماره اقتصادی: {Invoice.Buyer_Tins}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text47>
+                <Text51 Ref="28" type="Text" isKey="true">
+                  <Anchor>Top, Right</Anchor>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>70,0,72,6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,11,Bold</Font>
+                  <Guid>14b92a23ec2941fbac8d7f8854666e81</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text51</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="24" />
+                  <ShiftMode>None</ShiftMode>
+                  <Text>شماره ثبت: {Invoice.Buyer_ApprovalNo}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text51>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>Panel1</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+            </Panel1>
+            <Text56 Ref="29" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>274,36,8,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,14</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text56</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <Text>خریدار</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,,Angle=90</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text56>
+            <Text44 Ref="30" type="Text" isKey="true">
+              <Anchor>Top, Right</Anchor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56,26,216,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>f8a0dc623a0b44b7a4ef80993062275e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <ShiftMode>None</ShiftMode>
+              <Text>نشانی: {Invoice.Seller_Address}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text44>
+            <Text52 Ref="31" type="Text" isKey="true">
+              <Anchor>Top, Right</Anchor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56,20,72,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>fb070fc562814c3781f2ee4ba2f1ec45</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <ShiftMode>None</ShiftMode>
+              <Text>شماره تلفن: {Invoice.Seller_Phone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text52>
+            <Text53 Ref="32" type="Text" isKey="true">
+              <Anchor>Top, Right</Anchor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56,14,72,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>7ea802371ff04142af89b329d4039367</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <ShiftMode>None</ShiftMode>
+              <Text>کدپستی: {Invoice.Seller_PostalCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text53>
+            <Text10 Ref="33" type="Text" isKey="true">
+              <Anchor>Top, Right</Anchor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56,48,216,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>8481743c6e2444f3b169e697fed47258</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <ShiftMode>None</ShiftMode>
+              <Text>نشانی: {Invoice.Buyer_Address}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text10>
+            <Text54 Ref="34" type="Text" isKey="true">
+              <Anchor>Top, Right</Anchor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56,42,72,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>a10708c09d9c4fea9a684f4f2c0bf21f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <ShiftMode>None</ShiftMode>
+              <Text>شماره تلفن: {Invoice.Buyer_Phone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text54>
+            <Text55 Ref="35" type="Text" isKey="true">
+              <Anchor>Top, Right</Anchor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56,36,72,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>6c141237db0d498aab8733da1a0c3384</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text55</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <ShiftMode>None</ShiftMode>
+              <Text>کدپستی: {Invoice.Buyer_PostalCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text55>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ReportTitleBand1>
+        <HeaderBand1 Ref="36" type="HeaderBand" isKey="true">
+          <Brush>EmptyBrush</Brush>
+          <ClientRectangle>0,70,283,10</ClientRectangle>
+          <Components isList="true" count="11">
+            <Text9 Ref="37" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>76,0,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>0eb417b8b3d64bab9c65159fd07d49a8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>مبلغ بعد از تخفیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text16 Ref="38" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>100,0,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>1bcc8da8b11d4b61b8cf562ccbef6a13</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>مبلغ تخفیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text20 Ref="39" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>274,0,8,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>5df18b53fe9e4bccb829cac5c7ecbaa5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="40" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>234,0,40,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>4d72ec0ebb774cd5b8ad1e03431e120c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>شناسه کالا و خدمات</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text22 Ref="41" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>180,0,54,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>f34e2b8cf2414467a3e055c5120f082d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>شرح کالا و خدمات</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text23 Ref="42" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>170,0,10,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>434afa7131304f87bf628908d447181e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>تعداد مقدار</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text25 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>122,0,26,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>4037ccd2684c4c9ea214d3e69ac5516d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>مبلغ قبل از تخفیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text3 Ref="44" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>148,0,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>a000fe0fa1db4afaa393afb360aa258e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>مبلغ واحد</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text26 Ref="45" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>56,0,20,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>b2250309eba24a938289175cf746a71b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>نرخ مالیات
+ بر ارزش افزوده</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text27 Ref="46" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>36,0,20,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>be868bc121ea41e7a24fcf8b9aea80b7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>مبلغ مالیات
+ بر ارزش افزوده
+</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="47" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
+              <Brush>[242:242:242]</Brush>
+              <ClientRectangle>0,0,36,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>eb6a0a8d54ce4692a24e308566ac162c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="4" />
+              <Parent isRef="36" />
+              <Text>مبلغ کل کالا و خدمت</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SkipFirst>False</SkipFirst>
+        </HeaderBand1>
+        <DataBand1 Ref="48" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,88,283,14</ClientRectangle>
+          <Components isList="true" count="1">
+            <Panel2 Ref="49" type="Panel" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,282,14</ClientRectangle>
+              <Components isList="true" count="11">
+                <Text67 Ref="50" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>274,0,8,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>65ac624a0e474067a5022b2fd83e4e71</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text67</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{Line}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>SystemVariables</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text67>
+                <Text5 Ref="51" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>234,0,40,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>dfde351605ff47e0be1cb8cbd8626d75</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text5</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Sstid}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>DataColumn</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text5>
+                <Text11 Ref="52" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>180,0,54,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>f70c885b4a044d66ae5db872727f219a</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text11</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Sstt}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text11>
+                <Text12 Ref="53" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>170,0,10,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>9060ebd7fd3041488e7de38351502b23</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text12</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Am}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text12>
+                <Text13 Ref="54" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>148,0,22,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>9a00fcfdf13941479bc0cf9d58b591af</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text13</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.fee}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text13>
+                <Text14 Ref="55" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>122,0,26,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>0447f94209f44298a756ecbaa058a3e2</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text14</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Prdis}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text14>
+                <Text15 Ref="56" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>100,0,22,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>3889c47c2da14c69bc48c0cb792f7efa</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text15</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Dis}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text15>
+                <Text17 Ref="57" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>76,0,24,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>a3df02dcec00445985a33c918c847e57</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text17</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Adis}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text17>
+                <Text18 Ref="58" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>56,0,20,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>d690e3a95c58439e99b3a50285ca0c34</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text18</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Vra}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text18>
+                <Text19 Ref="59" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>36,0,20,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>20821ee98c65409798250515309b804f</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text19</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Vam}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text19>
+                <Text24 Ref="60" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>0,0,36,14</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <GrowToHeight>True</GrowToHeight>
+                  <Guid>abf8284f09464c12b7214323efe525a9</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text24</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="49" />
+                  <Text>{InvoiceItemList.Tsstam}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text24>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <GrowToHeight>True</GrowToHeight>
+              <Name>Panel2</Name>
+              <Page isRef="4" />
+              <Parent isRef="48" />
+            </Panel2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>InvoiceItemList</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <FooterBand1 Ref="61" type="FooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,110,283,46</ClientRectangle>
+          <Components isList="true" count="3">
+            <TotalReportTable Ref="62" type="Panel" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0,2,282,16</ClientRectangle>
+              <Components isList="true" count="10">
+                <Text34 Ref="63" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[242:242:242]</Brush>
+                  <ClientRectangle>170,0,54,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <Guid>31673d338ef249efb89bb101d76114b8</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text34</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>مجموع مبلغ قبل از کسر تخفیف</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text34>
+                <Text8 Ref="64" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[242:242:242]</Brush>
+                  <ClientRectangle>110,0,60,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <Guid>4d858f3a81cf411e914319dd0b366ea0</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text8</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>مجموع مبلغ پس از کسر تخفیف</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text8>
+                <Text7 Ref="65" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[242:242:242]</Brush>
+                  <ClientRectangle>56,0,54,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <Guid>df9d3c8bacf54ecfb6951e9de5f9d22a</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text7</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>مجموع سایر مالیت و وجوه قانونی</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text7>
+                <Text41 Ref="66" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[242:242:242]</Brush>
+                  <ClientRectangle>0,0,56,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <Guid>9fb35217c3e04fefa98f9c3995be29c8</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text41</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>مجموع مالیات بر ارزش افزوده</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text41>
+                <Text50 Ref="67" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;4;Black</Border>
+                  <Brush>[242:242:242]</Brush>
+                  <ClientRectangle>224,0,58,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,12,Bold</Font>
+                  <Guid>c54a1ef4f1c34dee9148ba1b74f73cfc</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text50</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>مجموع صورت حساب</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text50>
+                <Text30 Ref="68" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>224,8,58,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,13,Bold</Font>
+                  <Guid>359a88c0bcf74abb8999dfac55931edb</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text30</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>{Invoice.Tbill}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text30>
+                <Text31 Ref="69" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>110,8,60,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,13,Bold</Font>
+                  <Guid>db4f527ed1ce4a238f5c0e69462d7890</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text31</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>{Invoice.Tadis}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text31>
+                <Text32 Ref="70" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>56,8,54,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,13,Bold</Font>
+                  <Guid>4aa95f0fbe454905a2074839974c643b</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text32</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>{Invoice.Todam}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text32>
+                <Text33 Ref="71" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0,8,56,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,13,Bold</Font>
+                  <Guid>aad11d86d4f344b6b2a75932a0a8d2d1</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text33</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>{Invoice.Tvam}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text33>
+                <Text39 Ref="72" type="Text" isKey="true">
+                  <Border>All;Black;1;Solid;False;1;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>170,8,54,8</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Parastoo Print FD,13,Bold</Font>
+                  <Guid>da6c5062670b4286adcb9c1ef2c538a2</Guid>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text39</Name>
+                  <Page isRef="4" />
+                  <Parent isRef="62" />
+                  <Text>{Invoice.Tprdis}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Text39>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>TotalReportTable</Name>
+              <Page isRef="4" />
+              <Parent isRef="61" />
+            </TotalReportTable>
+            <Text40 Ref="73" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>170,24,112,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,12,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="4" />
+              <Parent isRef="61" />
+              <Text>مهر و امضای فروشنده</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text40>
+            <Text42 Ref="74" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,24,110,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,12,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="4" />
+              <Parent isRef="61" />
+              <Text>مهر و امضای خریدار</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text42>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>FooterBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <SkipFirst>False</SkipFirst>
+        </FooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>23f90731031644739f4db25abcfc485b</Guid>
+      <Margins>7,7,7,7</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>210</PageHeight>
+      <PageWidth>297</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <RightToLeft>True</RightToLeft>
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>12/27/2023 12:12:49 AM</ReportChanged>
+  <ReportCreated>7/2/2023 8:30:03 PM</ReportCreated>
+  <ReportFile>C:\Users\amirh\source\repos\Excel-Invoice\ExcelInvoice\Resources\StimulsoftFiles\Invoice.mrt</ReportFile>
+  <ReportGuid>8b7fb0e186e14bd68e8a546cd48abb41</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2023.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
