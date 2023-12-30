@@ -126,6 +126,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 16.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
             label1.Location = new System.Drawing.Point(382, 257);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(232, 44);

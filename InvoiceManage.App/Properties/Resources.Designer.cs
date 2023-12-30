@@ -113,6 +113,26 @@ namespace InvoiceManage.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap completed {
+            get {
+                object obj = ResourceManager.GetObject("completed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap current {
+            get {
+                object obj = ResourceManager.GetObject("current", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);
@@ -186,6 +206,16 @@ namespace InvoiceManage.App.Properties {
         internal static System.Drawing.Bitmap minimize_w {
             get {
                 object obj = ResourceManager.GetObject("minimize_w", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pending {
+            get {
+                object obj = ResourceManager.GetObject("pending", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
