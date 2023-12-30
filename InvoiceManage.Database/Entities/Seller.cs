@@ -1,6 +1,8 @@
-﻿namespace InvoiceManage.Database.Entities
+﻿using InvoiceManage.Database.Entities.Common;
+
+namespace InvoiceManage.Database.Entities
 {
-    public class Seller
+    public class Seller : BaseEntity
     {
     }
 }
