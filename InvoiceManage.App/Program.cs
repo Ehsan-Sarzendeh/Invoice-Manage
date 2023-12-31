@@ -2,6 +2,7 @@ using InvoiceManage.App.Forms;
 using System;
 using System.IO;
 using System.Windows.Forms;
+using InvoiceManage.App.Forms.Home;
 using Microsoft.Extensions.DependencyInjection;
 using static Stimulsoft.Report.StiOptions;
 using InvoiceManage.Database.Contexts;
@@ -11,7 +12,7 @@ namespace InvoiceManage.App
 {
     internal static class Program
     {
-        public static FrmMain FrmMain { get; set; }
+        public static FrmHome FrmMain { get; set; }
         public static IServiceProvider ServiceProvider { get; set; }
 
         /// <summary>
@@ -37,7 +38,7 @@ namespace InvoiceManage.App
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            FrmMain = new FrmMain();
+            FrmMain = new FrmHome();
             Application.Run(FrmMain);
         }
 
