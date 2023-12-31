@@ -22,12 +22,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel
 
             Invoice = new Invoice();
 
-            PanelSlider.Controls.Add(new InvoiceStep());
-            PanelSlider.Controls.Add(new SellerStep());
-            PanelSlider.Controls.Add(new BuyerStep());
+            PanelSlider.Controls.Add(new InvoiceStep(Invoice));
+            PanelSlider.Controls.Add(new SellerStep(Invoice));
+            PanelSlider.Controls.Add(new BuyerStep(Invoice));
             PanelSlider.Controls.Add(new ItemStep());
-            PanelSlider.Controls.Add(new SumStep());
-            PanelSlider.Controls.Add(new PayStep(type));
+            PanelSlider.Controls.Add(new SumStep(Invoice));
+            PanelSlider.Controls.Add(new PayStep(type, Invoice));
         }
 
         private void FrmAddInvoice_FormClosing(object sender, FormClosingEventArgs e)

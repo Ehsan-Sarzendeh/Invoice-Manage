@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
@@ -14,6 +15,19 @@ namespace InvoiceManage.App.Services.Infrastructures
                 throw new NotSupportedException();
 
             return Enum.GetValues(input.GetType()).Cast<T>();
+        }
+
+        public static Array GetValues(Type type)
+        {
+            return Enum.GetValues(type)
+                .Cast<Enum>()
+                .Select(value => new
+                {
+                    Display = value.ToDisplay(),
+                    Value = value
+                })
+                .OrderBy(item => item.Value)
+                .ToArray();
         }
 
         public static IEnumerable<T> GetEnumFlags<T>(this T input) where T : struct

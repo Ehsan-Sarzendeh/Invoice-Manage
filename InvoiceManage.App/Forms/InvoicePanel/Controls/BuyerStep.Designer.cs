@@ -40,9 +40,9 @@
             groupBox7 = new System.Windows.Forms.GroupBox();
             TxtBId = new System.Windows.Forms.TextBox();
             groupBox1 = new System.Windows.Forms.GroupBox();
-            TxtSbc = new System.Windows.Forms.TextBox();
+            TxtBbc = new System.Windows.Forms.TextBox();
             groupBox9 = new System.Windows.Forms.GroupBox();
-            TxtTins = new System.Windows.Forms.TextBox();
+            TxtTinb = new System.Windows.Forms.TextBox();
             BtnSelect = new Resources.CustomToolBox.RoundedButton();
             groupBox8 = new System.Windows.Forms.GroupBox();
             CbFt = new System.Windows.Forms.ComboBox();
@@ -221,7 +221,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(TxtSbc);
+            groupBox1.Controls.Add(TxtBbc);
             groupBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox1.ForeColor = System.Drawing.Color.DimGray;
             groupBox1.Location = new System.Drawing.Point(501, 304);
@@ -232,19 +232,19 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "کد شعبه ";
             // 
-            // TxtSbc
+            // TxtBbc
             // 
-            TxtSbc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            TxtSbc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtSbc.Location = new System.Drawing.Point(10, 31);
-            TxtSbc.Name = "TxtSbc";
-            TxtSbc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            TxtSbc.Size = new System.Drawing.Size(219, 29);
-            TxtSbc.TabIndex = 0;
+            TxtBbc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtBbc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtBbc.Location = new System.Drawing.Point(10, 31);
+            TxtBbc.Name = "TxtBbc";
+            TxtBbc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtBbc.Size = new System.Drawing.Size(219, 29);
+            TxtBbc.TabIndex = 0;
             // 
             // groupBox9
             // 
-            groupBox9.Controls.Add(TxtTins);
+            groupBox9.Controls.Add(TxtTinb);
             groupBox9.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox9.ForeColor = System.Drawing.Color.DimGray;
             groupBox9.Location = new System.Drawing.Point(501, 109);
@@ -255,15 +255,15 @@
             groupBox9.TabStop = false;
             groupBox9.Text = "شماره اقتصادی";
             // 
-            // TxtTins
+            // TxtTinb
             // 
-            TxtTins.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            TxtTins.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtTins.Location = new System.Drawing.Point(10, 31);
-            TxtTins.Name = "TxtTins";
-            TxtTins.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            TxtTins.Size = new System.Drawing.Size(449, 29);
-            TxtTins.TabIndex = 0;
+            TxtTinb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtTinb.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtTinb.Location = new System.Drawing.Point(10, 31);
+            TxtTinb.Name = "TxtTinb";
+            TxtTinb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTinb.Size = new System.Drawing.Size(449, 29);
+            TxtTinb.TabIndex = 0;
             // 
             // BtnSelect
             // 
@@ -387,9 +387,9 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox TxtBId;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TxtSbc;
+        private System.Windows.Forms.TextBox TxtBbc;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox TxtTins;
+        private System.Windows.Forms.TextBox TxtTinb;
         private Resources.CustomToolBox.RoundedButton BtnSelect;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.ComboBox CbFt;
