@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using InvoiceManage.App.Forms.Common;
 
-namespace InvoiceManage.App.Forms.Invoice.Controls
+namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class ItemStep : UserControl
     {

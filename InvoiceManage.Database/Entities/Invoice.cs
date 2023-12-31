@@ -97,6 +97,8 @@ namespace InvoiceManage.Database.Entities
         public string Acn { get; set; }
         [Display(Name = "شماره پایانه")]
         public string Trmn { get; set; }
+        [Display(Name = "شماره پیگیری/مرجع")]
+        public string Trn { get; set; }
         [Display(Name = "روش پرداخت")]
         public int Pmt { get; set; }
         [Display(Name = "شماره کارت پرداخت کننده صورتحساب")]

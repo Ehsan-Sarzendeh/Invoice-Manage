@@ -1,15 +1,18 @@
 ﻿using System.Windows.Forms;
-using InvoiceManage.App.Forms.Invoice.Controls;
+using InvoiceManage.App.Forms.InvoicePanel.Controls;
 using InvoiceManage.App.Services.Infrastructures;
-using InvoiceManage.App.Services.InvoiceService.Dtos;
+using InvoiceManage.Database.Entities;
 
-namespace InvoiceManage.App.Forms.Invoice
+namespace InvoiceManage.App.Forms.InvoicePanel
 {
     public partial class FrmInvoice : Form
     {
         public FrmInvoiceType Type { get; set; }
 
-        public InvoiceDto InvoiceDto { get; set; }
+        public Invoice Invoice { get; set; }
+
+        public bool ShowSemiRequired { get; set; }
+        public bool ShowOptional { get; set; }
 
         public FrmInvoice(FrmInvoiceType type)
         {
@@ -17,7 +20,7 @@ namespace InvoiceManage.App.Forms.Invoice
 
             Type = type;
 
-            InvoiceDto = new InvoiceDto();
+            Invoice = new Invoice();
 
             PanelSlider.Controls.Add(new InvoiceStep());
             PanelSlider.Controls.Add(new SellerStep());

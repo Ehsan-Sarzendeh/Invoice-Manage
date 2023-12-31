@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
-using InvoiceManage.App.Forms.Invoice;
 using InvoiceManage.App.Forms.InvoiceList;
+using InvoiceManage.App.Forms.InvoicePanel;
 using InvoiceManage.App.Forms.Settings;
 using InvoiceManage.App.Services.Infrastructures;
 

@@ -1,4 +1,4 @@
-﻿namespace InvoiceManage.App.Forms.Invoice.Controls
+﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class SumStep
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             BtnNext = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
             groupBox2 = new System.Windows.Forms.GroupBox();
@@ -51,11 +52,12 @@
             groupBox8 = new System.Windows.Forms.GroupBox();
             TxtTocv = new System.Windows.Forms.TextBox();
             groupBox10 = new System.Windows.Forms.GroupBox();
-            textBox14 = new System.Windows.Forms.TextBox();
+            TxtTonw = new System.Windows.Forms.TextBox();
             groupBox14 = new System.Windows.Forms.GroupBox();
             TxtTadis = new System.Windows.Forms.TextBox();
             groupBox17 = new System.Windows.Forms.GroupBox();
             TxtTbill = new System.Windows.Forms.TextBox();
+            invoiceBindingSource = new System.Windows.Forms.BindingSource(components);
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -69,6 +71,7 @@
             groupBox10.SuspendLayout();
             groupBox14.SuspendLayout();
             groupBox17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)invoiceBindingSource).BeginInit();
             SuspendLayout();
             // 
             // BtnNext
@@ -349,7 +352,7 @@
             // 
             // groupBox10
             // 
-            groupBox10.Controls.Add(textBox14);
+            groupBox10.Controls.Add(TxtTonw);
             groupBox10.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox10.ForeColor = System.Drawing.Color.DimGray;
             groupBox10.Location = new System.Drawing.Point(742, 158);
@@ -360,15 +363,15 @@
             groupBox10.TabStop = false;
             groupBox10.Text = "مجموع وزن خالص";
             // 
-            // textBox14
+            // TxtTonw
             // 
-            textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox14.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox14.Location = new System.Drawing.Point(10, 31);
-            textBox14.Name = "textBox14";
-            textBox14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            textBox14.Size = new System.Drawing.Size(219, 29);
-            textBox14.TabIndex = 0;
+            TxtTonw.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtTonw.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtTonw.Location = new System.Drawing.Point(10, 31);
+            TxtTonw.Name = "TxtTonw";
+            TxtTonw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTonw.Size = new System.Drawing.Size(219, 29);
+            TxtTonw.TabIndex = 0;
             // 
             // groupBox14
             // 
@@ -415,6 +418,10 @@
             TxtTbill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             TxtTbill.Size = new System.Drawing.Size(460, 29);
             TxtTbill.TabIndex = 0;
+            // 
+            // invoiceBindingSource
+            // 
+            invoiceBindingSource.DataSource = typeof(Database.Entities.Invoice);
             // 
             // SumStep
             // 
@@ -465,6 +472,7 @@
             groupBox14.PerformLayout();
             groupBox17.ResumeLayout(false);
             groupBox17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)invoiceBindingSource).EndInit();
             ResumeLayout(false);
         }
 
@@ -493,10 +501,11 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TextBox TxtTocv;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox TxtTonw;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.TextBox TxtTadis;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.TextBox TxtTbill;
+        private System.Windows.Forms.BindingSource invoiceBindingSource;
     }
 }
