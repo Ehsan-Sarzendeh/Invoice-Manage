@@ -1,4 +1,4 @@
-﻿namespace InvoiceManage.App.Forms.Invoice.Controls
+﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class ItemStep
     {

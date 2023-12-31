@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace InvoiceManage.Database.Entities
 {
@@ -23,16 +24,16 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "زمان ایجاد صورتحساب")]
         public string Indatim2m_2 { get; set; }
         [Display(Name = "نوع صورتحساب")]
-        public int Inty { get; set; }
-        [Display(Name = "سریال داخلی صورتحساب")]
+        public Inty Inty { get; set; }
+        [Display(Name = "سریال داخلی")]
         [Description("سریال صورتحساب داخلی حافطه مالیاتی")]
         public string Inno { get; set; }
         [Display(Name = "شماره منحصربفرد مالیاتی صورتحساب مرجع")]
         public string Irtaxid { get; set; }
         [Display(Name = "الگوی صورتحساب")]
-        public int Inp { get; set; }
+        public Inp Inp { get; set; }
         [Display(Name = "موضوع صورتحساب")]
-        public int Ins { get; set; }
+        public Ins Ins { get; set; }
         [Display(Name = "شماره اقتصادی فروشنده")]
         public string Tins { get; set; }
         [Display(Name = "شماره اقتصادی خریدار")]
@@ -50,10 +51,10 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "شماره گذرنامه خریدار")]
         public string Bpn { get; set; }
         [Display(Name = "نوع پرواز")]
-        public int Ft { get; set; }
+        public Ft Ft { get; set; }
         [Display(Name = "شماره پروانه گمرکی")]
         public string Scln { get; set; }
-        [Display(Name = "کد گمرک محل اظهار فروشنده")]
+        [Display(Name = "کد گمرکی محل اظهار فروشنده")]
         public string Scc { get; set; }
         [Display(Name = "شناسه یکتای ثبت قرارداد فروشنده")]
         public string Crn { get; set; }
@@ -82,7 +83,7 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "مجموع ارزش ارزی")]
         public decimal Tocv { get; set; }
         [Display(Name = "روش تسویه")]
-        public int Setm { get; set; }
+        public Setm Setm { get; set; }
         [Display(Name = "مبلغ پرداختی نقدی")]
         public decimal Cap { get; set; }
         [Display(Name = "مبلغ نسیه")]
@@ -97,8 +98,10 @@ namespace InvoiceManage.Database.Entities
         public string Acn { get; set; }
         [Display(Name = "شماره پایانه")]
         public string Trmn { get; set; }
+        [Display(Name = "شماره پیگیری/مرجع")]
+        public string Trn { get; set; }
         [Display(Name = "روش پرداخت")]
-        public int Pmt { get; set; }
+        public Pmt Pmt { get; set; }
         [Display(Name = "شماره کارت پرداخت کننده صورتحساب")]
         public string Pcn { get; set; }
         [Display(Name = "شماره/شناسه ملی پرداخت کننده")]
@@ -134,5 +137,51 @@ namespace InvoiceManage.Database.Entities
 
         public long CompanyId { get; set; }
         public Company Company { get; set; }
+    }
+
+    public enum Inty
+    {
+        [Display(Name = "نوع اول")]
+        First = 1,
+        [Display(Name = "نوع دوم")]
+        Second = 2
+    }
+
+    public enum Inp
+    {
+        [Display(Name = "نوع اول")]
+        First = 1,
+        [Display(Name = "نوع دوم")]
+        Second = 2
+    }
+
+    public enum Ins
+    {
+        [Display(Name = "تست")]
+        Test = 1
+    }
+
+    public enum Tob
+    {
+        [Display(Name = "تست")]
+        Test = 1
+    }
+
+    public enum Ft
+    {
+        [Display(Name = "تست")]
+        Test = 1
+    }
+
+    public enum Pmt
+    {
+        [Display(Name = "تست")]
+        Test = 1
+    }
+
+    public enum Setm
+    {
+        [Display(Name = "تست")]
+        Test = 1
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace InvoiceManage.App.Forms.Invoice.Controls
+﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class SellerStep
     {
@@ -31,22 +31,22 @@
             BtnNext = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
             groupBox5 = new System.Windows.Forms.GroupBox();
-            maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            MtxtCdcd_1 = new System.Windows.Forms.MaskedTextBox();
             groupBox9 = new System.Windows.Forms.GroupBox();
-            textBox1 = new System.Windows.Forms.TextBox();
+            TxtTins = new System.Windows.Forms.TextBox();
             groupBox1 = new System.Windows.Forms.GroupBox();
-            textBox2 = new System.Windows.Forms.TextBox();
+            TxtCrn = new System.Windows.Forms.TextBox();
             groupBox2 = new System.Windows.Forms.GroupBox();
-            textBox3 = new System.Windows.Forms.TextBox();
+            TxtCdcn = new System.Windows.Forms.TextBox();
             groupBox3 = new System.Windows.Forms.GroupBox();
             textBox4 = new System.Windows.Forms.TextBox();
             groupBox4 = new System.Windows.Forms.GroupBox();
-            textBox5 = new System.Windows.Forms.TextBox();
+            TxtScln = new System.Windows.Forms.TextBox();
             groupBox6 = new System.Windows.Forms.GroupBox();
-            textBox6 = new System.Windows.Forms.TextBox();
+            TxtSbc = new System.Windows.Forms.TextBox();
             groupBox7 = new System.Windows.Forms.GroupBox();
-            textBox7 = new System.Windows.Forms.TextBox();
             BtnSelect = new Resources.CustomToolBox.RoundedButton();
+            TxtScc = new System.Windows.Forms.TextBox();
             groupBox5.SuspendLayout();
             groupBox9.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -103,7 +103,7 @@
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(maskedTextBox1);
+            groupBox5.Controls.Add(MtxtCdcd_1);
             groupBox5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox5.ForeColor = System.Drawing.Color.DimGray;
             groupBox5.Location = new System.Drawing.Point(752, 306);
@@ -114,21 +114,21 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "تاریخ کوتاژ اظهارنامه گمرکی";
             // 
-            // maskedTextBox1
+            // MtxtCdcd_1
             // 
-            maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            maskedTextBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            maskedTextBox1.Location = new System.Drawing.Point(6, 29);
-            maskedTextBox1.Mask = "0000/00/00";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            maskedTextBox1.Size = new System.Drawing.Size(205, 29);
-            maskedTextBox1.TabIndex = 0;
-            maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            MtxtCdcd_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            MtxtCdcd_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            MtxtCdcd_1.Location = new System.Drawing.Point(6, 29);
+            MtxtCdcd_1.Mask = "0000/00/00";
+            MtxtCdcd_1.Name = "MtxtCdcd_1";
+            MtxtCdcd_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            MtxtCdcd_1.Size = new System.Drawing.Size(205, 29);
+            MtxtCdcd_1.TabIndex = 0;
+            MtxtCdcd_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox9
             // 
-            groupBox9.Controls.Add(textBox1);
+            groupBox9.Controls.Add(TxtTins);
             groupBox9.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox9.ForeColor = System.Drawing.Color.DimGray;
             groupBox9.Location = new System.Drawing.Point(501, 110);
@@ -139,19 +139,19 @@
             groupBox9.TabStop = false;
             groupBox9.Text = "شماره اقتصادی";
             // 
-            // textBox1
+            // TxtTins
             // 
-            textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox1.Location = new System.Drawing.Point(10, 31);
-            textBox1.Name = "textBox1";
-            textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox1.Size = new System.Drawing.Size(450, 29);
-            textBox1.TabIndex = 0;
+            TxtTins.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtTins.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtTins.Location = new System.Drawing.Point(10, 31);
+            TxtTins.Name = "TxtTins";
+            TxtTins.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtTins.Size = new System.Drawing.Size(450, 29);
+            TxtTins.TabIndex = 0;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(TxtCrn);
             groupBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox1.ForeColor = System.Drawing.Color.DimGray;
             groupBox1.Location = new System.Drawing.Point(24, 306);
@@ -162,19 +162,19 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "شناسه یکتای ثبت قرارداد";
             // 
-            // textBox2
+            // TxtCrn
             // 
-            textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox2.Location = new System.Drawing.Point(10, 31);
-            textBox2.Name = "textBox2";
-            textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox2.Size = new System.Drawing.Size(225, 29);
-            textBox2.TabIndex = 0;
+            TxtCrn.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtCrn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtCrn.Location = new System.Drawing.Point(10, 31);
+            TxtCrn.Name = "TxtCrn";
+            TxtCrn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtCrn.Size = new System.Drawing.Size(225, 29);
+            TxtCrn.TabIndex = 0;
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(TxtCdcn);
             groupBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox2.ForeColor = System.Drawing.Color.DimGray;
             groupBox2.Location = new System.Drawing.Point(24, 207);
@@ -185,15 +185,15 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "شماره کوتاژ اظهارنامه گمرکی";
             // 
-            // textBox3
+            // TxtCdcn
             // 
-            textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox3.Location = new System.Drawing.Point(10, 31);
-            textBox3.Name = "textBox3";
-            textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox3.Size = new System.Drawing.Size(450, 29);
-            textBox3.TabIndex = 0;
+            TxtCdcn.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtCdcn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtCdcn.Location = new System.Drawing.Point(10, 31);
+            TxtCdcn.Name = "TxtCdcn";
+            TxtCdcn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtCdcn.Size = new System.Drawing.Size(450, 29);
+            TxtCdcn.TabIndex = 0;
             // 
             // groupBox3
             // 
@@ -220,7 +220,7 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(textBox5);
+            groupBox4.Controls.Add(TxtScln);
             groupBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox4.ForeColor = System.Drawing.Color.DimGray;
             groupBox4.Location = new System.Drawing.Point(271, 306);
@@ -231,19 +231,19 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "شماره پروانه گمرکی";
             // 
-            // textBox5
+            // TxtScln
             // 
-            textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox5.Location = new System.Drawing.Point(10, 31);
-            textBox5.Name = "textBox5";
-            textBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox5.Size = new System.Drawing.Size(203, 29);
-            textBox5.TabIndex = 0;
+            TxtScln.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtScln.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtScln.Location = new System.Drawing.Point(10, 31);
+            TxtScln.Name = "TxtScln";
+            TxtScln.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtScln.Size = new System.Drawing.Size(203, 29);
+            TxtScln.TabIndex = 0;
             // 
             // groupBox6
             // 
-            groupBox6.Controls.Add(textBox6);
+            groupBox6.Controls.Add(TxtSbc);
             groupBox6.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox6.ForeColor = System.Drawing.Color.DimGray;
             groupBox6.Location = new System.Drawing.Point(501, 306);
@@ -254,19 +254,19 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "کد شعبه ";
             // 
-            // textBox6
+            // TxtSbc
             // 
-            textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox6.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox6.Location = new System.Drawing.Point(10, 31);
-            textBox6.Name = "textBox6";
-            textBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox6.Size = new System.Drawing.Size(230, 29);
-            textBox6.TabIndex = 0;
+            TxtSbc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtSbc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtSbc.Location = new System.Drawing.Point(10, 31);
+            TxtSbc.Name = "TxtSbc";
+            TxtSbc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtSbc.Size = new System.Drawing.Size(230, 29);
+            TxtSbc.TabIndex = 0;
             // 
             // groupBox7
             // 
-            groupBox7.Controls.Add(textBox7);
+            groupBox7.Controls.Add(TxtScc);
             groupBox7.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox7.ForeColor = System.Drawing.Color.DimGray;
             groupBox7.Location = new System.Drawing.Point(501, 207);
@@ -276,16 +276,6 @@
             groupBox7.TabIndex = 217;
             groupBox7.TabStop = false;
             groupBox7.Text = "کد گمرکی محل اظهارنامه";
-            // 
-            // textBox7
-            // 
-            textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox7.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox7.Location = new System.Drawing.Point(10, 31);
-            textBox7.Name = "textBox7";
-            textBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox7.Size = new System.Drawing.Size(450, 29);
-            textBox7.TabIndex = 0;
             // 
             // BtnSelect
             // 
@@ -308,6 +298,16 @@
             BtnSelect.TextColor = System.Drawing.Color.White;
             BtnSelect.UseVisualStyleBackColor = false;
             BtnSelect.Click += BtnSelect_Click;
+            // 
+            // TxtScc
+            // 
+            TxtScc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtScc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtScc.Location = new System.Drawing.Point(10, 31);
+            TxtScc.Name = "TxtScc";
+            TxtScc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtScc.Size = new System.Drawing.Size(450, 29);
+            TxtScc.TabIndex = 0;
             // 
             // SellerStep
             // 
@@ -353,21 +353,21 @@
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox MtxtCdcd_1;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtTins;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtCrn;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtCdcn;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtScln;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TxtSbc;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox textBox7;
         private Resources.CustomToolBox.RoundedButton BtnSelect;
+        private System.Windows.Forms.TextBox TxtScc;
     }
 }

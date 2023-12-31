@@ -1,10 +1,9 @@
-﻿using InvoiceManage.App.Forms.Common;
-using InvoiceManage.Database.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using InvoiceManage.App.Forms.Common;
 
-namespace InvoiceManage.App.Forms.Invoice
+namespace InvoiceManage.App.Forms.InvoicePanel
 {
     public partial class FrmSelect : Form
     {

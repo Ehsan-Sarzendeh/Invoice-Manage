@@ -1,4 +1,4 @@
-﻿namespace InvoiceManage.App.Forms.Invoice
+﻿namespace InvoiceManage.App.Forms.InvoicePanel
 {
     partial class FrmSelect
     {

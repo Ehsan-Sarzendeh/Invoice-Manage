@@ -3,7 +3,7 @@ using InvoiceManage.App.Services.Infrastructures;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using InvoiceManage.App.Forms.Invoice;
+using InvoiceManage.App.Forms.InvoicePanel;
 using InvoiceManage.App.Services.InvoiceService.Dtos;
 using InvoiceManage.App.Services.InvoiceService;
 
@@ -100,7 +100,7 @@ namespace InvoiceManage.App.Forms.InvoiceList
             }
 
             var frmInvoice = new FrmInvoice(FrmInvoiceType.Edit);
-            frmInvoice.InvoiceDto = invoiceDto;
+            // frmInvoice.Invoice = invoiceDto;
             frmInvoice.ShowDialog();
         }
 
