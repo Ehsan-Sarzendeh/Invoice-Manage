@@ -13,7 +13,7 @@ namespace InvoiceManage.App.Forms.InvoiceList
 
         private void FrmInvoiceList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Program.FrmMain.Show();
+            Program.FrmHome.Show();
         }
 
         private void PanelHeader_MouseDown(object sender, MouseEventArgs e)

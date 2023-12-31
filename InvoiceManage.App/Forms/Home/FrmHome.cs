@@ -13,11 +13,6 @@ namespace InvoiceManage.App.Forms.Home
             InitializeComponent();
         }
 
-        private void FrmMain_Load(object sender, System.EventArgs e)
-        {
-
-        }
-
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == Keys.Enter)
@@ -25,7 +20,7 @@ namespace InvoiceManage.App.Forms.Home
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        private void FrmMain_MouseDown(object sender, MouseEventArgs e)
+        private void FrmHome_MouseDown(object sender, MouseEventArgs e)
         {
             WindowsApi.ReleaseCapture();
             WindowsApi.SendMessage(Handle, 0x112, 0xf012, 0);

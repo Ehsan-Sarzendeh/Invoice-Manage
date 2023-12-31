@@ -32,7 +32,7 @@ namespace InvoiceManage.App.Forms.Settings
 
         private void FrmSettings_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Program.FrmMain.Show();
+            Program.FrmHome.Show();
         }
 
         private void BtnClose_Click(object sender, System.EventArgs e)

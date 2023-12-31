@@ -167,7 +167,7 @@
             BtnClose.TabStop = false;
             BtnClose.Click += BtnClose_Click;
             // 
-            // FrmMain
+            // FrmHome
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,11 +179,10 @@
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            Name = "FrmMain";
+            Name = "FrmHome";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "FrmMain";
-            Load += FrmMain_Load;
-            MouseDown += FrmMain_MouseDown;
+            MouseDown += FrmHome_MouseDown;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -158,7 +158,7 @@ namespace InvoiceManage.App.Forms.Common
             labelCaption.Location = new Point(8, 2);
             labelCaption.Margin = new Padding(4, 0, 4, 0);
             labelCaption.Name = "labelCaption";
-            labelCaption.Size = new Size(49, 27);
+            labelCaption.Size = new Size(38, 21);
             labelCaption.TabIndex = 4;
             labelCaption.Text = "عنوان";
             // 
@@ -193,12 +193,12 @@ namespace InvoiceManage.App.Forms.Common
             labelMessage.Dock = DockStyle.Right;
             labelMessage.Font = new Font("IRANSansWeb", 12F, FontStyle.Bold, GraphicsUnit.Point);
             labelMessage.ForeColor = Color.FromArgb(85, 85, 85);
-            labelMessage.Location = new Point(293, 15);
+            labelMessage.Location = new Point(309, 15);
             labelMessage.Margin = new Padding(4, 0, 4, 0);
             labelMessage.MaximumSize = new Size(700, 0);
             labelMessage.Name = "labelMessage";
             labelMessage.Padding = new Padding(6, 8, 12, 22);
-            labelMessage.Size = new Size(103, 61);
+            labelMessage.Size = new Size(87, 55);
             labelMessage.TabIndex = 1;
             labelMessage.Text = "متن خطا";
             labelMessage.TextAlign = ContentAlignment.MiddleRight;
@@ -215,7 +215,7 @@ namespace InvoiceManage.App.Forms.Common
             // 
             // FormMessageBox
             // 
-            AutoScaleDimensions = new SizeF(9F, 24F);
+            AutoScaleDimensions = new SizeF(7F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(406, 205);

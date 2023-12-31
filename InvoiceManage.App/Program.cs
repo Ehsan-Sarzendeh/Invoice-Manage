@@ -1,18 +1,15 @@
 using InvoiceManage.App.Forms.Home;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
 using System.Windows.Forms;
-using InvoiceManage.Database.Contexts;
 using static Stimulsoft.Report.StiOptions;
 
 namespace InvoiceManage.App
 {
     internal static class Program
     {
-        public static FrmHome FrmMain { get; set; }
-        public static IServiceProvider ServiceProvider { get; set; }
+        public static FrmHome FrmHome { get; set; }
         public static IConfiguration Configuration { get; set; }
 
         /// <summary>
@@ -32,23 +29,14 @@ namespace InvoiceManage.App
             Stimulsoft.Base.StiFontCollection.AddFontFile(fontPath);
             Export.Pdf.AllowImportSystemLibraries = true;
 
-            var services = new ServiceCollection();
-            ConfigureServices(services);
-            ServiceProvider = services.BuildServiceProvider();
-
             // using (var context = new SqliteDbContext())
             //     context.Database.Migrate();
 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            FrmMain = new FrmHome();
-            Application.Run(FrmMain);
-        }
-
-        private static void ConfigureServices(IServiceCollection services)
-        {
-            services.AddDbContext<SqlServerContext>(ServiceLifetime.Transient);
+            FrmHome = new FrmHome();
+            Application.Run(FrmHome);
         }
     }
 }
