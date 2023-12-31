@@ -7,9 +7,6 @@ namespace InvoiceManage.Database.Entities
 {
     public class Invoice : BaseEntity
     {
-        public int CompanyId { get; set; }
-        public Company Company { get; set; }
-
         [StringLength(22)]
         [Display(Name = "شماره منحصر به فرد مالیاتی")]
         public string TaxId { get; set; }

@@ -1,22 +1,23 @@
-﻿using InvoiceManage.Database.Entities;
+﻿using System;
+using System.IO;
+using InvoiceManage.Database.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace InvoiceManage.Database.Contexts
 {
-    public class SqlServerContext : DbContext
+    public class SqliteDbContext : DbContext
     {
-        private const string ErrConnectionString =
-            "Data Source=.;Initial Catalog=InvoiceManage;Persist Security Info=True;User ID=sa;password=;Connection Timeout=3600;Encrypt=false;";
+        private readonly string _path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "InvoiceManage\\database.db");
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(ErrConnectionString);
+            options.UseSqlite($"Data Source={_path}");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(SqlServerContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(SqliteDbContext).Assembly);
         }
 
         public DbSet<Invoice> Invoice { get; set; }

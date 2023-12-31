@@ -1,6 +1,6 @@
 ﻿namespace InvoiceManage.App.Forms
 {
-    partial class FrmAddInvoice
+    partial class FrmInvoice
     {
         /// <summary>
         /// Required designer variable.

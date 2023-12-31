@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-using AssistantProject.App.Infrastructures;
+using InvoiceManage.App.Services.Infrastructures;
 
 namespace InvoiceManage.App.Forms
 {
@@ -41,7 +41,7 @@ namespace InvoiceManage.App.Forms
 
         private void AddInvoice_Click(object sender, System.EventArgs e)
         {
-            var frmAddInvoice = new FrmAddInvoice();
+            var frmAddInvoice = new FrmInvoice();
             frmAddInvoice.Show();
             Hide();
         }

@@ -8,9 +8,9 @@ using InvoiceManage.App.Forms;
 using Stimulsoft.Report;
 using Stimulsoft.Report.Export;
 
-namespace InvoiceManage.App.Services.Common.Extensions
+namespace InvoiceManage.App.Services.Infrastructures
 {
-    public static class StimulsoftExtension
+    public static class ReportExtension
     {
         public static void MakeReport(this string mrtName, string destPath, Dictionary<string, IEnumerable> parameters)
         {

@@ -53,9 +53,9 @@
             AddInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
             AddInvoice.FlatAppearance.BorderSize = 0;
             AddInvoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            AddInvoice.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            AddInvoice.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             AddInvoice.ForeColor = System.Drawing.Color.White;
-            AddInvoice.Location = new System.Drawing.Point(64, 56);
+            AddInvoice.Location = new System.Drawing.Point(43, 42);
             AddInvoice.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             AddInvoice.Name = "AddInvoice";
             AddInvoice.Size = new System.Drawing.Size(250, 70);
@@ -75,9 +75,9 @@
             InvoiceList.Cursor = System.Windows.Forms.Cursors.Hand;
             InvoiceList.FlatAppearance.BorderSize = 0;
             InvoiceList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            InvoiceList.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            InvoiceList.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             InvoiceList.ForeColor = System.Drawing.Color.White;
-            InvoiceList.Location = new System.Drawing.Point(64, 154);
+            InvoiceList.Location = new System.Drawing.Point(43, 140);
             InvoiceList.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             InvoiceList.Name = "InvoiceList";
             InvoiceList.Size = new System.Drawing.Size(250, 70);
@@ -97,9 +97,9 @@
             Settings.Cursor = System.Windows.Forms.Cursors.Hand;
             Settings.FlatAppearance.BorderSize = 0;
             Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            Settings.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Settings.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Settings.ForeColor = System.Drawing.Color.White;
-            Settings.Location = new System.Drawing.Point(64, 252);
+            Settings.Location = new System.Drawing.Point(43, 238);
             Settings.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             Settings.Name = "Settings";
             Settings.Size = new System.Drawing.Size(250, 70);
@@ -117,9 +117,9 @@
             panel1.Controls.Add(InvoiceList);
             panel1.Controls.Add(Settings);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new System.Drawing.Point(8, 45);
+            panel1.Location = new System.Drawing.Point(5, 41);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(666, 378);
+            panel1.Size = new System.Drawing.Size(609, 354);
             panel1.TabIndex = 3;
             // 
             // label1
@@ -127,18 +127,18 @@
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 16.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
-            label1.Location = new System.Drawing.Point(382, 257);
+            label1.Location = new System.Drawing.Point(351, 254);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(232, 44);
+            label1.Size = new System.Drawing.Size(201, 36);
             label1.TabIndex = 4;
-            label1.Text = "سامانه مدریت فاکتور";
+            label1.Text = "سامانه مدیریت فاکتور";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new System.Drawing.Point(404, 48);
+            pictureBox1.Location = new System.Drawing.Point(349, 50);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(194, 207);
+            pictureBox1.Size = new System.Drawing.Size(203, 207);
             pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -147,9 +147,9 @@
             // 
             BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnMinimize.Image = Properties.Resources.minimize_w;
-            BtnMinimize.Location = new System.Drawing.Point(598, 2);
+            BtnMinimize.Location = new System.Drawing.Point(548, 3);
             BtnMinimize.Name = "BtnMinimize";
-            BtnMinimize.Size = new System.Drawing.Size(40, 40);
+            BtnMinimize.Size = new System.Drawing.Size(37, 37);
             BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             BtnMinimize.TabIndex = 8;
             BtnMinimize.TabStop = false;
@@ -159,9 +159,9 @@
             // 
             BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnClose.Image = Properties.Resources.close_w;
-            BtnClose.Location = new System.Drawing.Point(637, 2);
+            BtnClose.Location = new System.Drawing.Point(583, 4);
             BtnClose.Name = "BtnClose";
-            BtnClose.Size = new System.Drawing.Size(40, 40);
+            BtnClose.Size = new System.Drawing.Size(35, 35);
             BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             BtnClose.TabIndex = 9;
             BtnClose.TabStop = false;
@@ -169,10 +169,10 @@
             // 
             // FrmMain
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(12F, 33F);
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(68, 68, 68);
-            ClientSize = new System.Drawing.Size(682, 432);
+            ClientSize = new System.Drawing.Size(619, 400);
             Controls.Add(BtnClose);
             Controls.Add(BtnMinimize);
             Controls.Add(panel1);

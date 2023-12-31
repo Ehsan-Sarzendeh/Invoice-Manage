@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace AssistantProject.App.Infrastructures
+namespace InvoiceManage.App.Services.Infrastructures
 {
     public static class WindowsApi
     {

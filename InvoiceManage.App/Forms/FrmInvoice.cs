@@ -1,12 +1,12 @@
-﻿using AssistantProject.App.Infrastructures;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 using InvoiceManage.App.Forms.UserControls;
+using InvoiceManage.App.Services.Infrastructures;
 
 namespace InvoiceManage.App.Forms
 {
-    public partial class FrmAddInvoice : Form
+    public partial class FrmInvoice : Form
     {
-        public FrmAddInvoice()
+        public FrmInvoice()
         {
             InitializeComponent();
 

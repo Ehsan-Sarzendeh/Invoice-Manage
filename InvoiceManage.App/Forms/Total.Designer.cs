@@ -1,5 +1,5 @@
 ﻿
-namespace CreateNewInvoiceFrm
+namespace InvoiceManage.App.Forms
 {
     partial class Total
     {

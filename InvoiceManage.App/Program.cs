@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using Microsoft.Extensions.DependencyInjection;
 using static Stimulsoft.Report.StiOptions;
 using InvoiceManage.Database.Contexts;
+using Microsoft.EntityFrameworkCore;
 
 namespace InvoiceManage.App
 {
@@ -30,7 +31,7 @@ namespace InvoiceManage.App
             ConfigureServices(services);
             ServiceProvider = services.BuildServiceProvider();
 
-            // using (var context = new AppDbContext())
+            // using (var context = new SqliteDbContext())
             //     context.Database.Migrate();
 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
@@ -42,7 +43,7 @@ namespace InvoiceManage.App
 
         private static void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(ServiceLifetime.Transient);
+            services.AddDbContext<SqlServerContext>(ServiceLifetime.Transient);
         }
     }
 }
