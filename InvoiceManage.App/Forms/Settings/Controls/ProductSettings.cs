@@ -16,5 +16,15 @@ namespace InvoiceManage.App.Forms.Settings.Controls
         {
             InitializeComponent();
         }
+
+        private void ProductSettings_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

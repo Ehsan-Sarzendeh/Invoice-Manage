@@ -15,9 +15,6 @@ namespace InvoiceManage.Database.Entities
         public string Scln { get; set; }
         [Display(Name = "شناسه یکتای ثبت قرارداد فروشنده")]
         public string Crn { get; set; }
-        [Display(Name = "شناسه یکتای ثبت قرارداد فروشنده")]
-        public string FilePath { get; set; }
-        public string BaseUrl { get; set; }
         [Display(Name = "سود شرکت")]
         public string Pro { get; set; }
     }

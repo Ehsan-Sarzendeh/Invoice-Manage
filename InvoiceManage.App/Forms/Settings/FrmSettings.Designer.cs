@@ -200,6 +200,7 @@
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "تنظیمات";
             FormClosing += FrmSettings_FormClosing;
+            Load += FrmSettings_Load;
             ((System.ComponentModel.ISupportInitialize)BtnClose).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnMinimize).EndInit();
             panel1.ResumeLayout(false);
