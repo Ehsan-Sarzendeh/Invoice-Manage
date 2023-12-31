@@ -91,6 +91,7 @@
             // 
             Settings.BackColor = System.Drawing.Color.FromArgb(68, 68, 68);
             Settings.BackgroundColor = System.Drawing.Color.FromArgb(68, 68, 68);
+            Settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             Settings.BorderColor = System.Drawing.Color.PaleVioletRed;
             Settings.BorderRadius = 20;
             Settings.BorderSize = 0;
@@ -99,6 +100,7 @@
             Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             Settings.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Settings.ForeColor = System.Drawing.Color.White;
+            Settings.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             Settings.Location = new System.Drawing.Point(43, 238);
             Settings.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             Settings.Name = "Settings";

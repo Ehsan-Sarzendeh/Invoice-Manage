@@ -1,12 +1,15 @@
 ﻿using System.Windows.Forms;
 using InvoiceManage.App.Forms.Invoice.Controls;
 using InvoiceManage.App.Services.Infrastructures;
+using InvoiceManage.App.Services.InvoiceService.Dtos;
 
 namespace InvoiceManage.App.Forms.Invoice
 {
     public partial class FrmInvoice : Form
     {
         public FrmInvoiceType Type { get; set; }
+
+        public InvoiceDto InvoiceDto { get; set; }
 
         public FrmInvoice(FrmInvoiceType type)
         {
