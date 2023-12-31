@@ -1,19 +1,23 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 using InvoiceManage.App.Forms.Settings.Controls;
+using InvoiceManage.App.Services.CommonService;
 using InvoiceManage.App.Services.Infrastructures;
 
 namespace InvoiceManage.App.Forms.Settings
 {
     public partial class FrmSettings : Form
     {
+        private readonly ICommonService _commonService;
+
         public FrmSettings()
         {
+            _commonService = new CommonService();
             InitializeComponent();
 
-            PanelSlider.Controls.Add(new ProductSettings());
-            PanelSlider.Controls.Add(new CustomerSettings());
-            PanelSlider.Controls.Add(new CompanySettings());
+            PanelSlider.Controls.Add(new ProductSettings(_commonService));
+            PanelSlider.Controls.Add(new CustomerSettings(_commonService));
+            PanelSlider.Controls.Add(new CompanySettings(_commonService));
         }
 
         private void FrmSettings_Load(object sender, System.EventArgs e)

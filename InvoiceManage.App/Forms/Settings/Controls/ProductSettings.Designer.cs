@@ -28,29 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new System.Windows.Forms.DataGridView();
+            ProductsGv = new System.Windows.Forms.DataGridView();
             BtnAdd = new Resources.CustomToolBox.RoundedButton();
-            groupBox11 = new System.Windows.Forms.GroupBox();
-            textBox3 = new System.Windows.Forms.TextBox();
+            gb = new System.Windows.Forms.GroupBox();
+            TxtSstt = new System.Windows.Forms.TextBox();
             groupBox10 = new System.Windows.Forms.GroupBox();
-            textBox2 = new System.Windows.Forms.TextBox();
-            groupBox9 = new System.Windows.Forms.GroupBox();
-            textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            groupBox11.SuspendLayout();
+            TxtVra = new System.Windows.Forms.TextBox();
+            gb2 = new System.Windows.Forms.GroupBox();
+            TxtSstid = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)ProductsGv).BeginInit();
+            gb.SuspendLayout();
             groupBox10.SuspendLayout();
-            groupBox9.SuspendLayout();
+            gb2.SuspendLayout();
             SuspendLayout();
             // 
-            // dataGridView1
+            // ProductsGv
             // 
-            dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new System.Drawing.Point(32, 242);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new System.Drawing.Size(727, 451);
-            dataGridView1.TabIndex = 225;
+            ProductsGv.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            ProductsGv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ProductsGv.Location = new System.Drawing.Point(32, 242);
+            ProductsGv.Name = "ProductsGv";
+            ProductsGv.RowTemplate.Height = 25;
+            ProductsGv.Size = new System.Drawing.Size(727, 451);
+            ProductsGv.TabIndex = 225;
             // 
             // BtnAdd
             // 
@@ -74,31 +74,31 @@
             BtnAdd.UseVisualStyleBackColor = false;
             BtnAdd.Click += BtnAdd_Click;
             // 
-            // groupBox11
+            // gb
             // 
-            groupBox11.Controls.Add(textBox3);
-            groupBox11.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox11.ForeColor = System.Drawing.Color.DimGray;
-            groupBox11.Location = new System.Drawing.Point(233, 31);
-            groupBox11.Name = "groupBox11";
-            groupBox11.Size = new System.Drawing.Size(204, 70);
-            groupBox11.TabIndex = 224;
-            groupBox11.TabStop = false;
-            groupBox11.Text = "نرخ مالیات بر ارزش افزوده";
+            gb.Controls.Add(TxtSstt);
+            gb.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            gb.ForeColor = System.Drawing.Color.DimGray;
+            gb.Location = new System.Drawing.Point(233, 31);
+            gb.Name = "gb";
+            gb.Size = new System.Drawing.Size(204, 70);
+            gb.TabIndex = 224;
+            gb.TabStop = false;
+            gb.Text = "نرخ مالیات بر ارزش افزوده";
             // 
-            // textBox3
+            // TxtSstt
             // 
-            textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox3.Location = new System.Drawing.Point(17, 30);
-            textBox3.Name = "textBox3";
-            textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox3.Size = new System.Drawing.Size(172, 29);
-            textBox3.TabIndex = 0;
+            TxtSstt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtSstt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtSstt.Location = new System.Drawing.Point(17, 30);
+            TxtSstt.Name = "TxtSstt";
+            TxtSstt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtSstt.Size = new System.Drawing.Size(172, 29);
+            TxtSstt.TabIndex = 0;
             // 
             // groupBox10
             // 
-            groupBox10.Controls.Add(textBox2);
+            groupBox10.Controls.Add(TxtVra);
             groupBox10.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox10.ForeColor = System.Drawing.Color.DimGray;
             groupBox10.Location = new System.Drawing.Point(233, 107);
@@ -108,75 +108,75 @@
             groupBox10.TabStop = false;
             groupBox10.Text = "شرح کالا";
             // 
-            // textBox2
+            // TxtVra
             // 
-            textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox2.Location = new System.Drawing.Point(17, 26);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox2.Size = new System.Drawing.Size(495, 52);
-            textBox2.TabIndex = 0;
-            textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            TxtVra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtVra.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtVra.Location = new System.Drawing.Point(17, 26);
+            TxtVra.Multiline = true;
+            TxtVra.Name = "TxtVra";
+            TxtVra.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtVra.Size = new System.Drawing.Size(495, 52);
+            TxtVra.TabIndex = 0;
+            TxtVra.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // groupBox9
+            // gb2
             // 
-            groupBox9.Controls.Add(textBox1);
-            groupBox9.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox9.ForeColor = System.Drawing.Color.DimGray;
-            groupBox9.Location = new System.Drawing.Point(455, 31);
-            groupBox9.Name = "groupBox9";
-            groupBox9.Size = new System.Drawing.Size(303, 70);
-            groupBox9.TabIndex = 222;
-            groupBox9.TabStop = false;
-            groupBox9.Text = "شناسه کالا";
+            gb2.Controls.Add(TxtSstid);
+            gb2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            gb2.ForeColor = System.Drawing.Color.DimGray;
+            gb2.Location = new System.Drawing.Point(455, 31);
+            gb2.Name = "gb2";
+            gb2.Size = new System.Drawing.Size(303, 70);
+            gb2.TabIndex = 222;
+            gb2.TabStop = false;
+            gb2.Text = "شناسه کالا";
             // 
-            // textBox1
+            // TxtSstid
             // 
-            textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox1.Location = new System.Drawing.Point(13, 29);
-            textBox1.Name = "textBox1";
-            textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            textBox1.Size = new System.Drawing.Size(279, 29);
-            textBox1.TabIndex = 0;
+            TxtSstid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtSstid.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtSstid.Location = new System.Drawing.Point(13, 29);
+            TxtSstid.Name = "TxtSstid";
+            TxtSstid.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtSstid.Size = new System.Drawing.Size(279, 29);
+            TxtSstid.TabIndex = 0;
             // 
             // ProductSettings
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            Controls.Add(dataGridView1);
+            Controls.Add(ProductsGv);
             Controls.Add(BtnAdd);
-            Controls.Add(groupBox11);
+            Controls.Add(gb);
             Controls.Add(groupBox10);
-            Controls.Add(groupBox9);
+            Controls.Add(gb2);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             Name = "ProductSettings";
             RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             Size = new System.Drawing.Size(793, 730);
             Load += ProductSettings_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            groupBox11.ResumeLayout(false);
-            groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ProductsGv).EndInit();
+            gb.ResumeLayout(false);
+            gb.PerformLayout();
             groupBox10.ResumeLayout(false);
             groupBox10.PerformLayout();
-            groupBox9.ResumeLayout(false);
-            groupBox9.PerformLayout();
+            gb2.ResumeLayout(false);
+            gb2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ProductsGv;
         private Resources.CustomToolBox.RoundedButton BtnAdd;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.GroupBox gb;
+        private System.Windows.Forms.TextBox TxtSstt;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtVra;
+        private System.Windows.Forms.GroupBox gb2;
+        private System.Windows.Forms.TextBox TxtSstid;
     }
 }

@@ -32,7 +32,7 @@
             textBox3 = new System.Windows.Forms.TextBox();
             groupBox9 = new System.Windows.Forms.GroupBox();
             textBox1 = new System.Windows.Forms.TextBox();
-            dataGridView1 = new System.Windows.Forms.DataGridView();
+            CustomersGv = new System.Windows.Forms.DataGridView();
             BtnAdd = new Resources.CustomToolBox.RoundedButton();
             textBox2 = new System.Windows.Forms.TextBox();
             groupBox3 = new System.Windows.Forms.GroupBox();
@@ -46,7 +46,7 @@
             textBox7 = new System.Windows.Forms.TextBox();
             groupBox11.SuspendLayout();
             groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CustomersGv).BeginInit();
             groupBox3.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -98,15 +98,15 @@
             textBox1.Size = new System.Drawing.Size(186, 29);
             textBox1.TabIndex = 0;
             // 
-            // dataGridView1
+            // CustomersGv
             // 
-            dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new System.Drawing.Point(32, 316);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new System.Drawing.Size(727, 382);
-            dataGridView1.TabIndex = 227;
+            CustomersGv.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            CustomersGv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            CustomersGv.Location = new System.Drawing.Point(32, 316);
+            CustomersGv.Name = "CustomersGv";
+            CustomersGv.RowTemplate.Height = 25;
+            CustomersGv.Size = new System.Drawing.Size(727, 382);
+            CustomersGv.TabIndex = 227;
             // 
             // BtnAdd
             // 
@@ -250,7 +250,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox11);
             Controls.Add(groupBox9);
-            Controls.Add(dataGridView1);
+            Controls.Add(CustomersGv);
             Controls.Add(BtnAdd);
             Controls.Add(groupBox3);
             Controls.Add(groupBox1);
@@ -265,7 +265,7 @@
             groupBox11.PerformLayout();
             groupBox9.ResumeLayout(false);
             groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CustomersGv).EndInit();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -285,7 +285,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CustomersGv;
         private Resources.CustomToolBox.RoundedButton BtnAdd;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBox3;
