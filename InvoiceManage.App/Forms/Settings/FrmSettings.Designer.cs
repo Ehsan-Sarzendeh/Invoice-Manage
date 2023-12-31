@@ -201,6 +201,7 @@
             Text = "تنظیمات";
             FormClosing += FrmSettings_FormClosing;
             Load += FrmSettings_Load;
+            MouseDown += FrmSettings_MouseDown;
             ((System.ComponentModel.ISupportInitialize)BtnClose).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnMinimize).EndInit();
             panel1.ResumeLayout(false);

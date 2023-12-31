@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 using InvoiceManage.App.Forms.Settings.Controls;
+using InvoiceManage.App.Services.Infrastructures;
 
 namespace InvoiceManage.App.Forms.Settings
 {
@@ -42,6 +43,13 @@ namespace InvoiceManage.App.Forms.Settings
         private void BtnMinimize_Click(object sender, System.EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+
+        private void FrmSettings_MouseDown(object sender, MouseEventArgs e)
+        {
+            WindowsApi.ReleaseCapture();
+            WindowsApi.SendMessage(Handle, 0x112, 0xf012, 0);
         }
 
         private void BtnProduct_Click(object sender, System.EventArgs e)
@@ -93,5 +101,6 @@ namespace InvoiceManage.App.Forms.Settings
                 BtnCustomer.ForeColor = Color.FromArgb(68, 68, 68);
             }
         }
+
     }
 }

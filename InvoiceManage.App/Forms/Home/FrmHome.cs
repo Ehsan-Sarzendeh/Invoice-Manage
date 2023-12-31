@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 using InvoiceManage.App.Forms.Invoice;
-using InvoiceManage.App.Forms.InvoiseList;
+using InvoiceManage.App.Forms.InvoiceList;
 using InvoiceManage.App.Forms.Settings;
 using InvoiceManage.App.Services.Infrastructures;
 
@@ -44,7 +44,7 @@ namespace InvoiceManage.App.Forms.Home
 
         private void AddInvoice_Click(object sender, System.EventArgs e)
         {
-            var frmAddInvoice = new FrmInvoice();
+            var frmAddInvoice = new FrmInvoice(FrmInvoiceType.Add);
             frmAddInvoice.Show();
             Hide();
         }

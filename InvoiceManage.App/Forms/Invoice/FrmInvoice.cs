@@ -6,9 +6,13 @@ namespace InvoiceManage.App.Forms.Invoice
 {
     public partial class FrmInvoice : Form
     {
-        public FrmInvoice()
+        public FrmInvoiceType Type { get; set; }
+
+        public FrmInvoice(FrmInvoiceType type)
         {
             InitializeComponent();
+
+            Type = type;
 
             PanelSlider.Controls.Add(new InvoiceStep());
             PanelSlider.Controls.Add(new SellerStep());
@@ -50,5 +54,11 @@ namespace InvoiceManage.App.Forms.Invoice
                 SendKeys.Send("{TAB}");
             return base.ProcessCmdKey(ref msg, keyData);
         }
+    }
+
+    public enum FrmInvoiceType
+    {
+        Add = 1,
+        Edit = 2
     }
 }
