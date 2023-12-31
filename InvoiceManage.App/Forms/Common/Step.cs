@@ -30,4 +30,12 @@ namespace InvoiceManage.App.Forms.Common
             parentForm.Controls.Find("panel", false)[0].Controls.Find("PanelSlider", false)[0].Controls.Find(nextPageName, false)[0].BringToFront();
         }
     }
+
+    public enum ParamType
+    {
+        Required = 0,
+        SemiRequired = 1,
+        Optional = 2,
+        Ignore = 3
+    }
 }
