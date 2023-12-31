@@ -141,12 +141,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("IRANSansWeb", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
             label1.Location = new System.Drawing.Point(174, 30);
             label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(157, 36);
+            label1.Size = new System.Drawing.Size(157, 38);
             label1.TabIndex = 4;
             label1.Text = "لیست فاکتور ها";
             // 

@@ -77,7 +77,7 @@
             // groupBox11
             // 
             groupBox11.Controls.Add(textBox3);
-            groupBox11.Font = new System.Drawing.Font("IRANSansWeb", 10.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox11.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox11.ForeColor = System.Drawing.Color.DimGray;
             groupBox11.Location = new System.Drawing.Point(233, 31);
             groupBox11.Name = "groupBox11";
@@ -99,7 +99,7 @@
             // groupBox10
             // 
             groupBox10.Controls.Add(textBox2);
-            groupBox10.Font = new System.Drawing.Font("IRANSansWeb", 10.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox10.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox10.ForeColor = System.Drawing.Color.DimGray;
             groupBox10.Location = new System.Drawing.Point(233, 107);
             groupBox10.Name = "groupBox10";
@@ -123,7 +123,7 @@
             // groupBox9
             // 
             groupBox9.Controls.Add(textBox1);
-            groupBox9.Font = new System.Drawing.Font("IRANSansWeb", 10.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox9.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox9.ForeColor = System.Drawing.Color.DimGray;
             groupBox9.Location = new System.Drawing.Point(455, 31);
             groupBox9.Name = "groupBox9";
