@@ -44,7 +44,7 @@
             BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnNext.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnNext.ForeColor = System.Drawing.Color.White;
-            BtnNext.Location = new System.Drawing.Point(4, 508);
+            BtnNext.Location = new System.Drawing.Point(4, 535);
             BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnNext.Name = "BtnNext";
             BtnNext.Size = new System.Drawing.Size(120, 47);
@@ -66,7 +66,7 @@
             BtnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnPrevious.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnPrevious.ForeColor = System.Drawing.Color.White;
-            BtnPrevious.Location = new System.Drawing.Point(856, 508);
+            BtnPrevious.Location = new System.Drawing.Point(872, 535);
             BtnPrevious.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnPrevious.Name = "BtnPrevious";
             BtnPrevious.Size = new System.Drawing.Size(120, 47);
@@ -78,14 +78,14 @@
             // 
             // SellerStep
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(12F, 33F);
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(BtnPrevious);
             Controls.Add(BtnNext);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "SellerStep";
-            Size = new System.Drawing.Size(980, 560);
+            Size = new System.Drawing.Size(996, 587);
             ResumeLayout(false);
         }
 

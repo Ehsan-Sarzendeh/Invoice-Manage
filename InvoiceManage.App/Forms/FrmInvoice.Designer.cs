@@ -59,7 +59,7 @@
             // InvoiceStep
             // 
             InvoiceStep.Image = Properties.Resources.current;
-            InvoiceStep.Location = new System.Drawing.Point(967, 23);
+            InvoiceStep.Location = new System.Drawing.Point(948, 23);
             InvoiceStep.Name = "InvoiceStep";
             InvoiceStep.Size = new System.Drawing.Size(50, 50);
             InvoiceStep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -71,9 +71,9 @@
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            label1.Location = new System.Drawing.Point(911, 32);
+            label1.Location = new System.Drawing.Point(901, 35);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(61, 33);
+            label1.Size = new System.Drawing.Size(49, 27);
             label1.TabIndex = 1;
             label1.Text = "فاکتور";
             // 
@@ -81,16 +81,16 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            label2.Location = new System.Drawing.Point(55, 32);
+            label2.Location = new System.Drawing.Point(30, 35);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(963, 33);
+            label2.Size = new System.Drawing.Size(927, 27);
             label2.TabIndex = 2;
-            label2.Text = "--------------------------------------------------------------------------------------------------------------------------------------------------------------";
+            label2.Text = "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
             // 
             // SellerStep
             // 
             SellerStep.Image = Properties.Resources.pending;
-            SellerStep.Location = new System.Drawing.Point(797, 23);
+            SellerStep.Location = new System.Drawing.Point(778, 23);
             SellerStep.Name = "SellerStep";
             SellerStep.Size = new System.Drawing.Size(50, 50);
             SellerStep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,16 +102,16 @@
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            label3.Location = new System.Drawing.Point(721, 32);
+            label3.Location = new System.Drawing.Point(713, 35);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(79, 33);
+            label3.Size = new System.Drawing.Size(65, 27);
             label3.TabIndex = 4;
             label3.Text = "فروشنده";
             // 
             // BuyerStep
             // 
             BuyerStep.Image = Properties.Resources.pending;
-            BuyerStep.Location = new System.Drawing.Point(608, 23);
+            BuyerStep.Location = new System.Drawing.Point(589, 23);
             BuyerStep.Name = "BuyerStep";
             BuyerStep.Size = new System.Drawing.Size(50, 50);
             BuyerStep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -123,16 +123,16 @@
             label4.AutoSize = true;
             label4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            label4.Location = new System.Drawing.Point(546, 32);
+            label4.Location = new System.Drawing.Point(536, 34);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(64, 33);
+            label4.Size = new System.Drawing.Size(53, 27);
             label4.TabIndex = 6;
             label4.Text = "خریدار";
             // 
             // ItemStep
             // 
             ItemStep.Image = Properties.Resources.pending;
-            ItemStep.Location = new System.Drawing.Point(442, 23);
+            ItemStep.Location = new System.Drawing.Point(418, 23);
             ItemStep.Name = "ItemStep";
             ItemStep.Size = new System.Drawing.Size(50, 50);
             ItemStep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -144,16 +144,16 @@
             label5.AutoSize = true;
             label5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            label5.Location = new System.Drawing.Point(390, 32);
+            label5.Location = new System.Drawing.Point(377, 35);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(52, 33);
+            label5.Size = new System.Drawing.Size(41, 27);
             label5.TabIndex = 8;
             label5.Text = "اقلام";
             // 
             // SumStep
             // 
             SumStep.Image = Properties.Resources.pending;
-            SumStep.Location = new System.Drawing.Point(277, 23);
+            SumStep.Location = new System.Drawing.Point(253, 23);
             SumStep.Name = "SumStep";
             SumStep.Size = new System.Drawing.Size(50, 50);
             SumStep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -165,16 +165,16 @@
             label6.AutoSize = true;
             label6.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label6.ForeColor = System.Drawing.SystemColors.ControlDark;
-            label6.Location = new System.Drawing.Point(210, 32);
+            label6.Location = new System.Drawing.Point(196, 34);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(72, 33);
+            label6.Size = new System.Drawing.Size(58, 27);
             label6.TabIndex = 10;
             label6.Text = "مجموع";
             // 
             // PayStep
             // 
             PayStep.Image = Properties.Resources.pending;
-            PayStep.Location = new System.Drawing.Point(115, 23);
+            PayStep.Location = new System.Drawing.Point(85, 23);
             PayStep.Name = "PayStep";
             PayStep.Size = new System.Drawing.Size(50, 50);
             PayStep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -186,9 +186,9 @@
             label7.AutoSize = true;
             label7.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label7.ForeColor = System.Drawing.SystemColors.ControlDark;
-            label7.Location = new System.Drawing.Point(37, 32);
+            label7.Location = new System.Drawing.Point(21, 33);
             label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(77, 33);
+            label7.Size = new System.Drawing.Size(63, 27);
             label7.TabIndex = 12;
             label7.Text = "پرداخت";
             // 
@@ -209,25 +209,25 @@
             panel.Controls.Add(label5);
             panel.Controls.Add(label4);
             panel.Controls.Add(label2);
-            panel.Location = new System.Drawing.Point(8, 44);
+            panel.Location = new System.Drawing.Point(4, 41);
             panel.Name = "panel";
-            panel.Size = new System.Drawing.Size(1066, 679);
+            panel.Size = new System.Drawing.Size(1018, 693);
             panel.TabIndex = 13;
             // 
             // PanelSlider
             // 
-            PanelSlider.Location = new System.Drawing.Point(41, 88);
+            PanelSlider.Location = new System.Drawing.Point(11, 95);
             PanelSlider.Name = "PanelSlider";
-            PanelSlider.Size = new System.Drawing.Size(980, 560);
+            PanelSlider.Size = new System.Drawing.Size(996, 587);
             PanelSlider.TabIndex = 13;
             // 
             // BtnClose
             // 
             BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnClose.Image = Properties.Resources.close_w;
-            BtnClose.Location = new System.Drawing.Point(1036, 2);
+            BtnClose.Location = new System.Drawing.Point(988, 2);
             BtnClose.Name = "BtnClose";
-            BtnClose.Size = new System.Drawing.Size(40, 40);
+            BtnClose.Size = new System.Drawing.Size(37, 37);
             BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             BtnClose.TabIndex = 15;
             BtnClose.TabStop = false;
@@ -237,27 +237,27 @@
             // 
             BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnMinimize.Image = Properties.Resources.minimize_w;
-            BtnMinimize.Location = new System.Drawing.Point(997, 2);
+            BtnMinimize.Location = new System.Drawing.Point(953, 2);
             BtnMinimize.Name = "BtnMinimize";
-            BtnMinimize.Size = new System.Drawing.Size(40, 40);
+            BtnMinimize.Size = new System.Drawing.Size(37, 37);
             BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             BtnMinimize.TabIndex = 14;
             BtnMinimize.TabStop = false;
             BtnMinimize.Click += BtnMinimize_Click;
             // 
-            // FrmAddInvoice
+            // FrmInvoice
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(12F, 33F);
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(68, 68, 68);
-            ClientSize = new System.Drawing.Size(1081, 729);
+            ClientSize = new System.Drawing.Size(1026, 738);
             Controls.Add(BtnClose);
             Controls.Add(BtnMinimize);
             Controls.Add(panel);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            Name = "FrmAddInvoice";
+            Name = "FrmInvoice";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "ثبت فاکتور";
             FormClosing += FrmAddInvoice_FormClosing;

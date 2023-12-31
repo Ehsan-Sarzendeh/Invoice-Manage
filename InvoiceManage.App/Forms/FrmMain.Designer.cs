@@ -117,9 +117,9 @@
             panel1.Controls.Add(InvoiceList);
             panel1.Controls.Add(Settings);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new System.Drawing.Point(5, 41);
+            panel1.Location = new System.Drawing.Point(5, 40);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(609, 354);
+            panel1.Size = new System.Drawing.Size(609, 355);
             panel1.TabIndex = 3;
             // 
             // label1
@@ -147,7 +147,7 @@
             // 
             BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnMinimize.Image = Properties.Resources.minimize_w;
-            BtnMinimize.Location = new System.Drawing.Point(548, 3);
+            BtnMinimize.Location = new System.Drawing.Point(547, 2);
             BtnMinimize.Name = "BtnMinimize";
             BtnMinimize.Size = new System.Drawing.Size(37, 37);
             BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -159,9 +159,9 @@
             // 
             BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnClose.Image = Properties.Resources.close_w;
-            BtnClose.Location = new System.Drawing.Point(583, 4);
+            BtnClose.Location = new System.Drawing.Point(581, 2);
             BtnClose.Name = "BtnClose";
-            BtnClose.Size = new System.Drawing.Size(35, 35);
+            BtnClose.Size = new System.Drawing.Size(37, 37);
             BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             BtnClose.TabIndex = 9;
             BtnClose.TabStop = false;
