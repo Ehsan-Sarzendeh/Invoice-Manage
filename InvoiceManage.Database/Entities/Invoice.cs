@@ -53,7 +53,7 @@ namespace InvoiceManage.Database.Entities
         public int Ft { get; set; }
         [Display(Name = "شماره پروانه گمرکی")]
         public string Scln { get; set; }
-        [Display(Name = "کد گمرک محل اظهار فروشنده")]
+        [Display(Name = "کد گمرکی محل اظهار فروشنده")]
         public string Scc { get; set; }
         [Display(Name = "شناسه یکتای ثبت قرارداد فروشنده")]
         public string Crn { get; set; }
