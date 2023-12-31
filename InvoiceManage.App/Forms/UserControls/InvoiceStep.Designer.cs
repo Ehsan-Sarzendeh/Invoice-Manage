@@ -118,11 +118,12 @@
             // comboBox1
             // 
             comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            comboBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            comboBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "نوع اول", "نوع دوم" });
             comboBox1.Location = new System.Drawing.Point(11, 25);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new System.Drawing.Size(208, 35);
+            comboBox1.Size = new System.Drawing.Size(208, 36);
             comboBox1.TabIndex = 0;
             // 
             // groupBox1
@@ -140,11 +141,12 @@
             // comboBox2
             // 
             comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            comboBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            comboBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "الگوی اول", "الگوی دوم" });
             comboBox2.Location = new System.Drawing.Point(10, 25);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new System.Drawing.Size(208, 35);
+            comboBox2.Size = new System.Drawing.Size(208, 36);
             comboBox2.TabIndex = 1;
             // 
             // groupBox3
@@ -162,11 +164,12 @@
             // comboBox3
             // 
             comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            comboBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            comboBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "حقیقی", "حقوقی" });
             comboBox3.Location = new System.Drawing.Point(11, 25);
             comboBox3.Name = "comboBox3";
-            comboBox3.Size = new System.Drawing.Size(208, 35);
+            comboBox3.Size = new System.Drawing.Size(208, 36);
             comboBox3.TabIndex = 1;
             // 
             // groupBox4
@@ -184,11 +187,11 @@
             // comboBox4
             // 
             comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            comboBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            comboBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             comboBox4.FormattingEnabled = true;
             comboBox4.Location = new System.Drawing.Point(10, 25);
             comboBox4.Name = "comboBox4";
-            comboBox4.Size = new System.Drawing.Size(208, 35);
+            comboBox4.Size = new System.Drawing.Size(208, 36);
             comboBox4.TabIndex = 0;
             // 
             // groupBox5
@@ -196,7 +199,7 @@
             groupBox5.Controls.Add(maskedTextBox1);
             groupBox5.Font = new System.Drawing.Font("IRANSansWeb", 10.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox5.ForeColor = System.Drawing.Color.DimGray;
-            groupBox5.Location = new System.Drawing.Point(220, 44);
+            groupBox5.Location = new System.Drawing.Point(220, 35);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new System.Drawing.Size(226, 70);
             groupBox5.TabIndex = 211;
@@ -206,22 +209,23 @@
             // maskedTextBox1
             // 
             maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            maskedTextBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            maskedTextBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             maskedTextBox1.Location = new System.Drawing.Point(6, 29);
             maskedTextBox1.Mask = "0000/00/00";
             maskedTextBox1.Name = "maskedTextBox1";
             maskedTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            maskedTextBox1.Size = new System.Drawing.Size(214, 27);
+            maskedTextBox1.Size = new System.Drawing.Size(214, 29);
             maskedTextBox1.TabIndex = 0;
             maskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
             textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            textBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             textBox1.Location = new System.Drawing.Point(10, 31);
             textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(450, 27);
+            textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            textBox1.Size = new System.Drawing.Size(450, 29);
             textBox1.TabIndex = 0;
             // 
             // groupBox6
@@ -239,12 +243,12 @@
             // maskedTextBox2
             // 
             maskedTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            maskedTextBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            maskedTextBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             maskedTextBox2.Location = new System.Drawing.Point(6, 29);
             maskedTextBox2.Mask = "0000/00/00";
             maskedTextBox2.Name = "maskedTextBox2";
             maskedTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            maskedTextBox2.Size = new System.Drawing.Size(214, 27);
+            maskedTextBox2.Size = new System.Drawing.Size(214, 29);
             maskedTextBox2.TabIndex = 0;
             maskedTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -253,7 +257,7 @@
             groupBox7.Controls.Add(maskedTextBox3);
             groupBox7.Font = new System.Drawing.Font("IRANSansWeb", 10.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox7.ForeColor = System.Drawing.Color.DimGray;
-            groupBox7.Location = new System.Drawing.Point(25, 44);
+            groupBox7.Location = new System.Drawing.Point(25, 35);
             groupBox7.Name = "groupBox7";
             groupBox7.Size = new System.Drawing.Size(179, 70);
             groupBox7.TabIndex = 213;
@@ -263,12 +267,12 @@
             // maskedTextBox3
             // 
             maskedTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            maskedTextBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            maskedTextBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             maskedTextBox3.Location = new System.Drawing.Point(6, 29);
             maskedTextBox3.Mask = "00:00";
             maskedTextBox3.Name = "maskedTextBox3";
             maskedTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            maskedTextBox3.Size = new System.Drawing.Size(167, 27);
+            maskedTextBox3.Size = new System.Drawing.Size(167, 29);
             maskedTextBox3.TabIndex = 0;
             maskedTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -287,12 +291,12 @@
             // maskedTextBox4
             // 
             maskedTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            maskedTextBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            maskedTextBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             maskedTextBox4.Location = new System.Drawing.Point(6, 29);
             maskedTextBox4.Mask = "00:00";
             maskedTextBox4.Name = "maskedTextBox4";
             maskedTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            maskedTextBox4.Size = new System.Drawing.Size(167, 27);
+            maskedTextBox4.Size = new System.Drawing.Size(167, 29);
             maskedTextBox4.TabIndex = 0;
             maskedTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -323,10 +327,11 @@
             // textBox2
             // 
             textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            textBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             textBox2.Location = new System.Drawing.Point(10, 31);
             textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(450, 27);
+            textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            textBox2.Size = new System.Drawing.Size(450, 29);
             textBox2.TabIndex = 0;
             // 
             // groupBox11
@@ -344,10 +349,11 @@
             // textBox3
             // 
             textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            textBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            textBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             textBox3.Location = new System.Drawing.Point(10, 31);
             textBox3.Name = "textBox3";
-            textBox3.Size = new System.Drawing.Size(450, 27);
+            textBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            textBox3.Size = new System.Drawing.Size(450, 29);
             textBox3.TabIndex = 0;
             // 
             // toggleButton1
