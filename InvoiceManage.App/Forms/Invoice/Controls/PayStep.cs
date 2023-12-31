@@ -6,9 +6,11 @@ namespace InvoiceManage.App.Forms.Invoice.Controls
 {
     public partial class PayStep : UserControl
     {
-        public PayStep()
+        public PayStep(FrmInvoiceType type)
         {
             InitializeComponent();
+
+            BtnEdit.Visible = type == FrmInvoiceType.Edit;
         }
 
         private void BtnPrevious_Click(object sender, EventArgs e)
@@ -16,9 +18,14 @@ namespace InvoiceManage.App.Forms.Invoice.Controls
             new Step().Previous(ParentForm, "PayStep", "SumStep", "SumStep");
         }
 
-        private void BtnNext_Click(object sender, EventArgs e)
+        private void BtnAdd_Click(object sender, EventArgs e)
         {
 
+            ParentForm.Close();
+        }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
 
             ParentForm.Close();
         }

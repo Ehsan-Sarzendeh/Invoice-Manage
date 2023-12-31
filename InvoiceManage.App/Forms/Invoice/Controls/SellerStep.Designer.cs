@@ -46,7 +46,7 @@
             textBox6 = new System.Windows.Forms.TextBox();
             groupBox7 = new System.Windows.Forms.GroupBox();
             textBox7 = new System.Windows.Forms.TextBox();
-            roundedButton1 = new Resources.CustomToolBox.RoundedButton();
+            BtnSelect = new Resources.CustomToolBox.RoundedButton();
             groupBox5.SuspendLayout();
             groupBox9.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -287,33 +287,34 @@
             textBox7.Size = new System.Drawing.Size(450, 29);
             textBox7.TabIndex = 0;
             // 
-            // roundedButton1
+            // BtnSelect
             // 
-            roundedButton1.BackColor = System.Drawing.Color.LightSlateGray;
-            roundedButton1.BackgroundColor = System.Drawing.Color.LightSlateGray;
-            roundedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            roundedButton1.BorderRadius = 10;
-            roundedButton1.BorderSize = 0;
-            roundedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            roundedButton1.FlatAppearance.BorderSize = 0;
-            roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            roundedButton1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            roundedButton1.ForeColor = System.Drawing.Color.White;
-            roundedButton1.Location = new System.Drawing.Point(24, 40);
-            roundedButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new System.Drawing.Size(220, 47);
-            roundedButton1.TabIndex = 218;
-            roundedButton1.Text = "انتخاب از لیست شرکت‌های من";
-            roundedButton1.TextColor = System.Drawing.Color.White;
-            roundedButton1.UseVisualStyleBackColor = false;
+            BtnSelect.BackColor = System.Drawing.Color.LightSlateGray;
+            BtnSelect.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            BtnSelect.BorderColor = System.Drawing.Color.PaleVioletRed;
+            BtnSelect.BorderRadius = 10;
+            BtnSelect.BorderSize = 0;
+            BtnSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnSelect.FlatAppearance.BorderSize = 0;
+            BtnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnSelect.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnSelect.ForeColor = System.Drawing.Color.White;
+            BtnSelect.Location = new System.Drawing.Point(24, 40);
+            BtnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnSelect.Name = "BtnSelect";
+            BtnSelect.Size = new System.Drawing.Size(188, 47);
+            BtnSelect.TabIndex = 218;
+            BtnSelect.Text = "انتخاب از لیست شرکت‌ها";
+            BtnSelect.TextColor = System.Drawing.Color.White;
+            BtnSelect.UseVisualStyleBackColor = false;
+            BtnSelect.Click += BtnSelect_Click;
             // 
             // SellerStep
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            Controls.Add(roundedButton1);
+            Controls.Add(BtnSelect);
             Controls.Add(groupBox2);
             Controls.Add(groupBox3);
             Controls.Add(groupBox4);
@@ -367,6 +368,6 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox textBox7;
-        private Resources.CustomToolBox.RoundedButton roundedButton1;
+        private Resources.CustomToolBox.RoundedButton BtnSelect;
     }
 }

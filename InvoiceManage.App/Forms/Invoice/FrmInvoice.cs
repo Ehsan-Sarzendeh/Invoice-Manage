@@ -17,12 +17,14 @@ namespace InvoiceManage.App.Forms.Invoice
 
             Type = type;
 
+            InvoiceDto = new InvoiceDto();
+
             PanelSlider.Controls.Add(new InvoiceStep());
             PanelSlider.Controls.Add(new SellerStep());
             PanelSlider.Controls.Add(new BuyerStep());
             PanelSlider.Controls.Add(new ItemStep());
             PanelSlider.Controls.Add(new SumStep());
-            PanelSlider.Controls.Add(new PayStep());
+            PanelSlider.Controls.Add(new PayStep(type));
         }
 
         private void FrmAddInvoice_FormClosing(object sender, FormClosingEventArgs e)

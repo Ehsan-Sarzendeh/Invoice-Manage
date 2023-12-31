@@ -100,6 +100,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.White;
             Controls.Add(PanelForm);
             Controls.Add(dataGridView1);
             Controls.Add(BtnPrevious);

@@ -41,13 +41,13 @@
             groupBox1 = new System.Windows.Forms.GroupBox();
             textBox2 = new System.Windows.Forms.TextBox();
             groupBox9 = new System.Windows.Forms.GroupBox();
+            roundedButton2 = new Resources.CustomToolBox.RoundedButton();
             textBox1 = new System.Windows.Forms.TextBox();
-            roundedButton1 = new Resources.CustomToolBox.RoundedButton();
+            BtnSelect = new Resources.CustomToolBox.RoundedButton();
             groupBox8 = new System.Windows.Forms.GroupBox();
             comboBox2 = new System.Windows.Forms.ComboBox();
             groupBox5 = new System.Windows.Forms.GroupBox();
             textBox6 = new System.Windows.Forms.TextBox();
-            roundedButton2 = new Resources.CustomToolBox.RoundedButton();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -129,6 +129,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(roundedButton2);
             groupBox3.Controls.Add(textBox4);
             groupBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox3.ForeColor = System.Drawing.Color.DimGray;
@@ -144,10 +145,10 @@
             // 
             textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             textBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox4.Location = new System.Drawing.Point(10, 31);
+            textBox4.Location = new System.Drawing.Point(10, 29);
             textBox4.Name = "textBox4";
             textBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            textBox4.Size = new System.Drawing.Size(450, 29);
+            textBox4.Size = new System.Drawing.Size(352, 29);
             textBox4.TabIndex = 0;
             // 
             // groupBox4
@@ -221,7 +222,6 @@
             // 
             // groupBox9
             // 
-            groupBox9.Controls.Add(roundedButton2);
             groupBox9.Controls.Add(textBox1);
             groupBox9.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox9.ForeColor = System.Drawing.Color.DimGray;
@@ -233,37 +233,60 @@
             groupBox9.TabStop = false;
             groupBox9.Text = "شماره اقتصادی";
             // 
+            // roundedButton2
+            // 
+            roundedButton2.BackColor = System.Drawing.Color.DarkGray;
+            roundedButton2.BackgroundColor = System.Drawing.Color.DarkGray;
+            roundedButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            roundedButton2.BorderRadius = 10;
+            roundedButton2.BorderSize = 0;
+            roundedButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            roundedButton2.FlatAppearance.BorderSize = 0;
+            roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            roundedButton2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            roundedButton2.ForeColor = System.Drawing.Color.White;
+            roundedButton2.Location = new System.Drawing.Point(369, 28);
+            roundedButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            roundedButton2.Name = "roundedButton2";
+            roundedButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            roundedButton2.Size = new System.Drawing.Size(91, 29);
+            roundedButton2.TabIndex = 229;
+            roundedButton2.Text = "استعلام خریدار";
+            roundedButton2.TextColor = System.Drawing.Color.White;
+            roundedButton2.UseVisualStyleBackColor = false;
+            // 
             // textBox1
             // 
             textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             textBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox1.Location = new System.Drawing.Point(105, 31);
+            textBox1.Location = new System.Drawing.Point(10, 31);
             textBox1.Name = "textBox1";
             textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            textBox1.Size = new System.Drawing.Size(354, 29);
+            textBox1.Size = new System.Drawing.Size(449, 29);
             textBox1.TabIndex = 0;
             // 
-            // roundedButton1
+            // BtnSelect
             // 
-            roundedButton1.BackColor = System.Drawing.Color.LightSlateGray;
-            roundedButton1.BackgroundColor = System.Drawing.Color.LightSlateGray;
-            roundedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            roundedButton1.BorderRadius = 10;
-            roundedButton1.BorderSize = 0;
-            roundedButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            roundedButton1.FlatAppearance.BorderSize = 0;
-            roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            roundedButton1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            roundedButton1.ForeColor = System.Drawing.Color.White;
-            roundedButton1.Location = new System.Drawing.Point(24, 40);
-            roundedButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            roundedButton1.Size = new System.Drawing.Size(188, 47);
-            roundedButton1.TabIndex = 227;
-            roundedButton1.Text = "انتخاب از لیست مشتریان";
-            roundedButton1.TextColor = System.Drawing.Color.White;
-            roundedButton1.UseVisualStyleBackColor = false;
+            BtnSelect.BackColor = System.Drawing.Color.LightSlateGray;
+            BtnSelect.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            BtnSelect.BorderColor = System.Drawing.Color.PaleVioletRed;
+            BtnSelect.BorderRadius = 10;
+            BtnSelect.BorderSize = 0;
+            BtnSelect.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnSelect.FlatAppearance.BorderSize = 0;
+            BtnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnSelect.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnSelect.ForeColor = System.Drawing.Color.White;
+            BtnSelect.Location = new System.Drawing.Point(24, 40);
+            BtnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnSelect.Name = "BtnSelect";
+            BtnSelect.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            BtnSelect.Size = new System.Drawing.Size(188, 47);
+            BtnSelect.TabIndex = 227;
+            BtnSelect.Text = "انتخاب از لیست مشتریان";
+            BtnSelect.TextColor = System.Drawing.Color.White;
+            BtnSelect.UseVisualStyleBackColor = false;
+            BtnSelect.Click += BtnSelect_Click;
             // 
             // groupBox8
             // 
@@ -307,33 +330,11 @@
             // 
             textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             textBox6.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox6.Location = new System.Drawing.Point(6, 31);
+            textBox6.Location = new System.Drawing.Point(7, 30);
             textBox6.Name = "textBox6";
             textBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             textBox6.Size = new System.Drawing.Size(219, 29);
             textBox6.TabIndex = 0;
-            // 
-            // roundedButton2
-            // 
-            roundedButton2.BackColor = System.Drawing.Color.DarkGray;
-            roundedButton2.BackgroundColor = System.Drawing.Color.DarkGray;
-            roundedButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            roundedButton2.BorderRadius = 10;
-            roundedButton2.BorderSize = 0;
-            roundedButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            roundedButton2.FlatAppearance.BorderSize = 0;
-            roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            roundedButton2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            roundedButton2.ForeColor = System.Drawing.Color.White;
-            roundedButton2.Location = new System.Drawing.Point(7, 31);
-            roundedButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            roundedButton2.Size = new System.Drawing.Size(91, 29);
-            roundedButton2.TabIndex = 229;
-            roundedButton2.Text = "استعلام خریدار";
-            roundedButton2.TextColor = System.Drawing.Color.White;
-            roundedButton2.UseVisualStyleBackColor = false;
             // 
             // BuyerStep
             // 
@@ -342,7 +343,7 @@
             BackColor = System.Drawing.Color.White;
             Controls.Add(groupBox5);
             Controls.Add(groupBox8);
-            Controls.Add(roundedButton1);
+            Controls.Add(BtnSelect);
             Controls.Add(groupBox2);
             Controls.Add(groupBox3);
             Controls.Add(groupBox4);
@@ -389,7 +390,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.TextBox textBox1;
-        private Resources.CustomToolBox.RoundedButton roundedButton1;
+        private Resources.CustomToolBox.RoundedButton BtnSelect;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.ComboBox comboBox2;
         private Resources.CustomToolBox.RoundedButton roundedButton2;

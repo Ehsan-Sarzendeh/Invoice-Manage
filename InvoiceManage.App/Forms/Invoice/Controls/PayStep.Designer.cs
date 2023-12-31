@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BtnNext = new Resources.CustomToolBox.RoundedButton();
+            BtnAdd = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
+            BtnEdit = new Resources.CustomToolBox.RoundedButton();
             SuspendLayout();
             // 
-            // BtnNext
+            // BtnAdd
             // 
-            BtnNext.BackColor = System.Drawing.Color.Green;
-            BtnNext.BackgroundColor = System.Drawing.Color.Green;
-            BtnNext.BorderColor = System.Drawing.Color.PaleVioletRed;
-            BtnNext.BorderRadius = 10;
-            BtnNext.BorderSize = 0;
-            BtnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            BtnNext.FlatAppearance.BorderSize = 0;
-            BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnNext.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            BtnNext.ForeColor = System.Drawing.Color.White;
-            BtnNext.Location = new System.Drawing.Point(4, 535);
-            BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            BtnNext.Name = "BtnNext";
-            BtnNext.Size = new System.Drawing.Size(120, 47);
-            BtnNext.TabIndex = 1;
-            BtnNext.Text = "ثبت";
-            BtnNext.TextColor = System.Drawing.Color.White;
-            BtnNext.UseVisualStyleBackColor = false;
-            BtnNext.Click += BtnNext_Click;
+            BtnAdd.BackColor = System.Drawing.Color.Green;
+            BtnAdd.BackgroundColor = System.Drawing.Color.Green;
+            BtnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
+            BtnAdd.BorderRadius = 10;
+            BtnAdd.BorderSize = 0;
+            BtnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnAdd.FlatAppearance.BorderSize = 0;
+            BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnAdd.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnAdd.ForeColor = System.Drawing.Color.White;
+            BtnAdd.Location = new System.Drawing.Point(4, 535);
+            BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnAdd.Name = "BtnAdd";
+            BtnAdd.Size = new System.Drawing.Size(133, 47);
+            BtnAdd.TabIndex = 1;
+            BtnAdd.Text = "ثبت فاکتور جدید";
+            BtnAdd.TextColor = System.Drawing.Color.White;
+            BtnAdd.UseVisualStyleBackColor = false;
+            BtnAdd.Click += BtnAdd_Click;
             // 
             // BtnPrevious
             // 
@@ -76,12 +77,36 @@
             BtnPrevious.UseVisualStyleBackColor = false;
             BtnPrevious.Click += BtnPrevious_Click;
             // 
+            // BtnEdit
+            // 
+            BtnEdit.BackColor = System.Drawing.Color.Orange;
+            BtnEdit.BackgroundColor = System.Drawing.Color.Orange;
+            BtnEdit.BorderColor = System.Drawing.Color.PaleVioletRed;
+            BtnEdit.BorderRadius = 10;
+            BtnEdit.BorderSize = 0;
+            BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnEdit.FlatAppearance.BorderSize = 0;
+            BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnEdit.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnEdit.ForeColor = System.Drawing.Color.White;
+            BtnEdit.Location = new System.Drawing.Point(145, 535);
+            BtnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new System.Drawing.Size(133, 47);
+            BtnEdit.TabIndex = 4;
+            BtnEdit.Text = "ویرایش فاکتور";
+            BtnEdit.TextColor = System.Drawing.Color.White;
+            BtnEdit.UseVisualStyleBackColor = false;
+            BtnEdit.Click += BtnEdit_Click;
+            // 
             // PayStep
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.White;
+            Controls.Add(BtnEdit);
             Controls.Add(BtnPrevious);
-            Controls.Add(BtnNext);
+            Controls.Add(BtnAdd);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "PayStep";
@@ -91,7 +116,8 @@
 
         #endregion
 
-        private Resources.CustomToolBox.RoundedButton BtnNext;
+        private Resources.CustomToolBox.RoundedButton BtnAdd;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
+        private Resources.CustomToolBox.RoundedButton BtnEdit;
     }
 }

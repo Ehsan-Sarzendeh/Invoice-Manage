@@ -8,19 +8,19 @@ namespace InvoiceManage.App.Forms.Invoice
 {
     public partial class FrmSelect : Form
     {
-        readonly List<object> _objects;
+        readonly List<object> _data;
 
         public object? SelectedItem;
 
-        public FrmSelect(List<object> objects)
+        public FrmSelect(List<object> data)
         {
             InitializeComponent();
-            _objects = objects;
+            _data = data;
         }
 
         private void FrmSelect_Load(object sender, EventArgs e)
         {
-            objectsGv.DataSource = _objects;
+            objectsGv.DataSource = _data;
         }
 
         private void BtnClose_Click(object sender, EventArgs e)
