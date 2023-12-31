@@ -85,7 +85,7 @@
             BtnProduct.Name = "BtnProduct";
             BtnProduct.Size = new System.Drawing.Size(224, 60);
             BtnProduct.TabIndex = 12;
-            BtnProduct.Text = "کالا           ";
+            BtnProduct.Text = "کـــــالا    ";
             BtnProduct.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             BtnProduct.TextColor = System.Drawing.Color.FromArgb(68, 68, 68);
             BtnProduct.UseVisualStyleBackColor = false;
@@ -102,9 +102,9 @@
             panel1.Controls.Add(BtnMinimize);
             panel1.Controls.Add(BtnClose);
             panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            panel1.Location = new System.Drawing.Point(780, 0);
+            panel1.Location = new System.Drawing.Point(796, 0);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(230, 699);
+            panel1.Size = new System.Drawing.Size(230, 738);
             panel1.TabIndex = 13;
             // 
             // pictureBox1
@@ -135,7 +135,7 @@
             BtnCustomer.Name = "BtnCustomer";
             BtnCustomer.Size = new System.Drawing.Size(224, 60);
             BtnCustomer.TabIndex = 16;
-            BtnCustomer.Text = "خریدار           ";
+            BtnCustomer.Text = "خریــدار    ";
             BtnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             BtnCustomer.TextColor = System.Drawing.Color.FromArgb(68, 68, 68);
             BtnCustomer.UseVisualStyleBackColor = false;
@@ -159,7 +159,7 @@
             BtnCompany.Name = "BtnCompany";
             BtnCompany.Size = new System.Drawing.Size(224, 60);
             BtnCompany.TabIndex = 15;
-            BtnCompany.Text = "فروشنده           ";
+            BtnCompany.Text = "فروشنده    ";
             BtnCompany.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             BtnCompany.TextColor = System.Drawing.Color.FromArgb(68, 68, 68);
             BtnCompany.UseVisualStyleBackColor = false;
@@ -181,7 +181,7 @@
             PanelSlider.BackColor = System.Drawing.Color.White;
             PanelSlider.Location = new System.Drawing.Point(4, 4);
             PanelSlider.Name = "PanelSlider";
-            PanelSlider.Size = new System.Drawing.Size(777, 691);
+            PanelSlider.Size = new System.Drawing.Size(793, 730);
             PanelSlider.TabIndex = 14;
             // 
             // FrmSettings
@@ -189,7 +189,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(68, 68, 68);
-            ClientSize = new System.Drawing.Size(1010, 699);
+            ClientSize = new System.Drawing.Size(1026, 738);
             Controls.Add(PanelSlider);
             Controls.Add(panel1);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

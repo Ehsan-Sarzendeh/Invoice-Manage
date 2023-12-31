@@ -30,6 +30,9 @@
         {
             BtnNext = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
+            dataGridView1 = new System.Windows.Forms.DataGridView();
+            PanelForm = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // BtnNext
@@ -76,16 +79,36 @@
             BtnPrevious.UseVisualStyleBackColor = false;
             BtnPrevious.Click += BtnPrevious_Click;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new System.Drawing.Point(4, 257);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new System.Drawing.Size(988, 261);
+            dataGridView1.TabIndex = 226;
+            // 
+            // PanelForm
+            // 
+            PanelForm.Location = new System.Drawing.Point(4, 11);
+            PanelForm.Name = "PanelForm";
+            PanelForm.Size = new System.Drawing.Size(988, 232);
+            PanelForm.TabIndex = 227;
+            // 
             // ItemStep
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(PanelForm);
+            Controls.Add(dataGridView1);
             Controls.Add(BtnPrevious);
             Controls.Add(BtnNext);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "ItemStep";
             Size = new System.Drawing.Size(996, 587);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -93,5 +116,7 @@
 
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel PanelForm;
     }
 }

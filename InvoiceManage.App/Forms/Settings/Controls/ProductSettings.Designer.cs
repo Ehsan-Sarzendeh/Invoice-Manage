@@ -46,10 +46,10 @@
             // 
             dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new System.Drawing.Point(25, 242);
+            dataGridView1.Location = new System.Drawing.Point(32, 242);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new System.Drawing.Size(727, 418);
+            dataGridView1.Size = new System.Drawing.Size(727, 451);
             dataGridView1.TabIndex = 225;
             // 
             // BtnAdd
@@ -64,7 +64,7 @@
             BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnAdd.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnAdd.ForeColor = System.Drawing.Color.White;
-            BtnAdd.Location = new System.Drawing.Point(25, 148);
+            BtnAdd.Location = new System.Drawing.Point(32, 148);
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new System.Drawing.Size(179, 47);
@@ -79,7 +79,7 @@
             groupBox11.Controls.Add(textBox3);
             groupBox11.Font = new System.Drawing.Font("IRANSansWeb", 10.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox11.ForeColor = System.Drawing.Color.DimGray;
-            groupBox11.Location = new System.Drawing.Point(226, 31);
+            groupBox11.Location = new System.Drawing.Point(233, 31);
             groupBox11.Name = "groupBox11";
             groupBox11.Size = new System.Drawing.Size(204, 70);
             groupBox11.TabIndex = 224;
@@ -101,7 +101,7 @@
             groupBox10.Controls.Add(textBox2);
             groupBox10.Font = new System.Drawing.Font("IRANSansWeb", 10.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox10.ForeColor = System.Drawing.Color.DimGray;
-            groupBox10.Location = new System.Drawing.Point(226, 107);
+            groupBox10.Location = new System.Drawing.Point(233, 107);
             groupBox10.Name = "groupBox10";
             groupBox10.Size = new System.Drawing.Size(525, 88);
             groupBox10.TabIndex = 223;
@@ -125,7 +125,7 @@
             groupBox9.Controls.Add(textBox1);
             groupBox9.Font = new System.Drawing.Font("IRANSansWeb", 10.1999989F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox9.ForeColor = System.Drawing.Color.DimGray;
-            groupBox9.Location = new System.Drawing.Point(448, 31);
+            groupBox9.Location = new System.Drawing.Point(455, 31);
             groupBox9.Name = "groupBox9";
             groupBox9.Size = new System.Drawing.Size(303, 70);
             groupBox9.TabIndex = 222;
@@ -156,7 +156,7 @@
             Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             Name = "ProductSettings";
             RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            Size = new System.Drawing.Size(777, 691);
+            Size = new System.Drawing.Size(793, 730);
             Load += ProductSettings_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox11.ResumeLayout(false);
