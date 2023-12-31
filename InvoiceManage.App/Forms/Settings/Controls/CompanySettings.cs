@@ -24,7 +24,7 @@ namespace InvoiceManage.App.Forms.Settings.Controls
 
         private void CompanySettings_Load(object sender, EventArgs e)
         {
-            CompaniesGv.DataSource = _commonService.GetCompanies();
+            // CompaniesGv.DataSource = _commonService.GetCompanies();
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)

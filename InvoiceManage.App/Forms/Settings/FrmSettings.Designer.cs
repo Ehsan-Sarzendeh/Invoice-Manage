@@ -47,7 +47,7 @@
             // 
             BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnClose.Image = Properties.Resources.close_w;
-            BtnClose.Location = new System.Drawing.Point(190, 0);
+            BtnClose.Location = new System.Drawing.Point(192, 0);
             BtnClose.Name = "BtnClose";
             BtnClose.Size = new System.Drawing.Size(37, 37);
             BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -59,7 +59,7 @@
             // 
             BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnMinimize.Image = Properties.Resources.minimize_w;
-            BtnMinimize.Location = new System.Drawing.Point(156, 0);
+            BtnMinimize.Location = new System.Drawing.Point(158, 0);
             BtnMinimize.Name = "BtnMinimize";
             BtnMinimize.Size = new System.Drawing.Size(37, 37);
             BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

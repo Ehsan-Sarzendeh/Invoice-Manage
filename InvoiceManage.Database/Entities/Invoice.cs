@@ -131,5 +131,8 @@ namespace InvoiceManage.Database.Entities
         public string Inty_1 { get; set; }
 
         public decimal Inno_1 { get; set; }
+
+        public long CompanyId { get; set; }
+        public Company Company { get; set; }
     }
 }

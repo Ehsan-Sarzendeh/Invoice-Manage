@@ -8,16 +8,15 @@ namespace InvoiceManage.App.Forms.Settings
 {
     public partial class FrmSettings : Form
     {
-        private readonly ICommonService _commonService;
-
         public FrmSettings()
         {
-            _commonService = new CommonService();
             InitializeComponent();
 
-            PanelSlider.Controls.Add(new ProductSettings(_commonService));
-            PanelSlider.Controls.Add(new CustomerSettings(_commonService));
-            PanelSlider.Controls.Add(new CompanySettings(_commonService));
+            ICommonService commonService = new CommonService();
+
+            PanelSlider.Controls.Add(new ProductSettings(commonService));
+            PanelSlider.Controls.Add(new CustomerSettings(commonService));
+            PanelSlider.Controls.Add(new CompanySettings(commonService));
         }
 
         private void FrmSettings_Load(object sender, System.EventArgs e)

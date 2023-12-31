@@ -17,5 +17,9 @@ namespace InvoiceManage.Database.Entities
         public string Crn { get; set; }
         [Display(Name = "سود شرکت")]
         public string Pro { get; set; }
+
+        public string FilePath { get; set; }
+        public string BaseUrl { get; set; }
+        public string ClientId { get; set; }
     }
 }

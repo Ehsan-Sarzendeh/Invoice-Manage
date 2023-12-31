@@ -17,7 +17,7 @@ namespace InvoiceManage.App.Forms.Settings.Controls
 
         private void ProductSettings_Load(object sender, EventArgs e)
         {
-            ProductsGv.DataSource = _commonService.GetProducts();
+            // ProductsGv.DataSource = _commonService.GetProducts();
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
