@@ -27,7 +27,7 @@
       <Invoice Ref="3" type="DataTableSource" isKey="true">
         <Alias>Invoice</Alias>
         <Columns isList="true" count="30">
-          <value>ORIGINAL,Invoices_Id,Invoices_Id,Invoices_Id,System.Int32,cd18aeae258347259cc2257f6d00697e</value>
+          <value>ORIGINAL,Id,Id,Id,System.Int32,cd18aeae258347259cc2257f6d00697e</value>
           <value>Indatim_1,System.String</value>
           <value>Indatim_2,System.String</value>
           <value>Inno,System.String</value>
@@ -235,7 +235,7 @@
                   <Page isRef="4" />
                   <Parent isRef="12" />
                   <ShiftMode>None</ShiftMode>
-                  <Text>شناسه فاکتور: {Invoice.Invoices_Id}</Text>
+                  <Text>شناسه فاکتور: {Invoice.Id}</Text>
                   <TextBrush>Black</TextBrush>
                   <TextOptions>,,RightToLeft=True,,,A=0</TextOptions>
                   <Type>Expression</Type>

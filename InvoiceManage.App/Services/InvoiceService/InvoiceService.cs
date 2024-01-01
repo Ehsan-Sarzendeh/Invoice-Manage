@@ -13,6 +13,12 @@ namespace InvoiceManage.App.Services.InvoiceService
             return db.Invoice.ToList();
         }
 
+        public Invoice GetInvoice(int invoiceId)
+        {
+            using var db = new SqliteDbContext();
+            return db.Invoice.Single(x => x.Id == invoiceId);
+        }
+
         public void DeleteInvoice(long invoiceId)
         {
             using var db = new SqliteDbContext();

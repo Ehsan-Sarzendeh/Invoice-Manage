@@ -1,13 +1,6 @@
 ﻿using InvoiceManage.App.Services.CommonService;
 using InvoiceManage.Database.Entities;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InvoiceManage.App.Forms.Settings.Controls
@@ -31,7 +24,11 @@ namespace InvoiceManage.App.Forms.Settings.Controls
         {
             var company = new Company()
             {
-
+                Tins = TxtTins.Text,
+                Name = TxtName.Text,
+                Sbc = TxtSbc.Text,
+                Scln = TxtScln.Text,
+                Crn = TxtCrn.Text,
             };
             _commonService.AddCompany(company);
         }
