@@ -1,4 +1,6 @@
-﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
+﻿using InvoiceManage.App.Resources.CustomToolBox;
+
+namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class SumStep
     {
@@ -35,7 +37,7 @@
             TxtTax17 = new System.Windows.Forms.TextBox();
             Insp = new System.Windows.Forms.GroupBox();
             TxtInsp = new System.Windows.Forms.TextBox();
-            Setm = new System.Windows.Forms.GroupBox();
+            Setm = new CustomGroupBox();
             Cbv = new System.Windows.Forms.ComboBox();
             Torv = new System.Windows.Forms.GroupBox();
             TxtTorv = new System.Windows.Forms.TextBox();
@@ -484,7 +486,7 @@
         private System.Windows.Forms.TextBox TxtTax17;
         private System.Windows.Forms.GroupBox Insp;
         private System.Windows.Forms.TextBox TxtInsp;
-        private System.Windows.Forms.GroupBox Setm;
+        private CustomGroupBox Setm;
         private System.Windows.Forms.ComboBox Cbv;
         private System.Windows.Forms.GroupBox Torv;
         private System.Windows.Forms.TextBox TxtTorv;

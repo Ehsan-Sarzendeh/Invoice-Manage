@@ -15,7 +15,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnEdit.Visible = type == FrmInvoiceType.Edit;
 
             SetComboBoxDataSource();
-            SetDataBindings();
         }
 
         public void SetDataBindings()
@@ -53,6 +52,11 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
 
             ParentForm!.Close();
+        }
+
+        private void PayStep_Load(object sender, EventArgs e)
+        {
+            SetDataBindings();
         }
     }
 }

@@ -329,6 +329,7 @@
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "SellerStep";
             Size = new System.Drawing.Size(996, 587);
+            Load += SellerStep_Load;
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
             Tins.ResumeLayout(false);

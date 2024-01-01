@@ -260,7 +260,6 @@
             Name = "FrmInvoice";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "ثبت فاکتور";
-            FormClosing += FrmAddInvoice_FormClosing;
             Load += FrmAddInvoice_Load;
             MouseDown += FrmAddInvoice_MouseDown;
             ((System.ComponentModel.ISupportInitialize)InvoiceStep).EndInit();

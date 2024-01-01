@@ -12,7 +12,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             InitializeComponent();
             SetComboBoxDataSource();
-            SetDataBindings();
         }
 
         public void SetDataBindings()
@@ -43,6 +42,39 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private void BtnNext_Click(object sender, EventArgs e)
         {
             new Step().Next(ParentForm!, "InvoiceStep", "SellerStep", "SellerStep");
+        }
+
+        private void InvoiceStep_Load(object sender, EventArgs e)
+        {
+            SetDataBindings();
+        }
+
+        private void CbInty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var parentForm = ParentForm as FrmInvoice;
+
+            parentForm?.ChangeModeGroupBoxes();
+        }
+
+        private void CbInp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var parentForm = ParentForm as FrmInvoice;
+
+            parentForm?.ChangeModeGroupBoxes();
+        }
+
+        private void TogSemiRequired_CheckedChanged(object sender, EventArgs e)
+        {
+            var parentForm = ParentForm as FrmInvoice;
+
+            parentForm!.ShowSemiRequiredGroupBoxes(TogOptional.Checked);
+        }
+
+        private void TogOptional_CheckedChanged(object sender, EventArgs e)
+        {
+            var parentForm = ParentForm as FrmInvoice;
+
+            parentForm!.ShowOptionalGroupBoxes(TogOptional.Checked);
         }
     }
 }

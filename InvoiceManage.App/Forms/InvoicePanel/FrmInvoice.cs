@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using InvoiceManage.App.Forms.InvoicePanel.Controls;
+using InvoiceManage.App.Resources.CustomToolBox;
 using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.Database.Entities;
 
@@ -28,12 +29,55 @@ namespace InvoiceManage.App.Forms.InvoicePanel
             PanelSlider.Controls.Add(new PayStep(frmInvoiceType));
         }
 
-        private void FrmAddInvoice_Load(object sender, System.EventArgs e)
+        public void ShowOptionalGroupBoxes(bool show)
         {
+            foreach (Control step in PanelSlider.Controls)
+            {
+                foreach (var control in step.Controls)
+                {
+                    if (control is not CustomGroupBox groupBox)
+                        continue;
 
+                    groupBox.ShowOptional = show;
+                }
+            }
         }
 
-        private void FrmAddInvoice_FormClosing(object sender, FormClosingEventArgs e)
+        public void ShowSemiRequiredGroupBoxes(bool show)
+        {
+            foreach (Control step in PanelSlider.Controls)
+            {
+                foreach (var control in step.Controls)
+                {
+                    if (control is not CustomGroupBox groupBox)
+                        continue;
+
+                    groupBox.ShowSemiRequired = show;
+                }
+            }
+        }
+
+        public void ChangeModeGroupBoxes()
+        {
+            if ((int)Invoice.Inty <= 0 || (int)Invoice.Inp <= 0)
+                return;
+
+            foreach (Control step in PanelSlider.Controls)
+            {
+                foreach (var control in step.Controls)
+                {
+                    if (control is not CustomGroupBox groupBox)
+                        continue;
+
+                    var newMode = groupBox.Name.GetMode((int)Invoice.Inty, (int)Invoice.Inp);
+
+                    if (newMode is not null)
+                        groupBox.Mode = newMode.Value;
+                }
+            }
+        }
+
+        private void FrmAddInvoice_Load(object sender, System.EventArgs e)
         {
             Program.FrmHome.Show();
         }

@@ -356,6 +356,7 @@
             Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             Name = "BuyerStep";
             Size = new System.Drawing.Size(996, 587);
+            Load += BuyerStep_Load;
             Bpn.ResumeLayout(false);
             Bpn.PerformLayout();
             groupBox3.ResumeLayout(false);

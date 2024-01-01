@@ -4,19 +4,25 @@ namespace InvoiceManage.App.Services.Infrastructures
 {
     public static class ConfigurationExtension
     {
-        public static ParamType? GetParamType(this string section, string input, int type, int pattern)
+        public static Mode? GetMode(this string input, int type, int pattern)
         {
+            var a = Program.Configuration
+                .GetSection("StepsConfigurations");
+
+            var b = Program.Configuration
+                .GetSection("StepsConfigurations")
+                .GetSection(input);
+
             var paramOption = Program.Configuration
                 .GetSection("StepsConfigurations")
-                .GetSection(section)
                 .GetSection(input)[$"{type}{pattern}"];
 
             return paramOption switch
             {
-                "M" => ParamType.Required,
-                "MC" => ParamType.SemiRequired,
-                "A" => ParamType.Optional,
-                "I" => ParamType.Ignore,
+                "M" => Mode.Required,
+                "MC" => Mode.SemiRequired,
+                "A" => Mode.Optional,
+                "I" => Mode.Ignore,
                 _ => null
             };
         }

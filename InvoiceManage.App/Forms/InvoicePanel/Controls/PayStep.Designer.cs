@@ -390,6 +390,7 @@
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "PayStep";
             Size = new System.Drawing.Size(996, 587);
+            Load += PayStep_Load;
             Pv.ResumeLayout(false);
             Pv.PerformLayout();
             Pid.ResumeLayout(false);

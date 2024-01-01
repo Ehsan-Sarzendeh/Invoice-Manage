@@ -31,7 +31,7 @@ namespace InvoiceManage.App.Forms.Common
         }
     }
 
-    public enum ParamType
+    public enum Mode
     {
         Required = 0,
         SemiRequired = 1,

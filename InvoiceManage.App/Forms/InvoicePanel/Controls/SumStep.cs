@@ -13,7 +13,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             InitializeComponent();
 
             SetComboBoxDataSource();
-            SetDataBindings();
         }
 
         public void SetDataBindings()
@@ -48,6 +47,11 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private void BtnNext_Click(object sender, EventArgs e)
         {
             new Step().Next(ParentForm!, "SumStep", "PayStep", "PayStep");
+        }
+
+        private void SumStep_Load(object sender, EventArgs e)
+        {
+            SetDataBindings();
         }
     }
 }

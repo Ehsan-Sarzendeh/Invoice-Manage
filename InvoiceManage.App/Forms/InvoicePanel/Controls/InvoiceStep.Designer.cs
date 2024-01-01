@@ -125,6 +125,7 @@
             CbInty.Name = "CbInty";
             CbInty.Size = new System.Drawing.Size(208, 36);
             CbInty.TabIndex = 0;
+            CbInty.SelectedIndexChanged += CbInty_SelectedIndexChanged;
             // 
             // Inp
             // 
@@ -148,6 +149,7 @@
             CbInp.Name = "CbInp";
             CbInp.Size = new System.Drawing.Size(208, 36);
             CbInp.TabIndex = 1;
+            CbInp.SelectedIndexChanged += CbInp_SelectedIndexChanged;
             // 
             // Tob
             // 
@@ -370,6 +372,7 @@
             TogSemiRequired.Size = new System.Drawing.Size(45, 22);
             TogSemiRequired.TabIndex = 217;
             TogSemiRequired.UseVisualStyleBackColor = true;
+            TogSemiRequired.CheckedChanged += TogSemiRequired_CheckedChanged;
             // 
             // label2
             // 
@@ -417,6 +420,7 @@
             TogOptional.Size = new System.Drawing.Size(45, 22);
             TogOptional.TabIndex = 221;
             TogOptional.UseVisualStyleBackColor = true;
+            TogOptional.CheckedChanged += TogOptional_CheckedChanged;
             // 
             // InvoiceStep
             // 
@@ -442,6 +446,7 @@
             Name = "InvoiceStep";
             RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             Size = new System.Drawing.Size(996, 587);
+            Load += InvoiceStep_Load;
             Inty.ResumeLayout(false);
             Inp.ResumeLayout(false);
             Tob.ResumeLayout(false);

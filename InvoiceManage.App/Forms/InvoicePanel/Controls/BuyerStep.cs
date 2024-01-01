@@ -14,7 +14,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             InitializeComponent();
             SetComboBoxDataSource();
-            SetDataBindings();
         }
 
         private void BtnPrevious_Click(object sender, EventArgs e)
@@ -56,6 +55,11 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             {
                 var selectItem = (Customer)frmSelect.SelectedItem!;
             }
+        }
+
+        private void BuyerStep_Load(object sender, EventArgs e)
+        {
+            SetDataBindings();
         }
     }
 }
