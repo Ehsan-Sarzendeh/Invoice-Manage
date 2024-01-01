@@ -4,6 +4,7 @@ using InvoiceManage.Database.Entities;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using InvoiceManage.App.Services.CommonService;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
@@ -46,8 +47,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnSelect_Click(object sender, EventArgs e)
         {
-            List<object> data = null;
-            var frmSelect = new FrmSelect(data);
+            using var commonService = new CommonService();
+
+            List<Customer> data = commonService.GetCustomers();
+            var frmSelect = new FrmSelect(null);
 
             if (frmSelect.ShowDialog() == DialogResult.OK)
             {

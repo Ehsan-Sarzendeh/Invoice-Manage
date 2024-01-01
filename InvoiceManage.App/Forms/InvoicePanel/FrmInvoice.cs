@@ -28,14 +28,14 @@ namespace InvoiceManage.App.Forms.InvoicePanel
             PanelSlider.Controls.Add(new PayStep(frmInvoiceType));
         }
 
-        private void FrmAddInvoice_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Program.FrmHome.Show();
-        }
-
         private void FrmAddInvoice_Load(object sender, System.EventArgs e)
         {
 
+        }
+
+        private void FrmAddInvoice_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Program.FrmHome.Show();
         }
 
         private void BtnClose_Click(object sender, System.EventArgs e)

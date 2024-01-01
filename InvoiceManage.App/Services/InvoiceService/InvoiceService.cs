@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using InvoiceManage.Database.Contexts;
 using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Services.InvoiceService
 {
-    public class InvoiceService : IInvoiceService
+    public class InvoiceService : IInvoiceService, IDisposable
     {
         public List<Invoice> GetInvoices()
         {
@@ -25,6 +26,11 @@ namespace InvoiceManage.App.Services.InvoiceService
             var invoice = db.Invoice.Single(x => x.Id == invoiceId);
             db.Invoice.Remove(invoice);
             db.SaveChanges();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
     }
 }

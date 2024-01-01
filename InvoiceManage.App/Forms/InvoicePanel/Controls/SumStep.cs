@@ -32,12 +32,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTprdis.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tprdis), true, DataSourceUpdateMode.OnPropertyChanged);
             TxtTvam.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tvam), true, DataSourceUpdateMode.OnPropertyChanged);
             TxtTvop.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tvop), true, DataSourceUpdateMode.OnPropertyChanged);
-            CbSetm.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Setm), true, DataSourceUpdateMode.OnPropertyChanged);
+            Cbv.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Setm), true, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void SetComboBoxDataSource()
         {
-            CbSetm.SetEnumDataSource(typeof(Setm));
+            Cbv.SetEnumDataSource(typeof(Setm));
         }
 
         private void BtnPrevious_Click(object sender, EventArgs e)

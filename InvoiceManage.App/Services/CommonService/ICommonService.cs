@@ -3,13 +3,13 @@ using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Services.CommonService
 {
-    public interface ICommonService
+    public abstract class ICommonService
     {
-        List<Product> GetProducts();
-        List<Company> GetCompanies();
-        List<Customer> GetCustomers();
-        void AddProduct(Product product);
-        void AddCompany(Company company);
-        void AddCustomer(Customer customer);
+        public abstract List<Product> GetProducts();
+        public abstract List<Company> GetCompanies();
+        public abstract List<Customer> GetCustomers();
+        public abstract void AddProduct(Product product);
+        public abstract void AddCompany(Company company);
+        public abstract void AddCustomer(Customer customer);
     }
 }

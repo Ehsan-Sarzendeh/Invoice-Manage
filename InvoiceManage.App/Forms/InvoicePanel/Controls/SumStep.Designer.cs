@@ -31,46 +31,46 @@
             components = new System.ComponentModel.Container();
             BtnNext = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
-            groupBox2 = new System.Windows.Forms.GroupBox();
+            Tax17 = new System.Windows.Forms.GroupBox();
             TxtTax17 = new System.Windows.Forms.TextBox();
-            groupBox1 = new System.Windows.Forms.GroupBox();
+            Insp = new System.Windows.Forms.GroupBox();
             TxtInsp = new System.Windows.Forms.TextBox();
-            groupBox4 = new System.Windows.Forms.GroupBox();
-            CbSetm = new System.Windows.Forms.ComboBox();
-            groupBox6 = new System.Windows.Forms.GroupBox();
+            Setm = new System.Windows.Forms.GroupBox();
+            Cbv = new System.Windows.Forms.ComboBox();
+            Torv = new System.Windows.Forms.GroupBox();
             TxtTorv = new System.Windows.Forms.TextBox();
-            groupBox7 = new System.Windows.Forms.GroupBox();
+            Tprdis = new System.Windows.Forms.GroupBox();
             TxtTprdis = new System.Windows.Forms.TextBox();
-            groupBox11 = new System.Windows.Forms.GroupBox();
+            Cap = new System.Windows.Forms.GroupBox();
             TxtCap = new System.Windows.Forms.TextBox();
-            groupBox12 = new System.Windows.Forms.GroupBox();
+            Tvam = new System.Windows.Forms.GroupBox();
             TxtTvam = new System.Windows.Forms.TextBox();
-            groupBox15 = new System.Windows.Forms.GroupBox();
+            Tvop = new System.Windows.Forms.GroupBox();
             TxtTvop = new System.Windows.Forms.TextBox();
-            groupBox16 = new System.Windows.Forms.GroupBox();
+            Todam = new System.Windows.Forms.GroupBox();
             TxtTodam = new System.Windows.Forms.TextBox();
-            groupBox8 = new System.Windows.Forms.GroupBox();
+            Tocv = new System.Windows.Forms.GroupBox();
             TxtTocv = new System.Windows.Forms.TextBox();
-            groupBox10 = new System.Windows.Forms.GroupBox();
+            Tonw = new System.Windows.Forms.GroupBox();
             TxtTonw = new System.Windows.Forms.TextBox();
-            groupBox14 = new System.Windows.Forms.GroupBox();
+            Tadis = new System.Windows.Forms.GroupBox();
             TxtTadis = new System.Windows.Forms.TextBox();
-            groupBox17 = new System.Windows.Forms.GroupBox();
+            Tbill = new System.Windows.Forms.GroupBox();
             TxtTbill = new System.Windows.Forms.TextBox();
             invoiceBindingSource = new System.Windows.Forms.BindingSource(components);
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox6.SuspendLayout();
-            groupBox7.SuspendLayout();
-            groupBox11.SuspendLayout();
-            groupBox12.SuspendLayout();
-            groupBox15.SuspendLayout();
-            groupBox16.SuspendLayout();
-            groupBox8.SuspendLayout();
-            groupBox10.SuspendLayout();
-            groupBox14.SuspendLayout();
-            groupBox17.SuspendLayout();
+            Tax17.SuspendLayout();
+            Insp.SuspendLayout();
+            Setm.SuspendLayout();
+            Torv.SuspendLayout();
+            Tprdis.SuspendLayout();
+            Cap.SuspendLayout();
+            Tvam.SuspendLayout();
+            Tvop.SuspendLayout();
+            Todam.SuspendLayout();
+            Tocv.SuspendLayout();
+            Tonw.SuspendLayout();
+            Tadis.SuspendLayout();
+            Tbill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)invoiceBindingSource).BeginInit();
             SuspendLayout();
             // 
@@ -118,18 +118,18 @@
             BtnPrevious.UseVisualStyleBackColor = false;
             BtnPrevious.Click += BtnPrevious_Click;
             // 
-            // groupBox2
+            // Tax17
             // 
-            groupBox2.Controls.Add(TxtTax17);
-            groupBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox2.ForeColor = System.Drawing.Color.DimGray;
-            groupBox2.Location = new System.Drawing.Point(22, 158);
-            groupBox2.Name = "groupBox2";
-            groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox2.Size = new System.Drawing.Size(230, 70);
-            groupBox2.TabIndex = 230;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "مالیات موضوع ماده 17";
+            Tax17.Controls.Add(TxtTax17);
+            Tax17.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tax17.ForeColor = System.Drawing.Color.DimGray;
+            Tax17.Location = new System.Drawing.Point(22, 158);
+            Tax17.Name = "Tax17";
+            Tax17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tax17.Size = new System.Drawing.Size(230, 70);
+            Tax17.TabIndex = 230;
+            Tax17.TabStop = false;
+            Tax17.Text = "مالیات موضوع ماده 17";
             // 
             // TxtTax17
             // 
@@ -141,18 +141,18 @@
             TxtTax17.Size = new System.Drawing.Size(209, 29);
             TxtTax17.TabIndex = 0;
             // 
-            // groupBox1
+            // Insp
             // 
-            groupBox1.Controls.Add(TxtInsp);
-            groupBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox1.ForeColor = System.Drawing.Color.DimGray;
-            groupBox1.Location = new System.Drawing.Point(258, 158);
-            groupBox1.Name = "groupBox1";
-            groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox1.Size = new System.Drawing.Size(242, 70);
-            groupBox1.TabIndex = 235;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "مبلغ پرداخت نسیه";
+            Insp.Controls.Add(TxtInsp);
+            Insp.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Insp.ForeColor = System.Drawing.Color.DimGray;
+            Insp.Location = new System.Drawing.Point(258, 158);
+            Insp.Name = "Insp";
+            Insp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Insp.Size = new System.Drawing.Size(242, 70);
+            Insp.TabIndex = 235;
+            Insp.TabStop = false;
+            Insp.Text = "مبلغ پرداخت نسیه";
             // 
             // TxtInsp
             // 
@@ -164,43 +164,43 @@
             TxtInsp.Size = new System.Drawing.Size(219, 29);
             TxtInsp.TabIndex = 0;
             // 
-            // groupBox4
+            // Setm
             // 
-            groupBox4.Controls.Add(CbSetm);
-            groupBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox4.ForeColor = System.Drawing.Color.DimGray;
-            groupBox4.Location = new System.Drawing.Point(258, 56);
-            groupBox4.Name = "groupBox4";
-            groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox4.Size = new System.Drawing.Size(242, 70);
-            groupBox4.TabIndex = 240;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "روش تسویه";
+            Setm.Controls.Add(Cbv);
+            Setm.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Setm.ForeColor = System.Drawing.Color.DimGray;
+            Setm.Location = new System.Drawing.Point(258, 56);
+            Setm.Name = "Setm";
+            Setm.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Setm.Size = new System.Drawing.Size(242, 70);
+            Setm.TabIndex = 240;
+            Setm.TabStop = false;
+            Setm.Text = "روش تسویه";
             // 
-            // CbSetm
+            // Cbv
             // 
-            CbSetm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            CbSetm.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            CbSetm.FormattingEnabled = true;
-            CbSetm.Items.AddRange(new object[] { "الگوی اول", "الگوی دوم" });
-            CbSetm.Location = new System.Drawing.Point(10, 25);
-            CbSetm.Name = "CbSetm";
-            CbSetm.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            CbSetm.Size = new System.Drawing.Size(219, 36);
-            CbSetm.TabIndex = 1;
+            Cbv.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            Cbv.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Cbv.FormattingEnabled = true;
+            Cbv.Items.AddRange(new object[] { "الگوی اول", "الگوی دوم" });
+            Cbv.Location = new System.Drawing.Point(10, 25);
+            Cbv.Name = "Cbv";
+            Cbv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Cbv.Size = new System.Drawing.Size(219, 36);
+            Cbv.TabIndex = 1;
             // 
-            // groupBox6
+            // Torv
             // 
-            groupBox6.Controls.Add(TxtTorv);
-            groupBox6.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox6.ForeColor = System.Drawing.Color.DimGray;
-            groupBox6.Location = new System.Drawing.Point(22, 56);
-            groupBox6.Name = "groupBox6";
-            groupBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox6.Size = new System.Drawing.Size(230, 70);
-            groupBox6.TabIndex = 237;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "مجموع ارزش ریالی";
+            Torv.Controls.Add(TxtTorv);
+            Torv.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Torv.ForeColor = System.Drawing.Color.DimGray;
+            Torv.Location = new System.Drawing.Point(22, 56);
+            Torv.Name = "Torv";
+            Torv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Torv.Size = new System.Drawing.Size(230, 70);
+            Torv.TabIndex = 237;
+            Torv.TabStop = false;
+            Torv.Text = "مجموع ارزش ریالی";
             // 
             // TxtTorv
             // 
@@ -212,18 +212,18 @@
             TxtTorv.Size = new System.Drawing.Size(209, 29);
             TxtTorv.TabIndex = 0;
             // 
-            // groupBox7
+            // Tprdis
             // 
-            groupBox7.Controls.Add(TxtTprdis);
-            groupBox7.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox7.ForeColor = System.Drawing.Color.DimGray;
-            groupBox7.Location = new System.Drawing.Point(742, 56);
-            groupBox7.Name = "groupBox7";
-            groupBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox7.Size = new System.Drawing.Size(235, 70);
-            groupBox7.TabIndex = 239;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "مجموع  قبل از تخفیف";
+            Tprdis.Controls.Add(TxtTprdis);
+            Tprdis.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tprdis.ForeColor = System.Drawing.Color.DimGray;
+            Tprdis.Location = new System.Drawing.Point(742, 56);
+            Tprdis.Name = "Tprdis";
+            Tprdis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tprdis.Size = new System.Drawing.Size(235, 70);
+            Tprdis.TabIndex = 239;
+            Tprdis.TabStop = false;
+            Tprdis.Text = "مجموع  قبل از تخفیف";
             // 
             // TxtTprdis
             // 
@@ -235,18 +235,18 @@
             TxtTprdis.Size = new System.Drawing.Size(219, 29);
             TxtTprdis.TabIndex = 0;
             // 
-            // groupBox11
+            // Cap
             // 
-            groupBox11.Controls.Add(TxtCap);
-            groupBox11.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox11.ForeColor = System.Drawing.Color.DimGray;
-            groupBox11.Location = new System.Drawing.Point(506, 263);
-            groupBox11.Name = "groupBox11";
-            groupBox11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox11.Size = new System.Drawing.Size(230, 70);
-            groupBox11.TabIndex = 237;
-            groupBox11.TabStop = false;
-            groupBox11.Text = "مبلغ پرداخت نقدی";
+            Cap.Controls.Add(TxtCap);
+            Cap.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Cap.ForeColor = System.Drawing.Color.DimGray;
+            Cap.Location = new System.Drawing.Point(506, 263);
+            Cap.Name = "Cap";
+            Cap.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Cap.Size = new System.Drawing.Size(230, 70);
+            Cap.TabIndex = 237;
+            Cap.TabStop = false;
+            Cap.Text = "مبلغ پرداخت نقدی";
             // 
             // TxtCap
             // 
@@ -258,18 +258,18 @@
             TxtCap.Size = new System.Drawing.Size(209, 29);
             TxtCap.TabIndex = 0;
             // 
-            // groupBox12
+            // Tvam
             // 
-            groupBox12.Controls.Add(TxtTvam);
-            groupBox12.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox12.ForeColor = System.Drawing.Color.DimGray;
-            groupBox12.Location = new System.Drawing.Point(742, 263);
-            groupBox12.Name = "groupBox12";
-            groupBox12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox12.Size = new System.Drawing.Size(235, 70);
-            groupBox12.TabIndex = 239;
-            groupBox12.TabStop = false;
-            groupBox12.Text = "مجموع مالیات بر ارزش افزوده";
+            Tvam.Controls.Add(TxtTvam);
+            Tvam.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tvam.ForeColor = System.Drawing.Color.DimGray;
+            Tvam.Location = new System.Drawing.Point(742, 263);
+            Tvam.Name = "Tvam";
+            Tvam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tvam.Size = new System.Drawing.Size(235, 70);
+            Tvam.TabIndex = 239;
+            Tvam.TabStop = false;
+            Tvam.Text = "مجموع مالیات بر ارزش افزوده";
             // 
             // TxtTvam
             // 
@@ -281,18 +281,18 @@
             TxtTvam.Size = new System.Drawing.Size(219, 29);
             TxtTvam.TabIndex = 0;
             // 
-            // groupBox15
+            // Tvop
             // 
-            groupBox15.Controls.Add(TxtTvop);
-            groupBox15.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox15.ForeColor = System.Drawing.Color.DimGray;
-            groupBox15.Location = new System.Drawing.Point(22, 263);
-            groupBox15.Name = "groupBox15";
-            groupBox15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox15.Size = new System.Drawing.Size(478, 70);
-            groupBox15.TabIndex = 241;
-            groupBox15.TabStop = false;
-            groupBox15.Text = "مجموع سهم مالیات بر ارزش افزوده از پرداخت";
+            Tvop.Controls.Add(TxtTvop);
+            Tvop.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tvop.ForeColor = System.Drawing.Color.DimGray;
+            Tvop.Location = new System.Drawing.Point(22, 263);
+            Tvop.Name = "Tvop";
+            Tvop.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tvop.Size = new System.Drawing.Size(478, 70);
+            Tvop.TabIndex = 241;
+            Tvop.TabStop = false;
+            Tvop.Text = "مجموع سهم مالیات بر ارزش افزوده از پرداخت";
             // 
             // TxtTvop
             // 
@@ -304,18 +304,18 @@
             TxtTvop.Size = new System.Drawing.Size(455, 29);
             TxtTvop.TabIndex = 0;
             // 
-            // groupBox16
+            // Todam
             // 
-            groupBox16.Controls.Add(TxtTodam);
-            groupBox16.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox16.ForeColor = System.Drawing.Color.DimGray;
-            groupBox16.Location = new System.Drawing.Point(22, 364);
-            groupBox16.Name = "groupBox16";
-            groupBox16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox16.Size = new System.Drawing.Size(478, 70);
-            groupBox16.TabIndex = 243;
-            groupBox16.TabStop = false;
-            groupBox16.Text = "مجموع  مبلغ سایر مالیات، عوارض و وجوه قانونی";
+            Todam.Controls.Add(TxtTodam);
+            Todam.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Todam.ForeColor = System.Drawing.Color.DimGray;
+            Todam.Location = new System.Drawing.Point(22, 364);
+            Todam.Name = "Todam";
+            Todam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Todam.Size = new System.Drawing.Size(478, 70);
+            Todam.TabIndex = 243;
+            Todam.TabStop = false;
+            Todam.Text = "مجموع  مبلغ سایر مالیات، عوارض و وجوه قانونی";
             // 
             // TxtTodam
             // 
@@ -327,18 +327,18 @@
             TxtTodam.Size = new System.Drawing.Size(455, 29);
             TxtTodam.TabIndex = 0;
             // 
-            // groupBox8
+            // Tocv
             // 
-            groupBox8.Controls.Add(TxtTocv);
-            groupBox8.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox8.ForeColor = System.Drawing.Color.DimGray;
-            groupBox8.Location = new System.Drawing.Point(506, 158);
-            groupBox8.Name = "groupBox8";
-            groupBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox8.Size = new System.Drawing.Size(230, 70);
-            groupBox8.TabIndex = 246;
-            groupBox8.TabStop = false;
-            groupBox8.Text = "مجموع  ارزش ارزی";
+            Tocv.Controls.Add(TxtTocv);
+            Tocv.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tocv.ForeColor = System.Drawing.Color.DimGray;
+            Tocv.Location = new System.Drawing.Point(506, 158);
+            Tocv.Name = "Tocv";
+            Tocv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tocv.Size = new System.Drawing.Size(230, 70);
+            Tocv.TabIndex = 246;
+            Tocv.TabStop = false;
+            Tocv.Text = "مجموع  ارزش ارزی";
             // 
             // TxtTocv
             // 
@@ -350,18 +350,18 @@
             TxtTocv.Size = new System.Drawing.Size(219, 29);
             TxtTocv.TabIndex = 0;
             // 
-            // groupBox10
+            // Tonw
             // 
-            groupBox10.Controls.Add(TxtTonw);
-            groupBox10.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox10.ForeColor = System.Drawing.Color.DimGray;
-            groupBox10.Location = new System.Drawing.Point(742, 158);
-            groupBox10.Name = "groupBox10";
-            groupBox10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox10.Size = new System.Drawing.Size(235, 70);
-            groupBox10.TabIndex = 245;
-            groupBox10.TabStop = false;
-            groupBox10.Text = "مجموع وزن خالص";
+            Tonw.Controls.Add(TxtTonw);
+            Tonw.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tonw.ForeColor = System.Drawing.Color.DimGray;
+            Tonw.Location = new System.Drawing.Point(742, 158);
+            Tonw.Name = "Tonw";
+            Tonw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tonw.Size = new System.Drawing.Size(235, 70);
+            Tonw.TabIndex = 245;
+            Tonw.TabStop = false;
+            Tonw.Text = "مجموع وزن خالص";
             // 
             // TxtTonw
             // 
@@ -373,18 +373,18 @@
             TxtTonw.Size = new System.Drawing.Size(219, 29);
             TxtTonw.TabIndex = 0;
             // 
-            // groupBox14
+            // Tadis
             // 
-            groupBox14.Controls.Add(TxtTadis);
-            groupBox14.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox14.ForeColor = System.Drawing.Color.DimGray;
-            groupBox14.Location = new System.Drawing.Point(506, 56);
-            groupBox14.Name = "groupBox14";
-            groupBox14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox14.Size = new System.Drawing.Size(230, 70);
-            groupBox14.TabIndex = 244;
-            groupBox14.TabStop = false;
-            groupBox14.Text = "مجموع مبلغ بعد از تخفیف";
+            Tadis.Controls.Add(TxtTadis);
+            Tadis.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tadis.ForeColor = System.Drawing.Color.DimGray;
+            Tadis.Location = new System.Drawing.Point(506, 56);
+            Tadis.Name = "Tadis";
+            Tadis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tadis.Size = new System.Drawing.Size(230, 70);
+            Tadis.TabIndex = 244;
+            Tadis.TabStop = false;
+            Tadis.Text = "مجموع مبلغ بعد از تخفیف";
             // 
             // TxtTadis
             // 
@@ -396,18 +396,18 @@
             TxtTadis.Size = new System.Drawing.Size(219, 29);
             TxtTadis.TabIndex = 0;
             // 
-            // groupBox17
+            // Tbill
             // 
-            groupBox17.Controls.Add(TxtTbill);
-            groupBox17.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox17.ForeColor = System.Drawing.Color.DimGray;
-            groupBox17.Location = new System.Drawing.Point(506, 364);
-            groupBox17.Name = "groupBox17";
-            groupBox17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox17.Size = new System.Drawing.Size(471, 70);
-            groupBox17.TabIndex = 244;
-            groupBox17.TabStop = false;
-            groupBox17.Text = "مجموع صورتحساب";
+            Tbill.Controls.Add(TxtTbill);
+            Tbill.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tbill.ForeColor = System.Drawing.Color.DimGray;
+            Tbill.Location = new System.Drawing.Point(506, 364);
+            Tbill.Name = "Tbill";
+            Tbill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tbill.Size = new System.Drawing.Size(471, 70);
+            Tbill.TabIndex = 244;
+            Tbill.TabStop = false;
+            Tbill.Text = "مجموع صورتحساب";
             // 
             // TxtTbill
             // 
@@ -428,50 +428,50 @@
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            Controls.Add(groupBox17);
-            Controls.Add(groupBox8);
-            Controls.Add(groupBox10);
-            Controls.Add(groupBox14);
-            Controls.Add(groupBox15);
-            Controls.Add(groupBox16);
-            Controls.Add(groupBox11);
-            Controls.Add(groupBox12);
-            Controls.Add(groupBox4);
-            Controls.Add(groupBox6);
-            Controls.Add(groupBox7);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(Tbill);
+            Controls.Add(Tocv);
+            Controls.Add(Tonw);
+            Controls.Add(Tadis);
+            Controls.Add(Tvop);
+            Controls.Add(Todam);
+            Controls.Add(Cap);
+            Controls.Add(Tvam);
+            Controls.Add(Setm);
+            Controls.Add(Torv);
+            Controls.Add(Tprdis);
+            Controls.Add(Tax17);
+            Controls.Add(Insp);
             Controls.Add(BtnPrevious);
             Controls.Add(BtnNext);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "SumStep";
             Size = new System.Drawing.Size(996, 587);
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
-            groupBox11.ResumeLayout(false);
-            groupBox11.PerformLayout();
-            groupBox12.ResumeLayout(false);
-            groupBox12.PerformLayout();
-            groupBox15.ResumeLayout(false);
-            groupBox15.PerformLayout();
-            groupBox16.ResumeLayout(false);
-            groupBox16.PerformLayout();
-            groupBox8.ResumeLayout(false);
-            groupBox8.PerformLayout();
-            groupBox10.ResumeLayout(false);
-            groupBox10.PerformLayout();
-            groupBox14.ResumeLayout(false);
-            groupBox14.PerformLayout();
-            groupBox17.ResumeLayout(false);
-            groupBox17.PerformLayout();
+            Tax17.ResumeLayout(false);
+            Tax17.PerformLayout();
+            Insp.ResumeLayout(false);
+            Insp.PerformLayout();
+            Setm.ResumeLayout(false);
+            Torv.ResumeLayout(false);
+            Torv.PerformLayout();
+            Tprdis.ResumeLayout(false);
+            Tprdis.PerformLayout();
+            Cap.ResumeLayout(false);
+            Cap.PerformLayout();
+            Tvam.ResumeLayout(false);
+            Tvam.PerformLayout();
+            Tvop.ResumeLayout(false);
+            Tvop.PerformLayout();
+            Todam.ResumeLayout(false);
+            Todam.PerformLayout();
+            Tocv.ResumeLayout(false);
+            Tocv.PerformLayout();
+            Tonw.ResumeLayout(false);
+            Tonw.PerformLayout();
+            Tadis.ResumeLayout(false);
+            Tadis.PerformLayout();
+            Tbill.ResumeLayout(false);
+            Tbill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)invoiceBindingSource).EndInit();
             ResumeLayout(false);
         }
@@ -480,31 +480,31 @@
 
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox Tax17;
         private System.Windows.Forms.TextBox TxtTax17;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Insp;
         private System.Windows.Forms.TextBox TxtInsp;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox CbSetm;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox Setm;
+        private System.Windows.Forms.ComboBox Cbv;
+        private System.Windows.Forms.GroupBox Torv;
         private System.Windows.Forms.TextBox TxtTorv;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox Tprdis;
         private System.Windows.Forms.TextBox TxtTprdis;
-        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox Cap;
         private System.Windows.Forms.TextBox TxtCap;
-        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.GroupBox Tvam;
         private System.Windows.Forms.TextBox TxtTvam;
-        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.GroupBox Tvop;
         private System.Windows.Forms.TextBox TxtTvop;
-        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.GroupBox Todam;
         private System.Windows.Forms.TextBox TxtTodam;
-        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox Tocv;
         private System.Windows.Forms.TextBox TxtTocv;
-        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox Tonw;
         private System.Windows.Forms.TextBox TxtTonw;
-        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.GroupBox Tadis;
         private System.Windows.Forms.TextBox TxtTadis;
-        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.GroupBox Tbill;
         private System.Windows.Forms.TextBox TxtTbill;
         private System.Windows.Forms.BindingSource invoiceBindingSource;
     }
