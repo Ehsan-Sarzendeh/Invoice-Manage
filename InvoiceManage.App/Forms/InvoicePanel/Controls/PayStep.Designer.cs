@@ -31,36 +31,36 @@
             BtnAdd = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
             BtnEdit = new Resources.CustomToolBox.RoundedButton();
-            groupBox17 = new System.Windows.Forms.GroupBox();
+            Pv = new System.Windows.Forms.GroupBox();
             TxtPv = new System.Windows.Forms.TextBox();
-            groupBox10 = new System.Windows.Forms.GroupBox();
+            Pid = new System.Windows.Forms.GroupBox();
             TxtPid = new System.Windows.Forms.TextBox();
-            groupBox14 = new System.Windows.Forms.GroupBox();
+            Trmn = new System.Windows.Forms.GroupBox();
             TxtTrmn = new System.Windows.Forms.TextBox();
-            groupBox4 = new System.Windows.Forms.GroupBox();
+            Pmt = new System.Windows.Forms.GroupBox();
             CbPmt = new System.Windows.Forms.ComboBox();
-            groupBox6 = new System.Windows.Forms.GroupBox();
+            Trn = new System.Windows.Forms.GroupBox();
             TxtTrn = new System.Windows.Forms.TextBox();
-            groupBox7 = new System.Windows.Forms.GroupBox();
+            Iinn = new System.Windows.Forms.GroupBox();
             TxtIinn = new System.Windows.Forms.TextBox();
-            groupBox2 = new System.Windows.Forms.GroupBox();
+            Pcn = new System.Windows.Forms.GroupBox();
             TxtPcn = new System.Windows.Forms.TextBox();
-            groupBox1 = new System.Windows.Forms.GroupBox();
+            Acn = new System.Windows.Forms.GroupBox();
             TxtAcn = new System.Windows.Forms.TextBox();
-            groupBox5 = new System.Windows.Forms.GroupBox();
+            Pdt_1 = new System.Windows.Forms.GroupBox();
             MtxtPdt_1 = new System.Windows.Forms.MaskedTextBox();
-            groupBox3 = new System.Windows.Forms.GroupBox();
+            Pdt_2 = new System.Windows.Forms.GroupBox();
             MtxtPdt_2 = new System.Windows.Forms.MaskedTextBox();
-            groupBox17.SuspendLayout();
-            groupBox10.SuspendLayout();
-            groupBox14.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox6.SuspendLayout();
-            groupBox7.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
-            groupBox5.SuspendLayout();
-            groupBox3.SuspendLayout();
+            Pv.SuspendLayout();
+            Pid.SuspendLayout();
+            Trmn.SuspendLayout();
+            Pmt.SuspendLayout();
+            Trn.SuspendLayout();
+            Iinn.SuspendLayout();
+            Pcn.SuspendLayout();
+            Acn.SuspendLayout();
+            Pdt_1.SuspendLayout();
+            Pdt_2.SuspendLayout();
             SuspendLayout();
             // 
             // BtnAdd
@@ -132,18 +132,18 @@
             BtnEdit.UseVisualStyleBackColor = false;
             BtnEdit.Click += BtnEdit_Click;
             // 
-            // groupBox17
+            // Pv
             // 
-            groupBox17.Controls.Add(TxtPv);
-            groupBox17.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox17.ForeColor = System.Drawing.Color.DimGray;
-            groupBox17.Location = new System.Drawing.Point(505, 269);
-            groupBox17.Name = "groupBox17";
-            groupBox17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox17.Size = new System.Drawing.Size(471, 70);
-            groupBox17.TabIndex = 256;
-            groupBox17.TabStop = false;
-            groupBox17.Text = "مبلغ پرداختی";
+            Pv.Controls.Add(TxtPv);
+            Pv.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Pv.ForeColor = System.Drawing.Color.DimGray;
+            Pv.Location = new System.Drawing.Point(505, 269);
+            Pv.Name = "Pv";
+            Pv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Pv.Size = new System.Drawing.Size(471, 70);
+            Pv.TabIndex = 256;
+            Pv.TabStop = false;
+            Pv.Text = "مبلغ پرداختی";
             // 
             // TxtPv
             // 
@@ -155,18 +155,18 @@
             TxtPv.Size = new System.Drawing.Size(455, 29);
             TxtPv.TabIndex = 0;
             // 
-            // groupBox10
+            // Pid
             // 
-            groupBox10.Controls.Add(TxtPid);
-            groupBox10.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox10.ForeColor = System.Drawing.Color.DimGray;
-            groupBox10.Location = new System.Drawing.Point(21, 269);
-            groupBox10.Name = "groupBox10";
-            groupBox10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox10.Size = new System.Drawing.Size(478, 70);
-            groupBox10.TabIndex = 258;
-            groupBox10.TabStop = false;
-            groupBox10.Text = "شماره /شناسه ملی پرداخت کننده";
+            Pid.Controls.Add(TxtPid);
+            Pid.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Pid.ForeColor = System.Drawing.Color.DimGray;
+            Pid.Location = new System.Drawing.Point(21, 269);
+            Pid.Name = "Pid";
+            Pid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Pid.Size = new System.Drawing.Size(478, 70);
+            Pid.TabIndex = 258;
+            Pid.TabStop = false;
+            Pid.Text = "شماره /شناسه ملی پرداخت کننده";
             // 
             // TxtPid
             // 
@@ -178,18 +178,18 @@
             TxtPid.Size = new System.Drawing.Size(455, 29);
             TxtPid.TabIndex = 0;
             // 
-            // groupBox14
+            // Trmn
             // 
-            groupBox14.Controls.Add(TxtTrmn);
-            groupBox14.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox14.ForeColor = System.Drawing.Color.DimGray;
-            groupBox14.Location = new System.Drawing.Point(505, 50);
-            groupBox14.Name = "groupBox14";
-            groupBox14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox14.Size = new System.Drawing.Size(230, 70);
-            groupBox14.TabIndex = 257;
-            groupBox14.TabStop = false;
-            groupBox14.Text = "شماره پایانه";
+            Trmn.Controls.Add(TxtTrmn);
+            Trmn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Trmn.ForeColor = System.Drawing.Color.DimGray;
+            Trmn.Location = new System.Drawing.Point(505, 50);
+            Trmn.Name = "Trmn";
+            Trmn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Trmn.Size = new System.Drawing.Size(230, 70);
+            Trmn.TabIndex = 257;
+            Trmn.TabStop = false;
+            Trmn.Text = "شماره پایانه";
             // 
             // TxtTrmn
             // 
@@ -201,18 +201,18 @@
             TxtTrmn.Size = new System.Drawing.Size(214, 29);
             TxtTrmn.TabIndex = 0;
             // 
-            // groupBox4
+            // Pmt
             // 
-            groupBox4.Controls.Add(CbPmt);
-            groupBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox4.ForeColor = System.Drawing.Color.DimGray;
-            groupBox4.Location = new System.Drawing.Point(257, 50);
-            groupBox4.Name = "groupBox4";
-            groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox4.Size = new System.Drawing.Size(242, 70);
-            groupBox4.TabIndex = 253;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "روش پرداخت";
+            Pmt.Controls.Add(CbPmt);
+            Pmt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Pmt.ForeColor = System.Drawing.Color.DimGray;
+            Pmt.Location = new System.Drawing.Point(257, 50);
+            Pmt.Name = "Pmt";
+            Pmt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Pmt.Size = new System.Drawing.Size(242, 70);
+            Pmt.TabIndex = 253;
+            Pmt.TabStop = false;
+            Pmt.Text = "روش پرداخت";
             // 
             // CbPmt
             // 
@@ -226,18 +226,18 @@
             CbPmt.Size = new System.Drawing.Size(219, 36);
             CbPmt.TabIndex = 1;
             // 
-            // groupBox6
+            // Trn
             // 
-            groupBox6.Controls.Add(TxtTrn);
-            groupBox6.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox6.ForeColor = System.Drawing.Color.DimGray;
-            groupBox6.Location = new System.Drawing.Point(21, 50);
-            groupBox6.Name = "groupBox6";
-            groupBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox6.Size = new System.Drawing.Size(230, 70);
-            groupBox6.TabIndex = 250;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "شماره پیگیری/مرجع";
+            Trn.Controls.Add(TxtTrn);
+            Trn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Trn.ForeColor = System.Drawing.Color.DimGray;
+            Trn.Location = new System.Drawing.Point(21, 50);
+            Trn.Name = "Trn";
+            Trn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Trn.Size = new System.Drawing.Size(230, 70);
+            Trn.TabIndex = 250;
+            Trn.TabStop = false;
+            Trn.Text = "شماره پیگیری/مرجع";
             // 
             // TxtTrn
             // 
@@ -249,18 +249,18 @@
             TxtTrn.Size = new System.Drawing.Size(209, 29);
             TxtTrn.TabIndex = 0;
             // 
-            // groupBox7
+            // Iinn
             // 
-            groupBox7.Controls.Add(TxtIinn);
-            groupBox7.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox7.ForeColor = System.Drawing.Color.DimGray;
-            groupBox7.Location = new System.Drawing.Point(741, 50);
-            groupBox7.Name = "groupBox7";
-            groupBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox7.Size = new System.Drawing.Size(235, 70);
-            groupBox7.TabIndex = 252;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "شماره سوئیچ پرداخت";
+            Iinn.Controls.Add(TxtIinn);
+            Iinn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Iinn.ForeColor = System.Drawing.Color.DimGray;
+            Iinn.Location = new System.Drawing.Point(741, 50);
+            Iinn.Name = "Iinn";
+            Iinn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Iinn.Size = new System.Drawing.Size(235, 70);
+            Iinn.TabIndex = 252;
+            Iinn.TabStop = false;
+            Iinn.Text = "شماره سوئیچ پرداخت";
             // 
             // TxtIinn
             // 
@@ -272,18 +272,18 @@
             TxtIinn.Size = new System.Drawing.Size(219, 29);
             TxtIinn.TabIndex = 0;
             // 
-            // groupBox2
+            // Pcn
             // 
-            groupBox2.Controls.Add(TxtPcn);
-            groupBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox2.ForeColor = System.Drawing.Color.DimGray;
-            groupBox2.Location = new System.Drawing.Point(21, 159);
-            groupBox2.Name = "groupBox2";
-            groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox2.Size = new System.Drawing.Size(230, 70);
-            groupBox2.TabIndex = 247;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "شماره کارت پرداخت کننده";
+            Pcn.Controls.Add(TxtPcn);
+            Pcn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Pcn.ForeColor = System.Drawing.Color.DimGray;
+            Pcn.Location = new System.Drawing.Point(21, 159);
+            Pcn.Name = "Pcn";
+            Pcn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Pcn.Size = new System.Drawing.Size(230, 70);
+            Pcn.TabIndex = 247;
+            Pcn.TabStop = false;
+            Pcn.Text = "شماره کارت پرداخت کننده";
             // 
             // TxtPcn
             // 
@@ -295,18 +295,18 @@
             TxtPcn.Size = new System.Drawing.Size(209, 29);
             TxtPcn.TabIndex = 0;
             // 
-            // groupBox1
+            // Acn
             // 
-            groupBox1.Controls.Add(TxtAcn);
-            groupBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox1.ForeColor = System.Drawing.Color.DimGray;
-            groupBox1.Location = new System.Drawing.Point(257, 159);
-            groupBox1.Name = "groupBox1";
-            groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox1.Size = new System.Drawing.Size(242, 70);
-            groupBox1.TabIndex = 248;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "شماره پذیرنده فروشگاهی";
+            Acn.Controls.Add(TxtAcn);
+            Acn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Acn.ForeColor = System.Drawing.Color.DimGray;
+            Acn.Location = new System.Drawing.Point(257, 159);
+            Acn.Name = "Acn";
+            Acn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Acn.Size = new System.Drawing.Size(242, 70);
+            Acn.TabIndex = 248;
+            Acn.TabStop = false;
+            Acn.Text = "شماره پذیرنده فروشگاهی";
             // 
             // TxtAcn
             // 
@@ -318,18 +318,18 @@
             TxtAcn.Size = new System.Drawing.Size(219, 29);
             TxtAcn.TabIndex = 0;
             // 
-            // groupBox5
+            // Pdt_1
             // 
-            groupBox5.Controls.Add(MtxtPdt_1);
-            groupBox5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox5.ForeColor = System.Drawing.Color.DimGray;
-            groupBox5.Location = new System.Drawing.Point(741, 159);
-            groupBox5.Name = "groupBox5";
-            groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox5.Size = new System.Drawing.Size(235, 70);
-            groupBox5.TabIndex = 260;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "تاریخ پرداخت";
+            Pdt_1.Controls.Add(MtxtPdt_1);
+            Pdt_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Pdt_1.ForeColor = System.Drawing.Color.DimGray;
+            Pdt_1.Location = new System.Drawing.Point(741, 159);
+            Pdt_1.Name = "Pdt_1";
+            Pdt_1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Pdt_1.Size = new System.Drawing.Size(235, 70);
+            Pdt_1.TabIndex = 260;
+            Pdt_1.TabStop = false;
+            Pdt_1.Text = "تاریخ پرداخت";
             // 
             // MtxtPdt_1
             // 
@@ -343,18 +343,18 @@
             MtxtPdt_1.TabIndex = 0;
             MtxtPdt_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox3
+            // Pdt_2
             // 
-            groupBox3.Controls.Add(MtxtPdt_2);
-            groupBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox3.ForeColor = System.Drawing.Color.DimGray;
-            groupBox3.Location = new System.Drawing.Point(505, 159);
-            groupBox3.Name = "groupBox3";
-            groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox3.Size = new System.Drawing.Size(230, 70);
-            groupBox3.TabIndex = 261;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "زمان پرداخت";
+            Pdt_2.Controls.Add(MtxtPdt_2);
+            Pdt_2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Pdt_2.ForeColor = System.Drawing.Color.DimGray;
+            Pdt_2.Location = new System.Drawing.Point(505, 159);
+            Pdt_2.Name = "Pdt_2";
+            Pdt_2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Pdt_2.Size = new System.Drawing.Size(230, 70);
+            Pdt_2.TabIndex = 261;
+            Pdt_2.TabStop = false;
+            Pdt_2.Text = "زمان پرداخت";
             // 
             // MtxtPdt_2
             // 
@@ -373,16 +373,16 @@
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox5);
-            Controls.Add(groupBox17);
-            Controls.Add(groupBox10);
-            Controls.Add(groupBox14);
-            Controls.Add(groupBox4);
-            Controls.Add(groupBox6);
-            Controls.Add(groupBox7);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(Pdt_2);
+            Controls.Add(Pdt_1);
+            Controls.Add(Pv);
+            Controls.Add(Pid);
+            Controls.Add(Trmn);
+            Controls.Add(Pmt);
+            Controls.Add(Trn);
+            Controls.Add(Iinn);
+            Controls.Add(Pcn);
+            Controls.Add(Acn);
             Controls.Add(BtnEdit);
             Controls.Add(BtnPrevious);
             Controls.Add(BtnAdd);
@@ -390,25 +390,25 @@
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "PayStep";
             Size = new System.Drawing.Size(996, 587);
-            groupBox17.ResumeLayout(false);
-            groupBox17.PerformLayout();
-            groupBox10.ResumeLayout(false);
-            groupBox10.PerformLayout();
-            groupBox14.ResumeLayout(false);
-            groupBox14.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
+            Pv.ResumeLayout(false);
+            Pv.PerformLayout();
+            Pid.ResumeLayout(false);
+            Pid.PerformLayout();
+            Trmn.ResumeLayout(false);
+            Trmn.PerformLayout();
+            Pmt.ResumeLayout(false);
+            Trn.ResumeLayout(false);
+            Trn.PerformLayout();
+            Iinn.ResumeLayout(false);
+            Iinn.PerformLayout();
+            Pcn.ResumeLayout(false);
+            Pcn.PerformLayout();
+            Acn.ResumeLayout(false);
+            Acn.PerformLayout();
+            Pdt_1.ResumeLayout(false);
+            Pdt_1.PerformLayout();
+            Pdt_2.ResumeLayout(false);
+            Pdt_2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -417,25 +417,25 @@
         private Resources.CustomToolBox.RoundedButton BtnAdd;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
         private Resources.CustomToolBox.RoundedButton BtnEdit;
-        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.GroupBox Pv;
         private System.Windows.Forms.TextBox TxtPv;
-        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox Pid;
         private System.Windows.Forms.TextBox TxtPid;
-        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.GroupBox Trmn;
         private System.Windows.Forms.TextBox TxtTrmn;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox Pmt;
         private System.Windows.Forms.ComboBox CbPmt;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox Trn;
         private System.Windows.Forms.TextBox TxtTrn;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox Iinn;
         private System.Windows.Forms.TextBox TxtIinn;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox Pcn;
         private System.Windows.Forms.TextBox TxtPcn;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Acn;
         private System.Windows.Forms.TextBox TxtAcn;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox Pdt_1;
         private System.Windows.Forms.MaskedTextBox MtxtPdt_1;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox Pdt_2;
         private System.Windows.Forms.MaskedTextBox MtxtPdt_2;
     }
 }

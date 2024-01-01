@@ -30,44 +30,44 @@
         {
             BtnNext = new Resources.CustomToolBox.RoundedButton();
             label1 = new System.Windows.Forms.Label();
-            groupBox2 = new System.Windows.Forms.GroupBox();
+            Inty = new System.Windows.Forms.GroupBox();
             CbInty = new System.Windows.Forms.ComboBox();
-            groupBox1 = new System.Windows.Forms.GroupBox();
+            Inp = new System.Windows.Forms.GroupBox();
             CbInp = new System.Windows.Forms.ComboBox();
-            groupBox3 = new System.Windows.Forms.GroupBox();
+            Tob = new System.Windows.Forms.GroupBox();
             CbTob = new System.Windows.Forms.ComboBox();
-            groupBox4 = new System.Windows.Forms.GroupBox();
+            Ins = new System.Windows.Forms.GroupBox();
             CbIns = new System.Windows.Forms.ComboBox();
-            groupBox5 = new System.Windows.Forms.GroupBox();
+            Indatim_1 = new System.Windows.Forms.GroupBox();
             MtxtIndatim_1 = new System.Windows.Forms.MaskedTextBox();
             TxtInno = new System.Windows.Forms.TextBox();
-            groupBox6 = new System.Windows.Forms.GroupBox();
+            Indatim2m_1 = new System.Windows.Forms.GroupBox();
             MtxtIndatim2m_1 = new System.Windows.Forms.MaskedTextBox();
-            groupBox7 = new System.Windows.Forms.GroupBox();
+            Indatim_2 = new System.Windows.Forms.GroupBox();
             MtxtIndatim_2 = new System.Windows.Forms.MaskedTextBox();
-            groupBox8 = new System.Windows.Forms.GroupBox();
+            Indatim2m_2 = new System.Windows.Forms.GroupBox();
             MtxtIndatim2m_2 = new System.Windows.Forms.MaskedTextBox();
-            groupBox9 = new System.Windows.Forms.GroupBox();
-            groupBox10 = new System.Windows.Forms.GroupBox();
+            Inno = new System.Windows.Forms.GroupBox();
+            Irtaxid = new System.Windows.Forms.GroupBox();
             TxtIrtaxid = new System.Windows.Forms.TextBox();
-            groupBox11 = new System.Windows.Forms.GroupBox();
+            TaxId = new System.Windows.Forms.GroupBox();
             TxtTaxId = new System.Windows.Forms.TextBox();
             TogSemiRequired = new Resources.CustomToolBox.ToggleButton();
             label2 = new System.Windows.Forms.Label();
             groupBox12 = new System.Windows.Forms.GroupBox();
             label3 = new System.Windows.Forms.Label();
             TogOptional = new Resources.CustomToolBox.ToggleButton();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox5.SuspendLayout();
-            groupBox6.SuspendLayout();
-            groupBox7.SuspendLayout();
-            groupBox8.SuspendLayout();
-            groupBox9.SuspendLayout();
-            groupBox10.SuspendLayout();
-            groupBox11.SuspendLayout();
+            Inty.SuspendLayout();
+            Inp.SuspendLayout();
+            Tob.SuspendLayout();
+            Ins.SuspendLayout();
+            Indatim_1.SuspendLayout();
+            Indatim2m_1.SuspendLayout();
+            Indatim_2.SuspendLayout();
+            Indatim2m_2.SuspendLayout();
+            Inno.SuspendLayout();
+            Irtaxid.SuspendLayout();
+            TaxId.SuspendLayout();
             groupBox12.SuspendLayout();
             SuspendLayout();
             // 
@@ -103,17 +103,17 @@
             label1.TabIndex = 1;
             label1.Text = "لطفا، ابتدا نوع و الگوی صورتحساب را مشخص کنید. دقت نمایید تمامی ایتم های دو ستاره باید پر شود";
             // 
-            // groupBox2
+            // Inty
             // 
-            groupBox2.Controls.Add(CbInty);
-            groupBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox2.ForeColor = System.Drawing.Color.DimGray;
-            groupBox2.Location = new System.Drawing.Point(746, 86);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new System.Drawing.Size(230, 70);
-            groupBox2.TabIndex = 207;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "نوع فاکتور";
+            Inty.Controls.Add(CbInty);
+            Inty.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Inty.ForeColor = System.Drawing.Color.DimGray;
+            Inty.Location = new System.Drawing.Point(746, 86);
+            Inty.Name = "Inty";
+            Inty.Size = new System.Drawing.Size(230, 70);
+            Inty.TabIndex = 207;
+            Inty.TabStop = false;
+            Inty.Text = "نوع فاکتور";
             // 
             // CbInty
             // 
@@ -126,17 +126,17 @@
             CbInty.Size = new System.Drawing.Size(208, 36);
             CbInty.TabIndex = 0;
             // 
-            // groupBox1
+            // Inp
             // 
-            groupBox1.Controls.Add(CbInp);
-            groupBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox1.ForeColor = System.Drawing.Color.DimGray;
-            groupBox1.Location = new System.Drawing.Point(505, 86);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(230, 70);
-            groupBox1.TabIndex = 208;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "الگوی فاکتور";
+            Inp.Controls.Add(CbInp);
+            Inp.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Inp.ForeColor = System.Drawing.Color.DimGray;
+            Inp.Location = new System.Drawing.Point(505, 86);
+            Inp.Name = "Inp";
+            Inp.Size = new System.Drawing.Size(230, 70);
+            Inp.TabIndex = 208;
+            Inp.TabStop = false;
+            Inp.Text = "الگوی فاکتور";
             // 
             // CbInp
             // 
@@ -149,17 +149,17 @@
             CbInp.Size = new System.Drawing.Size(208, 36);
             CbInp.TabIndex = 1;
             // 
-            // groupBox3
+            // Tob
             // 
-            groupBox3.Controls.Add(CbTob);
-            groupBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox3.ForeColor = System.Drawing.Color.DimGray;
-            groupBox3.Location = new System.Drawing.Point(19, 86);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new System.Drawing.Size(230, 70);
-            groupBox3.TabIndex = 210;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "نوع شخص خریدار";
+            Tob.Controls.Add(CbTob);
+            Tob.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Tob.ForeColor = System.Drawing.Color.DimGray;
+            Tob.Location = new System.Drawing.Point(19, 86);
+            Tob.Name = "Tob";
+            Tob.Size = new System.Drawing.Size(230, 70);
+            Tob.TabIndex = 210;
+            Tob.TabStop = false;
+            Tob.Text = "نوع شخص خریدار";
             // 
             // CbTob
             // 
@@ -172,17 +172,17 @@
             CbTob.Size = new System.Drawing.Size(208, 36);
             CbTob.TabIndex = 1;
             // 
-            // groupBox4
+            // Ins
             // 
-            groupBox4.Controls.Add(CbIns);
-            groupBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox4.ForeColor = System.Drawing.Color.DimGray;
-            groupBox4.Location = new System.Drawing.Point(261, 86);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new System.Drawing.Size(230, 70);
-            groupBox4.TabIndex = 209;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "موضوع فاکتور";
+            Ins.Controls.Add(CbIns);
+            Ins.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Ins.ForeColor = System.Drawing.Color.DimGray;
+            Ins.Location = new System.Drawing.Point(261, 86);
+            Ins.Name = "Ins";
+            Ins.Size = new System.Drawing.Size(230, 70);
+            Ins.TabIndex = 209;
+            Ins.TabStop = false;
+            Ins.Text = "موضوع فاکتور";
             // 
             // CbIns
             // 
@@ -194,17 +194,17 @@
             CbIns.Size = new System.Drawing.Size(208, 36);
             CbIns.TabIndex = 0;
             // 
-            // groupBox5
+            // Indatim_1
             // 
-            groupBox5.Controls.Add(MtxtIndatim_1);
-            groupBox5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox5.ForeColor = System.Drawing.Color.DimGray;
-            groupBox5.Location = new System.Drawing.Point(220, 35);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new System.Drawing.Size(226, 70);
-            groupBox5.TabIndex = 211;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "تاریخ صدور";
+            Indatim_1.Controls.Add(MtxtIndatim_1);
+            Indatim_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Indatim_1.ForeColor = System.Drawing.Color.DimGray;
+            Indatim_1.Location = new System.Drawing.Point(220, 35);
+            Indatim_1.Name = "Indatim_1";
+            Indatim_1.Size = new System.Drawing.Size(226, 70);
+            Indatim_1.TabIndex = 211;
+            Indatim_1.TabStop = false;
+            Indatim_1.Text = "تاریخ صدور";
             // 
             // MtxtIndatim_1
             // 
@@ -228,17 +228,17 @@
             TxtInno.Size = new System.Drawing.Size(450, 29);
             TxtInno.TabIndex = 0;
             // 
-            // groupBox6
+            // Indatim2m_1
             // 
-            groupBox6.Controls.Add(MtxtIndatim2m_1);
-            groupBox6.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox6.ForeColor = System.Drawing.Color.DimGray;
-            groupBox6.Location = new System.Drawing.Point(220, 120);
-            groupBox6.Name = "groupBox6";
-            groupBox6.Size = new System.Drawing.Size(226, 70);
-            groupBox6.TabIndex = 212;
-            groupBox6.TabStop = false;
-            groupBox6.Text = "تاریخ ایجاد";
+            Indatim2m_1.Controls.Add(MtxtIndatim2m_1);
+            Indatim2m_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Indatim2m_1.ForeColor = System.Drawing.Color.DimGray;
+            Indatim2m_1.Location = new System.Drawing.Point(220, 120);
+            Indatim2m_1.Name = "Indatim2m_1";
+            Indatim2m_1.Size = new System.Drawing.Size(226, 70);
+            Indatim2m_1.TabIndex = 212;
+            Indatim2m_1.TabStop = false;
+            Indatim2m_1.Text = "تاریخ ایجاد";
             // 
             // MtxtIndatim2m_1
             // 
@@ -252,17 +252,17 @@
             MtxtIndatim2m_1.TabIndex = 0;
             MtxtIndatim2m_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox7
+            // Indatim_2
             // 
-            groupBox7.Controls.Add(MtxtIndatim_2);
-            groupBox7.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox7.ForeColor = System.Drawing.Color.DimGray;
-            groupBox7.Location = new System.Drawing.Point(25, 35);
-            groupBox7.Name = "groupBox7";
-            groupBox7.Size = new System.Drawing.Size(179, 70);
-            groupBox7.TabIndex = 213;
-            groupBox7.TabStop = false;
-            groupBox7.Text = "ساعت صدور";
+            Indatim_2.Controls.Add(MtxtIndatim_2);
+            Indatim_2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Indatim_2.ForeColor = System.Drawing.Color.DimGray;
+            Indatim_2.Location = new System.Drawing.Point(25, 35);
+            Indatim_2.Name = "Indatim_2";
+            Indatim_2.Size = new System.Drawing.Size(179, 70);
+            Indatim_2.TabIndex = 213;
+            Indatim_2.TabStop = false;
+            Indatim_2.Text = "ساعت صدور";
             // 
             // MtxtIndatim_2
             // 
@@ -276,17 +276,17 @@
             MtxtIndatim_2.TabIndex = 0;
             MtxtIndatim_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox8
+            // Indatim2m_2
             // 
-            groupBox8.Controls.Add(MtxtIndatim2m_2);
-            groupBox8.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox8.ForeColor = System.Drawing.Color.DimGray;
-            groupBox8.Location = new System.Drawing.Point(25, 120);
-            groupBox8.Name = "groupBox8";
-            groupBox8.Size = new System.Drawing.Size(179, 70);
-            groupBox8.TabIndex = 214;
-            groupBox8.TabStop = false;
-            groupBox8.Text = "ساعت ایجاد";
+            Indatim2m_2.Controls.Add(MtxtIndatim2m_2);
+            Indatim2m_2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Indatim2m_2.ForeColor = System.Drawing.Color.DimGray;
+            Indatim2m_2.Location = new System.Drawing.Point(25, 120);
+            Indatim2m_2.Name = "Indatim2m_2";
+            Indatim2m_2.Size = new System.Drawing.Size(179, 70);
+            Indatim2m_2.TabIndex = 214;
+            Indatim2m_2.TabStop = false;
+            Indatim2m_2.Text = "ساعت ایجاد";
             // 
             // MtxtIndatim2m_2
             // 
@@ -300,29 +300,29 @@
             MtxtIndatim2m_2.TabIndex = 0;
             MtxtIndatim2m_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox9
+            // Inno
             // 
-            groupBox9.Controls.Add(TxtInno);
-            groupBox9.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox9.ForeColor = System.Drawing.Color.DimGray;
-            groupBox9.Location = new System.Drawing.Point(505, 184);
-            groupBox9.Name = "groupBox9";
-            groupBox9.Size = new System.Drawing.Size(471, 70);
-            groupBox9.TabIndex = 215;
-            groupBox9.TabStop = false;
-            groupBox9.Text = "سریال داخلی";
+            Inno.Controls.Add(TxtInno);
+            Inno.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Inno.ForeColor = System.Drawing.Color.DimGray;
+            Inno.Location = new System.Drawing.Point(505, 184);
+            Inno.Name = "Inno";
+            Inno.Size = new System.Drawing.Size(471, 70);
+            Inno.TabIndex = 215;
+            Inno.TabStop = false;
+            Inno.Text = "سریال داخلی";
             // 
-            // groupBox10
+            // Irtaxid
             // 
-            groupBox10.Controls.Add(TxtIrtaxid);
-            groupBox10.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox10.ForeColor = System.Drawing.Color.DimGray;
-            groupBox10.Location = new System.Drawing.Point(505, 260);
-            groupBox10.Name = "groupBox10";
-            groupBox10.Size = new System.Drawing.Size(471, 70);
-            groupBox10.TabIndex = 216;
-            groupBox10.TabStop = false;
-            groupBox10.Text = "شماره مالیاتی صورتحساب مرجع";
+            Irtaxid.Controls.Add(TxtIrtaxid);
+            Irtaxid.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Irtaxid.ForeColor = System.Drawing.Color.DimGray;
+            Irtaxid.Location = new System.Drawing.Point(505, 260);
+            Irtaxid.Name = "Irtaxid";
+            Irtaxid.Size = new System.Drawing.Size(471, 70);
+            Irtaxid.TabIndex = 216;
+            Irtaxid.TabStop = false;
+            Irtaxid.Text = "شماره مالیاتی صورتحساب مرجع";
             // 
             // TxtIrtaxid
             // 
@@ -334,17 +334,17 @@
             TxtIrtaxid.Size = new System.Drawing.Size(450, 29);
             TxtIrtaxid.TabIndex = 0;
             // 
-            // groupBox11
+            // TaxId
             // 
-            groupBox11.Controls.Add(TxtTaxId);
-            groupBox11.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox11.ForeColor = System.Drawing.Color.DimGray;
-            groupBox11.Location = new System.Drawing.Point(505, 336);
-            groupBox11.Name = "groupBox11";
-            groupBox11.Size = new System.Drawing.Size(471, 70);
-            groupBox11.TabIndex = 216;
-            groupBox11.TabStop = false;
-            groupBox11.Text = "شماره مالیاتی صورتحساب ";
+            TaxId.Controls.Add(TxtTaxId);
+            TaxId.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TaxId.ForeColor = System.Drawing.Color.DimGray;
+            TaxId.Location = new System.Drawing.Point(505, 336);
+            TaxId.Name = "TaxId";
+            TaxId.Size = new System.Drawing.Size(471, 70);
+            TaxId.TabIndex = 216;
+            TaxId.TabStop = false;
+            TaxId.Text = "شماره مالیاتی صورتحساب ";
             // 
             // TxtTaxId
             // 
@@ -383,10 +383,10 @@
             // 
             // groupBox12
             // 
-            groupBox12.Controls.Add(groupBox7);
-            groupBox12.Controls.Add(groupBox5);
-            groupBox12.Controls.Add(groupBox6);
-            groupBox12.Controls.Add(groupBox8);
+            groupBox12.Controls.Add(Indatim_2);
+            groupBox12.Controls.Add(Indatim_1);
+            groupBox12.Controls.Add(Indatim2m_1);
+            groupBox12.Controls.Add(Indatim2m_2);
             groupBox12.Location = new System.Drawing.Point(21, 181);
             groupBox12.Name = "groupBox12";
             groupBox12.Size = new System.Drawing.Size(470, 225);
@@ -427,13 +427,13 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(TogSemiRequired);
-            Controls.Add(groupBox11);
-            Controls.Add(groupBox10);
-            Controls.Add(groupBox9);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox4);
-            Controls.Add(groupBox1);
-            Controls.Add(groupBox2);
+            Controls.Add(TaxId);
+            Controls.Add(Irtaxid);
+            Controls.Add(Inno);
+            Controls.Add(Tob);
+            Controls.Add(Ins);
+            Controls.Add(Inp);
+            Controls.Add(Inty);
             Controls.Add(label1);
             Controls.Add(BtnNext);
             Controls.Add(groupBox12);
@@ -442,24 +442,24 @@
             Name = "InvoiceStep";
             RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             Size = new System.Drawing.Size(996, 587);
-            groupBox2.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
-            groupBox4.ResumeLayout(false);
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
-            groupBox6.ResumeLayout(false);
-            groupBox6.PerformLayout();
-            groupBox7.ResumeLayout(false);
-            groupBox7.PerformLayout();
-            groupBox8.ResumeLayout(false);
-            groupBox8.PerformLayout();
-            groupBox9.ResumeLayout(false);
-            groupBox9.PerformLayout();
-            groupBox10.ResumeLayout(false);
-            groupBox10.PerformLayout();
-            groupBox11.ResumeLayout(false);
-            groupBox11.PerformLayout();
+            Inty.ResumeLayout(false);
+            Inp.ResumeLayout(false);
+            Tob.ResumeLayout(false);
+            Ins.ResumeLayout(false);
+            Indatim_1.ResumeLayout(false);
+            Indatim_1.PerformLayout();
+            Indatim2m_1.ResumeLayout(false);
+            Indatim2m_1.PerformLayout();
+            Indatim_2.ResumeLayout(false);
+            Indatim_2.PerformLayout();
+            Indatim2m_2.ResumeLayout(false);
+            Indatim2m_2.PerformLayout();
+            Inno.ResumeLayout(false);
+            Inno.PerformLayout();
+            Irtaxid.ResumeLayout(false);
+            Irtaxid.PerformLayout();
+            TaxId.ResumeLayout(false);
+            TaxId.PerformLayout();
             groupBox12.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -469,27 +469,27 @@
 
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Inty;
+        private System.Windows.Forms.GroupBox Inp;
         private System.Windows.Forms.ComboBox CbInty;
         private System.Windows.Forms.ComboBox CbInp;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox Tob;
         private System.Windows.Forms.ComboBox CbTob;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox Ins;
         private System.Windows.Forms.ComboBox CbIns;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox Indatim_1;
         private System.Windows.Forms.TextBox TxtInno;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim_1;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox Indatim2m_1;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim2m_1;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox Indatim_2;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim_2;
-        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox Indatim2m_2;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim2m_2;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox Inno;
+        private System.Windows.Forms.GroupBox Irtaxid;
         private System.Windows.Forms.TextBox TxtIrtaxid;
-        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox TaxId;
         private System.Windows.Forms.TextBox TxtTaxId;
         private Resources.CustomToolBox.ToggleButton TogSemiRequired;
         private System.Windows.Forms.Label label2;
