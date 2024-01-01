@@ -1,4 +1,6 @@
-﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
+﻿using InvoiceManage.App.Resources.CustomToolBox;
+
+namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class ItemStepAdd
     {
@@ -28,9 +30,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            gb2 = new System.Windows.Forms.GroupBox();
+            gb2 = new CustomGroupBox();
             TxtSstid = new System.Windows.Forms.TextBox();
-            groupBox10 = new System.Windows.Forms.GroupBox();
+            groupBox10 = new CustomGroupBox();
             TxtVra = new System.Windows.Forms.TextBox();
             BtnAdd = new Resources.CustomToolBox.RoundedButton();
             gb2.SuspendLayout();
@@ -126,9 +128,9 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gb2;
+        private CustomGroupBox gb2;
         private System.Windows.Forms.TextBox TxtSstid;
-        private System.Windows.Forms.GroupBox groupBox10;
+        private CustomGroupBox groupBox10;
         private System.Windows.Forms.TextBox TxtVra;
         private Resources.CustomToolBox.RoundedButton BtnAdd;
     }

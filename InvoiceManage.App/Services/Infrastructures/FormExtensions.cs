@@ -15,29 +15,7 @@ namespace InvoiceManage.App.Services.Infrastructures
             combo.DisplayMember = "Display";
             combo.ValueMember = "Value";
         }
-
-        public static void SetMode(this GroupBox groupBox, int type, int pattern)
-        {
-            var mode = groupBox.Name.GetMode(type, pattern);
-
-            switch (mode)
-            {
-                case Mode.Required:
-                    groupBox.Name = groupBox.Name.Replace("*", string.Empty) + "**";
-
-                    break;
-                case Mode.SemiRequired:
-                    groupBox.Name = groupBox.Name.Replace("*", string.Empty) + "*";
-                    break;
-                case Mode.Optional:
-                    groupBox.Name = groupBox.Name.Replace("*", string.Empty);
-                    break;
-                case Mode.Ignore:
-                    groupBox.Name = groupBox.Name.Replace("*", string.Empty);
-                    break;
-            }
-        }
-
+        
         public static void ChangeReadOnly(this GroupBox groupBox, bool disable)
         {
             foreach (Control control in groupBox.Controls)

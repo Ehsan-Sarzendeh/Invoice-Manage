@@ -1,4 +1,6 @@
-﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
+﻿using InvoiceManage.App.Resources.CustomToolBox;
+
+namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class BuyerStep
     {
@@ -30,23 +32,23 @@
         {
             BtnNext = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
-            Bpn = new System.Windows.Forms.GroupBox();
+            Bpn = new CustomGroupBox();
             TxtBpn = new System.Windows.Forms.TextBox();
-            groupBox3 = new System.Windows.Forms.GroupBox();
+            groupBox3 = new CustomGroupBox();
             roundedButton2 = new Resources.CustomToolBox.RoundedButton();
             textBox4 = new System.Windows.Forms.TextBox();
-            BillId = new System.Windows.Forms.GroupBox();
+            BillId = new CustomGroupBox();
             TxtBillId = new System.Windows.Forms.TextBox();
-            BId = new System.Windows.Forms.GroupBox();
+            BId = new CustomGroupBox();
             TxtBId = new System.Windows.Forms.TextBox();
-            Bbc = new System.Windows.Forms.GroupBox();
+            Bbc = new CustomGroupBox();
             TxtBbc = new System.Windows.Forms.TextBox();
-            Tinb = new System.Windows.Forms.GroupBox();
+            Tinb = new CustomGroupBox();
             TxtTinb = new System.Windows.Forms.TextBox();
             BtnSelect = new Resources.CustomToolBox.RoundedButton();
-            Ft = new System.Windows.Forms.GroupBox();
+            Ft = new CustomGroupBox();
             CbFt = new System.Windows.Forms.ComboBox();
-            Bpc = new System.Windows.Forms.GroupBox();
+            Bpc = new CustomGroupBox();
             TxtBpc = new System.Windows.Forms.TextBox();
             Bpn.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -379,23 +381,23 @@
 
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
-        private System.Windows.Forms.GroupBox Bpn;
+        private CustomGroupBox Bpn;
         private System.Windows.Forms.TextBox TxtBpn;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private CustomGroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.GroupBox BillId;
+        private CustomGroupBox BillId;
         private System.Windows.Forms.TextBox TxtBillId;
-        private System.Windows.Forms.GroupBox BId;
+        private CustomGroupBox BId;
         private System.Windows.Forms.TextBox TxtBId;
-        private System.Windows.Forms.GroupBox Bbc;
+        private CustomGroupBox Bbc;
         private System.Windows.Forms.TextBox TxtBbc;
-        private System.Windows.Forms.GroupBox Tinb;
+        private CustomGroupBox Tinb;
         private System.Windows.Forms.TextBox TxtTinb;
         private Resources.CustomToolBox.RoundedButton BtnSelect;
-        private System.Windows.Forms.GroupBox Ft;
+        private CustomGroupBox Ft;
         private System.Windows.Forms.ComboBox CbFt;
         private Resources.CustomToolBox.RoundedButton roundedButton2;
-        private System.Windows.Forms.GroupBox Bpc;
+        private CustomGroupBox Bpc;
         private System.Windows.Forms.TextBox TxtBpc;
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
+﻿using InvoiceManage.App.Resources.CustomToolBox;
+
+namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class InvoiceStep
     {
@@ -30,31 +32,31 @@
         {
             BtnNext = new Resources.CustomToolBox.RoundedButton();
             label1 = new System.Windows.Forms.Label();
-            Inty = new System.Windows.Forms.GroupBox();
+            Inty = new CustomGroupBox();
             CbInty = new System.Windows.Forms.ComboBox();
-            Inp = new System.Windows.Forms.GroupBox();
+            Inp = new CustomGroupBox();
             CbInp = new System.Windows.Forms.ComboBox();
-            Tob = new System.Windows.Forms.GroupBox();
+            Tob = new CustomGroupBox();
             CbTob = new System.Windows.Forms.ComboBox();
-            Ins = new System.Windows.Forms.GroupBox();
+            Ins = new CustomGroupBox();
             CbIns = new System.Windows.Forms.ComboBox();
-            Indatim_1 = new System.Windows.Forms.GroupBox();
+            Indatim_1 = new CustomGroupBox();
             MtxtIndatim_1 = new System.Windows.Forms.MaskedTextBox();
             TxtInno = new System.Windows.Forms.TextBox();
-            Indatim2m_1 = new System.Windows.Forms.GroupBox();
+            Indatim2m_1 = new CustomGroupBox();
             MtxtIndatim2m_1 = new System.Windows.Forms.MaskedTextBox();
-            Indatim_2 = new System.Windows.Forms.GroupBox();
+            Indatim_2 = new CustomGroupBox();
             MtxtIndatim_2 = new System.Windows.Forms.MaskedTextBox();
-            Indatim2m_2 = new System.Windows.Forms.GroupBox();
+            Indatim2m_2 = new CustomGroupBox();
             MtxtIndatim2m_2 = new System.Windows.Forms.MaskedTextBox();
-            Inno = new System.Windows.Forms.GroupBox();
-            Irtaxid = new System.Windows.Forms.GroupBox();
+            Inno = new CustomGroupBox();
+            Irtaxid = new CustomGroupBox();
             TxtIrtaxid = new System.Windows.Forms.TextBox();
-            TaxId = new System.Windows.Forms.GroupBox();
+            TaxId = new CustomGroupBox();
             TxtTaxId = new System.Windows.Forms.TextBox();
             TogSemiRequired = new Resources.CustomToolBox.ToggleButton();
             label2 = new System.Windows.Forms.Label();
-            groupBox12 = new System.Windows.Forms.GroupBox();
+            groupBox12 = new CustomGroupBox();
             label3 = new System.Windows.Forms.Label();
             TogOptional = new Resources.CustomToolBox.ToggleButton();
             Inty.SuspendLayout();
@@ -474,31 +476,31 @@
 
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox Inty;
-        private System.Windows.Forms.GroupBox Inp;
+        private CustomGroupBox Inty;
+        private CustomGroupBox Inp;
         private System.Windows.Forms.ComboBox CbInty;
         private System.Windows.Forms.ComboBox CbInp;
-        private System.Windows.Forms.GroupBox Tob;
+        private CustomGroupBox Tob;
         private System.Windows.Forms.ComboBox CbTob;
-        private System.Windows.Forms.GroupBox Ins;
+        private CustomGroupBox Ins;
         private System.Windows.Forms.ComboBox CbIns;
-        private System.Windows.Forms.GroupBox Indatim_1;
+        private CustomGroupBox Indatim_1;
         private System.Windows.Forms.TextBox TxtInno;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim_1;
-        private System.Windows.Forms.GroupBox Indatim2m_1;
+        private CustomGroupBox Indatim2m_1;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim2m_1;
-        private System.Windows.Forms.GroupBox Indatim_2;
+        private CustomGroupBox Indatim_2;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim_2;
-        private System.Windows.Forms.GroupBox Indatim2m_2;
+        private CustomGroupBox Indatim2m_2;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim2m_2;
-        private System.Windows.Forms.GroupBox Inno;
-        private System.Windows.Forms.GroupBox Irtaxid;
+        private CustomGroupBox Inno;
+        private CustomGroupBox Irtaxid;
         private System.Windows.Forms.TextBox TxtIrtaxid;
-        private System.Windows.Forms.GroupBox TaxId;
+        private CustomGroupBox TaxId;
         private System.Windows.Forms.TextBox TxtTaxId;
         private Resources.CustomToolBox.ToggleButton TogSemiRequired;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox12;
+        private CustomGroupBox groupBox12;
         private System.Windows.Forms.Label label3;
         private Resources.CustomToolBox.ToggleButton TogOptional;
     }

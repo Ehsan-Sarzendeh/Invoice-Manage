@@ -67,7 +67,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             var parentForm = ParentForm as FrmInvoice;
 
-            parentForm!.ShowSemiRequiredGroupBoxes(TogOptional.Checked);
+            parentForm!.ShowSemiRequiredGroupBoxes(TogSemiRequired.Checked);
         }
 
         private void TogOptional_CheckedChanged(object sender, EventArgs e)

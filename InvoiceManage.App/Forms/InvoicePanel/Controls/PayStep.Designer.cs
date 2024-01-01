@@ -1,4 +1,6 @@
-﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
+﻿using InvoiceManage.App.Resources.CustomToolBox;
+
+namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class PayStep
     {
@@ -31,25 +33,25 @@
             BtnAdd = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
             BtnEdit = new Resources.CustomToolBox.RoundedButton();
-            Pv = new System.Windows.Forms.GroupBox();
+            Pv = new CustomGroupBox();
             TxtPv = new System.Windows.Forms.TextBox();
-            Pid = new System.Windows.Forms.GroupBox();
+            Pid = new CustomGroupBox();
             TxtPid = new System.Windows.Forms.TextBox();
-            Trmn = new System.Windows.Forms.GroupBox();
+            Trmn = new CustomGroupBox();
             TxtTrmn = new System.Windows.Forms.TextBox();
-            Pmt = new System.Windows.Forms.GroupBox();
+            Pmt = new CustomGroupBox();
             CbPmt = new System.Windows.Forms.ComboBox();
-            Trn = new System.Windows.Forms.GroupBox();
+            Trn = new CustomGroupBox();
             TxtTrn = new System.Windows.Forms.TextBox();
-            Iinn = new System.Windows.Forms.GroupBox();
+            Iinn = new CustomGroupBox();
             TxtIinn = new System.Windows.Forms.TextBox();
-            Pcn = new System.Windows.Forms.GroupBox();
+            Pcn = new CustomGroupBox();
             TxtPcn = new System.Windows.Forms.TextBox();
-            Acn = new System.Windows.Forms.GroupBox();
+            Acn = new CustomGroupBox();
             TxtAcn = new System.Windows.Forms.TextBox();
-            Pdt_1 = new System.Windows.Forms.GroupBox();
+            Pdt_1 = new CustomGroupBox();
             MtxtPdt_1 = new System.Windows.Forms.MaskedTextBox();
-            Pdt_2 = new System.Windows.Forms.GroupBox();
+            Pdt_2 = new CustomGroupBox();
             MtxtPdt_2 = new System.Windows.Forms.MaskedTextBox();
             Pv.SuspendLayout();
             Pid.SuspendLayout();
@@ -418,25 +420,25 @@
         private Resources.CustomToolBox.RoundedButton BtnAdd;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
         private Resources.CustomToolBox.RoundedButton BtnEdit;
-        private System.Windows.Forms.GroupBox Pv;
+        private CustomGroupBox Pv;
         private System.Windows.Forms.TextBox TxtPv;
-        private System.Windows.Forms.GroupBox Pid;
+        private CustomGroupBox Pid;
         private System.Windows.Forms.TextBox TxtPid;
-        private System.Windows.Forms.GroupBox Trmn;
+        private CustomGroupBox Trmn;
         private System.Windows.Forms.TextBox TxtTrmn;
-        private System.Windows.Forms.GroupBox Pmt;
+        private CustomGroupBox Pmt;
         private System.Windows.Forms.ComboBox CbPmt;
-        private System.Windows.Forms.GroupBox Trn;
+        private CustomGroupBox Trn;
         private System.Windows.Forms.TextBox TxtTrn;
-        private System.Windows.Forms.GroupBox Iinn;
+        private CustomGroupBox Iinn;
         private System.Windows.Forms.TextBox TxtIinn;
-        private System.Windows.Forms.GroupBox Pcn;
+        private CustomGroupBox Pcn;
         private System.Windows.Forms.TextBox TxtPcn;
-        private System.Windows.Forms.GroupBox Acn;
+        private CustomGroupBox Acn;
         private System.Windows.Forms.TextBox TxtAcn;
-        private System.Windows.Forms.GroupBox Pdt_1;
+        private CustomGroupBox Pdt_1;
         private System.Windows.Forms.MaskedTextBox MtxtPdt_1;
-        private System.Windows.Forms.GroupBox Pdt_2;
+        private CustomGroupBox Pdt_2;
         private System.Windows.Forms.MaskedTextBox MtxtPdt_2;
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace InvoiceManage.App.Forms.InvoicePanel.Controls
+﻿using InvoiceManage.App.Resources.CustomToolBox;
+
+namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     partial class SellerStep
     {
@@ -30,21 +32,21 @@
         {
             BtnNext = new Resources.CustomToolBox.RoundedButton();
             BtnPrevious = new Resources.CustomToolBox.RoundedButton();
-            groupBox5 = new System.Windows.Forms.GroupBox();
+            groupBox5 = new CustomGroupBox();
             MtxtCdcd_1 = new System.Windows.Forms.MaskedTextBox();
-            Tins = new System.Windows.Forms.GroupBox();
+            Tins = new CustomGroupBox();
             TxtTins = new System.Windows.Forms.TextBox();
-            Crn = new System.Windows.Forms.GroupBox();
+            Crn = new CustomGroupBox();
             TxtCrn = new System.Windows.Forms.TextBox();
-            Cdcn = new System.Windows.Forms.GroupBox();
+            Cdcn = new CustomGroupBox();
             TxtCdcn = new System.Windows.Forms.TextBox();
-            CompanyId = new System.Windows.Forms.GroupBox();
+            CompanyId = new CustomGroupBox();
             TxtCompanyId = new System.Windows.Forms.TextBox();
-            Scln = new System.Windows.Forms.GroupBox();
+            Scln = new CustomGroupBox();
             TxtScln = new System.Windows.Forms.TextBox();
-            Sbc = new System.Windows.Forms.GroupBox();
+            Sbc = new CustomGroupBox();
             TxtSbc = new System.Windows.Forms.TextBox();
-            Scc = new System.Windows.Forms.GroupBox();
+            Scc = new CustomGroupBox();
             Cdcd_1 = new System.Windows.Forms.TextBox();
             BtnSelect = new Resources.CustomToolBox.RoundedButton();
             groupBox5.SuspendLayout();
@@ -353,21 +355,21 @@
 
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private CustomGroupBox groupBox5;
         private System.Windows.Forms.MaskedTextBox MtxtCdcd_1;
-        private System.Windows.Forms.GroupBox Tins;
+        private CustomGroupBox Tins;
         private System.Windows.Forms.TextBox TxtTins;
-        private System.Windows.Forms.GroupBox Crn;
+        private CustomGroupBox Crn;
         private System.Windows.Forms.TextBox TxtCrn;
-        private System.Windows.Forms.GroupBox Cdcn;
+        private CustomGroupBox Cdcn;
         private System.Windows.Forms.TextBox TxtCdcn;
-        private System.Windows.Forms.GroupBox CompanyId;
+        private CustomGroupBox CompanyId;
         private System.Windows.Forms.TextBox TxtCompanyId;
-        private System.Windows.Forms.GroupBox Scln;
+        private CustomGroupBox Scln;
         private System.Windows.Forms.TextBox TxtScln;
-        private System.Windows.Forms.GroupBox Sbc;
+        private CustomGroupBox Sbc;
         private System.Windows.Forms.TextBox TxtSbc;
-        private System.Windows.Forms.GroupBox Scc;
+        private CustomGroupBox Scc;
         private Resources.CustomToolBox.RoundedButton BtnSelect;
         private System.Windows.Forms.TextBox Cdcd_1;
     }
