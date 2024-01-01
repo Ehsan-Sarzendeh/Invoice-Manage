@@ -39,7 +39,7 @@ namespace InvoiceManage.App.Forms.Home
 
         private void AddInvoice_Click(object sender, System.EventArgs e)
         {
-            var frmAddInvoice = new FrmInvoice(FrmInvoiceType.Add);
+            var frmAddInvoice = new FrmInvoice();
             frmAddInvoice.Show();
             Hide();
         }

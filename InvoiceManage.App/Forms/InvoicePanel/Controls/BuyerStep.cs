@@ -49,7 +49,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
             if (frmSelect.ShowDialog() == DialogResult.OK)
             {
-                var selectItem = frmSelect.SelectedItem;
+                var selectItem = (Customer)frmSelect.SelectedItem!;
             }
         }
     }

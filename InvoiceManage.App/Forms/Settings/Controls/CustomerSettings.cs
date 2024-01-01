@@ -32,7 +32,13 @@ namespace InvoiceManage.App.Forms.Settings.Controls
         {
             var customer = new Customer
             {
-                
+                BId = long.Parse(TxtBId.Text),
+                Tinb = TxtTinb.Text,
+                Name = TxtName.Text,
+                Bpc = TxtBpc.Text,
+                Bbc = TxtBbc.Text,
+                Bpn = TxtBpn.Text,
+                BillId = TxtBillId.Text
             };
             _commonService.AddCustomer(customer);
         }

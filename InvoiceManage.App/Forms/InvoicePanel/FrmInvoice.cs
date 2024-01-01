@@ -7,27 +7,25 @@ namespace InvoiceManage.App.Forms.InvoicePanel
 {
     public partial class FrmInvoice : Form
     {
-        public FrmInvoiceType Type { get; set; }
-
         public Invoice Invoice { get; set; }
 
         public bool ShowSemiRequired { get; set; }
         public bool ShowOptional { get; set; }
 
-        public FrmInvoice(FrmInvoiceType type)
+        public FrmInvoice(Invoice? invoice = null)
         {
             InitializeComponent();
 
-            Type = type;
+            Invoice = invoice ?? new Invoice();
+            
+            var frmInvoiceType = invoice == null ? FrmInvoiceType.Add : FrmInvoiceType.Edit;
 
-            Invoice = new Invoice();
-
-            PanelSlider.Controls.Add(new InvoiceStep(Invoice));
-            PanelSlider.Controls.Add(new SellerStep(Invoice));
-            PanelSlider.Controls.Add(new BuyerStep(Invoice));
+            PanelSlider.Controls.Add(new InvoiceStep());
+            PanelSlider.Controls.Add(new SellerStep());
+            PanelSlider.Controls.Add(new BuyerStep());
             PanelSlider.Controls.Add(new ItemStep());
-            PanelSlider.Controls.Add(new SumStep(Invoice));
-            PanelSlider.Controls.Add(new PayStep(type, Invoice));
+            PanelSlider.Controls.Add(new SumStep());
+            PanelSlider.Controls.Add(new PayStep(frmInvoiceType));
         }
 
         private void FrmAddInvoice_FormClosing(object sender, FormClosingEventArgs e)

@@ -79,6 +79,7 @@
 
   <ItemGroup>
     <Folder Include="Services\CommonService\Dtos\" />
+    <Folder Include="Services\InvoiceService\Dtos\" />
   </ItemGroup>
 
 </Project>

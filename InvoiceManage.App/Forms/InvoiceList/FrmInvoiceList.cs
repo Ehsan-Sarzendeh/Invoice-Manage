@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using InvoiceManage.App.Forms.InvoicePanel;
 using InvoiceManage.App.Services.InvoiceService.Dtos;
 using InvoiceManage.App.Services.InvoiceService;
+using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Forms.InvoiceList
 {
@@ -72,8 +73,8 @@ namespace InvoiceManage.App.Forms.InvoiceList
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            var invoiceDto = GetSelectedItem();
-            if (invoiceDto is null)
+            var invoice = GetSelectedItem();
+            if (invoice is null)
             {
                 CustomMessageBox.Show("آیتمی انتخاب نشده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -82,25 +83,24 @@ namespace InvoiceManage.App.Forms.InvoiceList
             var res = CustomMessageBox.Show("آیا از حذف این فاکتور اطمینان دارید؟", "هشدار", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, true);
             if (res != DialogResult.OK) return;
 
-            if (invoiceDto.Invoices_Id > 0)
+            if (invoice.Id > 0)
             {
-                _invoiceService.DeleteInvoice(invoiceDto.Invoices_Id);
+                _invoiceService.DeleteInvoice(invoice.Id);
             }
 
-            InvoiceGv.Rows.RemoveAt(invoiceDto.Index);
+            InvoiceGv.Rows.RemoveAt(InvoiceGv.SelectedRows[0].Index);
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-            var invoiceDto = GetSelectedItem();
-            if (invoiceDto is null)
+            var invoice = GetSelectedItem();
+            if (invoice is null)
             {
                 CustomMessageBox.Show("آیتمی انتخاب نشده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            var frmInvoice = new FrmInvoice(FrmInvoiceType.Edit);
-            // frmInvoice.Invoice = invoiceDto;
+            var frmInvoice = new FrmInvoice(invoice);
             frmInvoice.ShowDialog();
         }
 
@@ -113,14 +113,16 @@ namespace InvoiceManage.App.Forms.InvoiceList
             }
         }
 
-        private InvoiceDto? GetSelectedItem()
+        private Invoice? GetSelectedItem()
         {
             if (InvoiceGv.SelectedRows.Count == 0 || InvoiceGv.SelectedRows[0].IsNewRow)
                 return null;
 
-            int.TryParse(InvoiceGv.SelectedRows[0].Cells["Invoices_Id"].Value.ToString(), out var invoiceId);
+            int.TryParse(InvoiceGv.SelectedRows[0].Cells["Id"].Value.ToString(), out var invoiceId);
 
-            return new InvoiceDto();
+            var invoice = _invoiceService.GetInvoice(invoiceId);
+
+            return invoice;
         }
 
         private void MakeReadonlyProperties(params string[] properties)
