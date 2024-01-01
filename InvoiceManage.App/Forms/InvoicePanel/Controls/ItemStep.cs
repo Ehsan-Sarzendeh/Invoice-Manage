@@ -13,12 +13,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnPrevious_Click(object sender, EventArgs e)
         {
-            new Step().Previous(ParentForm, "ItemStep", "BuyerStep", "BuyerStep");
+            new Step().Previous(ParentForm!, "ItemStep", "BuyerStep", "BuyerStep");
         }
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
-            new Step().Next(ParentForm, "ItemStep", "SumStep", "SumStep");
+            new Step().Next(ParentForm!, "ItemStep", "SumStep", "SumStep");
         }
     }
 }

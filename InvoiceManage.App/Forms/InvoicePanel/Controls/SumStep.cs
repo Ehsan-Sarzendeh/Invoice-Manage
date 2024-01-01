@@ -8,29 +8,31 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class SumStep : UserControl
     {
-        public SumStep(Invoice invoice)
+        public SumStep()
         {
             InitializeComponent();
 
             SetComboBoxDataSource();
-            SetDataBindings(invoice);
+            SetDataBindings();
         }
 
-        public void SetDataBindings(Invoice invoice)
+        public void SetDataBindings()
         {
-            TxtCap.DataBindings.Add("Text", invoice, "Cap", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtInsp.DataBindings.Add("Text", invoice, "Insp", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTadis.DataBindings.Add("Text", invoice, "Tadis", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTax17.DataBindings.Add("Text", invoice, "Tax17", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTbill.DataBindings.Add("Text", invoice, "Tbill", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTocv.DataBindings.Add("Text", invoice, "Tocv", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTodam.DataBindings.Add("Text", invoice, "Todam", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTonw.DataBindings.Add("Text", invoice, "Tonw", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTorv.DataBindings.Add("Text", invoice, "Torv", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTprdis.DataBindings.Add("Text", invoice, "Tprdis", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTvam.DataBindings.Add("Text", invoice, "Tvam", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTvop.DataBindings.Add("Text", invoice, "Tvop", true, DataSourceUpdateMode.OnPropertyChanged);
-            CbSetm.DataBindings.Add("SelectedValue", invoice, "Setm", true, DataSourceUpdateMode.OnPropertyChanged);
+            var parentForm = ParentForm as FrmInvoice;
+
+            TxtCap.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Cap), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtInsp.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Insp), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTadis.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tadis), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTax17.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tax17), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTbill.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tbill), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTocv.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tocv), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTodam.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Todam), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTonw.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tonw), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTorv.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Torv), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTprdis.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tprdis), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTvam.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tvam), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTvop.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tvop), true, DataSourceUpdateMode.OnPropertyChanged);
+            CbSetm.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Setm), true, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void SetComboBoxDataSource()
@@ -40,12 +42,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnPrevious_Click(object sender, EventArgs e)
         {
-            new Step().Previous(ParentForm, "SumStep", "ItemStep", "ItemStep");
+            new Step().Previous(ParentForm!, "SumStep", "ItemStep", "ItemStep");
         }
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
-            new Step().Next(ParentForm, "SumStep", "PayStep", "PayStep");
+            new Step().Next(ParentForm!, "SumStep", "PayStep", "PayStep");
         }
     }
 }

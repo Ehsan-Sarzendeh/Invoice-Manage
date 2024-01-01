@@ -8,28 +8,30 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class PayStep : UserControl
     {
-        public PayStep(FrmInvoiceType type, Invoice invoice)
+        public PayStep(FrmInvoiceType type)
         {
             InitializeComponent();
 
             BtnEdit.Visible = type == FrmInvoiceType.Edit;
 
             SetComboBoxDataSource();
-            SetDataBindings(invoice);
+            SetDataBindings();
         }
 
-        public void SetDataBindings(Invoice invoice)
+        public void SetDataBindings()
         {
-            TxtAcn.DataBindings.Add("Text", invoice, "Acn", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtIinn.DataBindings.Add("Text", invoice, "Iinn", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtPcn.DataBindings.Add("Text", invoice, "Pcn", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtPid.DataBindings.Add("Text", invoice, "Pid", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtPv.DataBindings.Add("Text", invoice, "Pv", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTrmn.DataBindings.Add("Text", invoice, "Trmn", true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTrn.DataBindings.Add("Text", invoice, "Trn", true, DataSourceUpdateMode.OnPropertyChanged);
-            MtxtPdt_1.DataBindings.Add("Text", invoice, "Pdt_1", true, DataSourceUpdateMode.OnPropertyChanged);
-            MtxtPdt_2.DataBindings.Add("Text", invoice, "Pdt_2", true, DataSourceUpdateMode.OnPropertyChanged);
-            CbPmt.DataBindings.Add("SelectedValue", invoice, "Pmt", true, DataSourceUpdateMode.OnPropertyChanged);
+            var parentForm = ParentForm as FrmInvoice;
+
+            TxtAcn.DataBindings.Add("Text", parentForm!.Invoice, nameof(parentForm.Invoice.Acn), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtIinn.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Iinn), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtPcn.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Pcn), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtPid.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Pid), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtPv.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Pv), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTrmn.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Trmn), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtTrn.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Trn), true, DataSourceUpdateMode.OnPropertyChanged);
+            MtxtPdt_1.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Pdt_1), true, DataSourceUpdateMode.OnPropertyChanged);
+            MtxtPdt_2.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Pdt_2), true, DataSourceUpdateMode.OnPropertyChanged);
+            CbPmt.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Pmt), true, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void SetComboBoxDataSource()
@@ -39,22 +41,18 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnPrevious_Click(object sender, EventArgs e)
         {
-            new Step().Previous(ParentForm, "PayStep", "SumStep", "SumStep");
+            new Step().Previous(ParentForm!, "PayStep", "SumStep", "SumStep");
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            var a = ParentForm as FrmInvoice;
-
-            var b= a.Invoice;
-
-            ParentForm.Close();
+            ParentForm!.Close();
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
 
-            ParentForm.Close();
+            ParentForm!.Close();
         }
     }
 }

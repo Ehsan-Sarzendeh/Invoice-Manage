@@ -83,7 +83,7 @@
             // 
             dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new System.Drawing.Point(4, 257);
+            dataGridView1.Location = new System.Drawing.Point(4, 266);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new System.Drawing.Size(988, 261);
@@ -91,9 +91,9 @@
             // 
             // PanelForm
             // 
-            PanelForm.Location = new System.Drawing.Point(4, 11);
+            PanelForm.Location = new System.Drawing.Point(4, 16);
             PanelForm.Name = "PanelForm";
-            PanelForm.Size = new System.Drawing.Size(988, 232);
+            PanelForm.Size = new System.Drawing.Size(988, 244);
             PanelForm.TabIndex = 227;
             // 
             // ItemStep
