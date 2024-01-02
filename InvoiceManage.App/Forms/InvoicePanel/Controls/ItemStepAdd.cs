@@ -32,27 +32,43 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             {
                 SstId = TxtSstid.Text,
                 Sstt = TxtSstt.Text,
-                Am = decimal.Parse(TxtAm.Text),
+                Am = decimal.TryParse(TxtAm.Text, out var am)
+                    ? am : default,
                 Mu = CbMu.SelectedText,
-                Mu_1 = CbMu.SelectedValue.ToString(),
-                Nw = decimal.Parse(TxtNw.Text),
-                Fee = decimal.Parse(TxtFee.Text),
-                CFee = decimal.Parse(TxtCFee.Text),
+                Mu_1 = CbMu.SelectedValue?.ToString(),
+                Nw = decimal.TryParse(TxtNw.Text, out var nw)
+                    ? nw : default,
+                Fee = decimal.TryParse(TxtFee.Text, out var fee)
+                    ? fee : default,
+                CFee = decimal.TryParse(TxtCFee.Text, out var cfee)
+                    ? cfee : default,
                 Cut = TxtCut.Text,
-                Exr = decimal.Parse(TxtExr.Text),
-                Ssrv = decimal.Parse(TxtSsrv.Text),
-                Sscv = decimal.Parse(TxtSscv.Text),
-                Dis = decimal.Parse(TxtDis.Text),
-                Vra = double.Parse(TxtVra.Text),
+                Exr = decimal.TryParse(TxtExr.Text, out var exr)
+                    ? exr : default,
+                Ssrv = decimal.TryParse(TxtSsrv.Text, out var ssrv)
+                    ? ssrv : default,
+                Sscv = decimal.TryParse(TxtSscv.Text, out var sscv)
+                    ? sscv : default,
+                Dis = decimal.TryParse(TxtDis.Text, out var dis)
+                    ? dis : default,
+                Vra = double.TryParse(TxtVra.Text, out var vra)
+                    ? vra : default,
                 Odt = TxtOdt.Text,
-                Odr = double.Parse(TxtOdr.Text),
-                Odam = decimal.Parse(TxtOdam.Text),
+                Odr = double.TryParse(TxtOdr.Text, out var odr)
+                    ? odr : default,
+                Odam = decimal.TryParse(TxtOdam.Text, out var odam)
+                    ? odam : default,
                 Olt = TxtOlt.Text,
-                Olr = double.Parse(TxtOlr.Text),
-                Olam = decimal.Parse(TxtOlam.Text),
-                Consfee = decimal.Parse(TxtConsfee.Text),
-                Spro = decimal.Parse(TxtSpro.Text),
-                Bros = decimal.Parse(TxtBros.Text)
+                Olr = double.TryParse(TxtOlr.Text, out var olr)
+                    ? olr : default,
+                Olam = decimal.TryParse(TxtOlam.Text, out var olam)
+                    ? olam : default,
+                Consfee = decimal.TryParse(TxtConsfee.Text, out var consfee)
+                    ? consfee : default,
+                Spro = decimal.TryParse(TxtSpro.Text, out var spro)
+                    ? spro : default,
+                Bros = decimal.TryParse(TxtBros.Text, out var bros)
+                    ? bros : default
             };
 
             var parentForm = ParentForm as FrmInvoice;

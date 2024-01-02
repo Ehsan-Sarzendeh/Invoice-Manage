@@ -1,9 +1,9 @@
-﻿using System.ComponentModel;
-using System.Windows.Forms;
-using InvoiceManage.App.Forms.InvoicePanel.Controls;
+﻿using InvoiceManage.App.Forms.InvoicePanel.Controls;
 using InvoiceManage.App.Resources.CustomToolBox;
 using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.Database.Entities;
+using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace InvoiceManage.App.Forms.InvoicePanel
 {
@@ -15,8 +15,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel
         {
             InitializeComponent();
 
-            Invoice = invoice ?? new Invoice {Items = new BindingList<InvoiceItem>()};
-            
+            Invoice = invoice ?? new Invoice { Items = new BindingList<InvoiceItem>() };
+
             var frmInvoiceType = invoice == null ? FrmInvoiceType.Add : FrmInvoiceType.Edit;
 
             PanelSlider.Controls.Add(new InvoiceStep());
@@ -45,6 +45,25 @@ namespace InvoiceManage.App.Forms.InvoicePanel
             Close();
         }
 
+        public void ShowOptionalGroupBoxes(bool show)
+        {
+            foreach (Control step in PanelSlider.Controls)
+                ShowOptionalGroupBoxesRecursive(step);
+
+            void ShowOptionalGroupBoxesRecursive(Control step)
+            {
+                foreach (Control control in step.Controls)
+                {
+                    ShowOptionalGroupBoxesRecursive(control);
+
+                    if (control is not CustomGroupBox groupBox)
+                        continue;
+
+                    groupBox.ShowOptional = show;
+                }
+            }
+        }
+
         private void BtnMinimize_Click(object sender, System.EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
@@ -52,17 +71,21 @@ namespace InvoiceManage.App.Forms.InvoicePanel
 
         #endregion
 
-        public void ChangeModeGroupBoxes()
+        public void ShowSemiRequiredGroupBoxes(bool show)
         {
-            if ((int)Invoice.Inty <= 0 || (int)Invoice.Inp <= 0)
-                return;
-
             foreach (Control step in PanelSlider.Controls)
+                ShowSemiRequiredGroupBoxesRecursive(step);
+
+            void ShowSemiRequiredGroupBoxesRecursive(Control step)
             {
-                foreach (var control in step.Controls)
+                foreach (Control control in step.Controls)
                 {
+                    ShowSemiRequiredGroupBoxesRecursive(control);
+
                     if (control is not CustomGroupBox groupBox)
                         continue;
+
+                    groupBox.ShowSemiRequired = show;
 
                     var newMode = groupBox.Name.GetMode((int)Invoice.Inty, (int)Invoice.Inp);
 
@@ -72,30 +95,27 @@ namespace InvoiceManage.App.Forms.InvoicePanel
             }
         }
 
-        public void ShowOptionalGroupBoxes(bool show)
+        public void ChangeModeGroupBoxes()
         {
+            if ((int)Invoice.Inty <= 0 || (int)Invoice.Inp <= 0)
+                return;
+
             foreach (Control step in PanelSlider.Controls)
+                ChangeModeGroupBoxesRecursive(step);
+
+            void ChangeModeGroupBoxesRecursive(Control step)
             {
-                foreach (var control in step.Controls)
+                foreach (Control control in step.Controls)
                 {
+                    ChangeModeGroupBoxesRecursive(control);
+
                     if (control is not CustomGroupBox groupBox)
                         continue;
 
-                    groupBox.ShowOptional = show;
-                }
-            }
-        }
+                    var newMode = groupBox.Name.GetMode((int)Invoice.Inty, (int)Invoice.Inp);
 
-        public void ShowSemiRequiredGroupBoxes(bool show)
-        {
-            foreach (Control step in PanelSlider.Controls)
-            {
-                foreach (var control in step.Controls)
-                {
-                    if (control is not CustomGroupBox groupBox)
-                        continue;
-
-                    groupBox.ShowSemiRequired = show;
+                    if (newMode is not null)
+                        groupBox.Mode = newMode.Value;
                 }
             }
         }
