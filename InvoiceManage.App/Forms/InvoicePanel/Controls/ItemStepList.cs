@@ -8,5 +8,16 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             InitializeComponent();
         }
+
+        private void ItemStepList_Load(object sender, System.EventArgs e)
+        {
+            SetDataBindings();
+        }
+
+        public void SetDataBindings()
+        {
+            var parentForm = ParentForm! as FrmInvoice;
+            GvItems.DataSource = parentForm!.Invoice.Items;
+        }
     }
 }

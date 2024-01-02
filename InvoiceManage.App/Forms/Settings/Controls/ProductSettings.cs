@@ -26,7 +26,7 @@ namespace InvoiceManage.App.Forms.Settings.Controls
             {
                 Sstid = gb2.Text,
                 Sstt = gb.Text,
-                Vra = double.Parse(TxtVra.Text),
+                Vra = double.Parse(TxtSstt.Text),
             };
 
             _commonService.AddProduct(product);

@@ -31,9 +31,9 @@
             ProductsGv = new System.Windows.Forms.DataGridView();
             BtnAdd = new Resources.CustomToolBox.RoundedButton();
             gb = new System.Windows.Forms.GroupBox();
-            TxtSstt = new System.Windows.Forms.TextBox();
-            groupBox10 = new System.Windows.Forms.GroupBox();
             TxtVra = new System.Windows.Forms.TextBox();
+            groupBox10 = new System.Windows.Forms.GroupBox();
+            TxtSstt = new System.Windows.Forms.TextBox();
             gb2 = new System.Windows.Forms.GroupBox();
             TxtSstid = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)ProductsGv).BeginInit();
@@ -76,7 +76,7 @@
             // 
             // gb
             // 
-            gb.Controls.Add(TxtSstt);
+            gb.Controls.Add(TxtVra);
             gb.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             gb.ForeColor = System.Drawing.Color.DimGray;
             gb.Location = new System.Drawing.Point(233, 31);
@@ -86,19 +86,19 @@
             gb.TabStop = false;
             gb.Text = "نرخ مالیات بر ارزش افزوده";
             // 
-            // TxtSstt
+            // TxtVra
             // 
-            TxtSstt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            TxtSstt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtSstt.Location = new System.Drawing.Point(17, 30);
-            TxtSstt.Name = "TxtSstt";
-            TxtSstt.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            TxtSstt.Size = new System.Drawing.Size(172, 29);
-            TxtSstt.TabIndex = 0;
+            TxtVra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtVra.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtVra.Location = new System.Drawing.Point(17, 30);
+            TxtVra.Name = "TxtVra";
+            TxtVra.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtVra.Size = new System.Drawing.Size(172, 29);
+            TxtVra.TabIndex = 0;
             // 
             // groupBox10
             // 
-            groupBox10.Controls.Add(TxtVra);
+            groupBox10.Controls.Add(TxtSstt);
             groupBox10.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox10.ForeColor = System.Drawing.Color.DimGray;
             groupBox10.Location = new System.Drawing.Point(233, 107);
@@ -108,17 +108,17 @@
             groupBox10.TabStop = false;
             groupBox10.Text = "شرح کالا";
             // 
-            // TxtVra
+            // TxtSstt
             // 
-            TxtVra.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            TxtVra.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtVra.Location = new System.Drawing.Point(17, 26);
-            TxtVra.Multiline = true;
-            TxtVra.Name = "TxtVra";
-            TxtVra.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            TxtVra.Size = new System.Drawing.Size(495, 52);
-            TxtVra.TabIndex = 0;
-            TxtVra.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            TxtSstt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtSstt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtSstt.Location = new System.Drawing.Point(17, 26);
+            TxtSstt.Multiline = true;
+            TxtSstt.Name = "TxtSstt";
+            TxtSstt.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtSstt.Size = new System.Drawing.Size(495, 52);
+            TxtSstt.TabIndex = 0;
+            TxtSstt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // gb2
             // 
@@ -173,9 +173,9 @@
         private System.Windows.Forms.DataGridView ProductsGv;
         private Resources.CustomToolBox.RoundedButton BtnAdd;
         private System.Windows.Forms.GroupBox gb;
-        private System.Windows.Forms.TextBox TxtSstt;
-        private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.TextBox TxtVra;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.TextBox TxtSstt;
         private System.Windows.Forms.GroupBox gb2;
         private System.Windows.Forms.TextBox TxtSstid;
     }

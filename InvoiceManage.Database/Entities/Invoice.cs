@@ -1,8 +1,6 @@
 ﻿using InvoiceManage.Database.Entities.Common;
-using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace InvoiceManage.Database.Entities
 {
@@ -39,7 +37,7 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "شماره اقتصادی خریدار")]
         public string Tinb { get; set; }
         [Display(Name = "نوع شخص خریدار")]
-        public int Tob { get; set; }
+        public Tob Tob { get; set; }
         [Display(Name = "کد شعبه فروشنده")]
         public string Sbc { get; set; }
         [Display(Name = "شماره /شناسه ملی")]
@@ -137,6 +135,8 @@ namespace InvoiceManage.Database.Entities
 
         public long CompanyId { get; set; }
         public Company Company { get; set; }
+
+        public BindingList<InvoiceItem> Items { get; set; }
     }
 
     public enum Inty
@@ -149,39 +149,67 @@ namespace InvoiceManage.Database.Entities
 
     public enum Inp
     {
-        [Display(Name = "نوع اول")]
+        [Display(Name = "الگوی اول")]
         First = 1,
-        [Display(Name = "نوع دوم")]
+        [Display(Name = "الگوی دوم")]
         Second = 2
     }
 
     public enum Ins
     {
-        [Display(Name = "تست")]
-        Test = 1
+        [Display(Name = "اصلی")]
+        Main = 1,
+        [Display(Name = "اصلاحی")]
+        Corrective = 2,
+        [Display(Name = "ابطالی")]
+        Cancel = 3,
+        [Display(Name = "برگشت از فروش")]
+        Return = 4
     }
 
     public enum Tob
     {
-        [Display(Name = "تست")]
-        Test = 1
+        [Display(Name = "حقیقی")]
+        Natural = 1,
+        [Display(Name = "حقوقی")]
+        Legal = 2
     }
 
     public enum Ft
     {
         [Display(Name = "تست")]
-        Test = 1
+        Internal = 1,
+        [Display(Name = "خارجی")]
+        Foreign = 2
     }
 
     public enum Pmt
     {
-        [Display(Name = "تست")]
-        Test = 1
+        [Display(Name = "چک")]
+        Check = 1,
+        [Display(Name = "اصلاحی")]
+        Corrective = 2,
+        [Display(Name = "وجه نقد")]
+        Cash = 3,
+        [Display(Name = "pos")]
+        Pos = 4,
+        [Display(Name = "درگاه پرداخت اینترنتی")]
+        Gateway = 5,
+        [Display(Name = "کارت به کارت")]
+        CardByCard = 6,
+        [Display(Name = "انتقال به حساب")]
+        AccountTransfer = 7,
+        [Display(Name = "سایر")]
+        Other = 8
     }
 
     public enum Setm
     {
-        [Display(Name = "تست")]
-        Test = 1
+        [Display(Name = "نقدی")]
+        Cash = 1,
+        [Display(Name = "نسیه")]
+        Credit = 2,
+        [Display(Name = "نقدی/نسیه")]
+        CashAndCredit = 3,
     }
 }

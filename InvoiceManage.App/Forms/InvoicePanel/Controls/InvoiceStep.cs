@@ -39,14 +39,16 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CbTob.SetEnumDataSource(typeof(Tob));
         }
 
-        private void BtnNext_Click(object sender, EventArgs e)
-        {
-            new Step().Next(ParentForm!, "InvoiceStep", "SellerStep", "SellerStep");
-        }
+        #region Events
 
         private void InvoiceStep_Load(object sender, EventArgs e)
         {
             SetDataBindings();
+        }
+
+        private void BtnNext_Click(object sender, EventArgs e)
+        {
+            new Step().Next(ParentForm!, "InvoiceStep", "CompanyStep", "CompanyStep");
         }
 
         private void CbInty_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,5 +78,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
             parentForm!.ShowOptionalGroupBoxes(TogOptional.Checked);
         }
+
+        #endregion
     }
 }

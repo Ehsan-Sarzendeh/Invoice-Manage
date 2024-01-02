@@ -28,37 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            CustomersGv = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)CustomersGv).BeginInit();
+            GvItems = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)GvItems).BeginInit();
             SuspendLayout();
             // 
-            // CustomersGv
+            // GvItems
             // 
-            CustomersGv.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            CustomersGv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            CustomersGv.Location = new System.Drawing.Point(24, 32);
-            CustomersGv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            CustomersGv.Name = "CustomersGv";
-            CustomersGv.RowTemplate.Height = 25;
-            CustomersGv.Size = new System.Drawing.Size(945, 424);
-            CustomersGv.TabIndex = 228;
+            GvItems.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            GvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GvItems.Location = new System.Drawing.Point(21, 17);
+            GvItems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            GvItems.Name = "GvItems";
+            GvItems.RowTemplate.Height = 25;
+            GvItems.Size = new System.Drawing.Size(975, 458);
+            GvItems.TabIndex = 228;
             // 
             // ItemStepList
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            Controls.Add(CustomersGv);
+            Controls.Add(GvItems);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "ItemStepList";
-            Size = new System.Drawing.Size(997, 475);
-            ((System.ComponentModel.ISupportInitialize)CustomersGv).EndInit();
+            RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Size = new System.Drawing.Size(1012, 495);
+            Load += ItemStepList_Load;
+            ((System.ComponentModel.ISupportInitialize)GvItems).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView CustomersGv;
+        private System.Windows.Forms.DataGridView GvItems;
     }
 }

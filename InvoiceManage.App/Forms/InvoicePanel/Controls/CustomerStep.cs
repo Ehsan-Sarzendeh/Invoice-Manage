@@ -8,17 +8,12 @@ using InvoiceManage.App.Services.CommonService;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
-    public partial class BuyerStep : UserControl
+    public partial class CustomerStep : UserControl
     {
-        public BuyerStep()
+        public CustomerStep()
         {
             InitializeComponent();
             SetComboBoxDataSource();
-        }
-
-        private void BtnPrevious_Click(object sender, EventArgs e)
-        {
-            new Step().Previous(ParentForm!, "BuyerStep", "SellerStep", "SellerStep");
         }
 
         public void SetDataBindings()
@@ -39,9 +34,20 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CbFt.SetEnumDataSource(typeof(Ft));
         }
 
+        #region Events
+        private void CustomerStep_Load(object sender, EventArgs e)
+        {
+            SetDataBindings();
+        }
+
+        private void BtnPrevious_Click(object sender, EventArgs e)
+        {
+            new Step().Previous(ParentForm!, "CustomerStep", "CompanyStep", "CompanyStep");
+        }
+
         private void BtnNext_Click(object sender, EventArgs e)
         {
-            new Step().Next(ParentForm!, "BuyerStep", "ItemStep", "ItemStep");
+            new Step().Next(ParentForm!, "CustomerStep", "ItemStep", "ItemStep");
         }
 
         private void BtnSelect_Click(object sender, EventArgs e)
@@ -57,9 +63,11 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             }
         }
 
-        private void BuyerStep_Load(object sender, EventArgs e)
+        private void BtnInquiry_Click(object sender, EventArgs e)
         {
-            SetDataBindings();
+
         }
+
+        #endregion
     }
 }

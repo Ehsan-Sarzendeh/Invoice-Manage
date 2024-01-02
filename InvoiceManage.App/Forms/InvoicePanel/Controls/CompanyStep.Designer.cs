@@ -2,7 +2,7 @@
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
-    partial class SellerStep
+    partial class CompanyStep
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,8 +30,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            BtnNext = new Resources.CustomToolBox.RoundedButton();
-            BtnPrevious = new Resources.CustomToolBox.RoundedButton();
+            BtnNext = new RoundedButton();
+            BtnPrevious = new RoundedButton();
             groupBox5 = new CustomGroupBox();
             MtxtCdcd_1 = new System.Windows.Forms.MaskedTextBox();
             Tins = new CustomGroupBox();
@@ -48,7 +48,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtSbc = new System.Windows.Forms.TextBox();
             Scc = new CustomGroupBox();
             Cdcd_1 = new System.Windows.Forms.TextBox();
-            BtnSelect = new Resources.CustomToolBox.RoundedButton();
+            BtnSelect = new RoundedButton();
             groupBox5.SuspendLayout();
             Tins.SuspendLayout();
             Crn.SuspendLayout();
@@ -71,7 +71,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnNext.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnNext.ForeColor = System.Drawing.Color.White;
-            BtnNext.Location = new System.Drawing.Point(4, 535);
+            BtnNext.Location = new System.Drawing.Point(4, 551);
             BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnNext.Name = "BtnNext";
             BtnNext.Size = new System.Drawing.Size(120, 47);
@@ -93,7 +93,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnPrevious.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnPrevious.ForeColor = System.Drawing.Color.White;
-            BtnPrevious.Location = new System.Drawing.Point(872, 535);
+            BtnPrevious.Location = new System.Drawing.Point(888, 551);
             BtnPrevious.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnPrevious.Name = "BtnPrevious";
             BtnPrevious.Size = new System.Drawing.Size(120, 47);
@@ -108,9 +108,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             groupBox5.Controls.Add(MtxtCdcd_1);
             groupBox5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox5.ForeColor = System.Drawing.Color.DimGray;
-            groupBox5.Location = new System.Drawing.Point(752, 306);
+            groupBox5.Location = new System.Drawing.Point(761, 306);
+            groupBox5.Mode = Common.Mode.Required;
             groupBox5.Name = "groupBox5";
             groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            groupBox5.ShowOptional = false;
+            groupBox5.ShowSemiRequired = false;
             groupBox5.Size = new System.Drawing.Size(220, 70);
             groupBox5.TabIndex = 212;
             groupBox5.TabStop = false;
@@ -133,9 +136,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tins.Controls.Add(TxtTins);
             Tins.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Tins.ForeColor = System.Drawing.Color.DimGray;
-            Tins.Location = new System.Drawing.Point(501, 110);
+            Tins.Location = new System.Drawing.Point(510, 110);
+            Tins.Mode = Common.Mode.Required;
             Tins.Name = "Tins";
             Tins.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tins.ShowOptional = false;
+            Tins.ShowSemiRequired = false;
             Tins.Size = new System.Drawing.Size(471, 70);
             Tins.TabIndex = 216;
             Tins.TabStop = false;
@@ -156,9 +162,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Crn.Controls.Add(TxtCrn);
             Crn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Crn.ForeColor = System.Drawing.Color.DimGray;
-            Crn.Location = new System.Drawing.Point(24, 306);
+            Crn.Location = new System.Drawing.Point(33, 306);
+            Crn.Mode = Common.Mode.Required;
             Crn.Name = "Crn";
             Crn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Crn.ShowOptional = false;
+            Crn.ShowSemiRequired = false;
             Crn.Size = new System.Drawing.Size(241, 70);
             Crn.TabIndex = 217;
             Crn.TabStop = false;
@@ -179,9 +188,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Cdcn.Controls.Add(TxtCdcn);
             Cdcn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Cdcn.ForeColor = System.Drawing.Color.DimGray;
-            Cdcn.Location = new System.Drawing.Point(24, 207);
+            Cdcn.Location = new System.Drawing.Point(33, 207);
+            Cdcn.Mode = Common.Mode.Required;
             Cdcn.Name = "Cdcn";
             Cdcn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Cdcn.ShowOptional = false;
+            Cdcn.ShowSemiRequired = false;
             Cdcn.Size = new System.Drawing.Size(471, 70);
             Cdcn.TabIndex = 217;
             Cdcn.TabStop = false;
@@ -202,9 +214,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CompanyId.Controls.Add(TxtCompanyId);
             CompanyId.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CompanyId.ForeColor = System.Drawing.Color.DimGray;
-            CompanyId.Location = new System.Drawing.Point(24, 110);
+            CompanyId.Location = new System.Drawing.Point(33, 110);
+            CompanyId.Mode = Common.Mode.Required;
             CompanyId.Name = "CompanyId";
             CompanyId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            CompanyId.ShowOptional = false;
+            CompanyId.ShowSemiRequired = false;
             CompanyId.Size = new System.Drawing.Size(471, 70);
             CompanyId.TabIndex = 217;
             CompanyId.TabStop = false;
@@ -225,9 +240,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Scln.Controls.Add(TxtScln);
             Scln.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Scln.ForeColor = System.Drawing.Color.DimGray;
-            Scln.Location = new System.Drawing.Point(271, 306);
+            Scln.Location = new System.Drawing.Point(280, 306);
+            Scln.Mode = Common.Mode.Required;
             Scln.Name = "Scln";
             Scln.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Scln.ShowOptional = false;
+            Scln.ShowSemiRequired = false;
             Scln.Size = new System.Drawing.Size(224, 70);
             Scln.TabIndex = 217;
             Scln.TabStop = false;
@@ -248,9 +266,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Sbc.Controls.Add(TxtSbc);
             Sbc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Sbc.ForeColor = System.Drawing.Color.DimGray;
-            Sbc.Location = new System.Drawing.Point(501, 306);
+            Sbc.Location = new System.Drawing.Point(510, 306);
+            Sbc.Mode = Common.Mode.Required;
             Sbc.Name = "Sbc";
             Sbc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Sbc.ShowOptional = false;
+            Sbc.ShowSemiRequired = false;
             Sbc.Size = new System.Drawing.Size(245, 70);
             Sbc.TabIndex = 217;
             Sbc.TabStop = false;
@@ -271,9 +292,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Scc.Controls.Add(Cdcd_1);
             Scc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Scc.ForeColor = System.Drawing.Color.DimGray;
-            Scc.Location = new System.Drawing.Point(501, 207);
+            Scc.Location = new System.Drawing.Point(510, 207);
+            Scc.Mode = Common.Mode.Required;
             Scc.Name = "Scc";
             Scc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Scc.ShowOptional = false;
+            Scc.ShowSemiRequired = false;
             Scc.Size = new System.Drawing.Size(471, 70);
             Scc.TabIndex = 217;
             Scc.TabStop = false;
@@ -301,7 +325,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnSelect.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnSelect.ForeColor = System.Drawing.Color.White;
-            BtnSelect.Location = new System.Drawing.Point(24, 40);
+            BtnSelect.Location = new System.Drawing.Point(33, 38);
             BtnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnSelect.Name = "BtnSelect";
             BtnSelect.Size = new System.Drawing.Size(188, 47);
@@ -311,7 +335,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnSelect.UseVisualStyleBackColor = false;
             BtnSelect.Click += BtnSelect_Click;
             // 
-            // SellerStep
+            // CompanyStep
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -329,9 +353,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Controls.Add(BtnNext);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            Name = "SellerStep";
-            Size = new System.Drawing.Size(996, 587);
-            Load += SellerStep_Load;
+            Name = "CompanyStep";
+            Size = new System.Drawing.Size(1012, 603);
+            Load += CompanyStep_Load;
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
             Tins.ResumeLayout(false);

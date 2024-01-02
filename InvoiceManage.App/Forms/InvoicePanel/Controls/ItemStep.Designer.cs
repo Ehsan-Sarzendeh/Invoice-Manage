@@ -49,7 +49,7 @@
             BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnNext.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnNext.ForeColor = System.Drawing.Color.White;
-            BtnNext.Location = new System.Drawing.Point(4, 535);
+            BtnNext.Location = new System.Drawing.Point(4, 551);
             BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnNext.Name = "BtnNext";
             BtnNext.Size = new System.Drawing.Size(120, 47);
@@ -71,7 +71,7 @@
             BtnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnPrevious.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnPrevious.ForeColor = System.Drawing.Color.White;
-            BtnPrevious.Location = new System.Drawing.Point(872, 535);
+            BtnPrevious.Location = new System.Drawing.Point(888, 551);
             BtnPrevious.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnPrevious.Name = "BtnPrevious";
             BtnPrevious.Size = new System.Drawing.Size(120, 47);
@@ -88,13 +88,13 @@
             panel1.Dock = System.Windows.Forms.DockStyle.Top;
             panel1.Location = new System.Drawing.Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(996, 52);
+            panel1.Size = new System.Drawing.Size(1012, 46);
             panel1.TabIndex = 4;
             // 
             // TabAdd
             // 
-            TabAdd.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
-            TabAdd.BackgroundColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            TabAdd.BackColor = System.Drawing.Color.PeachPuff;
+            TabAdd.BackgroundColor = System.Drawing.Color.PeachPuff;
             TabAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             TabAdd.BorderColor = System.Drawing.Color.FromArgb(224, 224, 224);
             TabAdd.BorderRadius = 5;
@@ -105,9 +105,9 @@
             TabAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             TabAdd.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TabAdd.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
-            TabAdd.Location = new System.Drawing.Point(497, 0);
+            TabAdd.Location = new System.Drawing.Point(506, 0);
             TabAdd.Name = "TabAdd";
-            TabAdd.Size = new System.Drawing.Size(499, 52);
+            TabAdd.Size = new System.Drawing.Size(506, 46);
             TabAdd.TabIndex = 1;
             TabAdd.Text = "افزودن اقلام";
             TabAdd.TextColor = System.Drawing.Color.FromArgb(68, 68, 68);
@@ -116,8 +116,8 @@
             // 
             // TabList
             // 
-            TabList.BackColor = System.Drawing.Color.FromArgb(224, 224, 224);
-            TabList.BackgroundColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            TabList.BackColor = System.Drawing.Color.LightGray;
+            TabList.BackgroundColor = System.Drawing.Color.LightGray;
             TabList.BorderColor = System.Drawing.Color.PaleVioletRed;
             TabList.BorderRadius = 5;
             TabList.BorderSize = 0;
@@ -129,7 +129,7 @@
             TabList.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
             TabList.Location = new System.Drawing.Point(0, 0);
             TabList.Name = "TabList";
-            TabList.Size = new System.Drawing.Size(499, 52);
+            TabList.Size = new System.Drawing.Size(506, 46);
             TabList.TabIndex = 0;
             TabList.Text = "لیست اقلام";
             TabList.TextColor = System.Drawing.Color.FromArgb(68, 68, 68);
@@ -138,9 +138,9 @@
             // 
             // PanelSlider
             // 
-            PanelSlider.Location = new System.Drawing.Point(-1, 52);
+            PanelSlider.Location = new System.Drawing.Point(0, 47);
             PanelSlider.Name = "PanelSlider";
-            PanelSlider.Size = new System.Drawing.Size(997, 475);
+            PanelSlider.Size = new System.Drawing.Size(1012, 495);
             PanelSlider.TabIndex = 5;
             // 
             // ItemStep
@@ -155,7 +155,7 @@
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "ItemStep";
-            Size = new System.Drawing.Size(996, 587);
+            Size = new System.Drawing.Size(1012, 603);
             panel1.ResumeLayout(false);
             ResumeLayout(false);
         }

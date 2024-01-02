@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
-    public partial class SellerStep : UserControl
+    public partial class CompanyStep : UserControl
     {
-        public SellerStep()
+        public CompanyStep()
         {
             InitializeComponent();
             SetComboBoxDataSource();
@@ -28,16 +28,15 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void SetComboBoxDataSource()
         {
+
         }
 
-        private void BtnPrevious_Click(object sender, EventArgs e)
-        {
-            new Step().Previous(ParentForm!, "SellerStep", "InvoiceStep", "InvoiceStep");
-        }
+        #region Events
 
-        private void BtnNext_Click(object sender, EventArgs e)
+        private void CompanyStep_Load(object sender, EventArgs e)
         {
-            new Step().Next(ParentForm!, "SellerStep", "BuyerStep", "BuyerStep");
+            SetDataBindings();
+
         }
 
         private void BtnSelect_Click(object sender, EventArgs e)
@@ -51,9 +50,16 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             }
         }
 
-        private void SellerStep_Load(object sender, EventArgs e)
+        private void BtnPrevious_Click(object sender, EventArgs e)
         {
-            SetDataBindings();
+            new Step().Previous(ParentForm!, "CompanyStep", "InvoiceStep", "InvoiceStep");
         }
+
+        private void BtnNext_Click(object sender, EventArgs e)
+        {
+            new Step().Next(ParentForm!, "CompanyStep", "CustomerStep", "CustomerStep");
+        }
+
+        #endregion
     }
 }

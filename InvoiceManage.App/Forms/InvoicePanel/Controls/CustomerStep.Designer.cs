@@ -2,7 +2,7 @@
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
-    partial class BuyerStep
+    partial class CustomerStep
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,12 +30,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            BtnNext = new Resources.CustomToolBox.RoundedButton();
-            BtnPrevious = new Resources.CustomToolBox.RoundedButton();
+            BtnNext = new RoundedButton();
+            BtnPrevious = new RoundedButton();
             Bpn = new CustomGroupBox();
             TxtBpn = new System.Windows.Forms.TextBox();
             groupBox3 = new CustomGroupBox();
-            roundedButton2 = new Resources.CustomToolBox.RoundedButton();
+            BtnInquiry = new RoundedButton();
             textBox4 = new System.Windows.Forms.TextBox();
             BillId = new CustomGroupBox();
             TxtBillId = new System.Windows.Forms.TextBox();
@@ -45,7 +45,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtBbc = new System.Windows.Forms.TextBox();
             Tinb = new CustomGroupBox();
             TxtTinb = new System.Windows.Forms.TextBox();
-            BtnSelect = new Resources.CustomToolBox.RoundedButton();
+            BtnSelect = new RoundedButton();
             Ft = new CustomGroupBox();
             CbFt = new System.Windows.Forms.ComboBox();
             Bpc = new CustomGroupBox();
@@ -72,7 +72,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnNext.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnNext.ForeColor = System.Drawing.Color.White;
-            BtnNext.Location = new System.Drawing.Point(4, 535);
+            BtnNext.Location = new System.Drawing.Point(4, 551);
             BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnNext.Name = "BtnNext";
             BtnNext.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -95,7 +95,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnPrevious.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnPrevious.ForeColor = System.Drawing.Color.White;
-            BtnPrevious.Location = new System.Drawing.Point(872, 535);
+            BtnPrevious.Location = new System.Drawing.Point(888, 551);
             BtnPrevious.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnPrevious.Name = "BtnPrevious";
             BtnPrevious.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -111,9 +111,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Bpn.Controls.Add(TxtBpn);
             Bpn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Bpn.ForeColor = System.Drawing.Color.DimGray;
-            Bpn.Location = new System.Drawing.Point(265, 304);
+            Bpn.Location = new System.Drawing.Point(274, 304);
+            Bpn.Mode = Common.Mode.Required;
             Bpn.Name = "Bpn";
             Bpn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Bpn.ShowOptional = false;
+            Bpn.ShowSemiRequired = false;
             Bpn.Size = new System.Drawing.Size(230, 70);
             Bpn.TabIndex = 221;
             Bpn.TabStop = false;
@@ -131,39 +134,43 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(roundedButton2);
+            groupBox3.Controls.Add(BtnInquiry);
             groupBox3.Controls.Add(textBox4);
             groupBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox3.ForeColor = System.Drawing.Color.DimGray;
-            groupBox3.Location = new System.Drawing.Point(24, 109);
+            groupBox3.Location = new System.Drawing.Point(33, 109);
+            groupBox3.Mode = Common.Mode.Required;
             groupBox3.Name = "groupBox3";
             groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            groupBox3.ShowOptional = false;
+            groupBox3.ShowSemiRequired = false;
             groupBox3.Size = new System.Drawing.Size(471, 70);
             groupBox3.TabIndex = 222;
             groupBox3.TabStop = false;
             groupBox3.Text = "نتیجه استعلام";
             // 
-            // roundedButton2
+            // BtnInquiry
             // 
-            roundedButton2.BackColor = System.Drawing.Color.DarkGray;
-            roundedButton2.BackgroundColor = System.Drawing.Color.DarkGray;
-            roundedButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            roundedButton2.BorderRadius = 10;
-            roundedButton2.BorderSize = 0;
-            roundedButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            roundedButton2.FlatAppearance.BorderSize = 0;
-            roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            roundedButton2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            roundedButton2.ForeColor = System.Drawing.Color.White;
-            roundedButton2.Location = new System.Drawing.Point(369, 28);
-            roundedButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            roundedButton2.Size = new System.Drawing.Size(91, 29);
-            roundedButton2.TabIndex = 229;
-            roundedButton2.Text = "استعلام خریدار";
-            roundedButton2.TextColor = System.Drawing.Color.White;
-            roundedButton2.UseVisualStyleBackColor = false;
+            BtnInquiry.BackColor = System.Drawing.Color.DarkGray;
+            BtnInquiry.BackgroundColor = System.Drawing.Color.DarkGray;
+            BtnInquiry.BorderColor = System.Drawing.Color.PaleVioletRed;
+            BtnInquiry.BorderRadius = 10;
+            BtnInquiry.BorderSize = 0;
+            BtnInquiry.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnInquiry.FlatAppearance.BorderSize = 0;
+            BtnInquiry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnInquiry.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnInquiry.ForeColor = System.Drawing.Color.White;
+            BtnInquiry.Location = new System.Drawing.Point(369, 28);
+            BtnInquiry.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnInquiry.Name = "BtnInquiry";
+            BtnInquiry.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            BtnInquiry.Size = new System.Drawing.Size(91, 29);
+            BtnInquiry.TabIndex = 229;
+            BtnInquiry.Text = "استعلام خریدار";
+            BtnInquiry.TextColor = System.Drawing.Color.White;
+            BtnInquiry.UseVisualStyleBackColor = false;
+            BtnInquiry.Click += BtnInquiry_Click;
             // 
             // textBox4
             // 
@@ -180,9 +187,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BillId.Controls.Add(TxtBillId);
             BillId.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BillId.ForeColor = System.Drawing.Color.DimGray;
-            BillId.Location = new System.Drawing.Point(24, 204);
+            BillId.Location = new System.Drawing.Point(33, 204);
+            BillId.Mode = Common.Mode.Required;
             BillId.Name = "BillId";
             BillId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            BillId.ShowOptional = false;
+            BillId.ShowSemiRequired = false;
             BillId.Size = new System.Drawing.Size(471, 70);
             BillId.TabIndex = 223;
             BillId.TabStop = false;
@@ -203,9 +213,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BId.Controls.Add(TxtBId);
             BId.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BId.ForeColor = System.Drawing.Color.DimGray;
-            BId.Location = new System.Drawing.Point(501, 204);
+            BId.Location = new System.Drawing.Point(510, 204);
+            BId.Mode = Common.Mode.Required;
             BId.Name = "BId";
             BId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            BId.ShowOptional = false;
+            BId.ShowSemiRequired = false;
             BId.Size = new System.Drawing.Size(471, 70);
             BId.TabIndex = 225;
             BId.TabStop = false;
@@ -226,9 +239,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Bbc.Controls.Add(TxtBbc);
             Bbc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Bbc.ForeColor = System.Drawing.Color.DimGray;
-            Bbc.Location = new System.Drawing.Point(501, 304);
+            Bbc.Location = new System.Drawing.Point(510, 304);
+            Bbc.Mode = Common.Mode.Required;
             Bbc.Name = "Bbc";
             Bbc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Bbc.ShowOptional = false;
+            Bbc.ShowSemiRequired = false;
             Bbc.Size = new System.Drawing.Size(235, 70);
             Bbc.TabIndex = 226;
             Bbc.TabStop = false;
@@ -249,9 +265,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tinb.Controls.Add(TxtTinb);
             Tinb.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Tinb.ForeColor = System.Drawing.Color.DimGray;
-            Tinb.Location = new System.Drawing.Point(501, 109);
+            Tinb.Location = new System.Drawing.Point(510, 109);
+            Tinb.Mode = Common.Mode.Required;
             Tinb.Name = "Tinb";
             Tinb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Tinb.ShowOptional = false;
+            Tinb.ShowSemiRequired = false;
             Tinb.Size = new System.Drawing.Size(471, 70);
             Tinb.TabIndex = 220;
             Tinb.TabStop = false;
@@ -279,7 +298,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnSelect.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnSelect.ForeColor = System.Drawing.Color.White;
-            BtnSelect.Location = new System.Drawing.Point(24, 40);
+            BtnSelect.Location = new System.Drawing.Point(33, 40);
             BtnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnSelect.Name = "BtnSelect";
             BtnSelect.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -295,9 +314,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Ft.Controls.Add(CbFt);
             Ft.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Ft.ForeColor = System.Drawing.Color.DimGray;
-            Ft.Location = new System.Drawing.Point(742, 304);
+            Ft.Location = new System.Drawing.Point(751, 304);
+            Ft.Mode = Common.Mode.Required;
             Ft.Name = "Ft";
             Ft.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Ft.ShowOptional = false;
+            Ft.ShowSemiRequired = false;
             Ft.Size = new System.Drawing.Size(230, 70);
             Ft.TabIndex = 228;
             Ft.TabStop = false;
@@ -320,9 +342,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Bpc.Controls.Add(TxtBpc);
             Bpc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Bpc.ForeColor = System.Drawing.Color.DimGray;
-            Bpc.Location = new System.Drawing.Point(24, 304);
+            Bpc.Location = new System.Drawing.Point(33, 304);
+            Bpc.Mode = Common.Mode.Required;
             Bpc.Name = "Bpc";
             Bpc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Bpc.ShowOptional = false;
+            Bpc.ShowSemiRequired = false;
             Bpc.Size = new System.Drawing.Size(235, 70);
             Bpc.TabIndex = 222;
             Bpc.TabStop = false;
@@ -338,7 +363,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtBpc.Size = new System.Drawing.Size(219, 29);
             TxtBpc.TabIndex = 0;
             // 
-            // BuyerStep
+            // CustomerStep
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -356,9 +381,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Controls.Add(BtnNext);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            Name = "BuyerStep";
-            Size = new System.Drawing.Size(996, 587);
-            Load += BuyerStep_Load;
+            Name = "CustomerStep";
+            Size = new System.Drawing.Size(1012, 603);
+            Load += CustomerStep_Load;
             Bpn.ResumeLayout(false);
             Bpn.PerformLayout();
             groupBox3.ResumeLayout(false);
@@ -396,7 +421,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private Resources.CustomToolBox.RoundedButton BtnSelect;
         private CustomGroupBox Ft;
         private System.Windows.Forms.ComboBox CbFt;
-        private Resources.CustomToolBox.RoundedButton roundedButton2;
+        private Resources.CustomToolBox.RoundedButton BtnInquiry;
         private CustomGroupBox Bpc;
         private System.Windows.Forms.TextBox TxtBpc;
     }
