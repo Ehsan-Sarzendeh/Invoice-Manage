@@ -28,7 +28,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             //TODO: Calculate
 
-            var newItem = new InvoiceItem()
+            var newItem = new InvoiceItem
             {
                 SstId = TxtSstid.Text,
                 Sstt = TxtSstt.Text,
