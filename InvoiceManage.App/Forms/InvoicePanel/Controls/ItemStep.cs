@@ -41,7 +41,11 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnNext_Click(object sender, EventArgs e)
         {
-            new Step().Next(ParentForm!, "ItemStep", "SumStep", "SumStep");
+            var step = new Step().Next(ParentForm!, "ItemStep", "SumStep", "SumStep");
+
+            var sumStep = step as SumStep;
+
+            sumStep!.SetComputedProperties();
         }
 
         #endregion

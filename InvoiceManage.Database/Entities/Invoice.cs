@@ -1,6 +1,7 @@
 ﻿using InvoiceManage.Database.Entities.Common;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using InvoiceManage.Database.Infrastructures;
 
 namespace InvoiceManage.Database.Entities
@@ -73,46 +74,48 @@ namespace InvoiceManage.Database.Entities
 
         [Display(Name = "تاریخ کوتاژ اظهارنامه گمرکی")]
         public string Cdcd_1 { get; set; }
+
         public decimal Cdcd { get; set; }
 
         [Display(Name = "شماره اشتراک/ شناسه قبض بهربرداری")]
         public string BillId { get; set; }
 
         [Display(Name = "مجموع مبلغ قبل از کسر تخفیف")]
-        public decimal Tprdis { get; set; }
+        [Bindable(true)]
+        public decimal Tprdis => Items?.Sum(x => x.Prdis) ?? 0;
 
         [Display(Name = "مجموع تخفیفات")]
-        public decimal Tdis { get; set; }
+        public decimal Tdis => Items?.Sum(x => x.Dis) ?? 0;
 
         [Display(Name = "مجموع مبلغ پس از کسر تخفیف")]
-        public decimal Tadis { get; set; }
+        public decimal Tadis => Items?.Sum(x => x.Adis) ?? 0;
 
         [Display(Name = "مجموع مالیات بر ارزش افزوده")]
-        public decimal Tvam { get; set; }
+        public decimal Tvam => Items?.Sum(x => x.Vam) ?? 0;
 
         [Display(Name = "مجموع سایر مالیات، عوارض و وجوه قانونی")]
-        public decimal Todam { get; set; }
+        public decimal Todam => Items?.Sum(x => x.Odam) ?? 0;
 
         [Display(Name = "مجموع صورتحساب")]
-        public decimal Tbill { get; set; }
+        public decimal Tbill => Items?.Sum(x => x.Tsstam) ?? 0;
 
         [Display(Name = "مجموع وزن خالص")]
-        public decimal Tonw { get; set; }
+        public decimal Tonw => Items?.Sum(x => x.Nw) ?? 0;
 
         [Display(Name = "مجموع ارزش ریالی")]
-        public decimal Torv { get; set; }
+        public decimal Torv => Items?.Sum(x => x.Ssrv) ?? 0;
 
         [Display(Name = "مجموع ارزش ارزی")]
-        public decimal Tocv { get; set; }
+        public decimal Tocv => Items?.Sum(x => x.Sscv) ?? 0;
+
+        [Display(Name = "مجموع سهم مالیات بر ارزش افزوده از پرداخت")]
+        public decimal Tvop => Items?.Sum(x => x.Vop) ?? 0;
 
         [Display(Name = "مبلغ پرداختی نقدی")]
         public decimal Cap { get; set; }
 
         [Display(Name = "مبلغ نسیه")]
         public decimal Insp { get; set; }
-
-        [Display(Name = "مجموع سهم مالیات بر ارزش افزوده از پرداخت")]
-        public decimal Tvop { get; set; }
 
         [Display(Name = "مالیات موضوع ماده 17")]
         public decimal Tax17 { get; set; }

@@ -40,16 +40,9 @@ namespace InvoiceManage.App.Forms.InvoiceList
                         Tins = _invoice.Tins,
                         Tob = _invoice.Tob,
                         Tinb = _invoice.Tinb,
-                        Tprdis = _invoice.Tprdis,
-                        Tadis = _invoice.Tadis,
-                        Tvam = _invoice.Tvam,
-                        Todam = _invoice.Todam,
-                        Tbill = _invoice.Tbill,
                         Setm = _invoice.Setm,
                         SendStatus = _invoice.SendStatus,
-                        Items = _invoice.Items,
-                        // Buyer_Address = addressTxt.Text,
-                        // Buyer_Phone = phoneTxt.Text
+                        Items = _invoice.Items
                     }
                 };
 

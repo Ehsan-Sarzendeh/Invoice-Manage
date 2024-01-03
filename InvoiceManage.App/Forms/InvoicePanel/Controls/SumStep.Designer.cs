@@ -454,7 +454,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTbill.Location = new System.Drawing.Point(10, 31);
             TxtTbill.Name = "TxtTbill";
             TxtTbill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            TxtTbill.Size = new System.Drawing.Size(460, 29);
+            TxtTbill.Size = new System.Drawing.Size(455, 29);
             TxtTbill.TabIndex = 0;
             // 
             // SumStep

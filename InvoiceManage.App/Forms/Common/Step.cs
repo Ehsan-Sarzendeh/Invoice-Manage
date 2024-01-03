@@ -4,7 +4,7 @@ namespace InvoiceManage.App.Forms.Common
 {
     public class Step
     {
-        public void Previous(Form parentForm, string currentStep, string previousStep, string previousPageName)
+        public Control Previous(Form parentForm, string currentStep, string previousStep, string previousPageName)
         {
             // resolve images
             var currentPictureBox = (PictureBox)parentForm.Controls.Find("panel", false)[0].Controls.Find(currentStep, false)[0];
@@ -14,10 +14,14 @@ namespace InvoiceManage.App.Forms.Common
             previousPictureBox.Image = Properties.Resources.current;
 
             // resolve pages
-            parentForm.Controls.Find("panel", false)[0].Controls.Find("PanelSlider", false)[0].Controls.Find(previousPageName, false)[0].BringToFront();
+            var previousControl = parentForm.Controls.Find("panel", false)[0].Controls.Find("PanelSlider", false)[0].Controls.Find(previousPageName, false)[0];
+
+            previousControl.BringToFront();
+
+            return previousControl;
         }   
 
-        public void Next(Form parentForm, string currentStep, string nextStep, string nextPageName)
+        public Control Next(Form parentForm, string currentStep, string nextStep, string nextPageName)
         {
             // resolve images 
             var currentPictureBox = (PictureBox)parentForm.Controls.Find("panel", false)[0].Controls.Find(currentStep, false)[0];
@@ -27,7 +31,12 @@ namespace InvoiceManage.App.Forms.Common
             nextPictureBox.Image = Properties.Resources.current;
 
             // resolve pages
-            parentForm.Controls.Find("panel", false)[0].Controls.Find("PanelSlider", false)[0].Controls.Find(nextPageName, false)[0].BringToFront();
+            var nextControl = parentForm.Controls.Find("panel", false)[0].Controls.Find("PanelSlider", false)[0]
+                .Controls.Find(nextPageName, false)[0];
+
+            nextControl.BringToFront();
+
+            return nextControl;
         }
     }
 

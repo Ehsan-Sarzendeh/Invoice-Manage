@@ -27,10 +27,11 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            //TODO: Calculate
+            var parentForm = ParentForm as FrmInvoice;
 
             var newItem = new InvoiceItem
             {
+                Invoice = parentForm!.Invoice,
                 SstId = TxtSstid.Text,
                 Sstt = TxtSstt.Text,
                 Am = decimal.TryParse(TxtAm.Text, out var am)
@@ -72,7 +73,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
                     ? bros : default
             };
 
-            var parentForm = ParentForm as FrmInvoice;
             parentForm!.Invoice.Items.Add(newItem);
 
             this.ClearControls();

@@ -1,6 +1,8 @@
 ﻿using InvoiceManage.App.Forms.Common;
 using InvoiceManage.Database.Entities;
 using System;
+using System.Globalization;
+using System.Linq;
 using System.Windows.Forms;
 using InvoiceManage.App.Services.Infrastructures;
 
@@ -19,19 +21,25 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             var parentForm = ParentForm as FrmInvoice;
 
-            TxtCap.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Cap), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtCap.DataBindings.Add("Text", parentForm!.Invoice, nameof(parentForm.Invoice.Cap), true, DataSourceUpdateMode.OnPropertyChanged);
             TxtInsp.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Insp), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTadis.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tadis), true, DataSourceUpdateMode.OnPropertyChanged);
             TxtTax17.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tax17), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTbill.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tbill), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTocv.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tocv), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTodam.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Todam), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTonw.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tonw), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTorv.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Torv), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTprdis.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tprdis), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTvam.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tvam), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTvop.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tvop), true, DataSourceUpdateMode.OnPropertyChanged);
             Cbv.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Setm), true, DataSourceUpdateMode.OnPropertyChanged);
+        }
+
+        public void SetComputedProperties()
+        {
+            var parentForm = ParentForm as FrmInvoice;
+
+            TxtTadis.Text = parentForm!.Invoice.Tadis.ToString("N0", CultureInfo.InvariantCulture);
+            TxtTbill.Text = parentForm.Invoice.Tbill.ToString("N0", CultureInfo.InvariantCulture);
+            TxtTocv.Text = parentForm.Invoice.Tocv.ToString("N0", CultureInfo.InvariantCulture);
+            TxtTodam.Text = parentForm.Invoice.Todam.ToString("N0", CultureInfo.InvariantCulture);
+            TxtTonw.Text = parentForm.Invoice.Tonw.ToString("N0", CultureInfo.InvariantCulture);
+            TxtTorv.Text = parentForm.Invoice.Torv.ToString("N0", CultureInfo.InvariantCulture);
+            TxtTprdis.Text = parentForm.Invoice.Tprdis.ToString("N0", CultureInfo.InvariantCulture);
+            TxtTvam.Text = parentForm.Invoice.Tvam.ToString("N0", CultureInfo.InvariantCulture);
+            TxtTvop.Text = parentForm.Invoice.Tvop.ToString("N0", CultureInfo.InvariantCulture);
         }
 
         private void SetComboBoxDataSource()

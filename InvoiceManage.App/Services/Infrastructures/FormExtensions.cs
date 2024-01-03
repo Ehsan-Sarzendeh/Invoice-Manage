@@ -1,8 +1,6 @@
-﻿using System;
+﻿using InvoiceManage.Database.Infrastructures;
+using System;
 using System.Windows.Forms;
-using InvoiceManage.App.Resources.CustomToolBox;
-using InvoiceManage.Database.Entities;
-using InvoiceManage.Database.Infrastructures;
 
 namespace InvoiceManage.App.Services.Infrastructures
 {
@@ -14,7 +12,7 @@ namespace InvoiceManage.App.Services.Infrastructures
             combo.DisplayMember = "Display";
             combo.ValueMember = "Value";
         }
-        
+
         public static void ChangeReadOnly(this GroupBox groupBox, bool disable)
         {
             foreach (Control control in groupBox.Controls)
