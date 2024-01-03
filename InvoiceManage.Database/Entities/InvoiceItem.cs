@@ -49,9 +49,11 @@ namespace InvoiceManage.Database.Entities
         public double Vra { get; set; }
 
         [Display(Name = "مبلغ مالیات بر ارزش افزوده")]
-        public decimal Vam => Invoice.Inp == Inp.First 
-            ? (decimal)Vra * Adis / 100
-            : Tcpbs * 9 / 100 + Prdis * (decimal)Vra / 100;
+        public decimal Vam => Invoice is null 
+            ? 0
+            : Invoice.Inp == Inp.First
+                ? (decimal)Vra * Adis / 100
+                : Tcpbs * 9 / 100 + Prdis * (decimal)Vra / 100;
 
         [Display(Name = "موضوع سایر مالیات و عوارض")]
         public string Odt { get; set; }

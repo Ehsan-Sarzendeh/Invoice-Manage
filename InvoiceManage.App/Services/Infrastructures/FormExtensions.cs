@@ -1,5 +1,7 @@
 ﻿using InvoiceManage.Database.Infrastructures;
 using System;
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace InvoiceManage.App.Services.Infrastructures
@@ -11,6 +13,13 @@ namespace InvoiceManage.App.Services.Infrastructures
             combo.DataSource = EnumExtensions.GetValues(targerEnum);
             combo.DisplayMember = "Display";
             combo.ValueMember = "Value";
+        }
+
+        public static void SetHeaders(this DataGridView dataGrid, Type target)
+        {
+            foreach (var property in target.GetProperties())
+                if (dataGrid.Columns.Contains(property.Name))
+                    dataGrid.Columns[property.Name]!.HeaderText = property.GetCustomAttribute<DisplayAttribute>(false)?.Name ?? property.Name;
         }
 
         public static void ChangeReadOnly(this GroupBox groupBox, bool disable)

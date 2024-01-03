@@ -28,15 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             GvItems = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)GvItems).BeginInit();
             SuspendLayout();
             // 
             // GvItems
             // 
+            GvItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             GvItems.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            GvItems.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             GvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GvItems.Location = new System.Drawing.Point(21, 17);
+            GvItems.Location = new System.Drawing.Point(15, 17);
             GvItems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             GvItems.Name = "GvItems";
             GvItems.RowTemplate.Height = 25;
