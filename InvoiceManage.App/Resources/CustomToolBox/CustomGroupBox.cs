@@ -74,7 +74,7 @@ namespace InvoiceManage.App.Resources.CustomToolBox
                         break;
                     }
 
-                    ForeColor = Color.DarkGray;
+                    ForeColor = Color.LightGray;
                     this.ChangeReadOnly(true);
 
                     break;
@@ -86,12 +86,12 @@ namespace InvoiceManage.App.Resources.CustomToolBox
                         break;
                     }
 
-                    ForeColor = Color.DarkGray;
+                    ForeColor = Color.LightGray;
                     this.ChangeReadOnly(true);
 
                     break;
                 case Mode.Ignore:
-                    ForeColor = Color.DarkGray;
+                    ForeColor = Color.LightGray;
                     this.ChangeReadOnly(true);
                     this.ResetValue();
                     break;

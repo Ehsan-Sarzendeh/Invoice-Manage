@@ -159,13 +159,13 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnInquiry.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnInquiry.FlatAppearance.BorderSize = 0;
             BtnInquiry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            BtnInquiry.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnInquiry.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnInquiry.ForeColor = System.Drawing.Color.White;
-            BtnInquiry.Location = new System.Drawing.Point(369, 28);
+            BtnInquiry.Location = new System.Drawing.Point(16, 25);
             BtnInquiry.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnInquiry.Name = "BtnInquiry";
             BtnInquiry.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            BtnInquiry.Size = new System.Drawing.Size(91, 29);
+            BtnInquiry.Size = new System.Drawing.Size(98, 33);
             BtnInquiry.TabIndex = 229;
             BtnInquiry.Text = "استعلام خریدار";
             BtnInquiry.TextColor = System.Drawing.Color.White;
@@ -176,10 +176,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             textBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            textBox4.Location = new System.Drawing.Point(10, 29);
+            textBox4.Location = new System.Drawing.Point(125, 27);
             textBox4.Name = "textBox4";
             textBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            textBox4.Size = new System.Drawing.Size(352, 29);
+            textBox4.Size = new System.Drawing.Size(337, 29);
             textBox4.TabIndex = 0;
             // 
             // BillId
@@ -331,7 +331,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CbFt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CbFt.FormattingEnabled = true;
             CbFt.Items.AddRange(new object[] { "الگوی اول", "الگوی دوم" });
-            CbFt.Location = new System.Drawing.Point(10, 25);
+            CbFt.Location = new System.Drawing.Point(10, 26);
             CbFt.Name = "CbFt";
             CbFt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             CbFt.Size = new System.Drawing.Size(208, 36);

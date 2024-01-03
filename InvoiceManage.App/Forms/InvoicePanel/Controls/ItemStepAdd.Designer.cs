@@ -37,7 +37,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnAdd = new RoundedButton();
             BtnSelect = new RoundedButton();
             PicAdd = new System.Windows.Forms.PictureBox();
-            Vra = new System.Windows.Forms.GroupBox();
+            Vra = new CustomGroupBox();
             TxtVra = new System.Windows.Forms.TextBox();
             Am = new CustomGroupBox();
             TxtAm = new System.Windows.Forms.TextBox();
@@ -125,7 +125,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             TxtSstid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             TxtSstid.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtSstid.Location = new System.Drawing.Point(13, 28);
+            TxtSstid.Location = new System.Drawing.Point(17, 28);
             TxtSstid.Name = "TxtSstid";
             TxtSstid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtSstid.Size = new System.Drawing.Size(200, 29);
@@ -136,12 +136,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Sstt.Controls.Add(TxtSstt);
             Sstt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Sstt.ForeColor = System.Drawing.Color.DimGray;
-            Sstt.Location = new System.Drawing.Point(215, 66);
+            Sstt.Location = new System.Drawing.Point(140, 66);
             Sstt.Mode = Common.Mode.Required;
             Sstt.Name = "Sstt";
             Sstt.ShowOptional = false;
             Sstt.ShowSemiRequired = false;
-            Sstt.Size = new System.Drawing.Size(530, 70);
+            Sstt.Size = new System.Drawing.Size(605, 70);
             Sstt.TabIndex = 225;
             Sstt.TabStop = false;
             Sstt.Text = "شرح کالا";
@@ -153,7 +153,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtSstt.Location = new System.Drawing.Point(7, 28);
             TxtSstt.Name = "TxtSstt";
             TxtSstt.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            TxtSstt.Size = new System.Drawing.Size(516, 29);
+            TxtSstt.Size = new System.Drawing.Size(591, 29);
             TxtSstt.TabIndex = 0;
             TxtSstt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -222,19 +222,19 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Vra.ForeColor = System.Drawing.Color.DimGray;
             Vra.Location = new System.Drawing.Point(28, 66);
             Vra.Name = "Vra";
-            Vra.Size = new System.Drawing.Size(181, 70);
+            Vra.Size = new System.Drawing.Size(106, 70);
             Vra.TabIndex = 230;
             Vra.TabStop = false;
-            Vra.Text = "نرخ مالیات بر ارزش افزوده";
+            Vra.Text = "نرخ مالیات";
             // 
             // TxtVra
             // 
             TxtVra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             TxtVra.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtVra.Location = new System.Drawing.Point(6, 31);
+            TxtVra.Location = new System.Drawing.Point(10, 30);
             TxtVra.Name = "TxtVra";
             TxtVra.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            TxtVra.Size = new System.Drawing.Size(169, 29);
+            TxtVra.Size = new System.Drawing.Size(84, 29);
             TxtVra.TabIndex = 0;
             // 
             // Am
@@ -471,6 +471,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtOdt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             TxtOdt.Size = new System.Drawing.Size(206, 29);
             TxtOdt.TabIndex = 0;
+            TxtOdt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Spro
             // 
@@ -767,6 +768,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtOlt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             TxtOlt.Size = new System.Drawing.Size(206, 29);
             TxtOlt.TabIndex = 0;
+            TxtOlt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ItemStepAdd
             // 
@@ -857,7 +859,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private Resources.CustomToolBox.RoundedButton BtnAdd;
         private RoundedButton BtnSelect;
         private System.Windows.Forms.PictureBox PicAdd;
-        private System.Windows.Forms.GroupBox Vra;
+        private CustomGroupBox Vra;
         private System.Windows.Forms.TextBox TxtVra;
         private CustomGroupBox Am;
         private System.Windows.Forms.TextBox TxtAm;

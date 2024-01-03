@@ -6,13 +6,13 @@ namespace InvoiceManage.App.Resources.CustomToolBox
     {
         protected override bool IsInputKey(Keys keyData)
         {
-            switch ((keyData & (Keys.Alt | Keys.KeyCode)))
+            switch (keyData & (Keys.Alt | Keys.KeyCode))
             {
                 case Keys.Enter:
                 case Keys.Escape:
-                    if (this.DroppedDown)
+                    if (DroppedDown)
                     {
-                        this.DroppedDown = false;
+                        DroppedDown = false;
                         return false;
                     }
                     break;

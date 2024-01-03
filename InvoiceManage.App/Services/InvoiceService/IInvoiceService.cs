@@ -8,5 +8,6 @@ namespace InvoiceManage.App.Services.InvoiceService
         List<Invoice> GetInvoices();
         Invoice GetInvoice(int invoiceId);
         void DeleteInvoice(long invoiceId);
+        decimal GenerateInnoCode();
     }
 }

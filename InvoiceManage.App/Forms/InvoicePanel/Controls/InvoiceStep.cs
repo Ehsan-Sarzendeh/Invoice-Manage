@@ -3,6 +3,7 @@ using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.Database.Entities;
 using System;
 using System.Windows.Forms;
+using InvoiceManage.App.Services.InvoiceService;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
@@ -18,7 +19,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             var parentForm = ParentForm as FrmInvoice;
 
-            TxtInno.DataBindings.Add("Text", parentForm!.Invoice, nameof(parentForm.Invoice.Inno), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtInno_1.DataBindings.Add("Text", parentForm!.Invoice, nameof(parentForm.Invoice.Inno_1), true, DataSourceUpdateMode.OnPropertyChanged);
             TxtIrtaxid.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Irtaxid), true, DataSourceUpdateMode.OnPropertyChanged);
             TxtTaxId.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.TaxId), true, DataSourceUpdateMode.OnPropertyChanged);
             MtxtIndatim2m_1.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Indatim2m_1), true, DataSourceUpdateMode.OnPropertyChanged);
@@ -77,6 +78,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             var parentForm = ParentForm as FrmInvoice;
 
             parentForm!.ShowOptionalGroupBoxes(TogOptional.Checked);
+        }
+
+        private void BtnGenerateCode_Click(object sender, EventArgs e)
+        {
+            using var invoiceService = new InvoiceService();
+            Inno_1.Text = invoiceService.GenerateInnoCode().ToString();
         }
 
         #endregion

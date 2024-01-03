@@ -32,7 +32,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             BtnNext = new RoundedButton();
             BtnPrevious = new RoundedButton();
-            groupBox5 = new CustomGroupBox();
+            Cdcd_1 = new CustomGroupBox();
             MtxtCdcd_1 = new System.Windows.Forms.MaskedTextBox();
             Tins = new CustomGroupBox();
             TxtTins = new System.Windows.Forms.TextBox();
@@ -47,9 +47,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Sbc = new CustomGroupBox();
             TxtSbc = new System.Windows.Forms.TextBox();
             Scc = new CustomGroupBox();
-            Cdcd_1 = new System.Windows.Forms.TextBox();
+            TxtScc = new System.Windows.Forms.TextBox();
             BtnSelect = new RoundedButton();
-            groupBox5.SuspendLayout();
+            Cdcd_1.SuspendLayout();
             Tins.SuspendLayout();
             Crn.SuspendLayout();
             Cdcn.SuspendLayout();
@@ -103,21 +103,21 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnPrevious.UseVisualStyleBackColor = false;
             BtnPrevious.Click += BtnPrevious_Click;
             // 
-            // groupBox5
+            // Cdcd_1
             // 
-            groupBox5.Controls.Add(MtxtCdcd_1);
-            groupBox5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            groupBox5.ForeColor = System.Drawing.Color.DimGray;
-            groupBox5.Location = new System.Drawing.Point(761, 306);
-            groupBox5.Mode = Common.Mode.Required;
-            groupBox5.Name = "groupBox5";
-            groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            groupBox5.ShowOptional = false;
-            groupBox5.ShowSemiRequired = false;
-            groupBox5.Size = new System.Drawing.Size(220, 70);
-            groupBox5.TabIndex = 212;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "تاریخ کوتاژ اظهارنامه گمرکی";
+            Cdcd_1.Controls.Add(MtxtCdcd_1);
+            Cdcd_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Cdcd_1.ForeColor = System.Drawing.Color.DimGray;
+            Cdcd_1.Location = new System.Drawing.Point(761, 306);
+            Cdcd_1.Mode = Common.Mode.Required;
+            Cdcd_1.Name = "Cdcd_1";
+            Cdcd_1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            Cdcd_1.ShowOptional = false;
+            Cdcd_1.ShowSemiRequired = false;
+            Cdcd_1.Size = new System.Drawing.Size(220, 70);
+            Cdcd_1.TabIndex = 212;
+            Cdcd_1.TabStop = false;
+            Cdcd_1.Text = "تاریخ کوتاژ اظهارنامه گمرکی";
             // 
             // MtxtCdcd_1
             // 
@@ -289,7 +289,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // Scc
             // 
-            Scc.Controls.Add(Cdcd_1);
+            Scc.Controls.Add(TxtScc);
             Scc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Scc.ForeColor = System.Drawing.Color.DimGray;
             Scc.Location = new System.Drawing.Point(510, 207);
@@ -303,15 +303,15 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Scc.TabStop = false;
             Scc.Text = "کد گمرکی محل اظهارنامه";
             // 
-            // Cdcd_1
+            // TxtScc
             // 
-            Cdcd_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            Cdcd_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Cdcd_1.Location = new System.Drawing.Point(10, 31);
-            Cdcd_1.Name = "Cdcd_1";
-            Cdcd_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            Cdcd_1.Size = new System.Drawing.Size(450, 29);
-            Cdcd_1.TabIndex = 0;
+            TxtScc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtScc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtScc.Location = new System.Drawing.Point(10, 31);
+            TxtScc.Name = "TxtScc";
+            TxtScc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtScc.Size = new System.Drawing.Size(450, 29);
+            TxtScc.TabIndex = 0;
             // 
             // BtnSelect
             // 
@@ -348,7 +348,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Controls.Add(Scc);
             Controls.Add(Crn);
             Controls.Add(Tins);
-            Controls.Add(groupBox5);
+            Controls.Add(Cdcd_1);
             Controls.Add(BtnPrevious);
             Controls.Add(BtnNext);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -356,8 +356,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Name = "CompanyStep";
             Size = new System.Drawing.Size(1012, 603);
             Load += CompanyStep_Load;
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
+            Cdcd_1.ResumeLayout(false);
+            Cdcd_1.PerformLayout();
             Tins.ResumeLayout(false);
             Tins.PerformLayout();
             Crn.ResumeLayout(false);
@@ -379,7 +379,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
-        private CustomGroupBox groupBox5;
+        private CustomGroupBox Cdcd_1;
         private System.Windows.Forms.MaskedTextBox MtxtCdcd_1;
         private CustomGroupBox Tins;
         private System.Windows.Forms.TextBox TxtTins;
@@ -395,6 +395,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private System.Windows.Forms.TextBox TxtSbc;
         private CustomGroupBox Scc;
         private Resources.CustomToolBox.RoundedButton BtnSelect;
-        private System.Windows.Forms.TextBox Cdcd_1;
+        private System.Windows.Forms.TextBox TxtScc;
     }
 }

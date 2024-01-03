@@ -28,6 +28,19 @@ namespace InvoiceManage.App.Services.InvoiceService
             db.SaveChanges();
         }
 
+        public decimal GenerateInnoCode()
+        {
+            using var db = new SqliteDbContext();
+
+            var maxCode = db.Invoice.Where(x => x.GenerateInno).Max(x => x.Inno_1)  + 1;
+            while (db.Invoice.Any(x => x.Inno_1 == maxCode))
+            {
+                maxCode++;
+            }
+
+            return maxCode;
+        }
+
         public void Dispose()
         {
             throw new NotImplementedException();

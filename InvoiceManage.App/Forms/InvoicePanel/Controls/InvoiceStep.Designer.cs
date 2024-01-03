@@ -42,14 +42,15 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CbIns = new System.Windows.Forms.ComboBox();
             Indatim_1 = new CustomGroupBox();
             MtxtIndatim_1 = new System.Windows.Forms.MaskedTextBox();
-            TxtInno = new System.Windows.Forms.TextBox();
+            TxtInno_1 = new System.Windows.Forms.TextBox();
             Indatim2m_1 = new CustomGroupBox();
             MtxtIndatim2m_1 = new System.Windows.Forms.MaskedTextBox();
             Indatim_2 = new CustomGroupBox();
             MtxtIndatim_2 = new System.Windows.Forms.MaskedTextBox();
             Indatim2m_2 = new CustomGroupBox();
             MtxtIndatim2m_2 = new System.Windows.Forms.MaskedTextBox();
-            Inno = new CustomGroupBox();
+            Inno_1 = new CustomGroupBox();
+            BtnGenerateCode = new RoundedButton();
             Irtaxid = new CustomGroupBox();
             TxtIrtaxid = new System.Windows.Forms.TextBox();
             TaxId = new CustomGroupBox();
@@ -67,7 +68,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Indatim2m_1.SuspendLayout();
             Indatim_2.SuspendLayout();
             Indatim2m_2.SuspendLayout();
-            Inno.SuspendLayout();
+            Inno_1.SuspendLayout();
             Irtaxid.SuspendLayout();
             TaxId.SuspendLayout();
             groupBox12.SuspendLayout();
@@ -99,7 +100,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            label1.Location = new System.Drawing.Point(92, 21);
+            label1.Location = new System.Drawing.Point(130, 21);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(769, 32);
             label1.TabIndex = 1;
@@ -237,15 +238,15 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             MtxtIndatim_1.TabIndex = 0;
             MtxtIndatim_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TxtInno
+            // TxtInno_1
             // 
-            TxtInno.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            TxtInno.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtInno.Location = new System.Drawing.Point(10, 31);
-            TxtInno.Name = "TxtInno";
-            TxtInno.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            TxtInno.Size = new System.Drawing.Size(450, 29);
-            TxtInno.TabIndex = 0;
+            TxtInno_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtInno_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtInno_1.Location = new System.Drawing.Point(128, 28);
+            TxtInno_1.Name = "TxtInno_1";
+            TxtInno_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtInno_1.Size = new System.Drawing.Size(332, 29);
+            TxtInno_1.TabIndex = 0;
             // 
             // Indatim2m_1
             // 
@@ -328,20 +329,44 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             MtxtIndatim2m_2.TabIndex = 0;
             MtxtIndatim2m_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // Inno
+            // Inno_1
             // 
-            Inno.Controls.Add(TxtInno);
-            Inno.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Inno.ForeColor = System.Drawing.Color.DimGray;
-            Inno.Location = new System.Drawing.Point(513, 184);
-            Inno.Mode = Common.Mode.Required;
-            Inno.Name = "Inno";
-            Inno.ShowOptional = false;
-            Inno.ShowSemiRequired = false;
-            Inno.Size = new System.Drawing.Size(471, 70);
-            Inno.TabIndex = 215;
-            Inno.TabStop = false;
-            Inno.Text = "سریال داخلی";
+            Inno_1.Controls.Add(BtnGenerateCode);
+            Inno_1.Controls.Add(TxtInno_1);
+            Inno_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            Inno_1.ForeColor = System.Drawing.Color.DimGray;
+            Inno_1.Location = new System.Drawing.Point(513, 184);
+            Inno_1.Mode = Common.Mode.Required;
+            Inno_1.Name = "Inno_1";
+            Inno_1.ShowOptional = false;
+            Inno_1.ShowSemiRequired = false;
+            Inno_1.Size = new System.Drawing.Size(471, 70);
+            Inno_1.TabIndex = 215;
+            Inno_1.TabStop = false;
+            Inno_1.Text = "سریال داخلی";
+            // 
+            // BtnGenerateCode
+            // 
+            BtnGenerateCode.BackColor = System.Drawing.Color.DarkGray;
+            BtnGenerateCode.BackgroundColor = System.Drawing.Color.DarkGray;
+            BtnGenerateCode.BorderColor = System.Drawing.Color.PaleVioletRed;
+            BtnGenerateCode.BorderRadius = 10;
+            BtnGenerateCode.BorderSize = 0;
+            BtnGenerateCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnGenerateCode.FlatAppearance.BorderSize = 0;
+            BtnGenerateCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnGenerateCode.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnGenerateCode.ForeColor = System.Drawing.Color.White;
+            BtnGenerateCode.Location = new System.Drawing.Point(9, 24);
+            BtnGenerateCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnGenerateCode.Name = "BtnGenerateCode";
+            BtnGenerateCode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            BtnGenerateCode.Size = new System.Drawing.Size(98, 33);
+            BtnGenerateCode.TabIndex = 230;
+            BtnGenerateCode.Text = "تولید سریال";
+            BtnGenerateCode.TextColor = System.Drawing.Color.White;
+            BtnGenerateCode.UseVisualStyleBackColor = false;
+            BtnGenerateCode.Click += BtnGenerateCode_Click;
             // 
             // Irtaxid
             // 
@@ -425,16 +450,14 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             groupBox12.Controls.Add(Indatim_1);
             groupBox12.Controls.Add(Indatim2m_1);
             groupBox12.Controls.Add(Indatim2m_2);
-            groupBox12.ForeColor = System.Drawing.Color.DimGray;
+            groupBox12.ForeColor = System.Drawing.Color.LightGray;
             groupBox12.Location = new System.Drawing.Point(29, 181);
-            groupBox12.Mode = Common.Mode.Required;
             groupBox12.Name = "groupBox12";
             groupBox12.ShowOptional = false;
             groupBox12.ShowSemiRequired = false;
             groupBox12.Size = new System.Drawing.Size(470, 225);
             groupBox12.TabIndex = 219;
             groupBox12.TabStop = false;
-            groupBox12.Text = "**";
             // 
             // label3
             // 
@@ -473,7 +496,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Controls.Add(TogSemiRequired);
             Controls.Add(TaxId);
             Controls.Add(Irtaxid);
-            Controls.Add(Inno);
+            Controls.Add(Inno_1);
             Controls.Add(Tob);
             Controls.Add(Ins);
             Controls.Add(Inp);
@@ -499,8 +522,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Indatim_2.PerformLayout();
             Indatim2m_2.ResumeLayout(false);
             Indatim2m_2.PerformLayout();
-            Inno.ResumeLayout(false);
-            Inno.PerformLayout();
+            Inno_1.ResumeLayout(false);
+            Inno_1.PerformLayout();
             Irtaxid.ResumeLayout(false);
             Irtaxid.PerformLayout();
             TaxId.ResumeLayout(false);
@@ -523,7 +546,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private CustomGroupBox Ins;
         private System.Windows.Forms.ComboBox CbIns;
         private CustomGroupBox Indatim_1;
-        private System.Windows.Forms.TextBox TxtInno;
+        private System.Windows.Forms.TextBox TxtInno_1;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim_1;
         private CustomGroupBox Indatim2m_1;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim2m_1;
@@ -531,7 +554,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private System.Windows.Forms.MaskedTextBox MtxtIndatim_2;
         private CustomGroupBox Indatim2m_2;
         private System.Windows.Forms.MaskedTextBox MtxtIndatim2m_2;
-        private CustomGroupBox Inno;
+        private CustomGroupBox Inno_1;
         private CustomGroupBox Irtaxid;
         private System.Windows.Forms.TextBox TxtIrtaxid;
         private CustomGroupBox TaxId;
@@ -541,5 +564,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private CustomGroupBox groupBox12;
         private System.Windows.Forms.Label label3;
         private Resources.CustomToolBox.ToggleButton TogOptional;
+        private RoundedButton BtnGenerateCode;
     }
 }
