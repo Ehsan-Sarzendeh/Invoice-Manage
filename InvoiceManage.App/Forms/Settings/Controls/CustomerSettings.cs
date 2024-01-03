@@ -1,20 +1,17 @@
 ﻿using InvoiceManage.App.Services.CommonService;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using InvoiceManage.Database.Entities;
+using InvoiceManage.App.Services.Infrastructures;
+using InvoiceManage.App.Forms.Common;
 
 namespace InvoiceManage.App.Forms.Settings.Controls
 {
     public partial class CustomerSettings : UserControl
     {
         private readonly ICommonService _commonService;
+        private BindingList<Customer> _customers;
 
         public CustomerSettings(ICommonService commonService)
         {
@@ -25,7 +22,8 @@ namespace InvoiceManage.App.Forms.Settings.Controls
 
         private void CustomerSettings_Load(object sender, EventArgs e)
         {
-            // CustomersGv.DataSource = _commonService.GetCustomers();
+            _customers = new BindingList<Customer>(_commonService.GetCustomers());
+            CustomersGv.DataSource = _customers;
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
@@ -40,7 +38,12 @@ namespace InvoiceManage.App.Forms.Settings.Controls
                 Bpn = TxtBpn.Text,
                 BillId = TxtBillId.Text
             };
+            _customers.Add(customer);
             _commonService.AddCustomer(customer);
+
+            this.ClearControls();
+
+            CustomMessageBox.Show("خریدار با موفقیت ثبت شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

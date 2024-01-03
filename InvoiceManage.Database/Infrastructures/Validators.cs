@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace InvoiceManage.App.Services.Infrastructures
+namespace InvoiceManage.Database.Infrastructures
 {
     public static class Validators
     {

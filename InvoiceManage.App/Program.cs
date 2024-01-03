@@ -3,6 +3,8 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
 using System.Windows.Forms;
+using InvoiceManage.Database.Contexts;
+using Microsoft.EntityFrameworkCore;
 using static Stimulsoft.Report.StiOptions;
 
 namespace InvoiceManage.App
@@ -29,8 +31,8 @@ namespace InvoiceManage.App
             Stimulsoft.Base.StiFontCollection.AddFontFile(fontPath);
             Export.Pdf.AllowImportSystemLibraries = true;
 
-            // using (var context = new SqliteDbContext())
-            //     context.Database.Migrate();
+            using (var context = new SqliteDbContext())
+                context.Database.Migrate();
 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();

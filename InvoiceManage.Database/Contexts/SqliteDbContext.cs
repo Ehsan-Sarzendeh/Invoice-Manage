@@ -25,5 +25,10 @@ namespace InvoiceManage.Database.Contexts
         public DbSet<Product> Product { get; set; }
         public DbSet<Company> Company { get; set; }
         public DbSet<Customer> Customer { get; set; }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+        }
     }
 }

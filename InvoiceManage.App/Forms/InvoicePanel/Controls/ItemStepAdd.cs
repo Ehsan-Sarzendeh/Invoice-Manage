@@ -1,18 +1,19 @@
 ﻿using InvoiceManage.Database.Entities;
 using System;
 using System.Windows.Forms;
-using InvoiceManage.App.Resources.CustomToolBox;
-using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.App.Forms.Common;
 using InvoiceManage.App.Services.CommonService;
-using System.Collections.Generic;
+using InvoiceManage.App.Services.Infrastructures;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class ItemStepAdd : UserControl
     {
-        public ItemStepAdd()
+        private readonly ICommonService _commonService;
+
+        public ItemStepAdd(ICommonService commonService)
         {
+            _commonService = commonService;
             InitializeComponent();
             SetComboBoxDataSource();
         }
@@ -74,7 +75,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             var parentForm = ParentForm as FrmInvoice;
             parentForm!.Invoice.Items.Add(newItem);
 
-            ClearForm();
+            this.ClearControls();
 
             CustomMessageBox.Show("کالا با موفقیت ثبت شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -86,38 +87,15 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnSelect_Click(object sender, EventArgs e)
         {
-            using var commonService = new CommonService();
-
-            List<Product> data = commonService.GetProducts();
-            var frmSelect = new FrmSelect(null);
+            var data = _commonService.GetProducts();
+            var frmSelect = new FrmSelect<Product>(data);
 
             if (frmSelect.ShowDialog() == DialogResult.OK)
             {
-                var selectItem = (Customer)frmSelect.SelectedItem!;
+                var selectItem = frmSelect.SelectedItem!;
             }
         }
 
         #endregion
-
-        private void ClearForm()
-        {
-            foreach (var control in Controls)
-            {
-                if (control is not CustomGroupBox groupBox) continue;
-                foreach (var gbControl in groupBox.Controls)
-                {
-                    switch (gbControl)
-                    {
-                        case TextBox textBox:
-                            textBox.Clear();
-                            break;
-
-                        case ComboBox comboBox:
-                            comboBox.SelectedItem = null;
-                            break;
-                    }
-                }
-            }
-        }
     }
 }

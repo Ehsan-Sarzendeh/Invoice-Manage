@@ -1,6 +1,7 @@
 ﻿using InvoiceManage.Database.Entities.Common;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using InvoiceManage.Database.Infrastructures;
 
 namespace InvoiceManage.Database.Entities
 {
@@ -28,10 +29,6 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "زمان ایجاد صورتحساب")]
         public string Indatim2m_2 { get; set; }
 
-        [Display(Name = "نوع صورتحساب")]
-        public Inty Inty { get; set; }
-        public string Inty_1 { get; set; }
-
         [Display(Name = "سریال داخلی")]
         [Description("سریال صورتحساب داخلی حافطه مالیاتی")]
         public string Inno { get; set; }
@@ -41,24 +38,11 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "شماره منحصربفرد مالیاتی صورتحساب مرجع")]
         public string Irtaxid { get; set; }
 
-        [Display(Name = "الگوی صورتحساب")]
-        public Inp Inp { get; set; }
-        public string Inp_1 { get; set; }
-
-        [Display(Name = "موضوع صورتحساب")]
-        public Ins Ins { get; set; }
-        public string Ins_1 { get; set; }
-
         [Display(Name = "شماره اقتصادی فروشنده")]
         public string Tins { get; set; }
 
         [Display(Name = "شماره اقتصادی خریدار")]
         public string Tinb { get; set; }
-
-        [Display(Name = "نوع شخص خریدار")]
-        public Tob Tob { get; set; }
-        public string Tob_1 { get; set; }
-
 
         [Display(Name = "کد شعبه فروشنده")]
         public string Sbc { get; set; }
@@ -74,9 +58,6 @@ namespace InvoiceManage.Database.Entities
 
         [Display(Name = "شماره گذرنامه خریدار")]
         public string Bpn { get; set; }
-
-        [Display(Name = "نوع پرواز")]
-        public Ft Ft { get; set; }
 
         [Display(Name = "شماره پروانه گمرکی")]
         public string Scln { get; set; }
@@ -124,9 +105,6 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "مجموع ارزش ارزی")]
         public decimal Tocv { get; set; }
 
-        [Display(Name = "روش تسویه")]
-        public Setm Setm { get; set; }
-
         [Display(Name = "مبلغ پرداختی نقدی")]
         public decimal Cap { get; set; }
 
@@ -151,9 +129,6 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "شماره پیگیری/مرجع")]
         public string Trn { get; set; }
 
-        [Display(Name = "روش پرداخت")]
-        public Pmt Pmt { get; set; }
-
         [Display(Name = "شماره کارت پرداخت کننده صورتحساب")]
         public string Pcn { get; set; }
 
@@ -177,6 +152,34 @@ namespace InvoiceManage.Database.Entities
         public string SendStatus { get; set; }
 
         public string ResultStatus { get; set; }
+
+        [Display(Name = "نوع صورتحساب")]
+        public Inty Inty { get; set; }
+        public string Inty_1 { get; set; }
+
+        [Display(Name = "الگوی صورتحساب")]
+        public Inp Inp { get; set; }
+        public string Inp_1 => Inp.ToDisplay();
+
+        [Display(Name = "موضوع صورتحساب")]
+        public Ins Ins { get; set; }
+        public string Ins_1 => Inp.ToDisplay();
+
+        [Display(Name = "نوع شخص خریدار")]
+        public Tob Tob { get; set; }
+        public string Tob_1 => Inp.ToDisplay();
+
+        [Display(Name = "نوع پرواز")]
+        public Ft Ft { get; set; }
+        public string Ft_1 => Ft.ToDisplay();
+
+        [Display(Name = "روش پرداخت")]
+        public Pmt Pmt { get; set; }
+        public string Pmt_1 => Pmt.ToDisplay();
+
+        [Display(Name = "روش تسویه")]
+        public Setm Setm { get; set; }
+        public string Setm_1 => Setm.ToDisplay();
 
         public long CompanyId { get; set; }
         public Company Company { get; set; }

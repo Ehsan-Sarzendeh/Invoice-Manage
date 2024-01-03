@@ -1,13 +1,17 @@
 ﻿using InvoiceManage.App.Services.CommonService;
 using InvoiceManage.Database.Entities;
 using System;
+using System.ComponentModel;
 using System.Windows.Forms;
+using InvoiceManage.App.Services.Infrastructures;
+using InvoiceManage.App.Forms.Common;
 
 namespace InvoiceManage.App.Forms.Settings.Controls
 {
     public partial class CompanySettings : UserControl
     {
         private readonly ICommonService _commonService;
+        private BindingList<Company> _companies;
 
         public CompanySettings(ICommonService commonService)
         {
@@ -17,7 +21,8 @@ namespace InvoiceManage.App.Forms.Settings.Controls
 
         private void CompanySettings_Load(object sender, EventArgs e)
         {
-            // CompaniesGv.DataSource = _commonService.GetCompanies();
+            _companies = new BindingList<Company>(_commonService.GetCompanies());
+            CompaniesGv.DataSource = _companies;
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
@@ -30,7 +35,12 @@ namespace InvoiceManage.App.Forms.Settings.Controls
                 Scln = TxtScln.Text,
                 Crn = TxtCrn.Text,
             };
+            _companies.Add(company);
             _commonService.AddCompany(company);
+
+            this.ClearControls();
+
+            CustomMessageBox.Show("شرکت با موفقیت ثبت شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -2,16 +2,17 @@
 using System.Drawing;
 using System.Windows.Forms;
 using InvoiceManage.App.Forms.Common;
+using InvoiceManage.App.Services.CommonService;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class ItemStep : UserControl
     {
-        public ItemStep()
+        public ItemStep(ICommonService commonService)
         {
             InitializeComponent();
 
-            PanelSlider.Controls.Add(new ItemStepAdd());
+            PanelSlider.Controls.Add(new ItemStepAdd(commonService));
             PanelSlider.Controls.Add(new ItemStepList());
         }
 

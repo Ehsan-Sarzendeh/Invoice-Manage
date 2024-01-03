@@ -253,6 +253,7 @@
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "FrmInvoiceList";
+            RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "FrmInvoiceList";
             FormClosing += FrmInvoiceList_FormClosing;

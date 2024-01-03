@@ -1,14 +1,19 @@
 ﻿using InvoiceManage.App.Forms.Common;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
+using InvoiceManage.App.Services.CommonService;
+using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class CompanyStep : UserControl
     {
-        public CompanyStep()
+        private readonly ICommonService _commonService;
+
+        public CompanyStep(ICommonService commonService)
         {
+            _commonService = commonService;
+
             InitializeComponent();
             SetComboBoxDataSource();
         }
@@ -41,8 +46,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnSelect_Click(object sender, EventArgs e)
         {
-            List<object> data = null;
-            var frmSelect = new FrmSelect(data);
+            var data = _commonService.GetCompanies();
+            var frmSelect = new FrmSelect<Company>(data);
 
             if (frmSelect.ShowDialog() == DialogResult.OK)
             {

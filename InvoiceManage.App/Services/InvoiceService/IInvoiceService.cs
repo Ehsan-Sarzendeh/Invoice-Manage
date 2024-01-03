@@ -7,7 +7,10 @@ namespace InvoiceManage.App.Services.InvoiceService
     {
         List<Invoice> GetInvoices();
         Invoice GetInvoice(int invoiceId);
+        void AddInvoice(Invoice invoice);
+        void EditInvoice(Invoice invoice);
         void DeleteInvoice(long invoiceId);
+
         decimal GenerateInnoCode();
     }
 }

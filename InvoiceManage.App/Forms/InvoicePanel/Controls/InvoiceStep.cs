@@ -1,16 +1,19 @@
 ﻿using InvoiceManage.App.Forms.Common;
-using InvoiceManage.App.Services.Infrastructures;
-using InvoiceManage.Database.Entities;
 using System;
 using System.Windows.Forms;
+using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.App.Services.InvoiceService;
+using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class InvoiceStep : UserControl
     {
-        public InvoiceStep()
+        private readonly IInvoiceService _invoiceService;
+
+        public InvoiceStep(IInvoiceService invoiceService)
         {
+            _invoiceService = invoiceService;
             InitializeComponent();
             SetComboBoxDataSource();
         }
@@ -82,8 +85,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnGenerateCode_Click(object sender, EventArgs e)
         {
-            using var invoiceService = new InvoiceService();
-            Inno_1.Text = invoiceService.GenerateInnoCode().ToString();
+            Inno_1.Text = _invoiceService.GenerateInnoCode().ToString();
         }
 
         #endregion

@@ -3,6 +3,7 @@ using InvoiceManage.App.Forms.InvoiceList;
 using InvoiceManage.App.Forms.InvoicePanel;
 using InvoiceManage.App.Forms.Settings;
 using InvoiceManage.App.Services.Infrastructures;
+using InvoiceManage.Database.Infrastructures;
 
 namespace InvoiceManage.App.Forms.Home
 {

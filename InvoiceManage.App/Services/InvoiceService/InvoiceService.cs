@@ -6,7 +6,7 @@ using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Services.InvoiceService
 {
-    public class InvoiceService : IInvoiceService, IDisposable
+    public class InvoiceService : IInvoiceService
     {
         public List<Invoice> GetInvoices()
         {
@@ -18,6 +18,20 @@ namespace InvoiceManage.App.Services.InvoiceService
         {
             using var db = new SqliteDbContext();
             return db.Invoice.Single(x => x.Id == invoiceId);
+        }
+
+        public void AddInvoice(Invoice invoice)
+        {
+            using var db = new SqliteDbContext();
+            db.Invoice.Add(invoice);
+            db.SaveChanges();
+        }
+
+        public void EditInvoice(Invoice invoice)
+        {
+            using var db = new SqliteDbContext();
+            db.Invoice.Update(invoice);
+            db.SaveChanges();
         }
 
         public void DeleteInvoice(long invoiceId)
@@ -34,16 +48,9 @@ namespace InvoiceManage.App.Services.InvoiceService
 
             var maxCode = db.Invoice.Where(x => x.GenerateInno).Max(x => x.Inno_1)  + 1;
             while (db.Invoice.Any(x => x.Inno_1 == maxCode))
-            {
                 maxCode++;
-            }
 
             return maxCode;
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
         }
     }
 }

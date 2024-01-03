@@ -1,20 +1,23 @@
-﻿using InvoiceManage.App.Forms.Common;
-using InvoiceManage.App.Services.Infrastructures;
-using InvoiceManage.Database.Entities;
-using System;
+﻿using System;
 using System.Windows.Forms;
+using InvoiceManage.App.Forms.Common;
+using InvoiceManage.App.Services.Infrastructures;
+using InvoiceManage.App.Services.InvoiceService;
+using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class PayStep : UserControl
     {
-        public PayStep(FrmInvoiceType type)
+        private readonly IInvoiceService _invoiceService;
+
+        public PayStep(FrmInvoiceType type, IInvoiceService invoiceService)
         {
             InitializeComponent();
-
-            BtnEdit.Visible = type == FrmInvoiceType.Edit;
-
             SetComboBoxDataSource();
+
+            _invoiceService = invoiceService;
+            BtnEdit.Visible = type == FrmInvoiceType.Edit;
         }
 
         public void SetDataBindings()
@@ -38,25 +41,46 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CbPmt.SetEnumDataSource(typeof(Pmt));
         }
 
-        private void BtnPrevious_Click(object sender, EventArgs e)
-        {
-            new Step().Previous(ParentForm!, "PayStep", "SumStep", "SumStep");
-        }
-
-        private void BtnAdd_Click(object sender, EventArgs e)
-        {
-            ParentForm!.Close();
-        }
-
-        private void BtnEdit_Click(object sender, EventArgs e)
-        {
-
-            ParentForm!.Close();
-        }
+        #region Events
 
         private void PayStep_Load(object sender, EventArgs e)
         {
             SetDataBindings();
         }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            var parentForm = ParentForm as FrmInvoice;
+
+            _invoiceService.AddInvoice(parentForm!.Invoice);
+
+            CustomMessageBox.Show("فاکتور با موفقیت ثبت شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            ParentForm!.Close();
+        }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+            var parentForm = ParentForm as FrmInvoice;
+
+            if (parentForm!.Invoice.SendStatus == "Success" && parentForm!.Invoice.ResultStatus == "Success")
+            {
+                CustomMessageBox.Show("امکان ویرایش این فاکتور به علت ارسال و نتیجه موفق قابل ویرایش نمی باشد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            _invoiceService.EditInvoice(parentForm.Invoice);
+
+            CustomMessageBox.Show("فاکتور با موفقیت ویرایش شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            ParentForm!.Close();
+        }
+
+        private void BtnPrevious_Click(object sender, EventArgs e)
+        {
+            new Step().Previous(ParentForm!, "PayStep", "SumStep", "SumStep");
+        }
+
+        #endregion
     }
 }

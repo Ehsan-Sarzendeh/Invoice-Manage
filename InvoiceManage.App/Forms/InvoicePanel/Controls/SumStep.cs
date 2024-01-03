@@ -1,8 +1,8 @@
 ﻿using InvoiceManage.App.Forms.Common;
-using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.Database.Entities;
 using System;
 using System.Windows.Forms;
+using InvoiceManage.App.Services.Infrastructures;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {

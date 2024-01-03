@@ -1,6 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
+using InvoiceManage.App.Forms.Common;
 using InvoiceManage.App.Services.CommonService;
+using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Forms.Settings.Controls
@@ -8,6 +11,7 @@ namespace InvoiceManage.App.Forms.Settings.Controls
     public partial class ProductSettings : UserControl
     {
         private readonly ICommonService _commonService;
+        private BindingList<Product> _products;
 
         public ProductSettings(ICommonService commonService)
         {
@@ -17,19 +21,24 @@ namespace InvoiceManage.App.Forms.Settings.Controls
 
         private void ProductSettings_Load(object sender, EventArgs e)
         {
-            // ProductsGv.DataSource = _commonService.GetProducts();
+            _products = new BindingList<Product>(_commonService.GetProducts());
+            ProductsGv.DataSource = _products;
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             var product = new Product
             {
-                Sstid = gb2.Text,
-                Sstt = gb.Text,
-                Vra = double.Parse(TxtSstt.Text),
+                Sstid = TxtSstid.Text,
+                Sstt = TxtSstt.Text,
+                Vra = double.Parse(TxtVra.Text),
             };
-
+            _products.Add(product);
             _commonService.AddProduct(product);
+
+            this.ClearControls();
+
+            CustomMessageBox.Show("کالا با موفقیت ثبت شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

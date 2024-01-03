@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
-using InvoiceManage.App.Forms.Common;
-using Microsoft.EntityFrameworkCore.Metadata;
+using InvoiceManage.App.Resources.CustomToolBox;
+using InvoiceManage.Database.Entities;
+using InvoiceManage.Database.Infrastructures;
 
 namespace InvoiceManage.App.Services.Infrastructures
 {
@@ -34,20 +33,21 @@ namespace InvoiceManage.App.Services.Infrastructures
             }
         }
 
-        public static void ResetValue(this GroupBox groupBox)
+        public static void ClearControls(this Control control)
         {
-            foreach (Control control in groupBox.Controls)
+            switch (control)
             {
-                switch (control)
-                {
-                    case TextBoxBase txt:
-                        txt.Text = default;
-                        break;
-                    case ComboBox combo:
-                        combo.SelectedItem = -1;
-                        break;
-                }
+                case TextBoxBase textBox:
+                    textBox.Clear();
+                    break;
+
+                case ComboBox comboBox:
+                    comboBox.SelectedItem = null;
+                    break;
             }
+
+            foreach (Control c in control.Controls)
+                ClearControls(c);
         }
     }
 }

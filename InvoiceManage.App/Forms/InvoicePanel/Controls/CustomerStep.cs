@@ -1,17 +1,20 @@
 ﻿using InvoiceManage.App.Forms.Common;
-using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.Database.Entities;
 using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using InvoiceManage.App.Services.CommonService;
+using InvoiceManage.App.Services.Infrastructures;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
     public partial class CustomerStep : UserControl
     {
-        public CustomerStep()
+        private readonly ICommonService _commonService;
+
+        public CustomerStep(ICommonService commonService)
         {
+            _commonService = commonService;
+
             InitializeComponent();
             SetComboBoxDataSource();
         }
@@ -52,14 +55,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnSelect_Click(object sender, EventArgs e)
         {
-            using var commonService = new CommonService();
-
-            List<Customer> data = commonService.GetCustomers();
-            var frmSelect = new FrmSelect(null);
+            var data = _commonService.GetCustomers();
+            var frmSelect = new FrmSelect<Customer>(data);
 
             if (frmSelect.ShowDialog() == DialogResult.OK)
             {
-                var selectItem = (Customer)frmSelect.SelectedItem!;
+                var selectItem = frmSelect.SelectedItem!;
             }
         }
 

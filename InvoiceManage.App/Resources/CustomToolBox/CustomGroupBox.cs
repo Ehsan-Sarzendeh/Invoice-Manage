@@ -93,7 +93,7 @@ namespace InvoiceManage.App.Resources.CustomToolBox
                 case Mode.Ignore:
                     ForeColor = Color.LightGray;
                     this.ChangeReadOnly(true);
-                    this.ResetValue();
+                    this.ClearControls();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

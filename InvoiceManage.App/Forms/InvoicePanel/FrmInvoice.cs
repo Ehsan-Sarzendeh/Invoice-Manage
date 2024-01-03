@@ -1,9 +1,11 @@
 ﻿using InvoiceManage.App.Forms.InvoicePanel.Controls;
 using InvoiceManage.App.Resources.CustomToolBox;
-using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.Database.Entities;
 using System.ComponentModel;
 using System.Windows.Forms;
+using InvoiceManage.App.Services.CommonService;
+using InvoiceManage.App.Services.Infrastructures;
+using InvoiceManage.App.Services.InvoiceService;
 
 namespace InvoiceManage.App.Forms.InvoicePanel
 {
@@ -19,23 +21,26 @@ namespace InvoiceManage.App.Forms.InvoicePanel
 
             var frmInvoiceType = invoice == null ? FrmInvoiceType.Add : FrmInvoiceType.Edit;
 
-            PanelSlider.Controls.Add(new InvoiceStep());
-            PanelSlider.Controls.Add(new CompanyStep());
-            PanelSlider.Controls.Add(new CustomerStep());
-            PanelSlider.Controls.Add(new ItemStep());
+            IInvoiceService invoiceService = new InvoiceService();
+            ICommonService commonService = new CommonService();
+
+            PanelSlider.Controls.Add(new InvoiceStep(invoiceService));
+            PanelSlider.Controls.Add(new CompanyStep(commonService));
+            PanelSlider.Controls.Add(new CustomerStep(commonService));
+            PanelSlider.Controls.Add(new ItemStep(commonService));
             PanelSlider.Controls.Add(new SumStep());
-            PanelSlider.Controls.Add(new PayStep(frmInvoiceType));
+            PanelSlider.Controls.Add(new PayStep(frmInvoiceType, invoiceService));
         }
 
         #region Events
 
-        private void FrmAddInvoice_MouseDown(object sender, MouseEventArgs e)
+        private void FrmInvoice_MouseDown(object sender, MouseEventArgs e)
         {
             WindowsApi.ReleaseCapture();
             WindowsApi.SendMessage(Handle, 0x112, 0xf012, 0);
         }
 
-        private void FrmAddInvoice_Load(object sender, System.EventArgs e)
+        private void FrmInvoice_FormClosing(object sender, FormClosingEventArgs e)
         {
             Program.FrmHome.Show();
         }
@@ -43,6 +48,11 @@ namespace InvoiceManage.App.Forms.InvoicePanel
         private void BtnClose_Click(object sender, System.EventArgs e)
         {
             Close();
+        }
+
+        private void BtnMinimize_Click(object sender, System.EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
 
         public void ShowOptionalGroupBoxes(bool show)
@@ -62,11 +72,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel
                     groupBox.ShowOptional = show;
                 }
             }
-        }
-
-        private void BtnMinimize_Click(object sender, System.EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
         }
 
         #endregion

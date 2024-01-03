@@ -1,9 +1,9 @@
 ﻿using InvoiceManage.App.Forms.Common;
-using InvoiceManage.App.Services.Infrastructures;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 using InvoiceManage.App.Forms.InvoicePanel;
+using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.App.Services.InvoiceService;
 using InvoiceManage.Database.Entities;
 
@@ -21,7 +21,7 @@ namespace InvoiceManage.App.Forms.InvoiceList
 
         private void FrmInvoiceList_Load(object sender, EventArgs e)
         {
-            // InvoiceGv.DataSource = _invoiceService.GetInvoices();
+            InvoiceGv.DataSource = _invoiceService.GetInvoices();
         }
 
         private void FrmInvoiceList_FormClosing(object sender, FormClosingEventArgs e)
@@ -110,6 +110,9 @@ namespace InvoiceManage.App.Forms.InvoiceList
                 CustomMessageBox.Show("آیتمی انتخاب نشده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            var printForm = new FrmPrePrintInvoice(GetSelectedItem()!);
+            printForm.ShowDialog();
         }
 
         private Invoice? GetSelectedItem()

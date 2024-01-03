@@ -5,30 +5,29 @@ using InvoiceManage.App.Forms.Common;
 
 namespace InvoiceManage.App.Forms.InvoicePanel
 {
-    public partial class FrmSelect : Form
+    public partial class FrmSelect<T> : FrmSelectAbstract
     {
-        readonly List<object> _data;
+        private readonly List<T> _data;
 
-        public object? SelectedItem;
+        public T? SelectedItem;
 
-        public FrmSelect(List<object> data)
+        public FrmSelect(List<T> data)
         {
-            InitializeComponent();
             _data = data;
         }
 
-        private void FrmSelect_Load(object sender, EventArgs e)
+        protected override void FrmSelect_Load(object sender, EventArgs e)
         {
             objectsGv.DataSource = _data;
         }
 
-        private void BtnClose_Click(object sender, EventArgs e)
+        protected override void BtnClose_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
             Close();
         }
 
-        private void BtnSelect_Click(object sender, EventArgs e)
+        protected override void BtnSelect_Click(object sender, EventArgs e)
         {
             if (objectsGv.SelectedRows.Count == 0 || objectsGv.SelectedRows[0].IsNewRow || objectsGv.CurrentRow is null)
             {
@@ -36,7 +35,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel
                 return;
             }
 
-            SelectedItem = objectsGv.CurrentRow.DataBoundItem;
+            SelectedItem = (T?)objectsGv.CurrentRow.DataBoundItem;
             DialogResult = DialogResult.OK;
         }
     }
