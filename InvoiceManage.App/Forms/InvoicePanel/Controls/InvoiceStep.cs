@@ -1,9 +1,9 @@
 ﻿using InvoiceManage.App.Forms.Common;
-using System;
-using System.Windows.Forms;
 using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.App.Services.InvoiceService;
 using InvoiceManage.Database.Entities;
+using System;
+using System.Windows.Forms;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
@@ -17,24 +17,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             InitializeComponent();
             SetComboBoxDataSource();
         }
-
-        public void SetDataBindings()
-        {
-            var parentForm = ParentForm as FrmInvoice;
-
-            TxtInno_1.DataBindings.Add("Text", parentForm!.Invoice, nameof(parentForm.Invoice.Inno_1), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtIrtaxid.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Irtaxid), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTaxId.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.TaxId), true, DataSourceUpdateMode.OnPropertyChanged);
-            MtxtIndatim2m_1.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Indatim2m_1), true, DataSourceUpdateMode.OnPropertyChanged);
-            MtxtIndatim2m_2.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Indatim2m_2), true, DataSourceUpdateMode.OnPropertyChanged);
-            MtxtIndatim_1.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Indatim_1), true, DataSourceUpdateMode.OnPropertyChanged);
-            MtxtIndatim_2.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Indatim_2), true, DataSourceUpdateMode.OnPropertyChanged);
-            CbInty.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Inty), true, DataSourceUpdateMode.OnPropertyChanged);
-            CbInp.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Inp), true, DataSourceUpdateMode.OnPropertyChanged);
-            CbIns.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Ins), true, DataSourceUpdateMode.OnPropertyChanged);
-            CbTob.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Tob), true, DataSourceUpdateMode.OnPropertyChanged);
-        }
-
+        
         private void SetComboBoxDataSource()
         {
             CbInty.SetEnumDataSource(typeof(Inty));
@@ -47,7 +30,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void InvoiceStep_Load(object sender, EventArgs e)
         {
-            SetDataBindings();
+            var parentForm = ParentForm as FrmInvoice;
+
+            this.SetDataBindings(parentForm!.Invoice);
+            this.SetNumberFormat(parentForm.Invoice);
         }
 
         private void BtnNext_Click(object sender, EventArgs e)

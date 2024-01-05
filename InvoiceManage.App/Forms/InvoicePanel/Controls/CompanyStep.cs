@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using InvoiceManage.App.Services.CommonService;
+using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.Database.Entities;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
@@ -17,32 +18,17 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             InitializeComponent();
             SetComboBoxDataSource();
         }
-
-        public void SetDataBindings()
-        {
-            var parentForm = ParentForm as FrmInvoice;
-
-            TxtCdcn.DataBindings.Add("Text", parentForm!.Invoice, nameof(parentForm.Invoice.Cdcn), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtCrn.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Crn), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtSbc.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Sbc), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtScc.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Scc), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtScln.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Scln), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTins.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tins), true, DataSourceUpdateMode.OnPropertyChanged);
-            MtxtCdcd_1.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Cdcd_1), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtCompanyId.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.CompanyId), true, DataSourceUpdateMode.OnPropertyChanged);
-        }
-
-        private void SetComboBoxDataSource()
-        {
-
-        }
+        
+        private void SetComboBoxDataSource() { }
 
         #region Events
 
         private void CompanyStep_Load(object sender, EventArgs e)
         {
-            SetDataBindings();
+            var parentForm = ParentForm as FrmInvoice;
 
+            this.SetDataBindings(parentForm!.Invoice);
+            this.SetNumberFormat(parentForm!.Invoice);
         }
 
         private void BtnSelect_Click(object sender, EventArgs e)

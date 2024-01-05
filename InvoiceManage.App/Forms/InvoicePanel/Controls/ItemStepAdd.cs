@@ -35,6 +35,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
                 Invoice = parentForm!.Invoice,
                 SstId = TxtSstid.Text,
                 Sstt = TxtSstt.Text,
+                Mu = (Mu)CbMu.SelectedValue,
                 Am = decimal.TryParse(TxtAm.Text, out var am)
                     ? am : default,
                 // Mu = CbMu.SelectedItem,

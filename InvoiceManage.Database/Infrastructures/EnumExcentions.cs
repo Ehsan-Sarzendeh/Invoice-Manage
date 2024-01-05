@@ -41,7 +41,7 @@ namespace InvoiceManage.Database.Infrastructures
 
         public static string ToDisplay(this Enum value, DisplayProperty property = DisplayProperty.Name)
         {
-            var attribute = value.GetType().GetField(value.ToString())
+            var attribute = value.GetType().GetField(value.ToString())?
                 .GetCustomAttributes<DisplayAttribute>(false).FirstOrDefault();
 
             if (attribute == null)

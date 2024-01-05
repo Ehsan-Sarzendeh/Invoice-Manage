@@ -18,20 +18,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             InitializeComponent();
             SetComboBoxDataSource();
         }
-
-        public void SetDataBindings()
-        {
-            var parentForm = ParentForm as FrmInvoice;
-
-            TxtTinb.DataBindings.Add("Text", parentForm!.Invoice, nameof(parentForm.Invoice.Tinb), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtBId.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Bid), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtBillId.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.BillId), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtBpc.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Bpc), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtBpn.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Bpn), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtBbc.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Bbc), true, DataSourceUpdateMode.OnPropertyChanged);
-            CbFt.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Ft), true, DataSourceUpdateMode.OnPropertyChanged);
-        }
-
+        
         private void SetComboBoxDataSource()
         {
             CbFt.SetEnumDataSource(typeof(Ft));
@@ -40,7 +27,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         #region Events
         private void CustomerStep_Load(object sender, EventArgs e)
         {
-            SetDataBindings();
+            var parentForm = ParentForm as FrmInvoice;
+
+            this.SetDataBindings(parentForm!.Invoice);
+            this.SetNumberFormat(parentForm!.Invoice);
         }
 
         private void BtnPrevious_Click(object sender, EventArgs e)

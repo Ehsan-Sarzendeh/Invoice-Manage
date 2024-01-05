@@ -60,6 +60,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             groupBox12 = new CustomGroupBox();
             label3 = new System.Windows.Forms.Label();
             TogOptional = new ToggleButton();
+            sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             Inty.SuspendLayout();
             Inp.SuspendLayout();
             Tob.SuspendLayout();
@@ -450,8 +451,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             groupBox12.Controls.Add(Indatim_1);
             groupBox12.Controls.Add(Indatim2m_1);
             groupBox12.Controls.Add(Indatim2m_2);
-            groupBox12.ForeColor = System.Drawing.Color.LightGray;
+            groupBox12.ForeColor = System.Drawing.Color.DimGray;
             groupBox12.Location = new System.Drawing.Point(29, 181);
+            groupBox12.Mode = Common.Mode.Required;
             groupBox12.Name = "groupBox12";
             groupBox12.ShowOptional = false;
             groupBox12.ShowSemiRequired = false;
@@ -484,6 +486,13 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TogOptional.TabIndex = 221;
             TogOptional.UseVisualStyleBackColor = true;
             TogOptional.CheckedChanged += TogOptional_CheckedChanged;
+            // 
+            // sqlCommand1
+            // 
+            sqlCommand1.CommandTimeout = 30;
+            sqlCommand1.Connection = null;
+            sqlCommand1.Notification = null;
+            sqlCommand1.Transaction = null;
             // 
             // InvoiceStep
             // 
@@ -565,5 +574,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private System.Windows.Forms.Label label3;
         private Resources.CustomToolBox.ToggleButton TogOptional;
         private RoundedButton BtnGenerateCode;
+        private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
     }
 }

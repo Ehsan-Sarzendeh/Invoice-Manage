@@ -17,7 +17,7 @@ namespace InvoiceManage.Database.Entities
 
         [Display(Name = "تاریخ صدور صورتحساب")]
         public string Indatim_1 { get; set; }
-
+        
         [Display(Name = "زمان صدور صورتحساب")]
         public string Indatim_2 { get; set; }
 
@@ -82,33 +82,43 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "شماره اشتراک/ شناسه قبض بهربرداری")]
         public string BillId { get; set; }
 
+        [Bindable(false)]
         [Display(Name = "مجموع مبلغ قبل از کسر تخفیف")]
         public decimal Tprdis => Items?.Sum(x => x.Prdis) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع تخفیفات")]
         public decimal Tdis => Items?.Sum(x => x.Dis) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع مبلغ پس از کسر تخفیف")]
         public decimal Tadis => Items?.Sum(x => x.Adis) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع مالیات بر ارزش افزوده")]
         public decimal Tvam => Items?.Sum(x => x.Vam) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع سایر مالیات، عوارض و وجوه قانونی")]
         public decimal Todam => Items?.Sum(x => x.Odam) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع صورتحساب")]
         public decimal Tbill => Items?.Sum(x => x.Tsstam) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع وزن خالص")]
         public decimal Tonw => Items?.Sum(x => x.Nw) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع ارزش ریالی")]
         public decimal Torv => Items?.Sum(x => x.Ssrv) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع ارزش ارزی")]
         public decimal Tocv => Items?.Sum(x => x.Sscv) ?? 0;
 
+        [Bindable(false)]
         [Display(Name = "مجموع سهم مالیات بر ارزش افزوده از پرداخت")]
         public decimal Tvop => Items?.Sum(x => x.Vop) ?? 0;
 
@@ -160,30 +170,37 @@ namespace InvoiceManage.Database.Entities
 
         [Display(Name = "نوع صورتحساب")]
         public Inty Inty { get; set; }
+        [Bindable(false)]
         public string Inty_1 => Inty.ToDisplay();
 
         [Display(Name = "الگوی صورتحساب")]
         public Inp Inp { get; set; }
+        [Bindable(false)]
         public string Inp_1 => Inp.ToDisplay();
 
         [Display(Name = "موضوع صورتحساب")]
         public Ins? Ins { get; set; }
+        [Bindable(false)]
         public string Ins_1 => Ins?.ToDisplay();
 
         [Display(Name = "نوع شخص خریدار")]
         public Tob? Tob { get; set; }
+        [Bindable(false)]
         public string Tob_1 => Tob?.ToDisplay();
 
         [Display(Name = "نوع پرواز")]
         public Ft? Ft { get; set; }
+        [Bindable(false)]
         public string Ft_1 => Ft?.ToDisplay();
 
         [Display(Name = "روش پرداخت")]
         public Pmt? Pmt { get; set; }
+        [Bindable(false)]
         public string Pmt_1 => Pmt?.ToDisplay();
 
         [Display(Name = "روش تسویه")]
         public Setm? Setm { get; set; }
+        [Bindable(false)]
         public string Setm_1 => Setm?.ToDisplay();
 
         [Display(Name = "شناسه شرکت")]

@@ -15,17 +15,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
             SetComboBoxDataSource();
         }
-
-        public void SetDataBindings()
-        {
-            var parentForm = ParentForm as FrmInvoice;
-
-            TxtCap.DataBindings.Add("Text", parentForm!.Invoice, nameof(parentForm.Invoice.Cap), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtInsp.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Insp), true, DataSourceUpdateMode.OnPropertyChanged);
-            TxtTax17.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tax17), true, DataSourceUpdateMode.OnPropertyChanged);
-            Cbv.DataBindings.Add("SelectedValue", parentForm.Invoice, nameof(parentForm.Invoice.Setm), true, DataSourceUpdateMode.OnPropertyChanged);
-        }
-
+        
         public void SetComputedProperties()
         {
             var parentForm = ParentForm as FrmInvoice;
@@ -58,7 +48,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void SumStep_Load(object sender, EventArgs e)
         {
-            SetDataBindings();
+            var parentForm = ParentForm as FrmInvoice;
+
+            this.SetDataBindings(parentForm!.Invoice);
+            this.SetNumberFormat(parentForm!.Invoice);
         }
     }
 }

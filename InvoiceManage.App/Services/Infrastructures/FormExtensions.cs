@@ -1,8 +1,12 @@
 ﻿using InvoiceManage.Database.Infrastructures;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using static Stimulsoft.Report.StiOptions.Designer;
 
 namespace InvoiceManage.App.Services.Infrastructures
 {
@@ -55,6 +59,98 @@ namespace InvoiceManage.App.Services.Infrastructures
 
             foreach (Control c in control.Controls)
                 ClearControls(c);
+        }
+
+        public static void SetNumberFormat(this Control control, object obj)
+        {
+            control.SetNumberFormat(obj.GetType().GetProperties());
+        }
+        private static void SetNumberFormat(this Control control, params PropertyInfo[] properties)
+        {
+            switch (control)
+            {
+                case TextBoxBase textBoxBase:
+                    var name = textBoxBase.Name
+                        .Replace("mtxt", "", StringComparison.OrdinalIgnoreCase)
+                        .Replace("txt", "", StringComparison.OrdinalIgnoreCase);
+
+                    var property = properties.FirstOrDefault(x => x.Name.Equals(name));
+
+                    if (property is not null && (property.PropertyType == typeof(byte) ||
+                                                 property.PropertyType == typeof(short) ||
+                                                 property.PropertyType == typeof(int) ||
+                                                 property.PropertyType == typeof(long)))
+                        textBoxBase.KeyPress += IntegerControl_KeyPress!;
+                    else if (property is not null && (property.PropertyType == typeof(float) ||
+                                                      property.PropertyType == typeof(decimal)))
+                        textBoxBase.KeyPress += DecimalControl_KeyPress!;
+
+                    break;
+            }
+
+            foreach (Control c in control.Controls)
+                SetNumberFormat(c, properties);
+        }
+
+        public static void SetDataBindings(this Control control, object obj)
+        {
+            control.SetDataBindings(obj, obj.GetType().GetProperties());
+        }
+        private static void SetDataBindings(this Control control, object obj, params PropertyInfo[] properties)
+        {
+            switch (control)
+            {
+                case TextBox textBox:
+                    var name = textBox.Name.Replace("txt", "", StringComparison.OrdinalIgnoreCase);
+                    
+                    var property = properties.FirstOrDefault(x => x.Name.Equals(name));
+
+                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null ||
+                                                 (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
+                        textBox.DataBindings.Add("Text", obj, property.Name, true, DataSourceUpdateMode.OnPropertyChanged);
+
+                    break;
+
+                case MaskedTextBox maskTextBox:
+                    name = maskTextBox.Name.Replace("mtxt", "", StringComparison.OrdinalIgnoreCase);
+
+                    property = properties.FirstOrDefault(x => x.Name.Equals(name));
+
+                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null ||
+                                                 (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
+                        maskTextBox.DataBindings.Add("Text", obj, property.Name, true, DataSourceUpdateMode.OnPropertyChanged);
+
+                    break;
+
+                case ComboBox comboBox:
+                    name = comboBox.Name.Replace("Cb", "", StringComparison.OrdinalIgnoreCase);
+
+                    property = properties.FirstOrDefault(x => x.Name.Equals(name));
+
+                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null ||
+                                                 (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
+                        comboBox.DataBindings.Add("SelectedValue", obj, property.Name, true, DataSourceUpdateMode.OnPropertyChanged);
+
+                    break;
+            }
+
+            foreach (Control c in control.Controls)
+                SetDataBindings(c, obj, properties);
+        }
+
+        private static void DecimalControl_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+                e.Handled = true;
+            
+            if (e.KeyChar == '.' && (sender as TextBoxBase)!.Text.IndexOf('.') > -1)
+                e.Handled = true;
+        }
+
+        private static void IntegerControl_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
     }
 }
