@@ -40,12 +40,20 @@
             TxtCrn = new System.Windows.Forms.TextBox();
             groupBox4 = new System.Windows.Forms.GroupBox();
             TxtScln = new System.Windows.Forms.TextBox();
+            panel1 = new System.Windows.Forms.Panel();
+            label1 = new System.Windows.Forms.Label();
+            BtnEdit = new System.Windows.Forms.PictureBox();
+            BtnDelete = new System.Windows.Forms.PictureBox();
+            BtnEditCompany = new Resources.CustomToolBox.RoundedButton();
             groupBox11.SuspendLayout();
             groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GvCompanies).BeginInit();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)BtnEdit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnDelete).BeginInit();
             SuspendLayout();
             // 
             // groupBox11
@@ -108,7 +116,7 @@
             BtnAdd.Location = new System.Drawing.Point(32, 136);
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
-            BtnAdd.Size = new System.Drawing.Size(179, 47);
+            BtnAdd.Size = new System.Drawing.Size(120, 47);
             BtnAdd.TabIndex = 1;
             BtnAdd.Text = "افزودن";
             BtnAdd.TextColor = System.Drawing.Color.White;
@@ -119,12 +127,15 @@
             // 
             GvCompanies.AllowUserToAddRows = false;
             GvCompanies.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            GvCompanies.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            GvCompanies.BackgroundColor = System.Drawing.Color.White;
             GvCompanies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GvCompanies.Location = new System.Drawing.Point(32, 239);
+            GvCompanies.Location = new System.Drawing.Point(32, 289);
+            GvCompanies.MultiSelect = false;
             GvCompanies.Name = "GvCompanies";
+            GvCompanies.ReadOnly = true;
             GvCompanies.RowTemplate.Height = 25;
-            GvCompanies.Size = new System.Drawing.Size(727, 458);
+            GvCompanies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            GvCompanies.Size = new System.Drawing.Size(727, 408);
             GvCompanies.TabIndex = 220;
             // 
             // TxtSbc
@@ -193,11 +204,84 @@
             TxtScln.Size = new System.Drawing.Size(186, 29);
             TxtScln.TabIndex = 0;
             // 
+            // panel1
+            // 
+            panel1.BackColor = System.Drawing.SystemColors.Control;
+            panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(BtnEdit);
+            panel1.Controls.Add(BtnDelete);
+            panel1.Location = new System.Drawing.Point(32, 233);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(727, 55);
+            panel1.TabIndex = 227;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
+            label1.Location = new System.Drawing.Point(586, 10);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(136, 32);
+            label1.TabIndex = 7;
+            label1.Text = "لیست شرکت ها";
+            // 
+            // BtnEdit
+            // 
+            BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnEdit.Image = Properties.Resources.edit;
+            BtnEdit.Location = new System.Drawing.Point(54, 5);
+            BtnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new System.Drawing.Size(45, 45);
+            BtnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            BtnEdit.TabIndex = 6;
+            BtnEdit.TabStop = false;
+            BtnEdit.Click += BtnEdit_Click;
+            // 
+            // BtnDelete
+            // 
+            BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnDelete.Image = Properties.Resources.delete;
+            BtnDelete.Location = new System.Drawing.Point(4, 5);
+            BtnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new System.Drawing.Size(45, 45);
+            BtnDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            BtnDelete.TabIndex = 5;
+            BtnDelete.TabStop = false;
+            BtnDelete.Click += BtnDelete_Click;
+            // 
+            // BtnEditCompany
+            // 
+            BtnEditCompany.BackColor = System.Drawing.Color.Orange;
+            BtnEditCompany.BackgroundColor = System.Drawing.Color.Orange;
+            BtnEditCompany.BorderColor = System.Drawing.Color.PaleVioletRed;
+            BtnEditCompany.BorderRadius = 10;
+            BtnEditCompany.BorderSize = 0;
+            BtnEditCompany.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnEditCompany.FlatAppearance.BorderSize = 0;
+            BtnEditCompany.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnEditCompany.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnEditCompany.ForeColor = System.Drawing.Color.White;
+            BtnEditCompany.Location = new System.Drawing.Point(156, 136);
+            BtnEditCompany.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnEditCompany.Name = "BtnEditCompany";
+            BtnEditCompany.Size = new System.Drawing.Size(120, 47);
+            BtnEditCompany.TabIndex = 228;
+            BtnEditCompany.Text = "ویرایش";
+            BtnEditCompany.TextColor = System.Drawing.Color.White;
+            BtnEditCompany.UseVisualStyleBackColor = false;
+            BtnEditCompany.Click += BtnEditCompany_Click;
+            // 
             // CompanySettings
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
+            Controls.Add(BtnEditCompany);
+            Controls.Add(panel1);
             Controls.Add(groupBox3);
             Controls.Add(groupBox4);
             Controls.Add(groupBox1);
@@ -222,6 +306,10 @@
             groupBox3.PerformLayout();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)BtnEdit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnDelete).EndInit();
             ResumeLayout(false);
         }
 
@@ -239,5 +327,10 @@
         private System.Windows.Forms.TextBox TxtCrn;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox TxtScln;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox BtnEdit;
+        private System.Windows.Forms.PictureBox BtnDelete;
+        private Resources.CustomToolBox.RoundedButton BtnEditCompany;
     }
 }

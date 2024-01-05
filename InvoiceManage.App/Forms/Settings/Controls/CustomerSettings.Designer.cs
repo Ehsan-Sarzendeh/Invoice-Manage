@@ -44,6 +44,11 @@
             TxtBpn = new System.Windows.Forms.TextBox();
             groupBox5 = new System.Windows.Forms.GroupBox();
             TxtBillId = new System.Windows.Forms.TextBox();
+            panel1 = new System.Windows.Forms.Panel();
+            label1 = new System.Windows.Forms.Label();
+            BtnEdit = new System.Windows.Forms.PictureBox();
+            BtnDelete = new System.Windows.Forms.PictureBox();
+            BtnEditCustomer = new Resources.CustomToolBox.RoundedButton();
             groupBox11.SuspendLayout();
             groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GvCustomers).BeginInit();
@@ -52,6 +57,9 @@
             groupBox4.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox5.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)BtnEdit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BtnDelete).BeginInit();
             SuspendLayout();
             // 
             // groupBox11
@@ -59,7 +67,7 @@
             groupBox11.Controls.Add(TxtBId);
             groupBox11.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox11.ForeColor = System.Drawing.Color.DimGray;
-            groupBox11.Location = new System.Drawing.Point(292, 31);
+            groupBox11.Location = new System.Drawing.Point(292, 27);
             groupBox11.Name = "groupBox11";
             groupBox11.Size = new System.Drawing.Size(244, 70);
             groupBox11.TabIndex = 226;
@@ -81,7 +89,7 @@
             groupBox9.Controls.Add(TxtTinb);
             groupBox9.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox9.ForeColor = System.Drawing.Color.DimGray;
-            groupBox9.Location = new System.Drawing.Point(553, 31);
+            groupBox9.Location = new System.Drawing.Point(553, 27);
             groupBox9.Name = "groupBox9";
             groupBox9.Size = new System.Drawing.Size(205, 70);
             groupBox9.TabIndex = 225;
@@ -100,13 +108,18 @@
             // 
             // GvCustomers
             // 
+            GvCustomers.AllowUserToAddRows = false;
+            GvCustomers.AllowUserToDeleteRows = false;
             GvCustomers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            GvCustomers.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            GvCustomers.BackgroundColor = System.Drawing.Color.White;
             GvCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            GvCustomers.Location = new System.Drawing.Point(32, 316);
+            GvCustomers.Location = new System.Drawing.Point(32, 355);
+            GvCustomers.MultiSelect = false;
             GvCustomers.Name = "GvCustomers";
+            GvCustomers.ReadOnly = true;
             GvCustomers.RowTemplate.Height = 25;
-            GvCustomers.Size = new System.Drawing.Size(727, 382);
+            GvCustomers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            GvCustomers.Size = new System.Drawing.Size(727, 350);
             GvCustomers.TabIndex = 227;
             // 
             // BtnAdd
@@ -121,10 +134,10 @@
             BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnAdd.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnAdd.ForeColor = System.Drawing.Color.White;
-            BtnAdd.Location = new System.Drawing.Point(32, 230);
+            BtnAdd.Location = new System.Drawing.Point(32, 226);
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
-            BtnAdd.Size = new System.Drawing.Size(179, 47);
+            BtnAdd.Size = new System.Drawing.Size(117, 47);
             BtnAdd.TabIndex = 224;
             BtnAdd.Text = "افزودن";
             BtnAdd.TextColor = System.Drawing.Color.White;
@@ -147,7 +160,7 @@
             groupBox3.Controls.Add(TxtBbc);
             groupBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox3.ForeColor = System.Drawing.Color.DimGray;
-            groupBox3.Location = new System.Drawing.Point(292, 114);
+            groupBox3.Location = new System.Drawing.Point(292, 110);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new System.Drawing.Size(244, 70);
             groupBox3.TabIndex = 230;
@@ -169,7 +182,7 @@
             groupBox1.Controls.Add(TxtName);
             groupBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox1.ForeColor = System.Drawing.Color.DimGray;
-            groupBox1.Location = new System.Drawing.Point(32, 31);
+            groupBox1.Location = new System.Drawing.Point(32, 27);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new System.Drawing.Size(244, 70);
             groupBox1.TabIndex = 228;
@@ -181,7 +194,7 @@
             groupBox4.Controls.Add(TxtBpc);
             groupBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox4.ForeColor = System.Drawing.Color.DimGray;
-            groupBox4.Location = new System.Drawing.Point(553, 114);
+            groupBox4.Location = new System.Drawing.Point(553, 110);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new System.Drawing.Size(205, 70);
             groupBox4.TabIndex = 229;
@@ -203,7 +216,7 @@
             groupBox2.Controls.Add(TxtBpn);
             groupBox2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox2.ForeColor = System.Drawing.Color.DimGray;
-            groupBox2.Location = new System.Drawing.Point(32, 114);
+            groupBox2.Location = new System.Drawing.Point(32, 110);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new System.Drawing.Size(244, 70);
             groupBox2.TabIndex = 231;
@@ -225,7 +238,7 @@
             groupBox5.Controls.Add(TxtBillId);
             groupBox5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox5.ForeColor = System.Drawing.Color.DimGray;
-            groupBox5.Location = new System.Drawing.Point(292, 207);
+            groupBox5.Location = new System.Drawing.Point(292, 203);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new System.Drawing.Size(466, 70);
             groupBox5.TabIndex = 232;
@@ -242,11 +255,84 @@
             TxtBillId.Size = new System.Drawing.Size(447, 29);
             TxtBillId.TabIndex = 0;
             // 
+            // panel1
+            // 
+            panel1.BackColor = System.Drawing.SystemColors.Control;
+            panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(BtnEdit);
+            panel1.Controls.Add(BtnDelete);
+            panel1.Location = new System.Drawing.Point(32, 299);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(727, 55);
+            panel1.TabIndex = 233;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
+            label1.Location = new System.Drawing.Point(604, 11);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(112, 32);
+            label1.TabIndex = 7;
+            label1.Text = "لیست خریدار";
+            // 
+            // BtnEdit
+            // 
+            BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnEdit.Image = Properties.Resources.edit;
+            BtnEdit.Location = new System.Drawing.Point(54, 5);
+            BtnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new System.Drawing.Size(45, 45);
+            BtnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            BtnEdit.TabIndex = 6;
+            BtnEdit.TabStop = false;
+            BtnEdit.Click += BtnEdit_Click;
+            // 
+            // BtnDelete
+            // 
+            BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnDelete.Image = Properties.Resources.delete;
+            BtnDelete.Location = new System.Drawing.Point(4, 5);
+            BtnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new System.Drawing.Size(45, 45);
+            BtnDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            BtnDelete.TabIndex = 5;
+            BtnDelete.TabStop = false;
+            BtnDelete.Click += BtnDelete_Click;
+            // 
+            // BtnEditCustomer
+            // 
+            BtnEditCustomer.BackColor = System.Drawing.Color.Orange;
+            BtnEditCustomer.BackgroundColor = System.Drawing.Color.Orange;
+            BtnEditCustomer.BorderColor = System.Drawing.Color.PaleVioletRed;
+            BtnEditCustomer.BorderRadius = 10;
+            BtnEditCustomer.BorderSize = 0;
+            BtnEditCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnEditCustomer.FlatAppearance.BorderSize = 0;
+            BtnEditCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnEditCustomer.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnEditCustomer.ForeColor = System.Drawing.Color.White;
+            BtnEditCustomer.Location = new System.Drawing.Point(159, 226);
+            BtnEditCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnEditCustomer.Name = "BtnEditCustomer";
+            BtnEditCustomer.Size = new System.Drawing.Size(117, 47);
+            BtnEditCustomer.TabIndex = 234;
+            BtnEditCustomer.Text = "ویرایش";
+            BtnEditCustomer.TextColor = System.Drawing.Color.White;
+            BtnEditCustomer.UseVisualStyleBackColor = false;
+            BtnEditCustomer.Click += BtnEditCustomer_Click;
+            // 
             // CustomerSettings
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
+            Controls.Add(BtnEditCustomer);
+            Controls.Add(panel1);
             Controls.Add(groupBox5);
             Controls.Add(groupBox2);
             Controls.Add(groupBox11);
@@ -277,6 +363,10 @@
             groupBox2.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)BtnEdit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BtnDelete).EndInit();
             ResumeLayout(false);
         }
 
@@ -298,5 +388,10 @@
         private System.Windows.Forms.TextBox TxtBpn;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox TxtBillId;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox BtnEdit;
+        private System.Windows.Forms.PictureBox BtnDelete;
+        private Resources.CustomToolBox.RoundedButton BtnEditCustomer;
     }
 }

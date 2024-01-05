@@ -1,12 +1,10 @@
 ﻿using InvoiceManage.Database.Infrastructures;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
-using static Stimulsoft.Report.StiOptions.Designer;
 
 namespace InvoiceManage.App.Services.Infrastructures
 {
@@ -95,7 +93,7 @@ namespace InvoiceManage.App.Services.Infrastructures
         public static void SetDataBindings(this Control control, object obj)
         {
             control.SetDataBindings(obj, obj.GetType().GetProperties());
-        }
+        } 
         private static void SetDataBindings(this Control control, object obj, params PropertyInfo[] properties)
         {
             switch (control)
@@ -105,8 +103,7 @@ namespace InvoiceManage.App.Services.Infrastructures
                     
                     var property = properties.FirstOrDefault(x => x.Name.Equals(name));
 
-                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null ||
-                                                 (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
+                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null || (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
                         textBox.DataBindings.Add("Text", obj, property.Name, true, DataSourceUpdateMode.OnPropertyChanged);
 
                     break;
@@ -116,8 +113,7 @@ namespace InvoiceManage.App.Services.Infrastructures
 
                     property = properties.FirstOrDefault(x => x.Name.Equals(name));
 
-                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null ||
-                                                 (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
+                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null || (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
                         maskTextBox.DataBindings.Add("Text", obj, property.Name, true, DataSourceUpdateMode.OnPropertyChanged);
 
                     break;
@@ -127,8 +123,7 @@ namespace InvoiceManage.App.Services.Infrastructures
 
                     property = properties.FirstOrDefault(x => x.Name.Equals(name));
 
-                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null ||
-                                                 (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
+                    if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null || (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
                         comboBox.DataBindings.Add("SelectedValue", obj, property.Name, true, DataSourceUpdateMode.OnPropertyChanged);
 
                     break;
