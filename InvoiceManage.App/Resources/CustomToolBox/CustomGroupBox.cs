@@ -13,6 +13,8 @@ namespace InvoiceManage.App.Resources.CustomToolBox
         private bool showOptional;
         private bool showSemiRequired;
 
+        public bool IsValid => this.CheckRequiredFieldHasValue();
+
         public bool ShowOptional
         {
             get => showOptional;

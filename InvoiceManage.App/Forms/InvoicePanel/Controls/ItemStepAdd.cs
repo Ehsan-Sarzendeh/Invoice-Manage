@@ -51,6 +51,13 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
+            if (!this.IsValid())
+            {
+                CustomMessageBox.Show("آیتم اجباری یا اجباری خاصی پر نشده است", "خطا", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
+
             var parentForm = ParentForm as FrmInvoice;
 
             var newItem = new InvoiceItem
