@@ -30,11 +30,13 @@ namespace InvoiceManage.App.Services.Infrastructures
         {
             foreach (Control control in groupBox.Controls)
             {
+                control.Visible = !disable;
+                control.Visible = !disable;
                 switch (control)
                 {
                     case TextBoxBase txt:
-                        txt.ReadOnly = disable;
                         txt.Visible = !disable;
+                        txt.Enabled = !disable;
                         break;
                     case ListControl combo:
                         combo.Enabled = !disable;
