@@ -28,7 +28,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel
             PanelSlider.Controls.Add(new InvoiceStep(invoiceService));
             PanelSlider.Controls.Add(new CompanyStep(commonService));
             PanelSlider.Controls.Add(new CustomerStep(commonService));
-            PanelSlider.Controls.Add(new ItemStep(commonService));
+            PanelSlider.Controls.Add(new ItemStep(commonService, invoiceService));
             PanelSlider.Controls.Add(new SumStep());
             PanelSlider.Controls.Add(new PayStep(_frmInvoiceType, invoiceService));
 

@@ -79,6 +79,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtOlr = new System.Windows.Forms.TextBox();
             Olt = new CustomGroupBox();
             TxtOlt = new System.Windows.Forms.TextBox();
+            BtnEdit = new RoundedButton();
+            PicEdit = new System.Windows.Forms.PictureBox();
             Sstid.SuspendLayout();
             Sstt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PicAdd).BeginInit();
@@ -104,6 +106,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Olam.SuspendLayout();
             Olr.SuspendLayout();
             Olt.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PicEdit).BeginInit();
             SuspendLayout();
             // 
             // Sstid
@@ -172,7 +175,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnAdd.Location = new System.Drawing.Point(28, 420);
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
-            BtnAdd.Size = new System.Drawing.Size(123, 50);
+            BtnAdd.Size = new System.Drawing.Size(114, 50);
             BtnAdd.TabIndex = 226;
             BtnAdd.Text = "افـزودن";
             BtnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -775,11 +778,48 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtOlt.TabIndex = 0;
             TxtOlt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // BtnEdit
+            // 
+            BtnEdit.BackColor = System.Drawing.Color.White;
+            BtnEdit.BackgroundColor = System.Drawing.Color.White;
+            BtnEdit.BorderColor = System.Drawing.Color.Orange;
+            BtnEdit.BorderRadius = 10;
+            BtnEdit.BorderSize = 2;
+            BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            BtnEdit.FlatAppearance.BorderSize = 0;
+            BtnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            BtnEdit.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            BtnEdit.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
+            BtnEdit.Location = new System.Drawing.Point(149, 419);
+            BtnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new System.Drawing.Size(114, 50);
+            BtnEdit.TabIndex = 249;
+            BtnEdit.Text = "ویرایش";
+            BtnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            BtnEdit.TextColor = System.Drawing.Color.FromArgb(68, 68, 68);
+            BtnEdit.UseVisualStyleBackColor = false;
+            BtnEdit.Click += BtnEdit_Click;
+            // 
+            // PicEdit
+            // 
+            PicEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            PicEdit.Image = Properties.Resources.edit;
+            PicEdit.Location = new System.Drawing.Point(156, 426);
+            PicEdit.Name = "PicEdit";
+            PicEdit.Size = new System.Drawing.Size(43, 38);
+            PicEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            PicEdit.TabIndex = 250;
+            PicEdit.TabStop = false;
+            PicEdit.Click += PicEdit_Click;
+            // 
             // ItemStepAdd
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
+            Controls.Add(PicEdit);
+            Controls.Add(BtnEdit);
             Controls.Add(GbOl);
             Controls.Add(GbOd);
             Controls.Add(Sscv);
@@ -852,6 +892,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Olr.PerformLayout();
             Olt.ResumeLayout(false);
             Olt.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PicEdit).EndInit();
             ResumeLayout(false);
         }
 
@@ -906,5 +947,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private System.Windows.Forms.TextBox TxtOlr;
         private CustomGroupBox Olt;
         private System.Windows.Forms.TextBox TxtOlt;
+        private RoundedButton BtnEdit;
+        private System.Windows.Forms.PictureBox PicEdit;
     }
 }

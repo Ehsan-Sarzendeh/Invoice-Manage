@@ -105,7 +105,6 @@ namespace InvoiceManage.App.Forms.Settings.Controls
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-
             var company = GetSelectedItem();
             if (company is null)
             {

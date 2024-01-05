@@ -12,6 +12,8 @@ namespace InvoiceManage.App.Services.InvoiceService
         void DeleteInvoice(Invoice invoice);
         void DeleteInvoice(long invoiceId);
 
+        void DeleteInvoiceItem(InvoiceItem invoiceItem);
+
         long GenerateInnoCode();
     }
 }

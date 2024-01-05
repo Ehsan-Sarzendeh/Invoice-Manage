@@ -5,18 +5,41 @@ using System.Windows.Forms;
 using InvoiceManage.App.Forms.Common;
 using InvoiceManage.App.Services.CommonService;
 using InvoiceManage.App.Services.Infrastructures;
+using System.ComponentModel;
 
 namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 {
-    public partial class ItemStepAdd : UserControl
+    public partial class ItemStepAdd : UserControl, INotifyPropertyChanged
     {
         private readonly ICommonService _commonService;
+
+
+        private bool _isEdit;
+        public bool IsEdit
+        {
+            get => _isEdit;
+            set
+            {
+                _isEdit = value;
+                OnPropertyChanged(nameof(IsEdit));
+            }
+        }
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected virtual void OnPropertyChanged(string property)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(property));
+        }
+
 
         public ItemStepAdd(ICommonService commonService)
         {
             _commonService = commonService;
+
             InitializeComponent();
             SetComboBoxDataSource();
+
+            BtnEdit.DataBindings.Add("Visible", this, nameof(IsEdit));
         }
 
         private void SetComboBoxDataSource()
@@ -77,6 +100,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             parentForm!.Invoice.Items.Add(newItem);
 
             this.ClearControls();
+            IsEdit = false;
 
             CustomMessageBox.Show("کالا با موفقیت ثبت شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -85,6 +109,25 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         {
             BtnAdd_Click(sender, e);
         }
+
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+            var parentForm = ParentForm as FrmInvoice;
+
+
+
+
+            this.ClearControls();
+            IsEdit = false;
+
+            CustomMessageBox.Show("کالا با موفقیت ویرایش شد", "ثبت", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void PicEdit_Click(object sender, EventArgs e)
+        {
+            BtnEdit_Click(sender, e);
+        }
+
 
         private void BtnSelect_Click(object sender, EventArgs e)
         {
@@ -102,5 +145,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         }
 
         #endregion
+
     }
 }
