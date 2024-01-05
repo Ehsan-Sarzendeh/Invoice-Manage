@@ -21,6 +21,7 @@ namespace InvoiceManage.App.Forms.InvoiceList
         private void BtnPrint_Click(object sender, EventArgs e)
         {
             var saveDialog = new SaveFileDialog();
+
             saveDialog.Filter = "PDF File|*.pdf";
             saveDialog.ShowDialog();
 
@@ -28,21 +29,10 @@ namespace InvoiceManage.App.Forms.InvoiceList
             {
                 var dto = new List<PrintInvoiceDto>
                 {
-                    new()
+                    new(_invoice)
                     {
-                        Id = _invoice.Id,
-                        Indatim_1 = _invoice.Indatim_1,
-                        Indatim_2 = _invoice.Indatim_2,
-                        Inno_1 = _invoice.Inno_1,
-                        Inty = _invoice.Inty,
-                        Inp = _invoice.Inp,
-                        Ins = _invoice.Ins,
-                        Tins = _invoice.Tins,
-                        Tob = _invoice.Tob,
-                        Tinb = _invoice.Tinb,
-                        Setm = _invoice.Setm,
-                        SendStatus = _invoice.SendStatus,
-                        Items = _invoice.Items
+                        Baddress = TxtBaddress.Text,
+                        Bcell = TxtBcell.Text
                     }
                 };
 
@@ -53,7 +43,6 @@ namespace InvoiceManage.App.Forms.InvoiceList
                 };
 
                 "Invoice.mrt".MakeReport(saveDialog.FileName, dic);
-
             }
 
             Close();

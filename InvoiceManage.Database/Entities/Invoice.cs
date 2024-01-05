@@ -41,17 +41,32 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "شماره منحصربفرد مالیاتی صورتحساب مرجع")]
         public string Irtaxid { get; set; }
 
+        #region Company
+
         [Display(Name = "شماره اقتصادی فروشنده")]
         public string Tins { get; set; }
-
-        [Display(Name = "شماره اقتصادی خریدار")]
-        public string Tinb { get; set; }
 
         [Display(Name = "کد شعبه فروشنده")]
         public string Sbc { get; set; }
 
+        [Display(Name = "کد گمرکی محل اظهار فروشنده")]
+        public string Scc { get; set; }
+
+        [Display(Name = "شناسه یکتای ثبت قرارداد فروشنده")]
+        public string Crn { get; set; }
+
+        [Display(Name = "شماره پروانه گمرکی")]
+        public string Scln { get; set; }
+
+        #endregion
+
+        #region Customer
+
         [Display(Name = "شماره /شناسه ملی")]
         public string Bid { get; set; }
+
+        [Display(Name = "شماره اقتصادی خریدار")]
+        public string Tinb { get; set; }
 
         [Display(Name = "کد پستی خریدار")]
         public string Bpc { get; set; }
@@ -62,14 +77,10 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "شماره گذرنامه خریدار")]
         public string Bpn { get; set; }
 
-        [Display(Name = "شماره پروانه گمرکی")]
-        public string Scln { get; set; }
+        [Display(Name = "شماره اشتراک/ شناسه قبض بهربرداری")]
+        public string BillId { get; set; }
 
-        [Display(Name = "کد گمرکی محل اظهار فروشنده")]
-        public string Scc { get; set; }
-
-        [Display(Name = "شناسه یکتای ثبت قرارداد فروشنده")]
-        public string Crn { get; set; }
+        #endregion
 
         [Display(Name = "شماره کوتاژ اظهارنامه گمرکی")]
         public string Cdcn { get; set; }
@@ -78,9 +89,6 @@ namespace InvoiceManage.Database.Entities
         public string Cdcd_1 { get; set; }
 
         public decimal Cdcd { get; set; }
-
-        [Display(Name = "شماره اشتراک/ شناسه قبض بهربرداری")]
-        public string BillId { get; set; }
 
         [Bindable(false)]
         [Display(Name = "مجموع مبلغ قبل از کسر تخفیف")]

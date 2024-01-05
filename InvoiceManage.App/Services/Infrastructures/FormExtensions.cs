@@ -1,12 +1,10 @@
 ﻿using InvoiceManage.Database.Infrastructures;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
-using static Stimulsoft.Report.StiOptions.Designer;
 
 namespace InvoiceManage.App.Services.Infrastructures
 {
@@ -104,7 +102,7 @@ namespace InvoiceManage.App.Services.Infrastructures
             {
                 case TextBox textBox:
                     var name = textBox.Name.Replace("txt", "", StringComparison.OrdinalIgnoreCase);
-                    
+
                     var property = properties.FirstOrDefault(x => x.Name.Equals(name));
 
                     if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null ||
@@ -144,7 +142,7 @@ namespace InvoiceManage.App.Services.Infrastructures
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
                 e.Handled = true;
-            
+
             if (e.KeyChar == '.' && (sender as TextBoxBase)!.Text.IndexOf('.') > -1)
                 e.Handled = true;
         }

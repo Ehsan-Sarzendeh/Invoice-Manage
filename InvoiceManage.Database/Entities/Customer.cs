@@ -19,7 +19,7 @@ namespace InvoiceManage.Database.Entities
         public string Bpn { get; set; }
         [Display(Name = "شماره اشتراک/ شناسه قبض بهربرداری")]
         public string BillId { get; set; }
-        [Display(Name = "سود خریدار")]
+
         public string Pro { get; set; }
     }
 }
