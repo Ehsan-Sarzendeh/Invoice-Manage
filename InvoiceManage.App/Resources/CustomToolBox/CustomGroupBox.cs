@@ -77,6 +77,7 @@ namespace InvoiceManage.App.Resources.CustomToolBox
                     }
 
                     ForeColor = Color.LightGray;
+                    this.ClearControls();
                     this.ChangeReadOnly(true);
 
                     break;
@@ -89,6 +90,7 @@ namespace InvoiceManage.App.Resources.CustomToolBox
                     }
 
                     ForeColor = Color.LightGray;
+                    this.ClearControls();
                     this.ChangeReadOnly(true);
 
                     break;
