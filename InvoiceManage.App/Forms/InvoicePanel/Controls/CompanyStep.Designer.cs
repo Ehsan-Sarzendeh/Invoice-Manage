@@ -124,7 +124,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             MtxtCdcd_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             MtxtCdcd_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             MtxtCdcd_1.Location = new System.Drawing.Point(6, 29);
-            MtxtCdcd_1.Mask = "0000/00/00";
+            MtxtCdcd_1.Mask = "0000\\/00\\/00";
             MtxtCdcd_1.Name = "MtxtCdcd_1";
             MtxtCdcd_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             MtxtCdcd_1.Size = new System.Drawing.Size(205, 29);

@@ -232,7 +232,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             MtxtIndatim_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             MtxtIndatim_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             MtxtIndatim_1.Location = new System.Drawing.Point(6, 29);
-            MtxtIndatim_1.Mask = "0000/00/00";
+            MtxtIndatim_1.Mask = "0000\\/00\\/00";
             MtxtIndatim_1.Name = "MtxtIndatim_1";
             MtxtIndatim_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             MtxtIndatim_1.Size = new System.Drawing.Size(214, 29);
@@ -269,7 +269,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             MtxtIndatim2m_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             MtxtIndatim2m_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             MtxtIndatim2m_1.Location = new System.Drawing.Point(6, 29);
-            MtxtIndatim2m_1.Mask = "0000/00/00";
+            MtxtIndatim2m_1.Mask = "0000\\/00\\/00";
             MtxtIndatim2m_1.Name = "MtxtIndatim2m_1";
             MtxtIndatim2m_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             MtxtIndatim2m_1.Size = new System.Drawing.Size(214, 29);

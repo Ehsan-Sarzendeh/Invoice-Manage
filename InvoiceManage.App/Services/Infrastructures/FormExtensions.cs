@@ -38,8 +38,13 @@ namespace InvoiceManage.App.Services.Infrastructures
 
                     return true;
 
-                case TextBoxBase textBox:
+                case TextBox textBox:
                     if (string.IsNullOrWhiteSpace(textBox.Text))
+                        return false;
+                    break;
+
+                case MaskedTextBox maskedText:
+                    if (string.IsNullOrWhiteSpace(maskedText.Text) || maskedText.Text.Contains(' '))
                         return false;
                     break;
 

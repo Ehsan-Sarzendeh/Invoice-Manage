@@ -365,9 +365,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             MtxtPdt_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             MtxtPdt_1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             MtxtPdt_1.Location = new System.Drawing.Point(10, 29);
-            MtxtPdt_1.Mask = "0000/00/00";
+            MtxtPdt_1.Mask = "0000\\/00\\/00";
             MtxtPdt_1.Name = "MtxtPdt_1";
-            MtxtPdt_1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            MtxtPdt_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             MtxtPdt_1.Size = new System.Drawing.Size(214, 29);
             MtxtPdt_1.TabIndex = 0;
             MtxtPdt_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -395,7 +395,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             MtxtPdt_2.Location = new System.Drawing.Point(10, 29);
             MtxtPdt_2.Mask = "00:00";
             MtxtPdt_2.Name = "MtxtPdt_2";
-            MtxtPdt_2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            MtxtPdt_2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             MtxtPdt_2.Size = new System.Drawing.Size(214, 29);
             MtxtPdt_2.TabIndex = 0;
             MtxtPdt_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

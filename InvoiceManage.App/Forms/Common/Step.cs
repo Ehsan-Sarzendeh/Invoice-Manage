@@ -42,9 +42,10 @@ namespace InvoiceManage.App.Forms.Common
 
     public enum Mode
     {
-        Required = 0,
-        SemiRequired = 1,
-        Optional = 2,
-        Ignore = 3
+        None = 0,
+        Required = 1,
+        SemiRequired = 2,
+        Optional = 3,
+        Ignore = 4
     }
 }
