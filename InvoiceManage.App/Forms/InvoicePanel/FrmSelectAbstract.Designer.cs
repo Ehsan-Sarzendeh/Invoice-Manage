@@ -32,17 +32,17 @@
             panel1 = new System.Windows.Forms.Panel();
             label1 = new System.Windows.Forms.Label();
             BtnSelect = new Resources.CustomToolBox.RoundedButton();
-            objectsGv = new System.Windows.Forms.DataGridView();
+            GvRecords = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)BtnClose).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)objectsGv).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)GvRecords).BeginInit();
             SuspendLayout();
             // 
             // BtnClose
             // 
             BtnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             BtnClose.Image = Properties.Resources.close_w;
-            BtnClose.Location = new System.Drawing.Point(597, 2);
+            BtnClose.Location = new System.Drawing.Point(692, 0);
             BtnClose.Name = "BtnClose";
             BtnClose.Size = new System.Drawing.Size(37, 37);
             BtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -55,11 +55,11 @@
             panel1.BackColor = System.Drawing.Color.White;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(BtnSelect);
-            panel1.Controls.Add(objectsGv);
+            panel1.Controls.Add(GvRecords);
             panel1.Location = new System.Drawing.Point(4, 39);
             panel1.Name = "panel1";
             panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            panel1.Size = new System.Drawing.Size(628, 407);
+            panel1.Size = new System.Drawing.Size(721, 440);
             panel1.TabIndex = 17;
             // 
             // label1
@@ -67,7 +67,7 @@
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             label1.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
-            label1.Location = new System.Drawing.Point(179, 18);
+            label1.Location = new System.Drawing.Point(234, 18);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(260, 32);
             label1.TabIndex = 223;
@@ -85,7 +85,7 @@
             BtnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnSelect.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnSelect.ForeColor = System.Drawing.Color.White;
-            BtnSelect.Location = new System.Drawing.Point(23, 339);
+            BtnSelect.Location = new System.Drawing.Point(24, 371);
             BtnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnSelect.Name = "BtnSelect";
             BtnSelect.Size = new System.Drawing.Size(143, 47);
@@ -95,22 +95,27 @@
             BtnSelect.UseVisualStyleBackColor = false;
             BtnSelect.Click += BtnSelect_Click;
             // 
-            // objectsGv
+            // GvRecords
             // 
-            objectsGv.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            objectsGv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            objectsGv.Location = new System.Drawing.Point(24, 68);
-            objectsGv.Name = "objectsGv";
-            objectsGv.RowTemplate.Height = 25;
-            objectsGv.Size = new System.Drawing.Size(581, 258);
-            objectsGv.TabIndex = 221;
+            GvRecords.AllowUserToAddRows = false;
+            GvRecords.AllowUserToDeleteRows = false;
+            GvRecords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            GvRecords.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            GvRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GvRecords.Location = new System.Drawing.Point(24, 68);
+            GvRecords.Name = "GvRecords";
+            GvRecords.ReadOnly = true;
+            GvRecords.RowTemplate.Height = 25;
+            GvRecords.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            GvRecords.Size = new System.Drawing.Size(676, 287);
+            GvRecords.TabIndex = 221;
             // 
             // FrmSelectAbstract
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(68, 68, 68);
-            ClientSize = new System.Drawing.Size(636, 451);
+            ClientSize = new System.Drawing.Size(729, 484);
             Controls.Add(panel1);
             Controls.Add(BtnClose);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -123,7 +128,7 @@
             ((System.ComponentModel.ISupportInitialize)BtnClose).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)objectsGv).EndInit();
+            ((System.ComponentModel.ISupportInitialize)GvRecords).EndInit();
             ResumeLayout(false);
         }
 
@@ -131,7 +136,7 @@
 
         private System.Windows.Forms.PictureBox BtnClose;
         private System.Windows.Forms.Panel panel1;
-        protected System.Windows.Forms.DataGridView objectsGv;
+        protected System.Windows.Forms.DataGridView GvRecords;
         private Resources.CustomToolBox.RoundedButton BtnSelect;
         private System.Windows.Forms.Label label1;
     }

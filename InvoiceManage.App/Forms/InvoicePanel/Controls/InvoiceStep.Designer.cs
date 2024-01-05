@@ -123,7 +123,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // CbInty
             // 
-            CbInty.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            CbInty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             CbInty.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CbInty.FormattingEnabled = true;
             CbInty.Items.AddRange(new object[] { "نوع اول", "نوع دوم" });
@@ -150,7 +150,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // CbInp
             // 
-            CbInp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            CbInp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             CbInp.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CbInp.FormattingEnabled = true;
             CbInp.Items.AddRange(new object[] { "الگوی اول", "الگوی دوم" });
@@ -177,7 +177,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // CbTob
             // 
-            CbTob.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            CbTob.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             CbTob.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CbTob.FormattingEnabled = true;
             CbTob.Items.AddRange(new object[] { "حقیقی", "حقوقی" });
@@ -203,7 +203,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // CbIns
             // 
-            CbIns.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            CbIns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             CbIns.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CbIns.FormattingEnabled = true;
             CbIns.Location = new System.Drawing.Point(10, 25);

@@ -12,6 +12,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel
     public partial class FrmInvoice : Form
     {
         public Invoice Invoice { get; set; }
+        private readonly FrmInvoiceType _frmInvoiceType;
 
         public FrmInvoice(Invoice? invoice = null)
         {
@@ -19,7 +20,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel
 
             Invoice = invoice ?? new Invoice { Items = new BindingList<InvoiceItem>() };
 
-            var frmInvoiceType = invoice == null ? FrmInvoiceType.Add : FrmInvoiceType.Edit;
+            _frmInvoiceType = invoice == null ? FrmInvoiceType.Add : FrmInvoiceType.Edit;
 
             IInvoiceService invoiceService = new InvoiceService();
             ICommonService commonService = new CommonService();
@@ -29,7 +30,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel
             PanelSlider.Controls.Add(new CustomerStep(commonService));
             PanelSlider.Controls.Add(new ItemStep(commonService));
             PanelSlider.Controls.Add(new SumStep());
-            PanelSlider.Controls.Add(new PayStep(frmInvoiceType, invoiceService));
+            PanelSlider.Controls.Add(new PayStep(_frmInvoiceType, invoiceService));
+
+            if (_frmInvoiceType == FrmInvoiceType.Edit)
+                ChangeModeGroupBoxes();
         }
 
         #region Events
@@ -42,7 +46,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel
 
         private void FrmInvoice_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Program.FrmHome.Show();
+            if (_frmInvoiceType == FrmInvoiceType.Add)
+                Program.FrmHome.Show();
         }
 
         private void BtnClose_Click(object sender, System.EventArgs e)

@@ -2,7 +2,6 @@
 using InvoiceManage.Database.Entities;
 using System;
 using System.Globalization;
-using System.Linq;
 using System.Windows.Forms;
 using InvoiceManage.App.Services.Infrastructures;
 

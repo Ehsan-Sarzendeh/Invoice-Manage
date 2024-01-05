@@ -230,7 +230,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // CbPmt
             // 
-            CbPmt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            CbPmt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             CbPmt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CbPmt.FormattingEnabled = true;
             CbPmt.Items.AddRange(new object[] { "الگوی اول", "الگوی دوم" });

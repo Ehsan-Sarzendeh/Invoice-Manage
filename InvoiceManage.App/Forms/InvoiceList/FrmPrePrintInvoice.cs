@@ -33,7 +33,7 @@ namespace InvoiceManage.App.Forms.InvoiceList
                         Id = _invoice.Id,
                         Indatim_1 = _invoice.Indatim_1,
                         Indatim_2 = _invoice.Indatim_2,
-                        Inno = _invoice.Inno,
+                        Inno_1 = _invoice.Inno_1,
                         Inty = _invoice.Inty,
                         Inp = _invoice.Inp,
                         Ins = _invoice.Ins,
@@ -53,12 +53,19 @@ namespace InvoiceManage.App.Forms.InvoiceList
                 };
 
                 "Invoice.mrt".MakeReport(saveDialog.FileName, dic);
+
             }
+
+            Close();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-            Dispose();
+            Close();
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
             Close();
         }
     }

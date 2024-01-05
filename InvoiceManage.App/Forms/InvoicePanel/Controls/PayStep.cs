@@ -65,7 +65,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
             if (parentForm!.Invoice.SendStatus == "Success" && parentForm!.Invoice.ResultStatus == "Success")
             {
-                CustomMessageBox.Show("امکان ویرایش این فاکتور به علت ارسال و نتیجه موفق قابل ویرایش نمی باشد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CustomMessageBox.Show("امکان ویرایش این فاکتور به علت ارسال و نتیجه موفق وجود ندارد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

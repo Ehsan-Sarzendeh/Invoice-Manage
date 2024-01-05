@@ -1,11 +1,15 @@
 ﻿using InvoiceManage.Database.Entities.Common;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using InvoiceManage.Database.Infrastructures;
 
 namespace InvoiceManage.Database.Entities
 {
     public class InvoiceItem : BaseEntity
     {
+        [Browsable(false)]
         public long InvoiceId { get; set; }
+        [Browsable(false)]
         public Invoice Invoice { get; set; }
 
         [Display(Name = "مبلغ کل کالا و خدمت")]
@@ -20,8 +24,10 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "تعداد / مقدار")]
         public decimal Am { get; set; }
 
+        [Display(Name = "کد واحد اندازه گیری")]
+        public Mu Mu { get; set; }
         [Display(Name = "واحد اندازه گیری")]
-        public string Mu { get; set; }
+        public string Mu_1 => Mu.ToDisplay();
 
         [Display(Name = "وزن خالص")]
         public decimal Nw { get; set; }
@@ -82,7 +88,6 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "سهم مالیات بر ارزش افزوده از پرداخت")]
         public decimal Vop { get; set; }
 
-        public string Mu_1 { get; set; }
 
         public string Bsrn { get; set; }
     }

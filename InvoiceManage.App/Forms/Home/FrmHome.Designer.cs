@@ -48,7 +48,7 @@
             AddInvoice.BackColor = System.Drawing.Color.FromArgb(68, 68, 68);
             AddInvoice.BackgroundColor = System.Drawing.Color.FromArgb(68, 68, 68);
             AddInvoice.BorderColor = System.Drawing.Color.PaleVioletRed;
-            AddInvoice.BorderRadius = 20;
+            AddInvoice.BorderRadius = 15;
             AddInvoice.BorderSize = 0;
             AddInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
             AddInvoice.FlatAppearance.BorderSize = 0;
@@ -58,7 +58,7 @@
             AddInvoice.Location = new System.Drawing.Point(43, 42);
             AddInvoice.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             AddInvoice.Name = "AddInvoice";
-            AddInvoice.Size = new System.Drawing.Size(250, 70);
+            AddInvoice.Size = new System.Drawing.Size(250, 66);
             AddInvoice.TabIndex = 0;
             AddInvoice.Text = "ثبت فاکتور";
             AddInvoice.TextColor = System.Drawing.Color.White;
@@ -70,7 +70,7 @@
             InvoiceList.BackColor = System.Drawing.Color.FromArgb(68, 68, 68);
             InvoiceList.BackgroundColor = System.Drawing.Color.FromArgb(68, 68, 68);
             InvoiceList.BorderColor = System.Drawing.Color.PaleVioletRed;
-            InvoiceList.BorderRadius = 20;
+            InvoiceList.BorderRadius = 15;
             InvoiceList.BorderSize = 0;
             InvoiceList.Cursor = System.Windows.Forms.Cursors.Hand;
             InvoiceList.FlatAppearance.BorderSize = 0;
@@ -80,7 +80,7 @@
             InvoiceList.Location = new System.Drawing.Point(43, 140);
             InvoiceList.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             InvoiceList.Name = "InvoiceList";
-            InvoiceList.Size = new System.Drawing.Size(250, 70);
+            InvoiceList.Size = new System.Drawing.Size(250, 66);
             InvoiceList.TabIndex = 1;
             InvoiceList.Text = "لیست فاکتور ها";
             InvoiceList.TextColor = System.Drawing.Color.White;
@@ -93,7 +93,7 @@
             Settings.BackgroundColor = System.Drawing.Color.FromArgb(68, 68, 68);
             Settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             Settings.BorderColor = System.Drawing.Color.PaleVioletRed;
-            Settings.BorderRadius = 20;
+            Settings.BorderRadius = 15;
             Settings.BorderSize = 0;
             Settings.Cursor = System.Windows.Forms.Cursors.Hand;
             Settings.FlatAppearance.BorderSize = 0;
@@ -104,7 +104,7 @@
             Settings.Location = new System.Drawing.Point(43, 238);
             Settings.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             Settings.Name = "Settings";
-            Settings.Size = new System.Drawing.Size(250, 70);
+            Settings.Size = new System.Drawing.Size(250, 66);
             Settings.TabIndex = 2;
             Settings.Text = "تنظیمات";
             Settings.TextColor = System.Drawing.Color.White;

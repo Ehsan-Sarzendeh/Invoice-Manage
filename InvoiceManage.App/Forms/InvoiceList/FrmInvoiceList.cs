@@ -6,12 +6,14 @@ using InvoiceManage.App.Forms.InvoicePanel;
 using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.App.Services.InvoiceService;
 using InvoiceManage.Database.Entities;
+using System.ComponentModel;
 
 namespace InvoiceManage.App.Forms.InvoiceList
 {
     public partial class FrmInvoiceList : Form
     {
         private readonly IInvoiceService _invoiceService;
+        private BindingList<Invoice> _invoices;
 
         public FrmInvoiceList()
         {
@@ -21,7 +23,8 @@ namespace InvoiceManage.App.Forms.InvoiceList
 
         private void FrmInvoiceList_Load(object sender, EventArgs e)
         {
-            InvoiceGv.DataSource = _invoiceService.GetInvoices();
+            LoadData();
+            GvInvoices.SetHeaders(typeof(Invoice));
         }
 
         private void FrmInvoiceList_FormClosing(object sender, FormClosingEventArgs e)
@@ -83,11 +86,10 @@ namespace InvoiceManage.App.Forms.InvoiceList
             if (res != DialogResult.OK) return;
 
             if (invoice.Id > 0)
-            {
-                _invoiceService.DeleteInvoice(invoice.Id);
-            }
+                _invoiceService.DeleteInvoice(invoice);
 
-            InvoiceGv.Rows.RemoveAt(InvoiceGv.SelectedRows[0].Index);
+            _invoices.Remove(invoice);
+            GvInvoices.Rows.RemoveAt(GvInvoices.SelectedRows[0].Index);
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
@@ -101,6 +103,8 @@ namespace InvoiceManage.App.Forms.InvoiceList
 
             var frmInvoice = new FrmInvoice(invoice);
             frmInvoice.ShowDialog();
+
+            LoadData();
         }
 
         private void BtnPrint_Click(object sender, EventArgs e)
@@ -117,35 +121,41 @@ namespace InvoiceManage.App.Forms.InvoiceList
 
         private Invoice? GetSelectedItem()
         {
-            if (InvoiceGv.SelectedRows.Count == 0 || InvoiceGv.SelectedRows[0].IsNewRow)
+            if (GvInvoices.SelectedRows.Count == 0 || GvInvoices.SelectedRows[0].IsNewRow)
                 return null;
 
-            int.TryParse(InvoiceGv.SelectedRows[0].Cells["Id"].Value.ToString(), out var invoiceId);
+            int.TryParse(GvInvoices.SelectedRows[0].Cells["Id"].Value.ToString(), out var invoiceId);
 
             var invoice = _invoiceService.GetInvoice(invoiceId);
 
             return invoice;
         }
 
+        private void LoadData()
+        {
+            _invoices = new BindingList<Invoice>(_invoiceService.GetInvoices());
+            GvInvoices.DataSource = _invoices;
+        }
+
         private void MakeReadonlyProperties(params string[] properties)
         {
             foreach (var property in properties)
-                if (InvoiceGv.Columns[property] is not null)
-                    InvoiceGv.Columns[property]!.ReadOnly = true;
+                if (GvInvoices.Columns[property] is not null)
+                    GvInvoices.Columns[property]!.ReadOnly = true;
         }
 
         private void HideProperties(params string[] properties)
         {
             foreach (var property in properties)
-                if (InvoiceGv.Columns[property] is not null)
-                    InvoiceGv.Columns[property]!.Visible = false;
+                if (GvInvoices.Columns[property] is not null)
+                    GvInvoices.Columns[property]!.Visible = false;
         }
 
         private void SetDisplayColumnName(params (string name, string text)[] properties)
         {
             foreach (var property in properties)
-                if (InvoiceGv.Columns[property.name] is not null)
-                    InvoiceGv.Columns[property.name]!.HeaderText = property.text;
+                if (GvInvoices.Columns[property.name] is not null)
+                    GvInvoices.Columns[property.name]!.HeaderText = property.text;
         }
     }
 }

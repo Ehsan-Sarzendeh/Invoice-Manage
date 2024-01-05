@@ -139,7 +139,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTax17.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTax17.Location = new System.Drawing.Point(10, 31);
             TxtTax17.Name = "TxtTax17";
-            TxtTax17.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTax17.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTax17.Size = new System.Drawing.Size(209, 29);
             TxtTax17.TabIndex = 0;
             // 
@@ -165,7 +165,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtInsp.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtInsp.Location = new System.Drawing.Point(10, 31);
             TxtInsp.Name = "TxtInsp";
-            TxtInsp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtInsp.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtInsp.Size = new System.Drawing.Size(219, 29);
             TxtInsp.TabIndex = 0;
             // 
@@ -219,7 +219,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTorv.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTorv.Location = new System.Drawing.Point(10, 31);
             TxtTorv.Name = "TxtTorv";
-            TxtTorv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTorv.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTorv.Size = new System.Drawing.Size(209, 29);
             TxtTorv.TabIndex = 0;
             // 
@@ -245,7 +245,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTprdis.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTprdis.Location = new System.Drawing.Point(10, 31);
             TxtTprdis.Name = "TxtTprdis";
-            TxtTprdis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTprdis.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTprdis.Size = new System.Drawing.Size(219, 29);
             TxtTprdis.TabIndex = 0;
             // 
@@ -271,7 +271,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtCap.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtCap.Location = new System.Drawing.Point(10, 31);
             TxtCap.Name = "TxtCap";
-            TxtCap.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtCap.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtCap.Size = new System.Drawing.Size(209, 29);
             TxtCap.TabIndex = 0;
             // 
@@ -297,7 +297,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTvam.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTvam.Location = new System.Drawing.Point(10, 31);
             TxtTvam.Name = "TxtTvam";
-            TxtTvam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTvam.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTvam.Size = new System.Drawing.Size(219, 29);
             TxtTvam.TabIndex = 0;
             // 
@@ -323,7 +323,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTvop.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTvop.Location = new System.Drawing.Point(10, 31);
             TxtTvop.Name = "TxtTvop";
-            TxtTvop.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTvop.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTvop.Size = new System.Drawing.Size(455, 29);
             TxtTvop.TabIndex = 0;
             // 
@@ -349,7 +349,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTodam.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTodam.Location = new System.Drawing.Point(10, 31);
             TxtTodam.Name = "TxtTodam";
-            TxtTodam.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTodam.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTodam.Size = new System.Drawing.Size(455, 29);
             TxtTodam.TabIndex = 0;
             // 
@@ -375,7 +375,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTocv.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTocv.Location = new System.Drawing.Point(10, 31);
             TxtTocv.Name = "TxtTocv";
-            TxtTocv.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTocv.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTocv.Size = new System.Drawing.Size(219, 29);
             TxtTocv.TabIndex = 0;
             // 
@@ -401,7 +401,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTonw.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTonw.Location = new System.Drawing.Point(10, 31);
             TxtTonw.Name = "TxtTonw";
-            TxtTonw.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTonw.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTonw.Size = new System.Drawing.Size(219, 29);
             TxtTonw.TabIndex = 0;
             // 
@@ -427,8 +427,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTadis.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTadis.Location = new System.Drawing.Point(10, 31);
             TxtTadis.Name = "TxtTadis";
-            TxtTadis.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            TxtTadis.Size = new System.Drawing.Size(219, 29);
+            TxtTadis.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtTadis.Size = new System.Drawing.Size(209, 29);
             TxtTadis.TabIndex = 0;
             // 
             // Tbill
@@ -453,7 +453,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTbill.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTbill.Location = new System.Drawing.Point(10, 31);
             TxtTbill.Name = "TxtTbill";
-            TxtTbill.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTbill.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTbill.Size = new System.Drawing.Size(455, 29);
             TxtTbill.TabIndex = 0;
             // 

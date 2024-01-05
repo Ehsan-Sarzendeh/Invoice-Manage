@@ -44,7 +44,7 @@
             BtnPrint = new System.Windows.Forms.PictureBox();
             BtnDelete = new System.Windows.Forms.PictureBox();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            InvoiceGv = new System.Windows.Forms.DataGridView();
+            GvInvoices = new System.Windows.Forms.DataGridView();
             PanelHeader.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)BtnMaximize).BeginInit();
@@ -56,7 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)BtnEdit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnPrint).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BtnDelete).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)InvoiceGv).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)GvInvoices).BeginInit();
             SuspendLayout();
             // 
             // PanelHeader
@@ -201,11 +201,12 @@
             BtnDelete.TabStop = false;
             BtnDelete.Click += BtnDelete_Click;
             // 
-            // InvoiceGv
+            // GvInvoices
             // 
-            InvoiceGv.AllowUserToDeleteRows = false;
-            InvoiceGv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            InvoiceGv.BackgroundColor = System.Drawing.Color.LightGray;
+            GvInvoices.AllowUserToAddRows = false;
+            GvInvoices.AllowUserToDeleteRows = false;
+            GvInvoices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            GvInvoices.BackgroundColor = System.Drawing.Color.LightGray;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -213,8 +214,8 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            InvoiceGv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            InvoiceGv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GvInvoices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            GvInvoices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -222,11 +223,12 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            InvoiceGv.DefaultCellStyle = dataGridViewCellStyle2;
-            InvoiceGv.Dock = System.Windows.Forms.DockStyle.Fill;
-            InvoiceGv.Location = new System.Drawing.Point(0, 133);
-            InvoiceGv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            InvoiceGv.Name = "InvoiceGv";
+            GvInvoices.DefaultCellStyle = dataGridViewCellStyle2;
+            GvInvoices.Dock = System.Windows.Forms.DockStyle.Fill;
+            GvInvoices.Location = new System.Drawing.Point(0, 133);
+            GvInvoices.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            GvInvoices.Name = "GvInvoices";
+            GvInvoices.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -234,11 +236,12 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            InvoiceGv.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            InvoiceGv.RowHeadersWidth = 51;
-            InvoiceGv.RowTemplate.Height = 29;
-            InvoiceGv.Size = new System.Drawing.Size(1026, 605);
-            InvoiceGv.TabIndex = 3;
+            GvInvoices.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            GvInvoices.RowHeadersWidth = 51;
+            GvInvoices.RowTemplate.Height = 29;
+            GvInvoices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            GvInvoices.Size = new System.Drawing.Size(1026, 605);
+            GvInvoices.TabIndex = 3;
             // 
             // FrmInvoiceList
             // 
@@ -246,7 +249,7 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
             ClientSize = new System.Drawing.Size(1026, 738);
-            Controls.Add(InvoiceGv);
+            Controls.Add(GvInvoices);
             Controls.Add(panel2);
             Controls.Add(PanelHeader);
             Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -271,7 +274,7 @@
             ((System.ComponentModel.ISupportInitialize)BtnEdit).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnPrint).EndInit();
             ((System.ComponentModel.ISupportInitialize)BtnDelete).EndInit();
-            ((System.ComponentModel.ISupportInitialize)InvoiceGv).EndInit();
+            ((System.ComponentModel.ISupportInitialize)GvInvoices).EndInit();
             ResumeLayout(false);
         }
 
@@ -280,7 +283,7 @@
         private System.Windows.Forms.Panel PanelHeader;
         private System.Windows.Forms.Panel panel2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.DataGridView InvoiceGv;
+        private System.Windows.Forms.DataGridView GvInvoices;
         private System.Windows.Forms.Panel actionPanel;
         private System.Windows.Forms.PictureBox BtnPrint;
         private System.Windows.Forms.PictureBox BtnDelete;

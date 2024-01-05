@@ -29,6 +29,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtScln.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Scln), true, DataSourceUpdateMode.OnPropertyChanged);
             TxtTins.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Tins), true, DataSourceUpdateMode.OnPropertyChanged);
             MtxtCdcd_1.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.Cdcd_1), true, DataSourceUpdateMode.OnPropertyChanged);
+            TxtCompanyId.DataBindings.Add("Text", parentForm.Invoice, nameof(parentForm.Invoice.CompanyId), true, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void SetComboBoxDataSource()
@@ -49,10 +50,16 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             var data = _commonService.GetCompanies();
             var frmSelect = new FrmSelect<Company>(data);
 
-            if (frmSelect.ShowDialog() == DialogResult.OK)
-            {
-                var selectItem = frmSelect.SelectedItem;
-            }
+            if (frmSelect.ShowDialog() != DialogResult.OK) return;
+
+            var selectItem = frmSelect.SelectedItem;
+            if (selectItem is null) return;
+
+            TxtCompanyId.Text = selectItem.Id.ToString();
+            TxtTins.Text = selectItem.Tins;
+            TxtSbc.Text = selectItem.Sbc;
+            TxtCrn.Text = selectItem.Crn;
+            TxtScln.Text = selectItem.Scln;
         }
 
         private void BtnPrevious_Click(object sender, EventArgs e)

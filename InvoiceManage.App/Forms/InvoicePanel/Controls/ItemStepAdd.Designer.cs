@@ -69,10 +69,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtSsrv = new System.Windows.Forms.TextBox();
             Sscv = new CustomGroupBox();
             TxtSscv = new System.Windows.Forms.TextBox();
-            customGroupBox1 = new CustomGroupBox();
+            GbOd = new CustomGroupBox();
             Odam = new CustomGroupBox();
             TxtOdam = new System.Windows.Forms.TextBox();
-            customGroupBox3 = new CustomGroupBox();
+            GbOl = new CustomGroupBox();
             Olam = new CustomGroupBox();
             TxtOlam = new System.Windows.Forms.TextBox();
             Olr = new CustomGroupBox();
@@ -98,9 +98,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Exr.SuspendLayout();
             Ssrv.SuspendLayout();
             Sscv.SuspendLayout();
-            customGroupBox1.SuspendLayout();
+            GbOd.SuspendLayout();
             Odam.SuspendLayout();
-            customGroupBox3.SuspendLayout();
+            GbOl.SuspendLayout();
             Olam.SuspendLayout();
             Olr.SuspendLayout();
             Olt.SuspendLayout();
@@ -221,7 +221,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Vra.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             Vra.ForeColor = System.Drawing.Color.DimGray;
             Vra.Location = new System.Drawing.Point(28, 66);
+            Vra.Mode = Common.Mode.Required;
             Vra.Name = "Vra";
+            Vra.ShowOptional = false;
+            Vra.ShowSemiRequired = false;
             Vra.Size = new System.Drawing.Size(106, 70);
             Vra.TabIndex = 230;
             Vra.TabStop = false;
@@ -281,7 +284,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // CbMu
             // 
-            CbMu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            CbMu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            CbMu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            CbMu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             CbMu.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CbMu.FormattingEnabled = true;
             CbMu.Items.AddRange(new object[] { "نوع اول", "نوع دوم" });
@@ -629,23 +634,23 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtSscv.Size = new System.Drawing.Size(218, 29);
             TxtSscv.TabIndex = 1;
             // 
-            // customGroupBox1
+            // GbOd
             // 
-            customGroupBox1.Controls.Add(Odam);
-            customGroupBox1.Controls.Add(Odr);
-            customGroupBox1.Controls.Add(Odt);
-            customGroupBox1.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            customGroupBox1.ForeColor = System.Drawing.Color.DimGray;
-            customGroupBox1.Location = new System.Drawing.Point(510, 224);
-            customGroupBox1.Mode = Common.Mode.Required;
-            customGroupBox1.Name = "customGroupBox1";
-            customGroupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            customGroupBox1.ShowOptional = false;
-            customGroupBox1.ShowSemiRequired = false;
-            customGroupBox1.Size = new System.Drawing.Size(476, 95);
-            customGroupBox1.TabIndex = 247;
-            customGroupBox1.TabStop = false;
-            customGroupBox1.Text = "سایر مالیات و عوارض";
+            GbOd.Controls.Add(Odam);
+            GbOd.Controls.Add(Odr);
+            GbOd.Controls.Add(Odt);
+            GbOd.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            GbOd.ForeColor = System.Drawing.Color.DimGray;
+            GbOd.Location = new System.Drawing.Point(510, 224);
+            GbOd.Mode = Common.Mode.Required;
+            GbOd.Name = "GbOd";
+            GbOd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            GbOd.ShowOptional = false;
+            GbOd.ShowSemiRequired = false;
+            GbOd.Size = new System.Drawing.Size(476, 95);
+            GbOd.TabIndex = 247;
+            GbOd.TabStop = false;
+            GbOd.Text = "سایر مالیات و عوارض";
             // 
             // Odam
             // 
@@ -673,23 +678,23 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtOdam.Size = new System.Drawing.Size(153, 29);
             TxtOdam.TabIndex = 0;
             // 
-            // customGroupBox3
+            // GbOl
             // 
-            customGroupBox3.Controls.Add(Olam);
-            customGroupBox3.Controls.Add(Olr);
-            customGroupBox3.Controls.Add(Olt);
-            customGroupBox3.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            customGroupBox3.ForeColor = System.Drawing.Color.DimGray;
-            customGroupBox3.Location = new System.Drawing.Point(28, 224);
-            customGroupBox3.Mode = Common.Mode.Required;
-            customGroupBox3.Name = "customGroupBox3";
-            customGroupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            customGroupBox3.ShowOptional = false;
-            customGroupBox3.ShowSemiRequired = false;
-            customGroupBox3.Size = new System.Drawing.Size(476, 95);
-            customGroupBox3.TabIndex = 248;
-            customGroupBox3.TabStop = false;
-            customGroupBox3.Text = "سایر وجوه قانونی";
+            GbOl.Controls.Add(Olam);
+            GbOl.Controls.Add(Olr);
+            GbOl.Controls.Add(Olt);
+            GbOl.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            GbOl.ForeColor = System.Drawing.Color.DimGray;
+            GbOl.Location = new System.Drawing.Point(28, 224);
+            GbOl.Mode = Common.Mode.Required;
+            GbOl.Name = "GbOl";
+            GbOl.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            GbOl.ShowOptional = false;
+            GbOl.ShowSemiRequired = false;
+            GbOl.Size = new System.Drawing.Size(476, 95);
+            GbOl.TabIndex = 248;
+            GbOl.TabStop = false;
+            GbOl.Text = "سایر وجوه قانونی";
             // 
             // Olam
             // 
@@ -775,8 +780,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            Controls.Add(customGroupBox3);
-            Controls.Add(customGroupBox1);
+            Controls.Add(GbOl);
+            Controls.Add(GbOd);
             Controls.Add(Sscv);
             Controls.Add(Ssrv);
             Controls.Add(Exr);
@@ -837,10 +842,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Ssrv.PerformLayout();
             Sscv.ResumeLayout(false);
             Sscv.PerformLayout();
-            customGroupBox1.ResumeLayout(false);
+            GbOd.ResumeLayout(false);
             Odam.ResumeLayout(false);
             Odam.PerformLayout();
-            customGroupBox3.ResumeLayout(false);
+            GbOl.ResumeLayout(false);
             Olam.ResumeLayout(false);
             Olam.PerformLayout();
             Olr.ResumeLayout(false);
@@ -891,10 +896,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         private System.Windows.Forms.TextBox TxtSsrv;
         private CustomGroupBox Sscv;
         private System.Windows.Forms.TextBox TxtSscv;
-        private CustomGroupBox customGroupBox1;
+        private CustomGroupBox GbOd;
         private CustomGroupBox Odam;
         private System.Windows.Forms.TextBox TxtOdam;
-        private CustomGroupBox customGroupBox3;
+        private CustomGroupBox GbOl;
         private CustomGroupBox Olam;
         private System.Windows.Forms.TextBox TxtOlam;
         private CustomGroupBox Olr;

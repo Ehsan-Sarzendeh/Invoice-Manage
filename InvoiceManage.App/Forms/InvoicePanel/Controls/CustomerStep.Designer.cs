@@ -128,7 +128,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtBpn.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtBpn.Location = new System.Drawing.Point(10, 31);
             TxtBpn.Name = "TxtBpn";
-            TxtBpn.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtBpn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtBpn.Size = new System.Drawing.Size(209, 29);
             TxtBpn.TabIndex = 0;
             // 
@@ -204,7 +204,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtBillId.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtBillId.Location = new System.Drawing.Point(10, 31);
             TxtBillId.Name = "TxtBillId";
-            TxtBillId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtBillId.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtBillId.Size = new System.Drawing.Size(450, 29);
             TxtBillId.TabIndex = 0;
             // 
@@ -228,9 +228,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             TxtBId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             TxtBId.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtBId.Location = new System.Drawing.Point(10, 31);
+            TxtBId.Location = new System.Drawing.Point(10, 28);
             TxtBId.Name = "TxtBId";
-            TxtBId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtBId.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtBId.Size = new System.Drawing.Size(450, 29);
             TxtBId.TabIndex = 0;
             // 
@@ -256,7 +256,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtBbc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtBbc.Location = new System.Drawing.Point(10, 31);
             TxtBbc.Name = "TxtBbc";
-            TxtBbc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtBbc.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtBbc.Size = new System.Drawing.Size(219, 29);
             TxtBbc.TabIndex = 0;
             // 
@@ -282,7 +282,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtTinb.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtTinb.Location = new System.Drawing.Point(10, 31);
             TxtTinb.Name = "TxtTinb";
-            TxtTinb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtTinb.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtTinb.Size = new System.Drawing.Size(449, 29);
             TxtTinb.TabIndex = 0;
             // 
@@ -327,7 +327,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             // 
             // CbFt
             // 
-            CbFt.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            CbFt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             CbFt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             CbFt.FormattingEnabled = true;
             CbFt.Items.AddRange(new object[] { "الگوی اول", "الگوی دوم" });
@@ -359,7 +359,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtBpc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             TxtBpc.Location = new System.Drawing.Point(7, 30);
             TxtBpc.Name = "TxtBpc";
-            TxtBpc.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtBpc.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtBpc.Size = new System.Drawing.Size(219, 29);
             TxtBpc.TabIndex = 0;
             // 

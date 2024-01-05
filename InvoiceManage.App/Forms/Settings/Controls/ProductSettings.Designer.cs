@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ProductsGv = new System.Windows.Forms.DataGridView();
+            GvProducts = new System.Windows.Forms.DataGridView();
             BtnAdd = new Resources.CustomToolBox.RoundedButton();
             gb = new System.Windows.Forms.GroupBox();
             TxtVra = new System.Windows.Forms.TextBox();
@@ -36,21 +36,22 @@
             TxtSstt = new System.Windows.Forms.TextBox();
             gb2 = new System.Windows.Forms.GroupBox();
             TxtSstid = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)ProductsGv).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)GvProducts).BeginInit();
             gb.SuspendLayout();
             groupBox10.SuspendLayout();
             gb2.SuspendLayout();
             SuspendLayout();
             // 
-            // ProductsGv
+            // GvProducts
             // 
-            ProductsGv.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            ProductsGv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ProductsGv.Location = new System.Drawing.Point(32, 242);
-            ProductsGv.Name = "ProductsGv";
-            ProductsGv.RowTemplate.Height = 25;
-            ProductsGv.Size = new System.Drawing.Size(727, 451);
-            ProductsGv.TabIndex = 225;
+            GvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            GvProducts.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            GvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GvProducts.Location = new System.Drawing.Point(32, 242);
+            GvProducts.Name = "GvProducts";
+            GvProducts.RowTemplate.Height = 25;
+            GvProducts.Size = new System.Drawing.Size(727, 451);
+            GvProducts.TabIndex = 225;
             // 
             // BtnAdd
             // 
@@ -64,7 +65,7 @@
             BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BtnAdd.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             BtnAdd.ForeColor = System.Drawing.Color.White;
-            BtnAdd.Location = new System.Drawing.Point(32, 148);
+            BtnAdd.Location = new System.Drawing.Point(32, 164);
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new System.Drawing.Size(179, 47);
@@ -103,7 +104,7 @@
             groupBox10.ForeColor = System.Drawing.Color.DimGray;
             groupBox10.Location = new System.Drawing.Point(233, 107);
             groupBox10.Name = "groupBox10";
-            groupBox10.Size = new System.Drawing.Size(525, 88);
+            groupBox10.Size = new System.Drawing.Size(525, 104);
             groupBox10.TabIndex = 223;
             groupBox10.TabStop = false;
             groupBox10.Text = "شرح کالا";
@@ -112,11 +113,11 @@
             // 
             TxtSstt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             TxtSstt.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtSstt.Location = new System.Drawing.Point(17, 26);
+            TxtSstt.Location = new System.Drawing.Point(17, 25);
             TxtSstt.Multiline = true;
             TxtSstt.Name = "TxtSstt";
             TxtSstt.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            TxtSstt.Size = new System.Drawing.Size(495, 52);
+            TxtSstt.Size = new System.Drawing.Size(495, 72);
             TxtSstt.TabIndex = 0;
             TxtSstt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -147,7 +148,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 27F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.White;
-            Controls.Add(ProductsGv);
+            Controls.Add(GvProducts);
             Controls.Add(BtnAdd);
             Controls.Add(gb);
             Controls.Add(groupBox10);
@@ -158,7 +159,7 @@
             RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             Size = new System.Drawing.Size(793, 730);
             Load += ProductSettings_Load;
-            ((System.ComponentModel.ISupportInitialize)ProductsGv).EndInit();
+            ((System.ComponentModel.ISupportInitialize)GvProducts).EndInit();
             gb.ResumeLayout(false);
             gb.PerformLayout();
             groupBox10.ResumeLayout(false);
@@ -170,7 +171,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView ProductsGv;
+        private System.Windows.Forms.DataGridView GvProducts;
         private Resources.CustomToolBox.RoundedButton BtnAdd;
         private System.Windows.Forms.GroupBox gb;
         private System.Windows.Forms.TextBox TxtVra;

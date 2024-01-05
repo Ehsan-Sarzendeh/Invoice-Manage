@@ -32,8 +32,10 @@ namespace InvoiceManage.Database.Entities
 
         [Display(Name = "سریال داخلی")]
         [Description("سریال صورتحساب داخلی حافطه مالیاتی")]
-        public string Inno { get; set; }
-        public decimal Inno_1 { get; set; }
+        public string Inno => $"{Inno_1:X}";
+        [Display(Name = "کد سریال داخلی")]
+        public long Inno_1 { get; set; }
+        [Browsable(false)]
         public bool GenerateInno { get; set; }
 
         [Display(Name = "شماره منحصربفرد مالیاتی صورتحساب مرجع")]
@@ -81,7 +83,6 @@ namespace InvoiceManage.Database.Entities
         public string BillId { get; set; }
 
         [Display(Name = "مجموع مبلغ قبل از کسر تخفیف")]
-        [Bindable(true)]
         public decimal Tprdis => Items?.Sum(x => x.Prdis) ?? 0;
 
         [Display(Name = "مجموع تخفیفات")]
@@ -154,39 +155,44 @@ namespace InvoiceManage.Database.Entities
 
         public string SendStatus { get; set; }
 
+        [Display(Name = "نتیجه ارسال")]
         public string ResultStatus { get; set; }
 
         [Display(Name = "نوع صورتحساب")]
         public Inty Inty { get; set; }
-        public string Inty_1 { get; set; }
+        public string Inty_1 => Inty.ToDisplay();
 
         [Display(Name = "الگوی صورتحساب")]
         public Inp Inp { get; set; }
         public string Inp_1 => Inp.ToDisplay();
 
         [Display(Name = "موضوع صورتحساب")]
-        public Ins Ins { get; set; }
-        public string Ins_1 => Inp.ToDisplay();
+        public Ins? Ins { get; set; }
+        public string Ins_1 => Ins?.ToDisplay();
 
         [Display(Name = "نوع شخص خریدار")]
-        public Tob Tob { get; set; }
-        public string Tob_1 => Inp.ToDisplay();
+        public Tob? Tob { get; set; }
+        public string Tob_1 => Tob?.ToDisplay();
 
         [Display(Name = "نوع پرواز")]
-        public Ft Ft { get; set; }
-        public string Ft_1 => Ft.ToDisplay();
+        public Ft? Ft { get; set; }
+        public string Ft_1 => Ft?.ToDisplay();
 
         [Display(Name = "روش پرداخت")]
-        public Pmt Pmt { get; set; }
-        public string Pmt_1 => Pmt.ToDisplay();
+        public Pmt? Pmt { get; set; }
+        public string Pmt_1 => Pmt?.ToDisplay();
 
         [Display(Name = "روش تسویه")]
-        public Setm Setm { get; set; }
-        public string Setm_1 => Setm.ToDisplay();
+        public Setm? Setm { get; set; }
+        public string Setm_1 => Setm?.ToDisplay();
 
+        [Display(Name = "شناسه شرکت")]
         public long CompanyId { get; set; }
+
+        [Browsable(false)]
         public Company Company { get; set; }
 
+        [Browsable(false)]
         public BindingList<InvoiceItem> Items { get; set; }
     }
 

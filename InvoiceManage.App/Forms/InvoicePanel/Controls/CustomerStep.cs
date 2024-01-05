@@ -58,10 +58,17 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             var data = _commonService.GetCustomers();
             var frmSelect = new FrmSelect<Customer>(data);
 
-            if (frmSelect.ShowDialog() == DialogResult.OK)
-            {
-                var selectItem = frmSelect.SelectedItem!;
-            }
+            if (frmSelect.ShowDialog() != DialogResult.OK) return;
+
+            var selectItem = frmSelect.SelectedItem;
+            if (selectItem is null) return;
+
+            TxtBId.Text = selectItem.BId.ToString();
+            TxtTinb.Text = selectItem.Tinb;
+            TxtBpc.Text = selectItem.Bpc;
+            TxtBbc.Text = selectItem.Bbc;
+            TxtBpn.Text = selectItem.Bpn;
+            TxtBillId.Text = selectItem.BillId;
         }
 
         private void BtnInquiry_Click(object sender, EventArgs e)

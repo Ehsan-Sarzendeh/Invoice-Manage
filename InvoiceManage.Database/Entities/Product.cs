@@ -5,7 +5,7 @@ namespace InvoiceManage.Database.Entities
 {
     public class Product : BaseEntity
     {
-        [Display(Name = "شناسه کالا/ خدمت")]
+        [Display(Name = "شناسه کالا/خدمت")]
         public string Sstid { get; set; }
         [Display(Name = "شرح کالا خدمت")] 
         public string Sstt { get; set; }

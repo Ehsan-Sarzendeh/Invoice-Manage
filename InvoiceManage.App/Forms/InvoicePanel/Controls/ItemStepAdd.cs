@@ -1,5 +1,6 @@
 ﻿using InvoiceManage.Database.Entities;
 using System;
+using System.Globalization;
 using System.Windows.Forms;
 using InvoiceManage.App.Forms.Common;
 using InvoiceManage.App.Services.CommonService;
@@ -36,8 +37,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
                 Sstt = TxtSstt.Text,
                 Am = decimal.TryParse(TxtAm.Text, out var am)
                     ? am : default,
-                Mu = CbMu.SelectedText,
-                Mu_1 = CbMu.SelectedValue?.ToString(),
+                // Mu = CbMu.SelectedItem,
                 Nw = decimal.TryParse(TxtNw.Text, out var nw)
                     ? nw : default,
                 Fee = decimal.TryParse(TxtFee.Text, out var fee)
@@ -90,10 +90,14 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             var data = _commonService.GetProducts();
             var frmSelect = new FrmSelect<Product>(data);
 
-            if (frmSelect.ShowDialog() == DialogResult.OK)
-            {
-                var selectItem = frmSelect.SelectedItem!;
-            }
+            if (frmSelect.ShowDialog() != DialogResult.OK) return;
+
+            var selectItem = frmSelect.SelectedItem;
+            if (selectItem is null) return;
+
+            TxtSstid.Text = selectItem.Sstid;
+            TxtSstt.Text = selectItem.Sstt;
+            TxtVra.Text = selectItem.Vra.ToString(CultureInfo.InvariantCulture);
         }
 
         #endregion

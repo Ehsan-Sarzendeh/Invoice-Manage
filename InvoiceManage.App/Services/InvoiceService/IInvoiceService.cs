@@ -9,8 +9,9 @@ namespace InvoiceManage.App.Services.InvoiceService
         Invoice GetInvoice(int invoiceId);
         void AddInvoice(Invoice invoice);
         void EditInvoice(Invoice invoice);
+        void DeleteInvoice(Invoice invoice);
         void DeleteInvoice(long invoiceId);
 
-        decimal GenerateInnoCode();
+        long GenerateInnoCode();
     }
 }

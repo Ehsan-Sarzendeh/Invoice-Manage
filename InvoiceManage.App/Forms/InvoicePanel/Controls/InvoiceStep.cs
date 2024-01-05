@@ -85,7 +85,10 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnGenerateCode_Click(object sender, EventArgs e)
         {
-            Inno_1.Text = _invoiceService.GenerateInnoCode().ToString();
+            TxtInno_1.Text = _invoiceService.GenerateInnoCode().ToString();
+
+            var parentForm = ParentForm as FrmInvoice;
+            parentForm!.Invoice.GenerateInno = true;
         }
 
         #endregion

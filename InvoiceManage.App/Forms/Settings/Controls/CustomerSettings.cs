@@ -23,7 +23,8 @@ namespace InvoiceManage.App.Forms.Settings.Controls
         private void CustomerSettings_Load(object sender, EventArgs e)
         {
             _customers = new BindingList<Customer>(_commonService.GetCustomers());
-            CustomersGv.DataSource = _customers;
+            GvCustomers.DataSource = _customers;
+            GvCustomers.SetHeaders(typeof(Customer));
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)

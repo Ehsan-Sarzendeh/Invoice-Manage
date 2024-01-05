@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using InvoiceManage.App.Forms.Common;
+using InvoiceManage.App.Services.Infrastructures;
 
 namespace InvoiceManage.App.Forms.InvoicePanel
 {
@@ -18,7 +19,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel
 
         protected override void FrmSelect_Load(object sender, EventArgs e)
         {
-            objectsGv.DataSource = _data;
+            GvRecords.DataSource = _data;
+            GvRecords.SetHeaders(typeof(T));
         }
 
         protected override void BtnClose_Click(object sender, EventArgs e)
@@ -29,13 +31,13 @@ namespace InvoiceManage.App.Forms.InvoicePanel
 
         protected override void BtnSelect_Click(object sender, EventArgs e)
         {
-            if (objectsGv.SelectedRows.Count == 0 || objectsGv.SelectedRows[0].IsNewRow || objectsGv.CurrentRow is null)
+            if (GvRecords.SelectedRows.Count == 0 || GvRecords.SelectedRows[0].IsNewRow || GvRecords.CurrentRow is null)
             {
                 CustomMessageBox.Show("آیتمی انتخاب نشده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            SelectedItem = (T?)objectsGv.CurrentRow.DataBoundItem;
+            SelectedItem = (T?)GvRecords.CurrentRow.DataBoundItem;
             DialogResult = DialogResult.OK;
         }
     }

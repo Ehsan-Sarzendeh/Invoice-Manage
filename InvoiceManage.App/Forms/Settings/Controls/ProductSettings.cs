@@ -22,7 +22,8 @@ namespace InvoiceManage.App.Forms.Settings.Controls
         private void ProductSettings_Load(object sender, EventArgs e)
         {
             _products = new BindingList<Product>(_commonService.GetProducts());
-            ProductsGv.DataSource = _products;
+            GvProducts.DataSource = _products;
+            GvProducts.SetHeaders(typeof(Product));
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)

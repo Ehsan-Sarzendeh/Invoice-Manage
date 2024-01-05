@@ -22,7 +22,8 @@ namespace InvoiceManage.App.Forms.Settings.Controls
         private void CompanySettings_Load(object sender, EventArgs e)
         {
             _companies = new BindingList<Company>(_commonService.GetCompanies());
-            CompaniesGv.DataSource = _companies;
+            GvCompanies.DataSource = _companies;
+            GvCompanies.SetHeaders(typeof(Company));
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
