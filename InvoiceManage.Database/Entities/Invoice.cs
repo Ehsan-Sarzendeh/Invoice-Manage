@@ -13,7 +13,7 @@ namespace InvoiceManage.Database.Entities
         public string TaxId { get; set; }
 
         [Display(Name = "تاریخ و زمان صدور صورتحساب")]
-        public decimal Indatim { get; set; }
+        public decimal? Indatim { get; set; }
 
         [Display(Name = "تاریخ صدور صورتحساب")]
         public string Indatim_1 { get; set; }
@@ -22,7 +22,7 @@ namespace InvoiceManage.Database.Entities
         public string Indatim_2 { get; set; }
 
         [Display(Name = "تاریخ و زمان ایجاد صورتحساب")]
-        public decimal Indatim2m { get; set; }
+        public decimal? Indatim2m { get; set; }
 
         [Display(Name = "تاریخ ایجاد صورتحساب")]
         public string Indatim2m_1 { get; set; }
@@ -88,7 +88,7 @@ namespace InvoiceManage.Database.Entities
         [Display(Name = "تاریخ کوتاژ اظهارنامه گمرکی")]
         public string Cdcd_1 { get; set; }
 
-        public decimal Cdcd { get; set; }
+        public decimal? Cdcd { get; set; }
 
         [Bindable(false)]
         [Display(Name = "مجموع مبلغ قبل از کسر تخفیف")]
@@ -131,13 +131,13 @@ namespace InvoiceManage.Database.Entities
         public decimal Tvop => Items?.Sum(x => x.Vop) ?? 0;
 
         [Display(Name = "مبلغ پرداختی نقدی")]
-        public decimal Cap { get; set; }
+        public decimal? Cap { get; set; }
 
         [Display(Name = "مبلغ نسیه")]
-        public decimal Insp { get; set; }
+        public decimal? Insp { get; set; }
 
         [Display(Name = "مالیات موضوع ماده 17")]
-        public decimal Tax17 { get; set; }
+        public decimal? Tax17 { get; set; }
 
         [Display(Name = "شماره سوییج پرداخت")]
         public string Iinn { get; set; }
@@ -159,13 +159,13 @@ namespace InvoiceManage.Database.Entities
 
         [Display(Name = "تاریخ پرداخت")]
         public string Pdt_1 { get; set; }
-        public decimal Pdt { get; set; }
+        public decimal? Pdt { get; set; }
 
         [Display(Name = "زمان پرداخت")]
         public string Pdt_2 { get; set; }
 
         [Display(Name = "مبلغ پرداختی")]
-        public decimal Pv { get; set; }
+        public decimal? Pv { get; set; }
 
         public string Tm { get; set; }
 
@@ -212,7 +212,7 @@ namespace InvoiceManage.Database.Entities
         public string Setm_1 => Setm?.ToDisplay();
 
         [Display(Name = "شناسه شرکت")]
-        public long CompanyId { get; set; }
+        public long? CompanyId { get; set; }
 
         [Browsable(false)]
         public Company Company { get; set; }

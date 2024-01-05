@@ -105,12 +105,12 @@
         </PageFooterBand1>
         <ReportTitleBand1 Ref="7" type="ReportTitleBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,4,283,58</ClientRectangle>
-          <Components isList="true" count="10">
+          <ClientRectangle>0,4,283,62</ClientRectangle>
+          <Components isList="true" count="11">
             <Panel4 Ref="8" type="Panel" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>0,36,56,20</ClientRectangle>
+              <ClientRectangle>0,36,56,24</ClientRectangle>
               <Components isList="true" count="3">
                 <Text6 Ref="9" type="Text" isKey="true">
                   <Anchor>Top, Right</Anchor>
@@ -386,8 +386,8 @@
             <Panel1 Ref="24" type="Panel" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>58,36,214,20</ClientRectangle>
-              <Components isList="true" count="6">
+              <ClientRectangle>58,36,214,24</ClientRectangle>
+              <Components isList="true" count="5">
                 <Text36 Ref="25" type="Text" isKey="true">
                   <Anchor>Top, Right</Anchor>
                   <Brush>Transparent</Brush>
@@ -464,28 +464,10 @@
                   <Type>Expression</Type>
                   <VertAlignment>Center</VertAlignment>
                 </Text51>
-                <Text44 Ref="29" type="Text" isKey="true">
+                <Text10 Ref="29" type="Text" isKey="true">
                   <Anchor>Top, Right</Anchor>
                   <Brush>Transparent</Brush>
-                  <ClientRectangle>142,12,72,8</ClientRectangle>
-                  <Conditions isList="true" count="0" />
-                  <Expressions isList="true" count="0" />
-                  <Font>Parastoo Print FD,11,Bold</Font>
-                  <Guid>9c3e8d08146246c7a38186219113d7d7</Guid>
-                  <Margins>0,0,0,0</Margins>
-                  <Name>Text44</Name>
-                  <Page isRef="4" />
-                  <Parent isRef="24" />
-                  <ShiftMode>None</ShiftMode>
-                  <Text>شماره تلفن: {Invoice.Bcell}</Text>
-                  <TextBrush>Black</TextBrush>
-                  <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
-                  <Type>Expression</Type>
-                </Text44>
-                <Text10 Ref="30" type="Text" isKey="true">
-                  <Anchor>Top, Right</Anchor>
-                  <Brush>Transparent</Brush>
-                  <ClientRectangle>0,12,142,8</ClientRectangle>
+                  <ClientRectangle>72,12,142,12</ClientRectangle>
                   <Conditions isList="true" count="0" />
                   <Expressions isList="true" count="0" />
                   <Font>Parastoo Print FD,11,Bold</Font>
@@ -507,10 +489,10 @@
               <Page isRef="4" />
               <Parent isRef="7" />
             </Panel1>
-            <Text56 Ref="31" type="Text" isKey="true">
+            <Text56 Ref="30" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
               <Brush>Transparent</Brush>
-              <ClientRectangle>274,36,8,20</ClientRectangle>
+              <ClientRectangle>274,36,8,24</ClientRectangle>
               <Conditions isList="true" count="0" />
               <Expressions isList="true" count="0" />
               <Font>Parastoo Print FD,14</Font>
@@ -525,7 +507,7 @@
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text56>
-            <Text53 Ref="32" type="Text" isKey="true">
+            <Text53 Ref="31" type="Text" isKey="true">
               <Anchor>Top, Right</Anchor>
               <Brush>Transparent</Brush>
               <ClientRectangle>56,14,72,6</ClientRectangle>
@@ -544,7 +526,7 @@
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text53>
-            <Text54 Ref="33" type="Text" isKey="true">
+            <Text54 Ref="32" type="Text" isKey="true">
               <Anchor>Top, Right</Anchor>
               <Brush>Transparent</Brush>
               <ClientRectangle>56,42,72,6</ClientRectangle>
@@ -563,7 +545,7 @@
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text54>
-            <Text55 Ref="34" type="Text" isKey="true">
+            <Text55 Ref="33" type="Text" isKey="true">
               <Anchor>Top, Right</Anchor>
               <Brush>Transparent</Brush>
               <ClientRectangle>56,36,72,6</ClientRectangle>
@@ -582,6 +564,24 @@
               <Type>Expression</Type>
               <VertAlignment>Center</VertAlignment>
             </Text55>
+            <Text44 Ref="34" type="Text" isKey="true">
+              <Anchor>Top, Right</Anchor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56,48,72,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Parastoo Print FD,11,Bold</Font>
+              <Guid>9c3e8d08146246c7a38186219113d7d7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="4" />
+              <Parent isRef="7" />
+              <ShiftMode>None</ShiftMode>
+              <Text>شماره تلفن: {Invoice.Bcell}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,RightToLeft=True,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text44>
           </Components>
           <Conditions isList="true" count="0" />
           <Expressions isList="true" count="0" />
@@ -591,7 +591,7 @@
         </ReportTitleBand1>
         <HeaderBand1 Ref="35" type="HeaderBand" isKey="true">
           <Brush>EmptyBrush</Brush>
-          <ClientRectangle>0,70,283,10</ClientRectangle>
+          <ClientRectangle>0,74,283,10</ClientRectangle>
           <Components isList="true" count="11">
             <Text9 Ref="36" type="Text" isKey="true">
               <Border>All;Black;1;Solid;False;4;[0:0:0:0]</Border>
@@ -816,7 +816,7 @@
         <DataBand1 Ref="47" type="DataBand" isKey="true">
           <Brush>Transparent</Brush>
           <BusinessObjectGuid isNull="true" />
-          <ClientRectangle>0,88,283,14</ClientRectangle>
+          <ClientRectangle>0,92,283,14</ClientRectangle>
           <Components isList="true" count="1">
             <Panel2 Ref="48" type="Panel" isKey="true">
               <Brush>Transparent</Brush>
@@ -1075,7 +1075,7 @@
         </DataBand1>
         <FooterBand1 Ref="60" type="FooterBand" isKey="true">
           <Brush>Transparent</Brush>
-          <ClientRectangle>0,110,283,46</ClientRectangle>
+          <ClientRectangle>0,114,283,46</ClientRectangle>
           <Components isList="true" count="3">
             <TotalReportTable Ref="61" type="Panel" isKey="true">
               <Border>All;Black;1;Solid;False;4;Black</Border>
@@ -1337,10 +1337,10 @@
     <value>Stimulsoft.Report.Dll</value>
   </ReferencedAssemblies>
   <ReportAlias>Report</ReportAlias>
-  <ReportChanged>1/5/2024 2:40:49 PM</ReportChanged>
+  <ReportChanged>1/5/2024 9:57:03 PM</ReportChanged>
   <ReportCreated>7/2/2023 8:30:03 PM</ReportCreated>
   <ReportFile>C:\Users\amirh\source\repos\Invoice-Manage\InvoiceManage.App\Resources\Templates\Invoice.mrt</ReportFile>
-  <ReportGuid>b015ae8ae86241e9915b7986275878f5</ReportGuid>
+  <ReportGuid>a2b15274442a40d4b2cc846d36d5d4b0</ReportGuid>
   <ReportName>Report</ReportName>
   <ReportUnit>Millimeters</ReportUnit>
   <ReportVersion>2023.1.1.0</ReportVersion>

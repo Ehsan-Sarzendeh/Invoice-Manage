@@ -60,7 +60,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             var parentForm = ParentForm! as FrmInvoice;
 
             parentForm!.Invoice.Items.Remove(item);
-            _invoiceService.DeleteInvoiceItem(item);
+
+            if (item.Id > 0)
+                _invoiceService.DeleteInvoiceItem(item);
         }
 
         private InvoiceItem? GetSelectedItem()

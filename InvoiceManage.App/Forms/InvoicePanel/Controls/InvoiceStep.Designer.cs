@@ -248,6 +248,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TxtInno_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             TxtInno_1.Size = new System.Drawing.Size(332, 29);
             TxtInno_1.TabIndex = 0;
+            TxtInno_1.KeyPress += TxtInno_1_KeyPress;
             // 
             // Indatim2m_1
             // 

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using InvoiceManage.App.Forms.Common;
 using InvoiceManage.App.Resources.CustomToolBox;
@@ -44,7 +45,7 @@ namespace InvoiceManage.App.Services.Infrastructures
                     break;
 
                 case MaskedTextBox maskedText:
-                    if (string.IsNullOrWhiteSpace(maskedText.Text) || maskedText.Text.Contains(' '))
+                    if (!Regex.IsMatch(maskedText.Text, @"^((?<time>\d{2}:\d{2})|(?<date>\d{4}\/\d{2}\/\d{2}))$"))
                         return false;
                     break;
 

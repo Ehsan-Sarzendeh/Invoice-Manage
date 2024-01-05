@@ -113,10 +113,10 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<string>("Bpn")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Cap")
+                    b.Property<decimal?>("Cap")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Cdcd")
+                    b.Property<decimal?>("Cdcd")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Cdcd_1")
@@ -125,7 +125,7 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<string>("Cdcn")
                         .HasColumnType("TEXT");
 
-                    b.Property<long>("CompanyId")
+                    b.Property<long?>("CompanyId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("CompanyId1")
@@ -143,10 +143,10 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<string>("Iinn")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Indatim")
+                    b.Property<decimal?>("Indatim")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Indatim2m")
+                    b.Property<decimal?>("Indatim2m")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Indatim2m_1")
@@ -161,9 +161,6 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<string>("Indatim_2")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Inno")
-                        .HasColumnType("TEXT");
-
                     b.Property<long>("Inno_1")
                         .HasColumnType("INTEGER");
 
@@ -173,7 +170,7 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<int?>("Ins")
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("Insp")
+                    b.Property<decimal?>("Insp")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Inty")
@@ -185,7 +182,7 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<string>("Pcn")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Pdt")
+                    b.Property<decimal?>("Pdt")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Pdt_1")
@@ -200,7 +197,7 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<int?>("Pmt")
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("Pv")
+                    b.Property<decimal?>("Pv")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("RefrenceNumber")
@@ -224,7 +221,7 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<int?>("Setm")
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("Tax17")
+                    b.Property<decimal?>("Tax17")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("TaxId")
@@ -298,11 +295,8 @@ namespace InvoiceManage.Database.Migrations
                     b.Property<int?>("InvoiceId1")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Mu")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Mu_1")
-                        .HasColumnType("TEXT");
+                    b.Property<int?>("Mu")
+                        .HasColumnType("INTEGER");
 
                     b.Property<decimal>("Nw")
                         .HasColumnType("TEXT");

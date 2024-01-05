@@ -31,6 +31,13 @@ namespace InvoiceManage.App
             Stimulsoft.Base.StiFontCollection.AddFontFile(fontPath);
             Export.Pdf.AllowImportSystemLibraries = true;
 
+            var invoiceManagerPath =
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+                    "InvoiceManage");
+
+            if (!Directory.Exists(invoiceManagerPath))
+                Directory.CreateDirectory(invoiceManagerPath);
+
             using (var context = new SqliteDbContext())
                 context.Database.Migrate();
 

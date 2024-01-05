@@ -17,7 +17,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             InitializeComponent();
             SetComboBoxDataSource();
         }
-        
+
         private void SetComboBoxDataSource()
         {
             CbInty.SetEnumDataSource(typeof(Inty));
@@ -84,5 +84,11 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         }
 
         #endregion
+        
+        private void TxtInno_1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            var parentForm = ParentForm as FrmInvoice;
+            parentForm!.Invoice.GenerateInno = false;
+        }
     }
 }
