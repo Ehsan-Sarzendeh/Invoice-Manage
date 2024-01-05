@@ -28,11 +28,13 @@ namespace InvoiceManage.App.Services.Infrastructures
         {
             foreach (Control control in groupBox.Controls)
             {
+                control.Visible = !disable;
+                control.Visible = !disable;
                 switch (control)
                 {
                     case TextBoxBase txt:
-                        txt.ReadOnly = disable;
                         txt.Visible = !disable;
+                        txt.Enabled = !disable;
                         break;
                     case ListControl combo:
                         combo.Enabled = !disable;
@@ -100,7 +102,7 @@ namespace InvoiceManage.App.Services.Infrastructures
             {
                 case TextBox textBox:
                     var name = textBox.Name.Replace("txt", "", StringComparison.OrdinalIgnoreCase);
-                    
+
                     var property = properties.FirstOrDefault(x => x.Name.Equals(name));
 
                     if (property is not null && (property.GetCustomAttribute<BindableAttribute>() is null || (bool)property.GetCustomAttribute<BindableAttribute>()?.Bindable))
@@ -137,7 +139,7 @@ namespace InvoiceManage.App.Services.Infrastructures
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
                 e.Handled = true;
-            
+
             if (e.KeyChar == '.' && (sender as TextBoxBase)!.Text.IndexOf('.') > -1)
                 e.Handled = true;
         }

@@ -30,9 +30,9 @@
         {
             panel1 = new System.Windows.Forms.Panel();
             groupBox5 = new System.Windows.Forms.GroupBox();
-            TxtBillId = new System.Windows.Forms.TextBox();
+            TxtBaddress = new System.Windows.Forms.TextBox();
             groupBox4 = new System.Windows.Forms.GroupBox();
-            TxtBpc = new System.Windows.Forms.TextBox();
+            TxtBcell = new System.Windows.Forms.TextBox();
             BtnCancel = new Resources.CustomToolBox.RoundedButton();
             BtnPrint = new Resources.CustomToolBox.RoundedButton();
             BtnClose = new System.Windows.Forms.PictureBox();
@@ -56,7 +56,7 @@
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(TxtBillId);
+            groupBox5.Controls.Add(TxtBaddress);
             groupBox5.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox5.ForeColor = System.Drawing.Color.DimGray;
             groupBox5.Location = new System.Drawing.Point(30, 98);
@@ -66,20 +66,20 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "نشانی";
             // 
-            // TxtBillId
+            // TxtBaddress
             // 
-            TxtBillId.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            TxtBillId.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtBillId.Location = new System.Drawing.Point(10, 24);
-            TxtBillId.Multiline = true;
-            TxtBillId.Name = "TxtBillId";
-            TxtBillId.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            TxtBillId.Size = new System.Drawing.Size(395, 107);
-            TxtBillId.TabIndex = 0;
+            TxtBaddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtBaddress.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtBaddress.Location = new System.Drawing.Point(10, 24);
+            TxtBaddress.Multiline = true;
+            TxtBaddress.Name = "TxtBaddress";
+            TxtBaddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            TxtBaddress.Size = new System.Drawing.Size(395, 107);
+            TxtBaddress.TabIndex = 0;
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(TxtBpc);
+            groupBox4.Controls.Add(TxtBcell);
             groupBox4.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             groupBox4.ForeColor = System.Drawing.Color.DimGray;
             groupBox4.Location = new System.Drawing.Point(239, 20);
@@ -89,15 +89,15 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "شماره تماس";
             // 
-            // TxtBpc
+            // TxtBcell
             // 
-            TxtBpc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            TxtBpc.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            TxtBpc.Location = new System.Drawing.Point(10, 26);
-            TxtBpc.Name = "TxtBpc";
-            TxtBpc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            TxtBpc.Size = new System.Drawing.Size(186, 29);
-            TxtBpc.TabIndex = 0;
+            TxtBcell.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            TxtBcell.Font = new System.Drawing.Font("IRANSansWeb(FaNum)", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            TxtBcell.Location = new System.Drawing.Point(10, 26);
+            TxtBcell.Name = "TxtBcell";
+            TxtBcell.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            TxtBcell.Size = new System.Drawing.Size(186, 29);
+            TxtBcell.TabIndex = 0;
             // 
             // BtnCancel
             // 
@@ -186,8 +186,8 @@
         private Resources.CustomToolBox.RoundedButton BtnCancel;
         private Resources.CustomToolBox.RoundedButton BtnPrint;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox TxtBillId;
+        private System.Windows.Forms.TextBox TxtBaddress;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox TxtBpc;
+        private System.Windows.Forms.TextBox TxtBcell;
     }
 }
