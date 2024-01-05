@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using InvoiceManage.App.Forms.Common;
+using InvoiceManage.App.Resources.CustomToolBox;
 
 namespace InvoiceManage.App.Services.Infrastructures
 {
@@ -22,6 +24,52 @@ namespace InvoiceManage.App.Services.Infrastructures
             foreach (var property in target.GetProperties())
                 if (dataGrid.Columns.Contains(property.Name))
                     dataGrid.Columns[property.Name]!.HeaderText = property.GetCustomAttribute<DisplayAttribute>(false)?.Name ?? property.Name;
+        }
+
+        public static bool CheckRequiredFieldHasValue(this Control control)
+        {
+            switch (control)
+            {
+                case CustomGroupBox groupBox:
+                    if (groupBox.Mode is Mode.Required)
+                        break;
+                    if (groupBox.Mode is Mode.SemiRequired && groupBox.ShowSemiRequired)
+                        break;
+
+                    return true;
+
+                case TextBoxBase textBox:
+                    if (string.IsNullOrWhiteSpace(textBox.Text))
+                        return false;
+                    break;
+
+                case ComboBox comboBox:
+                    if (comboBox.SelectedIndex < 0)
+                        return false;
+                    break;
+            }
+
+            foreach (Control c in control.Controls)
+                return CheckRequiredFieldHasValue(c);
+
+            return true;
+        }
+
+        public static bool IsValid(this Control control)
+        {
+            switch (control)
+            {
+                case CustomGroupBox groupBox:
+                    if (!groupBox.IsValid)
+                        return false;
+                    break;
+            }
+
+            foreach (Control c in control.Controls)
+                if (!c.IsValid())
+                    return false;
+
+            return true;
         }
 
         public static void ChangeReadOnly(this GroupBox groupBox, bool disable)
