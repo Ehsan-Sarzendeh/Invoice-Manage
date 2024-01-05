@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Windows.Forms;
 using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.App.Services.InvoiceService.Dtos;
@@ -22,6 +23,9 @@ namespace InvoiceManage.App.Forms.InvoiceList
         {
             var saveDialog = new SaveFileDialog();
 
+            var pc = new PersianCalendar();
+
+            saveDialog.FileName = $"{pc.GetYear(DateTime.Now)}-{pc.GetMonth(DateTime.Now)}-{pc.GetDayOfMonth(DateTime.Now)} invoice {_invoice.Id}.pdf";
             saveDialog.Filter = "PDF File|*.pdf";
             saveDialog.ShowDialog();
 
