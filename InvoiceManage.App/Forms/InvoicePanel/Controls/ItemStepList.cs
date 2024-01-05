@@ -42,7 +42,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
             var itemStepAdd = itemStep.PanelSlider.Controls.Find("ItemStepAdd", false)[0] as ItemStepAdd;
             itemStepAdd!.IsEdit = true;
-            itemStepAdd!.InvoiceItem = item;
+            itemStepAdd.SetInvoiceItem(item);
         }
 
         private void BtnDelete_Click(object sender, System.EventArgs e)

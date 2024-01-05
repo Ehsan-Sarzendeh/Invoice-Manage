@@ -32,7 +32,8 @@ namespace InvoiceManage.App.Services.InvoiceService
         public void EditInvoice(Invoice invoice)
         {
             using var db = new SqliteDbContext();
-            db.InvoiceItem.UpdateRange(invoice.Items);
+            db.InvoiceItem.AddRange(invoice.Items.Where(x => x.Id == 0));
+            db.InvoiceItem.UpdateRange(invoice.Items.Where(x => x.Id > 0));
             db.Invoice.Update(invoice);
             db.SaveChanges();
         }
