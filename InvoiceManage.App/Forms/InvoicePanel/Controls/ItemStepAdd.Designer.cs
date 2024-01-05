@@ -120,7 +120,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Sstid.ShowOptional = false;
             Sstid.ShowSemiRequired = false;
             Sstid.Size = new System.Drawing.Size(235, 70);
-            Sstid.TabIndex = 224;
+            Sstid.TabIndex = 0;
             Sstid.TabStop = false;
             Sstid.Text = "شناسه کالا";
             // 
@@ -145,7 +145,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Sstt.ShowOptional = false;
             Sstt.ShowSemiRequired = false;
             Sstt.Size = new System.Drawing.Size(605, 70);
-            Sstt.TabIndex = 225;
+            Sstt.TabIndex = 1;
             Sstt.TabStop = false;
             Sstt.Text = "شرح کالا";
             // 
@@ -176,7 +176,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new System.Drawing.Size(114, 50);
-            BtnAdd.TabIndex = 226;
+            BtnAdd.TabIndex = 18;
             BtnAdd.Text = "افـزودن";
             BtnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             BtnAdd.TextColor = System.Drawing.Color.FromArgb(68, 68, 68);
@@ -200,7 +200,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnSelect.Name = "BtnSelect";
             BtnSelect.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnSelect.Size = new System.Drawing.Size(188, 47);
-            BtnSelect.TabIndex = 228;
+            BtnSelect.TabIndex = 20;
             BtnSelect.Text = "انتخاب از لیست کالا ها";
             BtnSelect.TextColor = System.Drawing.Color.White;
             BtnSelect.UseVisualStyleBackColor = false;
@@ -229,7 +229,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Vra.ShowOptional = false;
             Vra.ShowSemiRequired = false;
             Vra.Size = new System.Drawing.Size(106, 70);
-            Vra.TabIndex = 230;
+            Vra.TabIndex = 2;
             Vra.TabStop = false;
             Vra.Text = "نرخ مالیات";
             // 
@@ -255,7 +255,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Am.ShowOptional = false;
             Am.ShowSemiRequired = false;
             Am.Size = new System.Drawing.Size(155, 70);
-            Am.TabIndex = 231;
+            Am.TabIndex = 3;
             Am.TabStop = false;
             Am.Text = "تعداد / مقدار";
             // 
@@ -281,7 +281,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Mu.ShowOptional = false;
             Mu.ShowSemiRequired = false;
             Mu.Size = new System.Drawing.Size(155, 70);
-            Mu.TabIndex = 232;
+            Mu.TabIndex = 4;
             Mu.TabStop = false;
             Mu.Text = "واحد اندازه گیری";
             // 
@@ -310,7 +310,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Nw.ShowOptional = false;
             Nw.ShowSemiRequired = false;
             Nw.Size = new System.Drawing.Size(155, 70);
-            Nw.TabIndex = 233;
+            Nw.TabIndex = 5;
             Nw.TabStop = false;
             Nw.Text = "وزن خالص";
             // 
@@ -336,7 +336,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Fee.ShowOptional = false;
             Fee.ShowSemiRequired = false;
             Fee.Size = new System.Drawing.Size(236, 70);
-            Fee.TabIndex = 234;
+            Fee.TabIndex = 11;
             Fee.TabStop = false;
             Fee.Text = "مبلغ واحد";
             // 
@@ -362,7 +362,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Dis.ShowOptional = false;
             Dis.ShowSemiRequired = false;
             Dis.Size = new System.Drawing.Size(235, 70);
-            Dis.TabIndex = 235;
+            Dis.TabIndex = 14;
             Dis.TabStop = false;
             Dis.Text = "مبلغ تخفیف";
             // 
@@ -388,7 +388,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Consfee.ShowOptional = false;
             Consfee.ShowSemiRequired = false;
             Consfee.Size = new System.Drawing.Size(235, 70);
-            Consfee.TabIndex = 236;
+            Consfee.TabIndex = 15;
             Consfee.TabStop = false;
             Consfee.Text = "اجرت ساخت";
             // 
@@ -414,7 +414,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Bros.ShowOptional = false;
             Bros.ShowSemiRequired = false;
             Bros.Size = new System.Drawing.Size(235, 70);
-            Bros.TabIndex = 237;
+            Bros.TabIndex = 17;
             Bros.TabStop = false;
             Bros.Text = "حق العمل";
             // 
@@ -440,7 +440,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Odr.ShowOptional = false;
             Odr.ShowSemiRequired = false;
             Odr.Size = new System.Drawing.Size(62, 63);
-            Odr.TabIndex = 239;
+            Odr.TabIndex = 1;
             Odr.TabStop = false;
             Odr.Text = "نرخ";
             // 
@@ -466,7 +466,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Odt.ShowOptional = false;
             Odt.ShowSemiRequired = false;
             Odt.Size = new System.Drawing.Size(220, 63);
-            Odt.TabIndex = 238;
+            Odt.TabIndex = 0;
             Odt.TabStop = false;
             Odt.Text = "موضوع";
             // 
@@ -493,7 +493,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Spro.ShowOptional = false;
             Spro.ShowSemiRequired = false;
             Spro.Size = new System.Drawing.Size(235, 70);
-            Spro.TabIndex = 238;
+            Spro.TabIndex = 16;
             Spro.TabStop = false;
             Spro.Text = "سود فروشنده";
             // 
@@ -519,7 +519,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CFee.ShowOptional = false;
             CFee.ShowSemiRequired = false;
             CFee.Size = new System.Drawing.Size(155, 70);
-            CFee.TabIndex = 242;
+            CFee.TabIndex = 6;
             CFee.TabStop = false;
             CFee.Text = "میزان ارز";
             // 
@@ -545,7 +545,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Cut.ShowOptional = false;
             Cut.ShowSemiRequired = false;
             Cut.Size = new System.Drawing.Size(155, 70);
-            Cut.TabIndex = 243;
+            Cut.TabIndex = 7;
             Cut.TabStop = false;
             Cut.Text = "کد نوع ارز";
             // 
@@ -571,7 +571,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Exr.ShowOptional = false;
             Exr.ShowSemiRequired = false;
             Exr.Size = new System.Drawing.Size(155, 70);
-            Exr.TabIndex = 244;
+            Exr.TabIndex = 8;
             Exr.TabStop = false;
             Exr.Text = "نرخ برابری ارز با ریال";
             // 
@@ -597,7 +597,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Ssrv.ShowOptional = false;
             Ssrv.ShowSemiRequired = false;
             Ssrv.Size = new System.Drawing.Size(236, 70);
-            Ssrv.TabIndex = 245;
+            Ssrv.TabIndex = 12;
             Ssrv.TabStop = false;
             Ssrv.Text = "ارزش ریالی کالا";
             // 
@@ -623,7 +623,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Sscv.ShowOptional = false;
             Sscv.ShowSemiRequired = false;
             Sscv.Size = new System.Drawing.Size(236, 70);
-            Sscv.TabIndex = 246;
+            Sscv.TabIndex = 13;
             Sscv.TabStop = false;
             Sscv.Text = "ارزش ارزی کالا";
             // 
@@ -651,7 +651,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             GbOd.ShowOptional = false;
             GbOd.ShowSemiRequired = false;
             GbOd.Size = new System.Drawing.Size(476, 95);
-            GbOd.TabIndex = 247;
+            GbOd.TabIndex = 9;
             GbOd.TabStop = false;
             GbOd.Text = "سایر مالیات و عوارض";
             // 
@@ -667,7 +667,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Odam.ShowOptional = false;
             Odam.ShowSemiRequired = false;
             Odam.Size = new System.Drawing.Size(167, 63);
-            Odam.TabIndex = 240;
+            Odam.TabIndex = 2;
             Odam.TabStop = false;
             Odam.Text = "مبلغ";
             // 
@@ -695,7 +695,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             GbOl.ShowOptional = false;
             GbOl.ShowSemiRequired = false;
             GbOl.Size = new System.Drawing.Size(476, 95);
-            GbOl.TabIndex = 248;
+            GbOl.TabIndex = 10;
             GbOl.TabStop = false;
             GbOl.Text = "سایر وجوه قانونی";
             // 
@@ -711,7 +711,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Olam.ShowOptional = false;
             Olam.ShowSemiRequired = false;
             Olam.Size = new System.Drawing.Size(167, 63);
-            Olam.TabIndex = 240;
+            Olam.TabIndex = 2;
             Olam.TabStop = false;
             Olam.Text = "مبلغ";
             // 
@@ -737,7 +737,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Olr.ShowOptional = false;
             Olr.ShowSemiRequired = false;
             Olr.Size = new System.Drawing.Size(62, 63);
-            Olr.TabIndex = 239;
+            Olr.TabIndex = 1;
             Olr.TabStop = false;
             Olr.Text = "نرخ";
             // 
@@ -763,7 +763,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Olt.ShowOptional = false;
             Olt.ShowSemiRequired = false;
             Olt.Size = new System.Drawing.Size(220, 63);
-            Olt.TabIndex = 238;
+            Olt.TabIndex = 0;
             Olt.TabStop = false;
             Olt.Text = "موضوع";
             // 
@@ -794,7 +794,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnEdit.Name = "BtnEdit";
             BtnEdit.Size = new System.Drawing.Size(114, 50);
-            BtnEdit.TabIndex = 249;
+            BtnEdit.TabIndex = 19;
             BtnEdit.Text = "ویرایش";
             BtnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             BtnEdit.TextColor = System.Drawing.Color.FromArgb(68, 68, 68);

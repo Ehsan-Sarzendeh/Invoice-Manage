@@ -91,7 +91,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnNext.Name = "BtnNext";
             BtnNext.Size = new System.Drawing.Size(120, 47);
-            BtnNext.TabIndex = 0;
+            BtnNext.TabIndex = 8;
             BtnNext.Text = "بعدی";
             BtnNext.TextColor = System.Drawing.Color.White;
             BtnNext.UseVisualStyleBackColor = false;
@@ -118,7 +118,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Inty.ShowOptional = false;
             Inty.ShowSemiRequired = false;
             Inty.Size = new System.Drawing.Size(230, 70);
-            Inty.TabIndex = 207;
+            Inty.TabIndex = 0;
             Inty.TabStop = false;
             Inty.Text = "نوع فاکتور";
             // 
@@ -145,7 +145,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Inp.ShowOptional = false;
             Inp.ShowSemiRequired = false;
             Inp.Size = new System.Drawing.Size(230, 70);
-            Inp.TabIndex = 208;
+            Inp.TabIndex = 1;
             Inp.TabStop = false;
             Inp.Text = "الگوی فاکتور";
             // 
@@ -158,7 +158,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CbInp.Location = new System.Drawing.Point(10, 25);
             CbInp.Name = "CbInp";
             CbInp.Size = new System.Drawing.Size(208, 36);
-            CbInp.TabIndex = 1;
+            CbInp.TabIndex = 0;
             CbInp.SelectedIndexChanged += CbInp_SelectedIndexChanged;
             // 
             // Tob
@@ -172,7 +172,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tob.ShowOptional = false;
             Tob.ShowSemiRequired = false;
             Tob.Size = new System.Drawing.Size(230, 70);
-            Tob.TabIndex = 210;
+            Tob.TabIndex = 3;
             Tob.TabStop = false;
             Tob.Text = "نوع شخص خریدار";
             // 
@@ -185,7 +185,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CbTob.Location = new System.Drawing.Point(11, 25);
             CbTob.Name = "CbTob";
             CbTob.Size = new System.Drawing.Size(208, 36);
-            CbTob.TabIndex = 1;
+            CbTob.TabIndex = 0;
             // 
             // Ins
             // 
@@ -198,7 +198,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Ins.ShowOptional = false;
             Ins.ShowSemiRequired = false;
             Ins.Size = new System.Drawing.Size(230, 70);
-            Ins.TabIndex = 209;
+            Ins.TabIndex = 2;
             Ins.TabStop = false;
             Ins.Text = "موضوع فاکتور";
             // 
@@ -223,7 +223,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Indatim_1.ShowOptional = false;
             Indatim_1.ShowSemiRequired = false;
             Indatim_1.Size = new System.Drawing.Size(226, 70);
-            Indatim_1.TabIndex = 211;
+            Indatim_1.TabIndex = 0;
             Indatim_1.TabStop = false;
             Indatim_1.Text = "تاریخ صدور";
             // 
@@ -260,7 +260,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Indatim2m_1.ShowOptional = false;
             Indatim2m_1.ShowSemiRequired = false;
             Indatim2m_1.Size = new System.Drawing.Size(226, 70);
-            Indatim2m_1.TabIndex = 212;
+            Indatim2m_1.TabIndex = 2;
             Indatim2m_1.TabStop = false;
             Indatim2m_1.Text = "تاریخ ایجاد";
             // 
@@ -287,7 +287,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Indatim_2.ShowOptional = false;
             Indatim_2.ShowSemiRequired = false;
             Indatim_2.Size = new System.Drawing.Size(179, 70);
-            Indatim_2.TabIndex = 213;
+            Indatim_2.TabIndex = 1;
             Indatim_2.TabStop = false;
             Indatim_2.Text = "ساعت صدور";
             // 
@@ -314,7 +314,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Indatim2m_2.ShowOptional = false;
             Indatim2m_2.ShowSemiRequired = false;
             Indatim2m_2.Size = new System.Drawing.Size(179, 70);
-            Indatim2m_2.TabIndex = 214;
+            Indatim2m_2.TabIndex = 3;
             Indatim2m_2.TabStop = false;
             Indatim2m_2.Text = "ساعت ایجاد";
             // 
@@ -342,7 +342,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Inno_1.ShowOptional = false;
             Inno_1.ShowSemiRequired = false;
             Inno_1.Size = new System.Drawing.Size(471, 70);
-            Inno_1.TabIndex = 215;
+            Inno_1.TabIndex = 4;
             Inno_1.TabStop = false;
             Inno_1.Text = "سریال داخلی";
             // 
@@ -363,7 +363,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnGenerateCode.Name = "BtnGenerateCode";
             BtnGenerateCode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnGenerateCode.Size = new System.Drawing.Size(98, 33);
-            BtnGenerateCode.TabIndex = 230;
+            BtnGenerateCode.TabIndex = 1;
             BtnGenerateCode.Text = "تولید سریال";
             BtnGenerateCode.TextColor = System.Drawing.Color.White;
             BtnGenerateCode.UseVisualStyleBackColor = false;
@@ -380,7 +380,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Irtaxid.ShowOptional = false;
             Irtaxid.ShowSemiRequired = false;
             Irtaxid.Size = new System.Drawing.Size(471, 70);
-            Irtaxid.TabIndex = 216;
+            Irtaxid.TabIndex = 5;
             Irtaxid.TabStop = false;
             Irtaxid.Text = "شماره مالیاتی صورتحساب مرجع";
             // 
@@ -405,7 +405,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             TaxId.ShowOptional = false;
             TaxId.ShowSemiRequired = false;
             TaxId.Size = new System.Drawing.Size(471, 70);
-            TaxId.TabIndex = 216;
+            TaxId.TabIndex = 6;
             TaxId.TabStop = false;
             TaxId.Text = "شماره مالیاتی صورتحساب ";
             // 
@@ -458,8 +458,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             groupBox12.ShowOptional = false;
             groupBox12.ShowSemiRequired = false;
             groupBox12.Size = new System.Drawing.Size(470, 225);
-            groupBox12.TabIndex = 219;
+            groupBox12.TabIndex = 7;
             groupBox12.TabStop = false;
+            groupBox12.Text = "**";
             // 
             // label3
             // 

@@ -75,7 +75,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnNext.Name = "BtnNext";
             BtnNext.Size = new System.Drawing.Size(120, 47);
-            BtnNext.TabIndex = 1;
+            BtnNext.TabIndex = 8;
             BtnNext.Text = "بعدی";
             BtnNext.TextColor = System.Drawing.Color.White;
             BtnNext.UseVisualStyleBackColor = false;
@@ -97,7 +97,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnPrevious.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnPrevious.Name = "BtnPrevious";
             BtnPrevious.Size = new System.Drawing.Size(120, 47);
-            BtnPrevious.TabIndex = 2;
+            BtnPrevious.TabIndex = 9;
             BtnPrevious.Text = "قبلی";
             BtnPrevious.TextColor = System.Drawing.Color.White;
             BtnPrevious.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Cdcd_1.ShowOptional = false;
             Cdcd_1.ShowSemiRequired = false;
             Cdcd_1.Size = new System.Drawing.Size(220, 70);
-            Cdcd_1.TabIndex = 212;
+            Cdcd_1.TabIndex = 4;
             Cdcd_1.TabStop = false;
             Cdcd_1.Text = "تاریخ کوتاژ اظهارنامه گمرکی";
             // 
@@ -143,7 +143,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tins.ShowOptional = false;
             Tins.ShowSemiRequired = false;
             Tins.Size = new System.Drawing.Size(471, 70);
-            Tins.TabIndex = 216;
+            Tins.TabIndex = 0;
             Tins.TabStop = false;
             Tins.Text = "شماره اقتصادی";
             // 
@@ -169,7 +169,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Crn.ShowOptional = false;
             Crn.ShowSemiRequired = false;
             Crn.Size = new System.Drawing.Size(241, 70);
-            Crn.TabIndex = 217;
+            Crn.TabIndex = 7;
             Crn.TabStop = false;
             Crn.Text = "شناسه یکتای ثبت قرارداد";
             // 
@@ -195,7 +195,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Cdcn.ShowOptional = false;
             Cdcn.ShowSemiRequired = false;
             Cdcn.Size = new System.Drawing.Size(471, 70);
-            Cdcn.TabIndex = 217;
+            Cdcn.TabIndex = 3;
             Cdcn.TabStop = false;
             Cdcn.Text = "شماره کوتاژ اظهارنامه گمرکی";
             // 
@@ -221,7 +221,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             CompanyId.ShowOptional = false;
             CompanyId.ShowSemiRequired = false;
             CompanyId.Size = new System.Drawing.Size(471, 70);
-            CompanyId.TabIndex = 217;
+            CompanyId.TabIndex = 1;
             CompanyId.TabStop = false;
             CompanyId.Text = "شناسه یکتا فروشنده";
             // 
@@ -247,7 +247,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Scln.ShowOptional = false;
             Scln.ShowSemiRequired = false;
             Scln.Size = new System.Drawing.Size(224, 70);
-            Scln.TabIndex = 217;
+            Scln.TabIndex = 6;
             Scln.TabStop = false;
             Scln.Text = "شماره پروانه گمرکی";
             // 
@@ -273,7 +273,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Sbc.ShowOptional = false;
             Sbc.ShowSemiRequired = false;
             Sbc.Size = new System.Drawing.Size(245, 70);
-            Sbc.TabIndex = 217;
+            Sbc.TabIndex = 5;
             Sbc.TabStop = false;
             Sbc.Text = "کد شعبه ";
             // 
@@ -299,7 +299,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Scc.ShowOptional = false;
             Scc.ShowSemiRequired = false;
             Scc.Size = new System.Drawing.Size(471, 70);
-            Scc.TabIndex = 217;
+            Scc.TabIndex = 2;
             Scc.TabStop = false;
             Scc.Text = "کد گمرکی محل اظهارنامه";
             // 
@@ -329,7 +329,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnSelect.Name = "BtnSelect";
             BtnSelect.Size = new System.Drawing.Size(188, 47);
-            BtnSelect.TabIndex = 218;
+            BtnSelect.TabIndex = 10;
             BtnSelect.Text = "انتخاب از لیست شرکت‌ها";
             BtnSelect.TextColor = System.Drawing.Color.White;
             BtnSelect.UseVisualStyleBackColor = false;

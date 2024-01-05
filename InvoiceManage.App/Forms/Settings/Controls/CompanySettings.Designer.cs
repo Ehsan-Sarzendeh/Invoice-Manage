@@ -64,7 +64,7 @@
             groupBox11.Location = new System.Drawing.Point(292, 30);
             groupBox11.Name = "groupBox11";
             groupBox11.Size = new System.Drawing.Size(244, 70);
-            groupBox11.TabIndex = 219;
+            groupBox11.TabIndex = 1;
             groupBox11.TabStop = false;
             groupBox11.Text = "نام شرکت";
             // 
@@ -87,7 +87,7 @@
             groupBox9.Location = new System.Drawing.Point(553, 30);
             groupBox9.Name = "groupBox9";
             groupBox9.Size = new System.Drawing.Size(205, 70);
-            groupBox9.TabIndex = 217;
+            groupBox9.TabIndex = 0;
             groupBox9.TabStop = false;
             groupBox9.Text = "شماره اقتصادی";
             // 
@@ -117,7 +117,7 @@
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new System.Drawing.Size(120, 47);
-            BtnAdd.TabIndex = 1;
+            BtnAdd.TabIndex = 5;
             BtnAdd.Text = "افزودن";
             BtnAdd.TextColor = System.Drawing.Color.White;
             BtnAdd.UseVisualStyleBackColor = false;
@@ -156,7 +156,7 @@
             groupBox1.Location = new System.Drawing.Point(32, 30);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new System.Drawing.Size(244, 70);
-            groupBox1.TabIndex = 221;
+            groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "کد شعبه";
             // 
@@ -168,7 +168,7 @@
             groupBox3.Location = new System.Drawing.Point(292, 113);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new System.Drawing.Size(244, 70);
-            groupBox3.TabIndex = 223;
+            groupBox3.TabIndex = 4;
             groupBox3.TabStop = false;
             groupBox3.Text = "شناسه یکتای ثبت قرارداد";
             // 
@@ -190,7 +190,7 @@
             groupBox4.Location = new System.Drawing.Point(553, 113);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new System.Drawing.Size(205, 70);
-            groupBox4.TabIndex = 222;
+            groupBox4.TabIndex = 3;
             groupBox4.TabStop = false;
             groupBox4.Text = "شماره پروانه گمرکی";
             // 
@@ -269,7 +269,7 @@
             BtnEditCompany.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnEditCompany.Name = "BtnEditCompany";
             BtnEditCompany.Size = new System.Drawing.Size(120, 47);
-            BtnEditCompany.TabIndex = 228;
+            BtnEditCompany.TabIndex = 6;
             BtnEditCompany.Text = "ویرایش";
             BtnEditCompany.TextColor = System.Drawing.Color.White;
             BtnEditCompany.UseVisualStyleBackColor = false;

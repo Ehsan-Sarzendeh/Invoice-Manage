@@ -82,7 +82,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnAdd.Name = "BtnAdd";
             BtnAdd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnAdd.Size = new System.Drawing.Size(133, 47);
-            BtnAdd.TabIndex = 1;
+            BtnAdd.TabIndex = 10;
             BtnAdd.Text = "ثبت فاکتور جدید";
             BtnAdd.TextColor = System.Drawing.Color.White;
             BtnAdd.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnPrevious.Name = "BtnPrevious";
             BtnPrevious.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnPrevious.Size = new System.Drawing.Size(120, 47);
-            BtnPrevious.TabIndex = 3;
+            BtnPrevious.TabIndex = 12;
             BtnPrevious.Text = "قبلی";
             BtnPrevious.TextColor = System.Drawing.Color.White;
             BtnPrevious.UseVisualStyleBackColor = false;
@@ -128,7 +128,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnEdit.Name = "BtnEdit";
             BtnEdit.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnEdit.Size = new System.Drawing.Size(133, 47);
-            BtnEdit.TabIndex = 4;
+            BtnEdit.TabIndex = 11;
             BtnEdit.Text = "ویرایش فاکتور";
             BtnEdit.TextColor = System.Drawing.Color.White;
             BtnEdit.UseVisualStyleBackColor = false;
@@ -146,7 +146,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Pv.ShowOptional = false;
             Pv.ShowSemiRequired = false;
             Pv.Size = new System.Drawing.Size(471, 70);
-            Pv.TabIndex = 256;
+            Pv.TabIndex = 8;
             Pv.TabStop = false;
             Pv.Text = "مبلغ پرداختی";
             // 
@@ -172,7 +172,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Pid.ShowOptional = false;
             Pid.ShowSemiRequired = false;
             Pid.Size = new System.Drawing.Size(478, 70);
-            Pid.TabIndex = 258;
+            Pid.TabIndex = 9;
             Pid.TabStop = false;
             Pid.Text = "شماره /شناسه ملی پرداخت کننده";
             // 
@@ -198,7 +198,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Trmn.ShowOptional = false;
             Trmn.ShowSemiRequired = false;
             Trmn.Size = new System.Drawing.Size(230, 70);
-            Trmn.TabIndex = 257;
+            Trmn.TabIndex = 1;
             Trmn.TabStop = false;
             Trmn.Text = "شماره پایانه";
             // 
@@ -224,7 +224,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Pmt.ShowOptional = false;
             Pmt.ShowSemiRequired = false;
             Pmt.Size = new System.Drawing.Size(242, 70);
-            Pmt.TabIndex = 253;
+            Pmt.TabIndex = 2;
             Pmt.TabStop = false;
             Pmt.Text = "روش پرداخت";
             // 
@@ -252,7 +252,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Trn.ShowOptional = false;
             Trn.ShowSemiRequired = false;
             Trn.Size = new System.Drawing.Size(230, 70);
-            Trn.TabIndex = 250;
+            Trn.TabIndex = 3;
             Trn.TabStop = false;
             Trn.Text = "شماره پیگیری/مرجع";
             // 
@@ -278,7 +278,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Iinn.ShowOptional = false;
             Iinn.ShowSemiRequired = false;
             Iinn.Size = new System.Drawing.Size(235, 70);
-            Iinn.TabIndex = 252;
+            Iinn.TabIndex = 0;
             Iinn.TabStop = false;
             Iinn.Text = "شماره سوئیچ پرداخت";
             // 
@@ -304,7 +304,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Pcn.ShowOptional = false;
             Pcn.ShowSemiRequired = false;
             Pcn.Size = new System.Drawing.Size(230, 70);
-            Pcn.TabIndex = 247;
+            Pcn.TabIndex = 7;
             Pcn.TabStop = false;
             Pcn.Text = "شماره کارت پرداخت کننده";
             // 
@@ -330,7 +330,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Acn.ShowOptional = false;
             Acn.ShowSemiRequired = false;
             Acn.Size = new System.Drawing.Size(242, 70);
-            Acn.TabIndex = 248;
+            Acn.TabIndex = 6;
             Acn.TabStop = false;
             Acn.Text = "شماره پذیرنده فروشگاهی";
             // 
@@ -356,7 +356,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Pdt_1.ShowOptional = false;
             Pdt_1.ShowSemiRequired = false;
             Pdt_1.Size = new System.Drawing.Size(235, 70);
-            Pdt_1.TabIndex = 260;
+            Pdt_1.TabIndex = 4;
             Pdt_1.TabStop = false;
             Pdt_1.Text = "تاریخ پرداخت";
             // 
@@ -384,7 +384,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Pdt_2.ShowOptional = false;
             Pdt_2.ShowSemiRequired = false;
             Pdt_2.Size = new System.Drawing.Size(230, 70);
-            Pdt_2.TabIndex = 261;
+            Pdt_2.TabIndex = 5;
             Pdt_2.TabStop = false;
             Pdt_2.Text = "زمان پرداخت";
             // 

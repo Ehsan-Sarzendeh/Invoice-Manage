@@ -82,7 +82,7 @@
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new System.Drawing.Size(159, 47);
-            BtnAdd.TabIndex = 221;
+            BtnAdd.TabIndex = 3;
             BtnAdd.Text = "افزودن";
             BtnAdd.TextColor = System.Drawing.Color.White;
             BtnAdd.UseVisualStyleBackColor = false;
@@ -96,7 +96,7 @@
             gb.Location = new System.Drawing.Point(222, 32);
             gb.Name = "gb";
             gb.Size = new System.Drawing.Size(216, 70);
-            gb.TabIndex = 224;
+            gb.TabIndex = 1;
             gb.TabStop = false;
             gb.Text = "نرخ مالیات بر ارزش افزوده";
             // 
@@ -118,7 +118,7 @@
             groupBox10.Location = new System.Drawing.Point(222, 108);
             groupBox10.Name = "groupBox10";
             groupBox10.Size = new System.Drawing.Size(537, 104);
-            groupBox10.TabIndex = 223;
+            groupBox10.TabIndex = 2;
             groupBox10.TabStop = false;
             groupBox10.Text = "شرح کالا";
             // 
@@ -142,7 +142,7 @@
             gb2.Location = new System.Drawing.Point(456, 32);
             gb2.Name = "gb2";
             gb2.Size = new System.Drawing.Size(303, 70);
-            gb2.TabIndex = 222;
+            gb2.TabIndex = 0;
             gb2.TabStop = false;
             gb2.Text = "شناسه کالا";
             // 
@@ -221,7 +221,7 @@
             BtnEditProduct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnEditProduct.Name = "BtnEditProduct";
             BtnEditProduct.Size = new System.Drawing.Size(159, 47);
-            BtnEditProduct.TabIndex = 227;
+            BtnEditProduct.TabIndex = 4;
             BtnEditProduct.Text = "ویرایش";
             BtnEditProduct.TextColor = System.Drawing.Color.White;
             BtnEditProduct.UseVisualStyleBackColor = false;

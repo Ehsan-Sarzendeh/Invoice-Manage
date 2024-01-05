@@ -70,7 +70,7 @@
             groupBox11.Location = new System.Drawing.Point(292, 27);
             groupBox11.Name = "groupBox11";
             groupBox11.Size = new System.Drawing.Size(244, 70);
-            groupBox11.TabIndex = 226;
+            groupBox11.TabIndex = 1;
             groupBox11.TabStop = false;
             groupBox11.Text = "شناسه ملی";
             // 
@@ -92,7 +92,7 @@
             groupBox9.Location = new System.Drawing.Point(553, 27);
             groupBox9.Name = "groupBox9";
             groupBox9.Size = new System.Drawing.Size(205, 70);
-            groupBox9.TabIndex = 225;
+            groupBox9.TabIndex = 0;
             groupBox9.TabStop = false;
             groupBox9.Text = "شماره اقتصادی";
             // 
@@ -138,7 +138,7 @@
             BtnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new System.Drawing.Size(117, 47);
-            BtnAdd.TabIndex = 224;
+            BtnAdd.TabIndex = 7;
             BtnAdd.Text = "افزودن";
             BtnAdd.TextColor = System.Drawing.Color.White;
             BtnAdd.UseVisualStyleBackColor = false;
@@ -163,7 +163,7 @@
             groupBox3.Location = new System.Drawing.Point(292, 110);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new System.Drawing.Size(244, 70);
-            groupBox3.TabIndex = 230;
+            groupBox3.TabIndex = 4;
             groupBox3.TabStop = false;
             groupBox3.Text = "کد شعبه";
             // 
@@ -185,7 +185,7 @@
             groupBox1.Location = new System.Drawing.Point(32, 27);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new System.Drawing.Size(244, 70);
-            groupBox1.TabIndex = 228;
+            groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             groupBox1.Text = "نام";
             // 
@@ -197,7 +197,7 @@
             groupBox4.Location = new System.Drawing.Point(553, 110);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new System.Drawing.Size(205, 70);
-            groupBox4.TabIndex = 229;
+            groupBox4.TabIndex = 3;
             groupBox4.TabStop = false;
             groupBox4.Text = "کدپستی";
             // 
@@ -219,7 +219,7 @@
             groupBox2.Location = new System.Drawing.Point(32, 110);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new System.Drawing.Size(244, 70);
-            groupBox2.TabIndex = 231;
+            groupBox2.TabIndex = 5;
             groupBox2.TabStop = false;
             groupBox2.Text = "شماره گذرنامه";
             // 
@@ -241,7 +241,7 @@
             groupBox5.Location = new System.Drawing.Point(292, 203);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new System.Drawing.Size(466, 70);
-            groupBox5.TabIndex = 232;
+            groupBox5.TabIndex = 6;
             groupBox5.TabStop = false;
             groupBox5.Text = "شماره اشتراک/ شناسه قبض بهربرداری";
             // 
@@ -320,7 +320,7 @@
             BtnEditCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnEditCustomer.Name = "BtnEditCustomer";
             BtnEditCustomer.Size = new System.Drawing.Size(117, 47);
-            BtnEditCustomer.TabIndex = 234;
+            BtnEditCustomer.TabIndex = 8;
             BtnEditCustomer.Text = "ویرایش";
             BtnEditCustomer.TextColor = System.Drawing.Color.White;
             BtnEditCustomer.UseVisualStyleBackColor = false;

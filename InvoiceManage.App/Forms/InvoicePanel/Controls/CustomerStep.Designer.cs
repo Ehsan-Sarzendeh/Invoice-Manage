@@ -77,7 +77,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnNext.Name = "BtnNext";
             BtnNext.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnNext.Size = new System.Drawing.Size(120, 47);
-            BtnNext.TabIndex = 1;
+            BtnNext.TabIndex = 8;
             BtnNext.Text = "بعدی";
             BtnNext.TextColor = System.Drawing.Color.White;
             BtnNext.UseVisualStyleBackColor = false;
@@ -100,7 +100,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnPrevious.Name = "BtnPrevious";
             BtnPrevious.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnPrevious.Size = new System.Drawing.Size(120, 47);
-            BtnPrevious.TabIndex = 3;
+            BtnPrevious.TabIndex = 9;
             BtnPrevious.Text = "قبلی";
             BtnPrevious.TextColor = System.Drawing.Color.White;
             BtnPrevious.UseVisualStyleBackColor = false;
@@ -118,7 +118,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Bpn.ShowOptional = false;
             Bpn.ShowSemiRequired = false;
             Bpn.Size = new System.Drawing.Size(230, 70);
-            Bpn.TabIndex = 221;
+            Bpn.TabIndex = 6;
             Bpn.TabStop = false;
             Bpn.Text = "شماره گذرنامه خریدار";
             // 
@@ -145,7 +145,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             groupBox3.ShowOptional = false;
             groupBox3.ShowSemiRequired = false;
             groupBox3.Size = new System.Drawing.Size(471, 70);
-            groupBox3.TabIndex = 222;
+            groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
             groupBox3.Text = "نتیجه استعلام";
             // 
@@ -166,7 +166,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnInquiry.Name = "BtnInquiry";
             BtnInquiry.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnInquiry.Size = new System.Drawing.Size(98, 33);
-            BtnInquiry.TabIndex = 229;
+            BtnInquiry.TabIndex = 1;
             BtnInquiry.Text = "استعلام خریدار";
             BtnInquiry.TextColor = System.Drawing.Color.White;
             BtnInquiry.UseVisualStyleBackColor = false;
@@ -194,7 +194,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BillId.ShowOptional = false;
             BillId.ShowSemiRequired = false;
             BillId.Size = new System.Drawing.Size(471, 70);
-            BillId.TabIndex = 223;
+            BillId.TabIndex = 3;
             BillId.TabStop = false;
             BillId.Text = "شماره اشتراک/ شناسه قبض";
             // 
@@ -220,7 +220,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BId.ShowOptional = false;
             BId.ShowSemiRequired = false;
             BId.Size = new System.Drawing.Size(471, 70);
-            BId.TabIndex = 225;
+            BId.TabIndex = 2;
             BId.TabStop = false;
             BId.Text = "شناسه ملی";
             // 
@@ -246,7 +246,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Bbc.ShowOptional = false;
             Bbc.ShowSemiRequired = false;
             Bbc.Size = new System.Drawing.Size(235, 70);
-            Bbc.TabIndex = 226;
+            Bbc.TabIndex = 5;
             Bbc.TabStop = false;
             Bbc.Text = "کد شعبه ";
             // 
@@ -272,7 +272,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tinb.ShowOptional = false;
             Tinb.ShowSemiRequired = false;
             Tinb.Size = new System.Drawing.Size(471, 70);
-            Tinb.TabIndex = 220;
+            Tinb.TabIndex = 0;
             Tinb.TabStop = false;
             Tinb.Text = "شماره اقتصادی";
             // 
@@ -303,7 +303,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnSelect.Name = "BtnSelect";
             BtnSelect.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             BtnSelect.Size = new System.Drawing.Size(188, 47);
-            BtnSelect.TabIndex = 227;
+            BtnSelect.TabIndex = 10;
             BtnSelect.Text = "انتخاب از لیست مشتریان";
             BtnSelect.TextColor = System.Drawing.Color.White;
             BtnSelect.UseVisualStyleBackColor = false;
@@ -321,7 +321,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Ft.ShowOptional = false;
             Ft.ShowSemiRequired = false;
             Ft.Size = new System.Drawing.Size(230, 70);
-            Ft.TabIndex = 228;
+            Ft.TabIndex = 4;
             Ft.TabStop = false;
             Ft.Text = "نوع پرواز";
             // 
@@ -349,7 +349,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Bpc.ShowOptional = false;
             Bpc.ShowSemiRequired = false;
             Bpc.Size = new System.Drawing.Size(235, 70);
-            Bpc.TabIndex = 222;
+            Bpc.TabIndex = 7;
             Bpc.TabStop = false;
             Bpc.Text = "کدپستی";
             // 

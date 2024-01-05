@@ -53,7 +53,7 @@
             BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnNext.Name = "BtnNext";
             BtnNext.Size = new System.Drawing.Size(120, 47);
-            BtnNext.TabIndex = 1;
+            BtnNext.TabIndex = 0;
             BtnNext.Text = "بعدی";
             BtnNext.TextColor = System.Drawing.Color.White;
             BtnNext.UseVisualStyleBackColor = false;

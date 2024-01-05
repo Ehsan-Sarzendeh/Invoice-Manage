@@ -89,7 +89,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnNext.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnNext.Name = "BtnNext";
             BtnNext.Size = new System.Drawing.Size(120, 47);
-            BtnNext.TabIndex = 1;
+            BtnNext.TabIndex = 13;
             BtnNext.Text = "بعدی";
             BtnNext.TextColor = System.Drawing.Color.White;
             BtnNext.UseVisualStyleBackColor = false;
@@ -111,7 +111,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             BtnPrevious.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             BtnPrevious.Name = "BtnPrevious";
             BtnPrevious.Size = new System.Drawing.Size(120, 47);
-            BtnPrevious.TabIndex = 3;
+            BtnPrevious.TabIndex = 14;
             BtnPrevious.Text = "قبلی";
             BtnPrevious.TextColor = System.Drawing.Color.White;
             BtnPrevious.UseVisualStyleBackColor = false;
@@ -129,7 +129,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tax17.ShowOptional = false;
             Tax17.ShowSemiRequired = false;
             Tax17.Size = new System.Drawing.Size(230, 70);
-            Tax17.TabIndex = 230;
+            Tax17.TabIndex = 7;
             Tax17.TabStop = false;
             Tax17.Text = "مالیات موضوع ماده 17";
             // 
@@ -155,7 +155,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Insp.ShowOptional = false;
             Insp.ShowSemiRequired = false;
             Insp.Size = new System.Drawing.Size(242, 70);
-            Insp.TabIndex = 235;
+            Insp.TabIndex = 6;
             Insp.TabStop = false;
             Insp.Text = "مبلغ پرداخت نسیه";
             // 
@@ -181,7 +181,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Setm.ShowOptional = false;
             Setm.ShowSemiRequired = false;
             Setm.Size = new System.Drawing.Size(242, 70);
-            Setm.TabIndex = 240;
+            Setm.TabIndex = 2;
             Setm.TabStop = false;
             Setm.Text = "روش تسویه";
             // 
@@ -209,7 +209,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Torv.ShowOptional = false;
             Torv.ShowSemiRequired = false;
             Torv.Size = new System.Drawing.Size(230, 70);
-            Torv.TabIndex = 237;
+            Torv.TabIndex = 3;
             Torv.TabStop = false;
             Torv.Text = "مجموع ارزش ریالی";
             // 
@@ -237,7 +237,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tprdis.ShowOptional = false;
             Tprdis.ShowSemiRequired = false;
             Tprdis.Size = new System.Drawing.Size(235, 70);
-            Tprdis.TabIndex = 239;
+            Tprdis.TabIndex = 0;
             Tprdis.TabStop = false;
             Tprdis.Text = "مجموع  قبل از تخفیف";
             // 
@@ -265,7 +265,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Cap.ShowOptional = false;
             Cap.ShowSemiRequired = false;
             Cap.Size = new System.Drawing.Size(230, 70);
-            Cap.TabIndex = 237;
+            Cap.TabIndex = 9;
             Cap.TabStop = false;
             Cap.Text = "مبلغ پرداخت نقدی";
             // 
@@ -291,7 +291,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tvam.ShowOptional = false;
             Tvam.ShowSemiRequired = false;
             Tvam.Size = new System.Drawing.Size(235, 70);
-            Tvam.TabIndex = 239;
+            Tvam.TabIndex = 8;
             Tvam.TabStop = false;
             Tvam.Text = "مجموع مالیات بر ارزش افزوده";
             // 
@@ -319,7 +319,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tvop.ShowOptional = false;
             Tvop.ShowSemiRequired = false;
             Tvop.Size = new System.Drawing.Size(478, 70);
-            Tvop.TabIndex = 241;
+            Tvop.TabIndex = 10;
             Tvop.TabStop = false;
             Tvop.Text = "مجموع سهم مالیات بر ارزش افزوده از پرداخت";
             // 
@@ -347,7 +347,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Todam.ShowOptional = false;
             Todam.ShowSemiRequired = false;
             Todam.Size = new System.Drawing.Size(478, 70);
-            Todam.TabIndex = 243;
+            Todam.TabIndex = 12;
             Todam.TabStop = false;
             Todam.Text = "مجموع  مبلغ سایر مالیات، عوارض و وجوه قانونی";
             // 
@@ -375,7 +375,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tocv.ShowOptional = false;
             Tocv.ShowSemiRequired = false;
             Tocv.Size = new System.Drawing.Size(230, 70);
-            Tocv.TabIndex = 246;
+            Tocv.TabIndex = 5;
             Tocv.TabStop = false;
             Tocv.Text = "مجموع  ارزش ارزی";
             // 
@@ -403,7 +403,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tonw.ShowOptional = false;
             Tonw.ShowSemiRequired = false;
             Tonw.Size = new System.Drawing.Size(235, 70);
-            Tonw.TabIndex = 245;
+            Tonw.TabIndex = 4;
             Tonw.TabStop = false;
             Tonw.Text = "مجموع وزن خالص";
             // 
@@ -431,7 +431,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tadis.ShowOptional = false;
             Tadis.ShowSemiRequired = false;
             Tadis.Size = new System.Drawing.Size(230, 70);
-            Tadis.TabIndex = 244;
+            Tadis.TabIndex = 1;
             Tadis.TabStop = false;
             Tadis.Text = "مجموع مبلغ بعد از تخفیف";
             // 
@@ -459,7 +459,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Tbill.ShowOptional = false;
             Tbill.ShowSemiRequired = false;
             Tbill.Size = new System.Drawing.Size(471, 70);
-            Tbill.TabIndex = 244;
+            Tbill.TabIndex = 11;
             Tbill.TabStop = false;
             Tbill.Text = "مجموع صورتحساب";
             // 
