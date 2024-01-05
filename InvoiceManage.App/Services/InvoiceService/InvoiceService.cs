@@ -54,6 +54,13 @@ namespace InvoiceManage.App.Services.InvoiceService
             db.SaveChanges();
         }
 
+        public void EditInvoiceItem(InvoiceItem invoiceItem)
+        {
+            using var db = new SqliteDbContext();
+            db.InvoiceItem.Update(invoiceItem);
+            db.SaveChanges();
+        }
+
         public void DeleteInvoiceItem(InvoiceItem invoiceItem)
         {
             using var db = new SqliteDbContext();

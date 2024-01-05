@@ -13,6 +13,16 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
     {
         private readonly ICommonService _commonService;
 
+        private InvoiceItem _invoiceItem = new();
+        public InvoiceItem InvoiceItem
+        {
+            get => _invoiceItem;
+            set
+            {
+                _invoiceItem = value;
+                OnPropertyChanged(nameof(InvoiceItem));
+            }
+        }
 
         private bool _isEdit;
         public bool IsEdit
@@ -40,6 +50,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             SetComboBoxDataSource();
 
             BtnEdit.DataBindings.Add("Visible", this, nameof(IsEdit));
+            PicEdit.DataBindings.Add("Visible", this, nameof(IsEdit));
         }
 
         private void SetComboBoxDataSource()
@@ -48,6 +59,12 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         }
 
         #region Events
+
+        private void ItemStepAdd_Load(object sender, EventArgs e)
+        {
+            this.SetDataBindings(InvoiceItem);
+            this.SetNumberFormat(InvoiceItem);
+        }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
@@ -60,51 +77,51 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
             var parentForm = ParentForm as FrmInvoice;
 
-            var newItem = new InvoiceItem
-            {
-                Invoice = parentForm!.Invoice,
-                SstId = TxtSstid.Text,
-                Sstt = TxtSstt.Text,
-                Mu = (Mu)CbMu.SelectedValue,
-                Am = decimal.TryParse(TxtAm.Text, out var am)
-                    ? am : default,
-                // Mu = CbMu.SelectedItem,
-                Nw = decimal.TryParse(TxtNw.Text, out var nw)
-                    ? nw : default,
-                Fee = decimal.TryParse(TxtFee.Text, out var fee)
-                    ? fee : default,
-                CFee = decimal.TryParse(TxtCFee.Text, out var cfee)
-                    ? cfee : default,
-                Cut = TxtCut.Text,
-                Exr = decimal.TryParse(TxtExr.Text, out var exr)
-                    ? exr : default,
-                Ssrv = decimal.TryParse(TxtSsrv.Text, out var ssrv)
-                    ? ssrv : default,
-                Sscv = decimal.TryParse(TxtSscv.Text, out var sscv)
-                    ? sscv : default,
-                Dis = decimal.TryParse(TxtDis.Text, out var dis)
-                    ? dis : default,
-                Vra = double.TryParse(TxtVra.Text, out var vra)
-                    ? vra : default,
-                Odt = TxtOdt.Text,
-                Odr = double.TryParse(TxtOdr.Text, out var odr)
-                    ? odr : default,
-                Odam = decimal.TryParse(TxtOdam.Text, out var odam)
-                    ? odam : default,
-                Olt = TxtOlt.Text,
-                Olr = double.TryParse(TxtOlr.Text, out var olr)
-                    ? olr : default,
-                Olam = decimal.TryParse(TxtOlam.Text, out var olam)
-                    ? olam : default,
-                Consfee = decimal.TryParse(TxtConsfee.Text, out var consfee)
-                    ? consfee : default,
-                Spro = decimal.TryParse(TxtSpro.Text, out var spro)
-                    ? spro : default,
-                Bros = decimal.TryParse(TxtBros.Text, out var bros)
-                    ? bros : default
-            };
+            // var newItem = new InvoiceItem
+            // {
+            //     Invoice = parentForm!.Invoice,
+            //     SstId = TxtSstid.Text,
+            //     Sstt = TxtSstt.Text,
+            //     Mu = (Mu)CbMu.SelectedValue,
+            //     Am = decimal.TryParse(TxtAm.Text, out var am)
+            //         ? am : default,
+            //     // Mu = CbMu.SelectedItem,
+            //     Nw = decimal.TryParse(TxtNw.Text, out var nw)
+            //         ? nw : default,
+            //     Fee = decimal.TryParse(TxtFee.Text, out var fee)
+            //         ? fee : default,
+            //     CFee = decimal.TryParse(TxtCFee.Text, out var cfee)
+            //         ? cfee : default,
+            //     Cut = TxtCut.Text,
+            //     Exr = decimal.TryParse(TxtExr.Text, out var exr)
+            //         ? exr : default,
+            //     Ssrv = decimal.TryParse(TxtSsrv.Text, out var ssrv)
+            //         ? ssrv : default,
+            //     Sscv = decimal.TryParse(TxtSscv.Text, out var sscv)
+            //         ? sscv : default,
+            //     Dis = decimal.TryParse(TxtDis.Text, out var dis)
+            //         ? dis : default,
+            //     Vra = double.TryParse(TxtVra.Text, out var vra)
+            //         ? vra : default,
+            //     Odt = TxtOdt.Text,
+            //     Odr = double.TryParse(TxtOdr.Text, out var odr)
+            //         ? odr : default,
+            //     Odam = decimal.TryParse(TxtOdam.Text, out var odam)
+            //         ? odam : default,
+            //     Olt = TxtOlt.Text,
+            //     Olr = double.TryParse(TxtOlr.Text, out var olr)
+            //         ? olr : default,
+            //     Olam = decimal.TryParse(TxtOlam.Text, out var olam)
+            //         ? olam : default,
+            //     Consfee = decimal.TryParse(TxtConsfee.Text, out var consfee)
+            //         ? consfee : default,
+            //     Spro = decimal.TryParse(TxtSpro.Text, out var spro)
+            //         ? spro : default,
+            //     Bros = decimal.TryParse(TxtBros.Text, out var bros)
+            //         ? bros : default
+            // };
 
-            parentForm!.Invoice.Items.Add(newItem);
+            parentForm!.Invoice.Items.Add(InvoiceItem);
 
             this.ClearControls();
             IsEdit = false;
@@ -119,11 +136,6 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-            var parentForm = ParentForm as FrmInvoice;
-
-
-
-
             this.ClearControls();
             IsEdit = false;
 
@@ -152,6 +164,5 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
         }
 
         #endregion
-
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Windows.Forms;
-using System.Xml.Linq;
+﻿using System.Windows.Forms;
 using InvoiceManage.App.Forms.Common;
 using InvoiceManage.App.Services.Infrastructures;
 using InvoiceManage.App.Services.InvoiceService;
@@ -32,8 +30,8 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
 
         private void BtnEdit_Click(object sender, System.EventArgs e)
         {
-            var company = GetSelectedItem();
-            if (company is null)
+            var item = GetSelectedItem();
+            if (item is null)
             {
                 CustomMessageBox.Show("آیتمی انتخاب نشده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -42,13 +40,9 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             var itemStep = Parent.Parent as ItemStep;
             itemStep!.TabAdd_Click(sender, e);
 
-            // TxtTins.Text = company!.Tins;
-            // TxtName.Text = company.Name;
-            // TxtSbc.Text = company.Sbc;
-            // TxtScln.Text = company.Scln;
-            // TxtCrn.Text = company.Crn;
-            //
-            // IsEdit = true;
+            var itemStepAdd = itemStep.PanelSlider.Controls.Find("ItemStepAdd", false)[0] as ItemStepAdd;
+            itemStepAdd!.IsEdit = true;
+            itemStepAdd!.InvoiceItem = item;
         }
 
         private void BtnDelete_Click(object sender, System.EventArgs e)

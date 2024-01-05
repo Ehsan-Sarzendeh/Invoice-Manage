@@ -25,7 +25,7 @@ namespace InvoiceManage.Database.Entities
         public decimal Am { get; set; }
 
         [Display(Name = "کد واحد اندازه گیری")]
-        public Mu Mu { get; set; }
+        public Mu? Mu { get; set; }
         [Display(Name = "واحد اندازه گیری")]
         public string Mu_1 => Mu.ToDisplay();
 

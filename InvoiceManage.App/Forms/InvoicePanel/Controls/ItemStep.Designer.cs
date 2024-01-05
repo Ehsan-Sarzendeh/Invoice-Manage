@@ -165,7 +165,7 @@
         private Resources.CustomToolBox.RoundedButton BtnNext;
         private Resources.CustomToolBox.RoundedButton BtnPrevious;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel PanelSlider;
+        public System.Windows.Forms.Panel PanelSlider;
         private Resources.CustomToolBox.RoundedButton TabList;
         private Resources.CustomToolBox.RoundedButton TabAdd;
     }

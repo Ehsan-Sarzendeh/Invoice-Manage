@@ -846,6 +846,7 @@ namespace InvoiceManage.App.Forms.InvoicePanel.Controls
             Name = "ItemStepAdd";
             RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             Size = new System.Drawing.Size(1012, 495);
+            Load += ItemStepAdd_Load;
             Sstid.ResumeLayout(false);
             Sstid.PerformLayout();
             Sstt.ResumeLayout(false);

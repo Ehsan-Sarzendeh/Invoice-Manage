@@ -35,20 +35,20 @@ namespace InvoiceManage.Database.Infrastructures
                 throw new NotSupportedException();
 
             foreach (var value in Enum.GetValues(input.GetType()))
-                if ((input as Enum).HasFlag(value as Enum))
+                if ((input as Enum)!.HasFlag((value as Enum)!))
                     yield return (T)value;
         }
 
         public static string ToDisplay(this Enum value, DisplayProperty property = DisplayProperty.Name)
         {
-            var attribute = value.GetType().GetField(value.ToString())?
+            var attribute = value?.GetType().GetField(value.ToString())?
                 .GetCustomAttributes<DisplayAttribute>(false).FirstOrDefault();
 
             if (attribute == null)
-                return value.ToString();
+                return value?.ToString();
 
-            var propValue = attribute.GetType().GetProperty(property.ToString()).GetValue(attribute, null);
-            return propValue.ToString();
+            var propValue = attribute.GetType().GetProperty(property.ToString())?.GetValue(attribute, null);
+            return propValue?.ToString();
         }
 
         public static Dictionary<int, string> ToDictionary(this Enum value)
